@@ -1,0 +1,200 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "Count": 48
+  },
+  "Cols": {
+    "Count": 69
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "fgc_logo_light.svg"
+      }
+    },
+    "7,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "_RS_Dark_ThemeStyle2",
+        "Items": [
+          {
+            "Text": "メニュ  1",
+            "IconPath": "Navigation/165_home_3.svg",
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Text": "メニュ 1_1",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Text": "メニュ  1_2",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "メニュ  2",
+            "IconPath": "Navigation/183_table_2.svg",
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Text": "メニュ  2_1",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Text": "メニュ 2_2",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "メニュ 3",
+            "IconPath": "Chart/363_column_chart_2.svg",
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Text": "メニュ  3_1",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Text": "メニュ  3_2",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 17.3333333333333,
+            "Height": 45.0,
+            "Width": 200.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "FontSize": 16.0,
+            "Height": 32.0,
+            "Width": 200.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "7,60": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "9,0": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,1,5,10",
+    "9,0,39,69",
+    "2,59,3,10",
+    "7,60,2,9",
+    "7,0,2,60"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "515397b3-ef9b-4f31-a45b-aa3c3ce18665",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "PCMasterBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 2,
+      "Size": "200,210"
+    },
+    {
+      "Name": "d7fb6181-e71a-4167-8b3d-6a2865f62b2a",
+      "DisplayName": "背景画像2",
+      "ForguncyPictureName": "PCMasterBanner",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "1380,100"
+    }
+  ]
+}//t2zXnzclkr+NhxZoKQ8cuGgVmel+jsDIckN8Mrb2+Hw1XF+uduXEk/PnRIIe2xX5a/uCcxNxFuVBJvU8Kjx4KqOluaSWIod5rPZ1YBzQyjNr3ir8ydqv88iAZL9BCXqGUBvNbqTgSt1iiynT4n6jZgZEzwIP2APTCioFUslqPI6Gt7oE4UsLCk0wnshCx7Pt78pyhSouKmmmnWho0Ho22y160r5BY+/l9wgx2gxveCorMYLEdJYkzJ4/mXCsj979YZaROoMchj1uZHoeHE9ajIuwiesH2mL5nGq355FhjRtCj9C1pp272c5kRUnz45TWxOUlWCGnBHR4PNfjmoJXc92iR9P7llRvtbDSVzQeqhj2bNb9NdMBgGhfm8tSH+RRowzNvy7YRh5136Gkzrn/VBcvrtIJwiUUvedGed9gC03+rzBHQGdPnlebO5ll7KYXJrNwj6rIlasrde+hsecM6tVeJSMiddugW7X6bsOJiaNY8223+Yh1491WPm+lHcvf3qbun93MjEzTxZwFznlviRwzfkPyyGYtsyOKS/BvJq+D64c4V/ZifoP/eAiB1+sMG65/BhOjJD6/RYQzHYjeJ+tQehyiUENoO3prsdlcOx2/lEniFBVesn61GLcgkYBlOhtLB9mfQvq/dO2Zyrmv1/Ufvgxr1WwnyeT4DgQxv6iLWZleU9904vDalEwvw4wFQzNdWO3pjl0vAWHjvhRLADKDhs/b5pzA8wh9anr9tNzDUwFgCEOpKA5f3BiZFP2sUMZk7Px54Vh2D2l1r9sFE/2UrLFBKihM09nPdWEfyvVrI0u1IBaEXa/y+WMDEeEpVQ87vXFlW3co0pY/DnypPxnmXVclczHGKJq137uWpOt+A/8dhhXkCqPEh6CJ/9/WtyGyDpPAuY0sSV/AvrnKKg==|920

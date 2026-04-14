@@ -1,0 +1,606 @@
+{
+  "Name": "材料受入明細表_レポート",
+  "DataSources": [
+    {
+      "Name": "材料受入明細表",
+      "GUID": "f2da76f5-7f21-4c40-8820-22948e180bb0",
+      "DataSourceSetting": {
+        "TableName": "tkansayo_torihiki",
+        "BindingInfos": [
+          {
+            "GUID": "de357004-17a9-43c6-be4f-4c75ae6a4dbe",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "SEQ_NO",
+              "GUID": "9e95231c-7e6e-47f0-a6c9-f64321e94703"
+            },
+            "ColumnName": "SEQ_NO"
+          },
+          {
+            "GUID": "acee731e-9813-4029-a1d7-2d26eabfbf66",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "RECORD_NO",
+              "GUID": "0e91d27b-6896-4536-8114-a9c76d9dfcbe"
+            },
+            "ColumnName": "RECORD_NO"
+          },
+          {
+            "GUID": "2f4c6039-d08d-4aa5-9ebe-669e7bd60dbe",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "TARGET_YEAR_MONTH",
+              "GUID": "1de29b2e-2c9d-4edf-a6fd-01f187882bdd"
+            },
+            "ColumnName": "TARGET_YEAR_MONTH"
+          },
+          {
+            "GUID": "5117aec1-e555-4ab4-bc77-1a0cf6411dcd",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "SAKUSEI_DATE",
+              "GUID": "000238f3-4c62-47c3-9ef5-c73abad3afd6"
+            },
+            "ColumnName": "SAKUSEI_DATE"
+          },
+          {
+            "GUID": "713fa870-0469-4c8f-a67d-0407f4c78030",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "DENKU",
+              "GUID": "6109dc47-fb19-465e-8d15-0bf3f578284f"
+            },
+            "ColumnName": "DENKU"
+          },
+          {
+            "GUID": "c52d0c0c-eac2-4974-92dd-8882c4697a37",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "DENSHU",
+              "GUID": "581d1473-5b01-48c0-b108-279d8524617a"
+            },
+            "ColumnName": "DENSHU"
+          },
+          {
+            "GUID": "81652d6d-0338-42a0-8064-ec70e466b6a0",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "NO1",
+              "GUID": "952f02f3-5bb6-4993-9363-2c4c8bd0412d"
+            },
+            "ColumnName": "NO1"
+          },
+          {
+            "GUID": "3f99ff88-1656-4cf7-8194-eb6a44b86b35",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "NO2",
+              "GUID": "be2938fc-0921-4af2-8975-f034f2ba5406"
+            },
+            "ColumnName": "NO2"
+          },
+          {
+            "GUID": "74a4d454-9cfa-41c3-903e-7eee6f7ffec1",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "TORIHIKISAKI_CODE",
+              "GUID": "a15a9ed5-c596-4c2e-b8fd-8acfc819a666"
+            },
+            "ColumnName": "TORIHIKISAKI_CODE"
+          },
+          {
+            "GUID": "8f4d71e9-3078-4323-aba6-6b5b10de3edd",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "TORIHIKISAKI_CODE",
+              "GUID": "3d2b40a8-2934-4bf4-8f3c-056cd76f191f",
+              "RelationBinding": {
+                "RelatedTable": "mtorihiki",
+                "RelatedColumn": "TORIHIKISAKI_CODE",
+                "DisplayColumn": "TORIHIKISAKI_NAME"
+              }
+            },
+            "ColumnName": "TORIHIKISAKI_NAME"
+          },
+          {
+            "GUID": "e1b5a5a2-cbe2-4231-97df-660e73ebb1b3",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "MOTO_KOJO",
+              "GUID": "2513c9bd-570d-4d5d-bf68-a1b75d04e820"
+            },
+            "ColumnName": "MOTO_KOJO"
+          },
+          {
+            "GUID": "305927ad-71f3-4e0e-9ad9-c7a1786c5ebd",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "MOTO_BUMON",
+              "GUID": "6406bc0e-0ab6-4896-9ae7-1d4c64378b7b"
+            },
+            "ColumnName": "MOTO_BUMON"
+          },
+          {
+            "GUID": "a2685247-b369-4063-96f7-22d7e0f6adfe",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "MOTO_HIMOKU",
+              "GUID": "2a027c9d-9910-4a88-8d33-a2146f994eb3"
+            },
+            "ColumnName": "MOTO_HIMOKU"
+          },
+          {
+            "GUID": "b8c71ce1-f5ab-402e-8170-790bfe2b1b76",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "SAKI_KOJO",
+              "GUID": "50143569-bfdc-4593-b894-de440585cce4"
+            },
+            "ColumnName": "SAKI_KOJO"
+          },
+          {
+            "GUID": "716133f9-d6f2-4275-8402-1c26380b34bf",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "SAKI_BUMON",
+              "GUID": "692b8b0e-c69f-4faa-83c2-5b5d7177e4ce"
+            },
+            "ColumnName": "SAKI_BUMON"
+          },
+          {
+            "GUID": "12138ff6-c033-494f-97b6-a7a6ea95dc56",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "SAKI_HIMOKU",
+              "GUID": "581829be-620b-4130-8491-dc71f72da197"
+            },
+            "ColumnName": "SAKI_HIMOKU"
+          },
+          {
+            "GUID": "c9bbd291-c8ce-4e00-9633-1cb86e0adcac",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "HINBAN",
+              "GUID": "ab013d00-427e-45a9-9ba0-8831772a1393"
+            },
+            "ColumnName": "HINBAN"
+          },
+          {
+            "GUID": "db38471a-b7f1-47e7-8cb4-36760f1c3e2d",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "MASTER_UMU",
+              "GUID": "89397cd0-c26e-4d09-bee9-6fd28ba1946a"
+            },
+            "ColumnName": "MASTER_UMU"
+          },
+          {
+            "GUID": "90c5c613-6341-435b-879e-755de3dc3174",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "HINMEI",
+              "GUID": "c228986e-dca5-48c1-ad83-9df11f29bf69"
+            },
+            "ColumnName": "HINMEI"
+          },
+          {
+            "GUID": "8695a7aa-8d6e-444a-8025-400029309ddb",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KIKAKU",
+              "GUID": "7a7a1fe6-11ca-461f-9f3b-01d8f853c1ca"
+            },
+            "ColumnName": "KIKAKU"
+          },
+          {
+            "GUID": "957d8d04-3618-4352-bcf6-0605dc236ec0",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "ZUBAN_NO",
+              "GUID": "306a9c3b-d8f1-4023-9584-dfd0748fa3a4"
+            },
+            "ColumnName": "ZUBAN_NO"
+          },
+          {
+            "GUID": "9c68a54a-f827-47b7-bc1f-883dca747049",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "IRO_CD",
+              "GUID": "10597174-5b0b-4c26-8e95-225debb0c48e"
+            },
+            "ColumnName": "IRO_CD"
+          },
+          {
+            "GUID": "5d2a960d-ece0-457a-815c-4bde7a1bfaef",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "SU1",
+              "GUID": "8fe05095-2f55-4a83-9be5-13755e382357"
+            },
+            "ColumnName": "SU1"
+          },
+          {
+            "GUID": "a03a2cdd-39bc-46b7-bb03-392ee56e28a4",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "SU2",
+              "GUID": "a00ad200-4af0-4fc9-9bf2-e68c1fe492d7"
+            },
+            "ColumnName": "SU2"
+          },
+          {
+            "GUID": "109bae63-495e-48e3-96d2-6565fe31079f",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "TANI",
+              "GUID": "c0dde69c-5563-4718-9c03-6fb2143104a8"
+            },
+            "ColumnName": "TANI"
+          },
+          {
+            "GUID": "64c6203f-0d1e-4fd3-b947-3453fbeae44b",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "TANTO1",
+              "GUID": "72637bdd-348c-411e-931f-859c218d0654"
+            },
+            "ColumnName": "TANTO1"
+          },
+          {
+            "GUID": "4a15a83d-603e-45ad-a766-75a529ad5381",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KANRI_KOTEI",
+              "GUID": "9bb461f4-e49d-4acd-a02f-7d65f88a9896"
+            },
+            "ColumnName": "KANRI_KOTEI"
+          },
+          {
+            "GUID": "ffa8aae7-416d-453f-bd4d-e390b191055b",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "TANKA1",
+              "GUID": "ad0c963c-2d98-4263-9e12-02cc30583da9"
+            },
+            "ColumnName": "TANKA1"
+          },
+          {
+            "GUID": "b761fe63-190b-4ac3-8fdc-8ca283833587",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "TANKA2",
+              "GUID": "446ad45c-56bb-4e36-9189-4892534456b8"
+            },
+            "ColumnName": "TANKA2"
+          },
+          {
+            "GUID": "29f041cd-c6a3-4532-a94d-7bbbbaebadde",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "TANKA3",
+              "GUID": "fa6beac2-c785-45e7-91a4-00694022a5b2"
+            },
+            "ColumnName": "TANKA3"
+          },
+          {
+            "GUID": "c21f7029-76f6-4c3d-9a4a-ffbc371ca749",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KINGAKU1",
+              "GUID": "6cff5a00-f99b-4a5c-94fc-c953dae5c243"
+            },
+            "ColumnName": "KINGAKU1"
+          },
+          {
+            "GUID": "578e36f5-5433-493b-aa67-812d12bd44ee",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KINGAKU2",
+              "GUID": "2e8ede5b-47bd-4e5f-892b-d84c26642099"
+            },
+            "ColumnName": "KINGAKU2"
+          },
+          {
+            "GUID": "c730c68c-1e9d-4620-96c4-aaa5404cc159",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KINGAKU3",
+              "GUID": "553e36be-5ba8-4303-82ed-3e4d25038719"
+            },
+            "ColumnName": "KINGAKU3"
+          },
+          {
+            "GUID": "0fcbb2cd-501f-4381-b347-1df89b302cde",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KUBUN1",
+              "GUID": "508d9c05-a6b5-45cb-b4b1-1869abe445ee"
+            },
+            "ColumnName": "KUBUN1"
+          },
+          {
+            "GUID": "97bfb6a1-46d3-41b7-8e88-eaba78893ce6",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KUBUN2",
+              "GUID": "0fedc75f-59d6-4805-af9d-bc323c684621"
+            },
+            "ColumnName": "KUBUN2"
+          },
+          {
+            "GUID": "4fd9c310-8d26-4be7-960b-daf603b6fff2",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KUBUN3",
+              "GUID": "b68bebca-5009-4f00-acf6-7615fa908476"
+            },
+            "ColumnName": "KUBUN3"
+          },
+          {
+            "GUID": "17be066f-5417-433d-afd3-6eb92eaa8158",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KUBUN4",
+              "GUID": "54f4d04b-b480-48cf-8273-05f15e648c41"
+            },
+            "ColumnName": "KUBUN4"
+          },
+          {
+            "GUID": "1573cada-9684-4ef7-8718-e57bc48de494",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KURADASHI_KOTEI",
+              "GUID": "efeeaa94-e720-4b77-a3bb-d4823f00959c"
+            },
+            "ColumnName": "KURADASHI_KOTEI"
+          },
+          {
+            "GUID": "81b0a56f-a621-474a-935d-69edcb55d043",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "LOCATION",
+              "GUID": "5888cf99-ad30-4a28-a42e-d08d71594048"
+            },
+            "ColumnName": "LOCATION"
+          },
+          {
+            "GUID": "628db9b7-5726-4068-8093-4eab648d371d",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "SHIHARAI_TORIHIKISAKI_CD",
+              "GUID": "bc31b794-8899-48fe-91ee-1dc1f4e5c7cd"
+            },
+            "ColumnName": "SHIHARAI_TORIHIKISAKI_CD"
+          },
+          {
+            "GUID": "a57cbb59-643c-4fa5-84ca-522060b3f6f7",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KOJI_NO",
+              "GUID": "f69e155a-c901-419b-b280-63a5884d49b0"
+            },
+            "ColumnName": "KOJI_NO"
+          },
+          {
+            "GUID": "0434f30a-0570-4be4-bf47-817e5b277d30",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "COMMENT",
+              "GUID": "41826187-fb05-4bfe-8fc3-cbcc74e4c4bc"
+            },
+            "ColumnName": "COMMENT"
+          },
+          {
+            "GUID": "ae92a935-4c73-4fc3-b20d-5ef8c9ac6770",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "DATE1",
+              "GUID": "da087c76-fd34-4a78-b961-73c354ad70c5"
+            },
+            "ColumnName": "DATE1"
+          },
+          {
+            "GUID": "2e7b9aa6-832e-45fb-8e1a-0e5152bc23de",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "DATE2",
+              "GUID": "221fbe94-b8e7-42c5-b038-d43a36dd7efd"
+            },
+            "ColumnName": "DATE2"
+          },
+          {
+            "GUID": "266df08c-88ea-40e5-a2b0-b19701605224",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "NOHINSAKI_CD",
+              "GUID": "bc02ef49-d4b9-4edb-9bd7-a921ff6e4b44"
+            },
+            "ColumnName": "NOHINSAKI_CD"
+          },
+          {
+            "GUID": "34dc4190-7191-4fc4-8472-13f744257de8",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "NOHINSAKI_MEISHO",
+              "GUID": "7a5298f5-1591-4883-81f9-40d13700e491"
+            },
+            "ColumnName": "NOHINSAKI_MEISHO"
+          },
+          {
+            "GUID": "96f3826d-b905-41d3-bc01-bafa5702d281",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KEIRI_SHORI_DAY",
+              "GUID": "2ce06e23-9989-4848-9506-f8d8dcd58a70"
+            },
+            "ColumnName": "KEIRI_SHORI_DAY"
+          },
+          {
+            "GUID": "56eb31a4-4bce-4c17-87af-f9536154585a",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KEIRI_SYORI_MONTH",
+              "GUID": "87f3bc62-c941-48e3-bb59-58b8a0035369"
+            },
+            "ColumnName": "KEIRI_SYORI_MONTH"
+          },
+          {
+            "GUID": "e68b4632-c7a4-41c8-a4a2-fe99b6385cd2",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "ZEI_KUBUN",
+              "GUID": "8b719940-e1b7-4060-928c-b481af9ff5de"
+            },
+            "ColumnName": "ZEI_KUBUN"
+          },
+          {
+            "GUID": "d7ae1a17-00ab-483c-8b16-40e57c5308ab",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "SHIWAKE_RENKEI_KUBUN",
+              "GUID": "8449a71d-928b-4c83-8604-1e92edb60f50"
+            },
+            "ColumnName": "SHIWAKE_RENKEI_KUBUN"
+          },
+          {
+            "GUID": "a59dd227-ea14-4288-80d9-ee053d45142c",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "TOROKU_TIMESTAMP",
+              "GUID": "3c1298bb-3a62-4a2d-b7fa-4ff8e0600ae0"
+            },
+            "ColumnName": "TOROKU_TIMESTAMP"
+          },
+          {
+            "GUID": "c7a8142c-9ed3-4e7f-8ee4-fc2deaf05f3f",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "TOROKUSHA_CODE",
+              "GUID": "b3af343c-2469-4a33-a9dd-688b4bfbd6ad"
+            },
+            "ColumnName": "TOROKUSHA_CODE"
+          },
+          {
+            "GUID": "948fc43e-71e0-4fcf-b1fa-b0833eab2289",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KOSHIN_TIMESTAMP",
+              "GUID": "cfa6d034-359d-4146-9c13-400aab172261"
+            },
+            "ColumnName": "KOSHIN_TIMESTAMP"
+          },
+          {
+            "GUID": "fda713d6-10b1-4f71-9314-c1f5b33a485a",
+            "BindingInfo": {
+              "TableName": "tkansayo_torihiki",
+              "ColumnName": "KOSHINSHA_CODE",
+              "GUID": "6a59c81a-da5a-4d97-bf6c-80590b21d3ea"
+            },
+            "ColumnName": "KOSHINSHA_CODE"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "tkansayo_torihiki",
+            "ColumnName": "TARGET_YEAR_MONTH",
+            "GUID": "cc26017c-9c1d-4182-9e51-19e83a2d8f03"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=処理月度"
+          }
+        }
+      },
+      "ReportDataSourceParams": [
+        {
+          "Name": "仕入先CD"
+        },
+        {
+          "Name": "帳票発行日"
+        },
+        {
+          "Name": "処理月度"
+        }
+      ],
+      "ColumnsType": [
+        "integer",
+        "string",
+        "string",
+        "date-time",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "boolean",
+        "string",
+        "string",
+        "string",
+        "string",
+        "integer",
+        "integer",
+        "string",
+        "string",
+        "string",
+        "number",
+        "number",
+        "number",
+        "number",
+        "number",
+        "number",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "date-time",
+        "date-time",
+        "string",
+        "string",
+        "date-time",
+        "date-time",
+        "string",
+        "string",
+        "date-time",
+        "string",
+        "date-time",
+        "string"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}
