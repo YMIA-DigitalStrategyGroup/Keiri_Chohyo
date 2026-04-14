@@ -290,5 +290,95 @@
   {
     "ModuleName": "PCPage/エンジン受払台帳_帳票画面",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/生産進捗一覧",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:14:00.5260735+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/インポートフォルダー1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:14:00.5271525+09:00",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/倉出情報一覧",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:14:00.5272103+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "TableView/ymia_v_seisan_shinchoku",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:14:00.5301711+09:00",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Tables/インポートフォルダー1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:14:00.5301991+09:00",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "TableView/ymia_v_kuradashi_buhin",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:14:00.5302688+09:00",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/ymia_v_kuradashi_kotei",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:14:00.5302765+09:00",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "PageReport/倉出部品表",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:14:00.5313386+09:00",
+    "ModuleType": 17
+  },
+  {
+    "ModuleName": "Reports/インポートフォルダー1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:14:00.5313521+09:00",
+    "ModuleType": 19
   }
 ]
