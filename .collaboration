@@ -233,7 +233,17 @@
   },
   {
     "ModuleName": "PCPage/エンジン・ドライブ一覧",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-14T15:56:29.0093487+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\エンジン・ドライブ受払台帳\\エンジン・ドライブ一覧.json",
+      "Pages\\エンジン・ドライブ受払台帳\\エンジン・ドライブ一覧.rd"
+    ]
   },
   {
     "ModuleName": "Pages/エンジン・ドライブ受払台帳",
@@ -301,6 +311,16 @@
       "Email": "example@example.com"
     },
     "LockDateTime": "2026-04-14T15:55:51.5570122+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/エンジン受払台帳_発行画面",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-14T15:56:29.0093593+09:00",
     "ModuleType": 1
   }
 ]
