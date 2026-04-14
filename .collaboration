@@ -322,16 +322,6 @@
     "ModuleType": 23
   },
   {
-    "ModuleName": "Reports/インポートフォルダー1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:43:34.8744377+09:00",
-    "ModuleType": 19
-  },
-  {
     "ModuleName": "PageReport/ドライブ受払台帳",
     "State": 3,
     "LockedBy": {
