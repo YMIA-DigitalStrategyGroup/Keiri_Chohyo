@@ -356,5 +356,15 @@
     },
     "LockDateTime": "2026-04-15T08:48:24.5645746+09:00",
     "ModuleType": 22
+  },
+  {
+    "ModuleName": "TableView/ymia_v_seihinuriage_syukkameisai",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:48:42.320983+09:00",
+    "ModuleType": 23
   }
 ]
