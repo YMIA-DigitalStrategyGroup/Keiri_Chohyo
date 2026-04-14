@@ -1,0 +1,135 @@
+{
+  "Name": "ymia_v_driveukebarai",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "対象年月",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "型式",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "前残",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "当月度入荷",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "当月度出荷",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "繰越残",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "前残＿入荷日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "前残＿価格",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "当月度入荷＿入荷日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "当月度入荷＿価格",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "当月度出荷＿出荷日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 15,
+      "Name": "当月度出荷＿工事№",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "double",
+      "MaxLength": -1,
+      "Name": "当月度出荷＿倉工",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "繰越残＿価格",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
+      "Required": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "型式計",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
+      "Required": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "エンジン計",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "MySql1",
+    "SourceTableName": "ymia_v_driveukebarai",
+    "SourceTableSchema": "",
+    "CreateViewSql": "select `summary`.`TARGET_YEAR_MONTH` AS `対象年月`,`m_hinban`.`DRIVE_KEISHIKI` AS `型式`,`summary`.`TO_ZENZAN` AS `前残`,`summary`.`TO_SHIIRE` AS `当月度入荷`,(((`summary`.`TO_URIAGE_YUSHOSHIKYU` + `summary`.`TO_MUSYOSHIKYU`) + `summary`.`TO_BANAI_KURADASHI`) + `summary`.`TO_SONOTA_KURADASHI`) AS `当月度出荷`,((`summary`.`TO_ZENZAN` + `summary`.`TO_SHIIRE`) - (((`summary`.`TO_URIAGE_YUSHOSHIKYU` + `summary`.`TO_MUSYOSHIKYU`) + `summary`.`TO_BANAI_KURADASHI`) + `summary`.`TO_SONOTA_KURADASHI`)) AS `繰越残`,(select `tukebarai`.`UKEBARAI_DATE` from `tukebarai` where ((`tukebarai`.`HINBAN` = `summary`.`BUHIN_CODE`) and (`tukebarai`.`UKEBARAI_KUBUN` = 4) and (`tukebarai`.`UKEBARAI_DATE` < `summary`.`TARGET_YEAR_MONTH`)) order by `tukebarai`.`UKEBARAI_NBR` desc limit 1) AS `前残＿入荷日`,(select `h`.`KINGAKU` from (`tukebarai` `t` join `thatchum` `h` on((`t`.`DENPYO_NBR` = `h`.`DENPYO_NBR`))) where ((`t`.`HINBAN` = `summary`.`BUHIN_CODE`) and (`t`.`UKEBARAI_KUBUN` = 4) and (`t`.`UKEBARAI_DATE` < `summary`.`TARGET_YEAR_MONTH`)) order by `t`.`UKEBARAI_NBR` desc limit 1) AS `前残＿価格`,(select `tukebarai`.`UKEBARAI_DATE` from `tukebarai` where ((`tukebarai`.`HINBAN` = `summary`.`BUHIN_CODE`) and (`tukebarai`.`UKEBARAI_KUBUN` = 4) and (date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') = date_format(`summary`.`TARGET_YEAR_MONTH`,'%Y/%m'))) order by `tukebarai`.`UKEBARAI_NBR` desc limit 1) AS `当月度入荷＿入荷日`,(select `h`.`KINGAKU` from (`tukebarai` `t` join `thatchum` `h` on((`t`.`DENPYO_NBR` = `h`.`DENPYO_NBR`))) where ((`t`.`HINBAN` = `summary`.`BUHIN_CODE`) and (`t`.`UKEBARAI_KUBUN` = 4) and (date_format(`t`.`UKEBARAI_DATE`,'%Y/%m') = date_format(`summary`.`TARGET_YEAR_MONTH`,'%Y/%m'))) order by `t`.`UKEBARAI_NBR` desc limit 1) AS `当月度入荷＿価格`,(select `tukebarai`.`UKEBARAI_DATE` from `tukebarai` where ((`tukebarai`.`HINBAN` = `summary`.`BUHIN_CODE`) and (`tukebarai`.`UKEBARAI_KUBUN` = 5) and (date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') = date_format(`summary`.`TARGET_YEAR_MONTH`,'%Y/%m'))) order by `tukebarai`.`UKEBARAI_NBR` desc limit 1) AS `当月度出荷＿出荷日`,(select `j`.`TEHAI_KOBAN` from (`tukebarai` `t` join `tjuchu` `j` on((`t`.`JUCHU_NBR` = `j`.`JUCHU_NBR`))) where ((`t`.`HINBAN` = `summary`.`BUHIN_CODE`) and (`t`.`UKEBARAI_KUBUN` = 5) and (date_format(`t`.`UKEBARAI_DATE`,'%Y/%m') = date_format(`summary`.`TARGET_YEAR_MONTH`,'%Y/%m'))) order by `t`.`UKEBARAI_NBR` desc limit 1) AS `当月度出荷＿工事№`,-((select `b`.`KURADASHI_KOTEI` from ((`tukebarai` `t` join `thatchum` `h` on((`t`.`DENPYO_NBR` = `h`.`DENPYO_NBR`))) join `tbuhink` `b` on((`h`.`BUHIN_KOSEI_ID` = `b`.`ID`))) where ((`t`.`HINBAN` = `summary`.`BUHIN_CODE`) and (`t`.`UKEBARAI_KUBUN` = 5) and (date_format(`t`.`UKEBARAI_DATE`,'%Y/%m') = date_format(`summary`.`TARGET_YEAR_MONTH`,'%Y/%m'))) order by `t`.`UKEBARAI_NBR` desc limit 1)) AS `当月度出荷＿倉工`,`summary`.`TO_TOZAN` AS `繰越残＿価格`,0 AS `型式計`,0 AS `エンジン計` from (`tkansayo_zaiko_summary` `summary` join `mhinban` `m_hinban` on((`summary`.`BUHIN_CODE` = `m_hinban`.`HINBAN`))) where (`m_hinban`.`ZAISHITSU` like '%DRIVE%')",
+    "ViewInfo": {
+      "ViewName": "ymia_v_driveukebarai",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": []
+}

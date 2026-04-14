@@ -1,0 +1,208 @@
+{
+  "Name": "エンジン受払台帳",
+  "DataSources": [
+    {
+      "Name": "エンジン受払",
+      "GUID": "09bb4f2e-39df-4c64-be38-59dcd601e89c",
+      "DataSourceSetting": {
+        "TableName": "ymia_v_engineukebarai",
+        "BindingInfos": [
+          {
+            "GUID": "a4adeb8e-cf78-4ff0-b957-11e80c34b084",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "対象年月",
+              "GUID": "3d97aba6-ff38-4722-8ccd-5ba996bbfd14"
+            },
+            "ColumnName": "対象年月"
+          },
+          {
+            "GUID": "7710d8c4-bb48-43e6-b5ae-e446517679e4",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "型式",
+              "GUID": "b132e8b3-381a-404b-a76e-0a6246c4cd8c"
+            },
+            "ColumnName": "型式"
+          },
+          {
+            "GUID": "2cea8270-4b90-448c-a402-30b831fb56ec",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "品番",
+              "GUID": "1d18a70b-b224-4ec3-879a-abfee9653812"
+            },
+            "ColumnName": "品番"
+          },
+          {
+            "GUID": "5fbe600b-c944-40cd-a842-dca158655d47",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "前残",
+              "GUID": "8d7e3e2d-6632-4527-be3a-3c8892a2104c"
+            },
+            "ColumnName": "前残"
+          },
+          {
+            "GUID": "2ddc9dc3-1bc7-4a23-b413-356e3ed443c9",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "当月度入荷",
+              "GUID": "1f5db2d0-b23f-4fc8-b8e9-880198c939b3"
+            },
+            "ColumnName": "当月度入荷"
+          },
+          {
+            "GUID": "50581ccd-dba6-464a-8da5-f08dee44d04c",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "当月度出荷",
+              "GUID": "39dec9f5-5e16-4e05-9af6-0d83fde08fdc"
+            },
+            "ColumnName": "当月度出荷"
+          },
+          {
+            "GUID": "b6921984-64a3-419c-99f0-72ea143fe755",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "繰越残",
+              "GUID": "ad7a0a86-c9d7-4d72-9230-fef721f0241d"
+            },
+            "ColumnName": "繰越残"
+          },
+          {
+            "GUID": "d6d267b5-0159-498d-bff8-5f7b1f99dcae",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "前残＿入荷日",
+              "GUID": "eb00cbd6-d6db-4a36-9500-1ccb75f22678"
+            },
+            "ColumnName": "前残＿入荷日"
+          },
+          {
+            "GUID": "981b36ae-dcb7-45e0-b978-8055d24ee563",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "前残＿価格",
+              "GUID": "6866356b-e7d9-4426-a48a-7156aab1b6fa"
+            },
+            "ColumnName": "前残＿価格"
+          },
+          {
+            "GUID": "4abc9824-6784-4988-b0ce-323f6cd3f7a8",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "当月度入荷＿入荷日",
+              "GUID": "70f8a99c-46a0-4d0a-b2d1-abb1979aab10"
+            },
+            "ColumnName": "当月度入荷＿入荷日"
+          },
+          {
+            "GUID": "1f312a55-85a1-4d51-8a3d-4132bb3ca153",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "当月度入荷＿価格",
+              "GUID": "77039e20-95ea-4744-b5ef-a386548568d3"
+            },
+            "ColumnName": "当月度入荷＿価格"
+          },
+          {
+            "GUID": "6a145355-3af6-499b-9d54-4b58ce62c570",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "当月度出荷＿出荷日",
+              "GUID": "40d1ced0-dda2-4d47-9694-0366654bf8a0"
+            },
+            "ColumnName": "当月度出荷＿出荷日"
+          },
+          {
+            "GUID": "65dc874b-06ca-4620-9e8d-9352800f8d60",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "当月度出荷＿工事№",
+              "GUID": "665f474c-3b12-42f7-800f-c5e7dc996aa2"
+            },
+            "ColumnName": "当月度出荷＿工事_"
+          },
+          {
+            "GUID": "af201fbd-16e6-46c9-a3ab-7812363a6ed8",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "当月度出荷＿倉工",
+              "GUID": "35251283-7b1b-4ee3-b7c9-c7b12df4a110"
+            },
+            "ColumnName": "当月度出荷＿倉工"
+          },
+          {
+            "GUID": "0ae9e48e-27b8-4e87-a039-425165a1e11e",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "繰越残＿価格",
+              "GUID": "0ce0c973-beb3-4980-9033-b063e5ee22c3"
+            },
+            "ColumnName": "繰越残＿価格"
+          },
+          {
+            "GUID": "ae0de582-b8b2-4223-b883-550a1d4e58e1",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "型式計",
+              "GUID": "0fc46057-7fdd-45bb-af97-d83730bc3348"
+            },
+            "ColumnName": "型式計"
+          },
+          {
+            "GUID": "248b8aaf-e091-4119-9b87-ec7ebc72f518",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "エンジン計",
+              "GUID": "eeb34cd3-c9fb-431d-8003-9c5e03b58f90"
+            },
+            "ColumnName": "エンジン計"
+          }
+        ]
+      },
+      "ColumnsType": [
+        "string",
+        "string",
+        "string",
+        "number",
+        "number",
+        "number",
+        "number",
+        "date-time",
+        "number",
+        "date-time",
+        "number",
+        "date-time",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}

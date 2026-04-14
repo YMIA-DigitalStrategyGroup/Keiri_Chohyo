@@ -213,16 +213,7 @@
   },
   {
     "ModuleName": "DataContectionSet",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:49:17.4781962+09:00",
-    "ModuleType": 25,
-    "ToRemoveFiles": [
-      "DataConnectionSet.json"
-    ]
+    "ModuleType": 25
   },
   {
     "ModuleName": "Upload",
@@ -242,132 +233,54 @@
   },
   {
     "ModuleName": "PCPage/エンジン・ドライブ一覧",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:44:55.4109289+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Pages/エンジン・ドライブ受払台帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:44:33.8903764+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "PCPage/ビュー作成のメモ",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:44:33.8910395+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Table/tkansayo_zaiko_summary",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:43:34.8729183+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Tables/エンジン・ドライブ受払台帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:50:01.9082268+09:00",
     "ModuleType": 22
   },
   {
     "ModuleName": "Table/tukebarai",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:43:34.8730692+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Table/tbuhink",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:43:34.8730823+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "TableView/ymia_v_driveukebarai",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:50:01.908281+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_engineukebarai",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:50:01.9082839+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "PageReport/ドライブ受払台帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:46:24.8210059+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "Reports/ドライブ受払台帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:46:24.8209687+09:00",
     "ModuleType": 19
   },
   {
     "ModuleName": "PageReport/エンジン受払台帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:46:38.1212556+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "Reports/エンジン受払台帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:46:38.1212203+09:00",
     "ModuleType": 19
   }
 ]
