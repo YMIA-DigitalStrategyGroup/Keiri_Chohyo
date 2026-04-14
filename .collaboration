@@ -293,92 +293,38 @@
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:14:18.0880871+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Pages/部品倉出メニュー",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:14:18.0871969+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:14:18.0882373+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "TableView/ymia_v_seisan_shinchoku",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:14:42.3846257+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "Tables/部品倉出メニュー",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:14:42.3845977+09:00",
     "ModuleType": 22
   },
   {
     "ModuleName": "TableView/ymia_v_kuradashi_buhin",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:14:42.3846329+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_kuradashi_kotei",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:14:42.3846358+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "PageReport/倉出部品表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:14:29.8217705+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "Reports/部品倉出メニュー",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:14:29.8217405+09:00",
     "ModuleType": 19
   }
 ]

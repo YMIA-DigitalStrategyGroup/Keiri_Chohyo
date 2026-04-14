@@ -1,0 +1,646 @@
+{
+  "Rows": {
+    "Count": 46
+  },
+  "Cols": {
+    "Count": 59
+  },
+  "Values": {
+    "0,1": "製番",
+    "0,13": "品番",
+    "3,1": "製番",
+    "3,13": "品番",
+    "3,27": "検索",
+    "3,34": "印刷",
+    "3,41": "閉じる",
+    "6,2": "倉出予定日4日前",
+    "6,13": "ロケーション"
+  },
+  "Formulas": {
+    "0,6": "SUBSTITUTE(G4,\"*\",\"%\")",
+    "0,18": "SUBSTITUTE(S4,\"*\",\"%\")",
+    "7,2": "IF(I8=\"-\",\"-\",I8-4)"
+  },
+  "AttachInfos": {
+    "3,6": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,18": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,27": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ymia_v_kuradashi_buhin",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 10,
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_kuradashi_buhin",
+                    "ColumnName": "製番",
+                    "GUID": "55261e0e-883d-4214-b5a6-16efef6397f6"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=倉出情報一覧!G1"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 10,
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_kuradashi_buhin",
+                    "ColumnName": "倉出品番",
+                    "GUID": "5f12334e-f379-42a5-96ce-b163810ddc44"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=倉出情報一覧!S1"
+                  }
+                }
+              ]
+            },
+            "ID": "9713f89eb8d0438b918d8b2856f6a709"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "3,34": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "印刷",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "3,41": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "閉じる",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_v_kuradashi_buhin",
+        "RowIndex": 6,
+        "ColumnIndex": 1,
+        "RowCount": 31,
+        "ColumnCount": 57,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ymia_v_kuradashi_buhin",
+                "ColumnName": "倉出予定日",
+                "GUID": "8197b653-82a5-4485-ad33-f9d4670ea20d"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": {
+          "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
+          "TopCount": 100
+        },
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true
+        },
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "7,1": {
+      "IsAutoMergeInListview": true
+    },
+    "7,2": {
+      "IsAutoMergeInListview": true
+    },
+    "7,8": {
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "倉出予定日",
+        "GUID": "1d0cf23b-4314-4c78-b42e-4129b7e763f8"
+      }
+    },
+    "7,14": {
+      "NameUsedInJavaScript": "倉出品番",
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "倉出品番",
+        "GUID": "80fb0636-0691-4c6d-9520-b341bb4024ec"
+      }
+    },
+    "7,21": {
+      "NameUsedInJavaScript": "品名",
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "品名",
+        "GUID": "08be08a6-52d6-4eb8-9840-5d4ce17310c1"
+      }
+    },
+    "7,29": {
+      "NameUsedInJavaScript": "規格_寸法",
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "規格・寸法",
+        "GUID": "64ea5f09-d6ce-429f-8bcc-f03ea04be4f1"
+      }
+    },
+    "7,33": {
+      "NameUsedInJavaScript": "倉出工程",
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "倉出工程",
+        "GUID": "8bb274e7-39fb-4be6-b5ff-10d095515241"
+      }
+    },
+    "7,37": {
+      "NameUsedInJavaScript": "予定数量",
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "予定数量",
+        "GUID": "414aad84-eb45-420d-aee7-8708ed26bb44"
+      }
+    },
+    "7,42": {
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "単位",
+        "GUID": "759a644b-ccac-4115-a227-71051cfdf9bf"
+      }
+    },
+    "7,45": {
+      "NameUsedInJavaScript": "ロケーション_棚番_",
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "ロケーション（棚番）",
+        "GUID": "36e16423-5792-49d2-a6b3-438335fe7cf0"
+      }
+    },
+    "7,49": {
+      "NameUsedInJavaScript": "購買区分",
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "購買区分",
+        "GUID": "af07b5bf-1d87-47f5-af37-34cc43fa8d1b"
+      }
+    },
+    "7,53": {
+      "NameUsedInJavaScript": "製番",
+      "IsAutoMergeInListview": true,
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "製番",
+        "GUID": "fd2e2376-aa83-40c9-88c4-5d69fd568aee"
+      }
+    },
+    "7,57": {
+      "IsAutoMergeInListview": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "black",
+        "Accent 1 80",
+        "@",
+        "yyyy/m/d",
+        "Center",
+        "#,##0.0000_);[Red](#,##0.0000)",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 0,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,21": 1,
+      "0,22": 1,
+      "0,23": 1,
+      "0,24": 1,
+      "3,1": 2,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 3,
+      "3,7": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,13": 2,
+      "3,14": 1,
+      "3,15": 1,
+      "3,16": 1,
+      "3,17": 1,
+      "3,18": 3,
+      "3,19": 1,
+      "3,20": 1,
+      "3,21": 1,
+      "3,22": 1,
+      "3,23": 1,
+      "3,24": 1,
+      "3,27": 4,
+      "3,28": 5,
+      "3,29": 5,
+      "3,30": 5,
+      "3,31": 5,
+      "3,34": 4,
+      "3,35": 5,
+      "3,36": 5,
+      "3,37": 5,
+      "3,38": 5,
+      "3,41": 4,
+      "3,42": 5,
+      "3,43": 5,
+      "3,44": 5,
+      "3,45": 5,
+      "3,46": 4,
+      "3,47": 4,
+      "3,48": 4,
+      "4,1": 1,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 1,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 1,
+      "4,18": 1,
+      "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
+      "4,22": 1,
+      "4,23": 1,
+      "4,24": 1,
+      "4,27": 5,
+      "4,28": 5,
+      "4,29": 5,
+      "4,30": 5,
+      "4,31": 5,
+      "4,34": 5,
+      "4,35": 5,
+      "4,36": 5,
+      "4,37": 5,
+      "4,38": 5,
+      "4,41": 5,
+      "4,42": 5,
+      "4,43": 5,
+      "4,44": 5,
+      "4,45": 5,
+      "4,46": 4,
+      "4,47": 4,
+      "4,48": 4,
+      "6,1": 6,
+      "6,2": 7,
+      "6,3": 5,
+      "6,4": 5,
+      "6,5": 5,
+      "6,6": 5,
+      "6,7": 5,
+      "6,8": 7,
+      "6,9": 5,
+      "6,10": 5,
+      "6,11": 5,
+      "6,12": 5,
+      "6,13": 4,
+      "6,14": 7,
+      "6,15": 5,
+      "6,16": 5,
+      "6,17": 5,
+      "6,18": 5,
+      "6,19": 5,
+      "6,20": 5,
+      "6,21": 7,
+      "6,22": 5,
+      "6,23": 5,
+      "6,24": 5,
+      "6,25": 5,
+      "6,26": 5,
+      "6,27": 5,
+      "6,28": 5,
+      "6,29": 7,
+      "6,30": 5,
+      "6,31": 5,
+      "6,32": 5,
+      "6,33": 7,
+      "6,34": 5,
+      "6,35": 5,
+      "6,36": 5,
+      "6,37": 7,
+      "6,38": 5,
+      "6,39": 5,
+      "6,40": 5,
+      "6,41": 5,
+      "6,45": 7,
+      "6,46": 5,
+      "6,47": 5,
+      "6,48": 5,
+      "6,49": 7,
+      "6,50": 5,
+      "6,51": 5,
+      "6,52": 5,
+      "6,53": 7,
+      "6,54": 5,
+      "6,55": 5,
+      "6,56": 5,
+      "7,1": 6,
+      "7,2": 8,
+      "7,3": 5,
+      "7,4": 5,
+      "7,5": 5,
+      "7,6": 5,
+      "7,7": 5,
+      "7,8": 8,
+      "7,9": 5,
+      "7,10": 5,
+      "7,11": 5,
+      "7,12": 5,
+      "7,13": 5,
+      "7,14": 7,
+      "7,15": 5,
+      "7,16": 5,
+      "7,17": 5,
+      "7,18": 5,
+      "7,19": 5,
+      "7,20": 5,
+      "7,21": 7,
+      "7,22": 5,
+      "7,23": 5,
+      "7,24": 5,
+      "7,25": 5,
+      "7,26": 5,
+      "7,27": 5,
+      "7,28": 5,
+      "7,29": 7,
+      "7,30": 5,
+      "7,31": 5,
+      "7,32": 5,
+      "7,33": 9,
+      "7,34": 5,
+      "7,35": 5,
+      "7,36": 5,
+      "7,37": 10,
+      "7,38": 10,
+      "7,39": 5,
+      "7,40": 5,
+      "7,41": 5,
+      "7,42": 11,
+      "7,45": 9,
+      "7,46": 5,
+      "7,47": 5,
+      "7,48": 5,
+      "7,49": 9,
+      "7,50": 5,
+      "7,51": 5,
+      "7,52": 5,
+      "7,53": 7,
+      "7,54": 5,
+      "7,55": 5,
+      "7,56": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,1,1,5",
+    "0,6,1,7",
+    "0,13,1,5",
+    "0,18,1,7",
+    "3,1,2,5",
+    "3,6,2,7",
+    "3,13,2,5",
+    "3,18,2,7",
+    "3,27,2,5",
+    "3,34,2,5",
+    "3,41,2,5",
+    "7,2,1,6",
+    "7,8,1,6",
+    "7,14,1,7",
+    "7,21,1,8",
+    "7,29,1,4",
+    "7,33,1,4",
+    "7,37,1,5",
+    "7,42,1,3",
+    "7,45,1,4",
+    "7,49,1,4",
+    "7,53,1,4",
+    "8,1,29,57",
+    "6,2,1,6",
+    "6,8,1,6",
+    "6,14,1,7",
+    "6,21,1,8",
+    "6,29,1,4",
+    "6,33,1,4",
+    "6,37,1,5",
+    "6,42,1,3",
+    "6,45,1,4",
+    "6,49,1,4",
+    "6,53,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//EfLsSA8uoelJl0sBpYvghS073P7nVncXH5/id0V7LR0sde99QGKf4iq1J1cBUBTIUAUOFLh9dUa+ambezTXVtoapDKl1GG75dz4DqZK7ad9QJIVI66bIRaVkqU7oV6CWDGLAvOQ1CmQ1PgnX6dfwfd3SuWcpD+QaYPT8M5x1xsthtSMjVPrgFhz0cbxFPJqVEojSo9Jqqym13zqn3iEUFM/SElc9lTksNZ/NNM9Lz6wVGENUC4+J0bggz+8JTYzhhB7HBLo5mHatgHfljccx3Kl5ig2nXku075Q/5L9wWEigTWL8AKWWdyb9/FHgr8Mya2qTSc9mcRMlA7cNLgPV1RdsZ3UHHNvUBp3yS7mrX8BenTL64DiCAK/Eb2E3KtWKYn+xfyVInf5c8hZJXnlGkilkED/4G6x4qtyBCmMxc+S8Fdw/hxqu3lbjGhKtYw8dG/jMNXHEE7cz/4v2LZ2YSgf7JBNCBprEMMr3M78MV0uXnvDGJV7viJefq82T7zFDnf7ESWNekzOTLx05I0g8Muse+3GIFPwvV7TgwGfT5r8cbJk97pzOgPhGr3NAC+Ov2l3yoaQYvQ2WnzhXVk9wpcMOrjlW/qQHiEnPgI5ZfCtlYxPf0yxpehOIon5mB1O2I57Pt0JEEHNcX4wdsgx6HSVVAxmJIBCj+AUuJskgGYoN6AyiPrZnensm2n1I9L7S4yxXZ4W5zy94pcdk4w7Ep9waBGgyKUGf5zXvGEBjAEYJIkB8xvC88cRRV+0vOgTD4415W0NXvtpGq/OaO/c9bpmmpOLFwkXeVCnMg1TkxwNS7dkJrIEPK1i1dXEmf/T5nRke43ZKN4Mk+2feqZktLAoT/0WzFAixv4yidjP0Mjce/RcHQeb+3NC4/X8nTSgofBWszGUKRprYKdeqypVMfA==|920

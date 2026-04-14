@@ -1,0 +1,185 @@
+{
+  "Name": "倉出部品表",
+  "DataSources": [
+    {
+      "Name": "倉出部品表",
+      "GUID": "1256c2a8-0363-418e-af2b-8a1e62acced0",
+      "DataSourceSetting": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "BindingInfos": [
+          {
+            "GUID": "62c02188-39f3-4033-96fc-eb01c067218f",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "製番",
+              "GUID": "6d2e3212-eae4-46d6-96b3-5a0abac46b3c"
+            },
+            "ColumnName": "製番"
+          },
+          {
+            "GUID": "aa5109c9-c1e7-4e14-9e5c-b1fcf2c5829d",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "倉出品番",
+              "GUID": "694d4861-1775-4a58-8eef-a6e879cb1f81"
+            },
+            "ColumnName": "倉出品番"
+          },
+          {
+            "GUID": "ca41af4d-de60-4862-a5be-5df545f4e13a",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "品名",
+              "GUID": "c702c53a-fd21-458f-b8dd-85f1d75686f2"
+            },
+            "ColumnName": "品名"
+          },
+          {
+            "GUID": "7abc9d9c-059d-4b0a-ac52-15f127d24dca",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "規格・寸法",
+              "GUID": "19fa8009-bdba-4cdc-9acd-fb42cdc28fc4"
+            },
+            "ColumnName": "規格_寸法"
+          },
+          {
+            "GUID": "f9e11f7c-0be4-494e-8e77-f0e83d0e5463",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "倉出工程",
+              "GUID": "8775eef9-df77-4712-8ffe-f0f27e273841"
+            },
+            "ColumnName": "倉出工程"
+          },
+          {
+            "GUID": "7a99ec48-6f6a-4158-afa7-a852f8b5354b",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "倉出予定日",
+              "GUID": "4a8d48f7-1beb-40ef-ba20-8433a5966b9f"
+            },
+            "ColumnName": "倉出予定日"
+          },
+          {
+            "GUID": "4de4d079-ed02-45ee-8096-c959fdab91d9",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "予定数量",
+              "GUID": "2e780107-6111-4f70-9b03-68d6523d76c4"
+            },
+            "ColumnName": "予定数量"
+          },
+          {
+            "GUID": "bc7f5633-9860-446f-8734-ac2a0aef85e7",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "単位",
+              "GUID": "f23ea19f-f15e-4c47-b9f4-274d75958695"
+            },
+            "ColumnName": "単位"
+          },
+          {
+            "GUID": "776de9b8-8b0e-4684-958e-9308fc0e2496",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "ロケーション（棚番）",
+              "GUID": "b995fccd-8653-4bf9-8426-ac7b1e54c319"
+            },
+            "ColumnName": "ロケーション_棚番_"
+          },
+          {
+            "GUID": "032b9dd9-331e-4e49-a024-e1e4de2c86e3",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "購買区分",
+              "GUID": "aa1e654d-bc86-4f88-882e-5251eb19da74"
+            },
+            "ColumnName": "購買区分"
+          },
+          {
+            "GUID": "664b1f3b-d36f-4636-b463-08414296ee46",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "伝票番号",
+              "GUID": "3e06a457-3784-4c53-ad2a-ad28906d5b41"
+            },
+            "ColumnName": "伝票番号"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_v_kuradashi_buhin",
+                "ColumnName": "製番",
+                "GUID": "5603ce55-c4e7-4861-89aa-a58feb85ab28"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=製番"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_v_kuradashi_buhin",
+                "ColumnName": "倉出工程",
+                "GUID": "9a350a3d-cf00-46d6-b6da-1d6345fc8a84"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=倉出工程"
+              }
+            }
+          ]
+        }
+      },
+      "ReportDataSourceParams": [
+        {
+          "Name": "製番"
+        },
+        {
+          "Name": "倉出工程"
+        }
+      ],
+      "ColumnsType": [
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "number",
+        "string",
+        "string",
+        "string",
+        "string"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}

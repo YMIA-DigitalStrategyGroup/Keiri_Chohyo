@@ -1,0 +1,274 @@
+{
+  "Name": "ymia_v_seisan_shinchoku",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 20,
+      "Name": "ルート品番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 15,
+      "Name": "製番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程1予定開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程2予定開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程3予定開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程4予定開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程5予定開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程6予定開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程7予定開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程8予定開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程9予定開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程10予定開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程1実績開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程2実績開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程3実績開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程4実績開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程5実績開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程6実績開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程7実績開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程8実績開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程9実績開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程10実績開始日",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 54,
+      "Name": "工程1名・進捗",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 54,
+      "Name": "工程2名・進捗",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 54,
+      "Name": "工程3名・進捗",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 54,
+      "Name": "工程4名・進捗",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 54,
+      "Name": "工程5名・進捗",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 54,
+      "Name": "工程6名・進捗",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 54,
+      "Name": "工程7名・進捗",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 54,
+      "Name": "工程8名・進捗",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 54,
+      "Name": "工程9名・進捗",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 54,
+      "Name": "工程10名・進捗",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "MySql1",
+    "SourceTableName": "ymia_v_seisan_shinchoku",
+    "SourceTableSchema": "",
+    "CreateViewSql": "select `t`.`HINBAN` AS `ルート品番`,`t`.`SEIBAN` AS `製番`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 1) then `pl`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程1予定開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 2) then `pl`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程2予定開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 3) then `pl`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程3予定開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 4) then `pl`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程4予定開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 5) then `pl`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程5予定開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 6) then `pl`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程6予定開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 7) then `pl`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程7予定開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 8) then `pl`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程8予定開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 9) then `pl`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程9予定開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 10) then `pl`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程10予定開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 1) then `st`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程1実績開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 2) then `st`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程2実績開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 3) then `st`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程3実績開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 4) then `st`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程4実績開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 5) then `st`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程5実績開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 6) then `st`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程6実績開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 7) then `st`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程7実績開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 8) then `st`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程8実績開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 9) then `st`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程9実績開始日`,coalesce(cast(max((case when (`m`.`KOTEI_SEQ_NBR` = 10) then `st`.`KAISHI_DATE` end)) as char charset utf8mb4),'-') AS `工程10実績開始日`,coalesce(max((case when (`m`.`KOTEI_SEQ_NBR` = 1) then concat(`n`.`KOTEI_NAME`,' [',if((coalesce(`st`.`KANRYO_FLAG`,0) = 1),'済','未'),']') end)),'-') AS `工程1名・進捗`,coalesce(max((case when (`m`.`KOTEI_SEQ_NBR` = 2) then concat(`n`.`KOTEI_NAME`,' [',if((coalesce(`st`.`KANRYO_FLAG`,0) = 1),'済','未'),']') end)),'-') AS `工程2名・進捗`,coalesce(max((case when (`m`.`KOTEI_SEQ_NBR` = 3) then concat(`n`.`KOTEI_NAME`,' [',if((coalesce(`st`.`KANRYO_FLAG`,0) = 1),'済','未'),']') end)),'-') AS `工程3名・進捗`,coalesce(max((case when (`m`.`KOTEI_SEQ_NBR` = 4) then concat(`n`.`KOTEI_NAME`,' [',if((coalesce(`st`.`KANRYO_FLAG`,0) = 1),'済','未'),']') end)),'-') AS `工程4名・進捗`,coalesce(max((case when (`m`.`KOTEI_SEQ_NBR` = 5) then concat(`n`.`KOTEI_NAME`,' [',if((coalesce(`st`.`KANRYO_FLAG`,0) = 1),'済','未'),']') end)),'-') AS `工程5名・進捗`,coalesce(max((case when (`m`.`KOTEI_SEQ_NBR` = 6) then concat(`n`.`KOTEI_NAME`,' [',if((coalesce(`st`.`KANRYO_FLAG`,0) = 1),'済','未'),']') end)),'-') AS `工程6名・進捗`,coalesce(max((case when (`m`.`KOTEI_SEQ_NBR` = 7) then concat(`n`.`KOTEI_NAME`,' [',if((coalesce(`st`.`KANRYO_FLAG`,0) = 1),'済','未'),']') end)),'-') AS `工程7名・進捗`,coalesce(max((case when (`m`.`KOTEI_SEQ_NBR` = 8) then concat(`n`.`KOTEI_NAME`,' [',if((coalesce(`st`.`KANRYO_FLAG`,0) = 1),'済','未'),']') end)),'-') AS `工程8名・進捗`,coalesce(max((case when (`m`.`KOTEI_SEQ_NBR` = 9) then concat(`n`.`KOTEI_NAME`,' [',if((coalesce(`st`.`KANRYO_FLAG`,0) = 1),'済','未'),']') end)),'-') AS `工程9名・進捗`,coalesce(max((case when (`m`.`KOTEI_SEQ_NBR` = 10) then concat(`n`.`KOTEI_NAME`,' [',if((coalesce(`st`.`KANRYO_FLAG`,0) = 1),'済','未'),']') end)),'-') AS `工程10名・進捗` from ((((((`tbuhink` `t` join `tjuchu` `j` on((`t`.`SEIBAN` = `j`.`TEHAI_KOBAN`))) join `mhinban` `mh` on((`t`.`HINBAN` = `mh`.`HINBAN`))) join `mkoteim` `m` on((`mh`.`KOTEI_PATTERN_NBR` = `m`.`KOTEI_PATTERN_NBR`))) left join `mkoteiname` `n` on((`m`.`KOTEI_CODE` = `n`.`KOTEI_CODE`))) left join (select `thatchum`.`SEIBAN` AS `SEIBAN`,`thatchum`.`HINBAN` AS `HINBAN`,`thatchum`.`KOTEI_CODE` AS `KOTEI_CODE`,max(`thatchum`.`KANRYO_FLAG`) AS `KANRYO_FLAG`,max(`thatchum`.`KAISHI_DATE`) AS `KAISHI_DATE` from `thatchum` group by `thatchum`.`SEIBAN`,`thatchum`.`HINBAN`,`thatchum`.`KOTEI_CODE`) `st` on(((`t`.`SEIBAN` = `st`.`SEIBAN`) and (`t`.`HINBAN` = `st`.`HINBAN`) and (`m`.`KOTEI_CODE` = `st`.`KOTEI_CODE`)))) left join `tbuhinjm` `pl` on(((`t`.`ID` = `pl`.`BUHIN_KOSEI_ID`) and (`m`.`KOTEI_SEQ_NBR` = `pl`.`KOTEI_SEQ_NBR`)))) where (`t`.`PARENT_ID` is null) group by `t`.`HINBAN`,`t`.`SEIBAN`",
+    "ViewInfo": {
+      "ViewName": "ymia_v_seisan_shinchoku",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": []
+}
