@@ -336,5 +336,15 @@
     },
     "LockDateTime": "2026-04-15T08:46:37.7288643+09:00",
     "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/製品売上_出荷明細_発行画面",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T08:48:03.1357799+09:00",
+    "ModuleType": 1
   }
 ]
