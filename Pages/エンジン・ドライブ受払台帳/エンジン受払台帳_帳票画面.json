@@ -1,0 +1,656 @@
+{
+  "Rows": {
+    "Count": 49
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      }
+    },
+    "Count": 81
+  },
+  "Values": {
+    "1,2": "エンジン受払台帳_帳票画面",
+    "2,60": "本日日付",
+    "3,2": "対象年月度",
+    "3,14": "PDF発行",
+    "3,20": "ビューワー表示",
+    "3,60": "前月日付",
+    "7,50": "当月度出荷＿倉工"
+  },
+  "Formulas": {
+    "3,64": "EDATE(BM3,-1)",
+    "2,64": "TODAY()"
+  },
+  "AttachInfos": {
+    "3,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportActiveReportCommand, ServerDesignerCommon",
+            "ExportReportNameList": [
+              "エンジン受払台帳"
+            ],
+            "CustomName": "エンジン受払台帳",
+            "ExportSettings": {
+              "MultiSheet": true
+            },
+            "PassParameters": [
+              {
+                "TargetParameter": "処理月度",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=エンジン受払台帳_帳票画面!C9"
+                }
+              }
+            ],
+            "IsPageBreakBefores": [
+              false
+            ],
+            "ReportGaps": [
+              "0cm"
+            ]
+          }
+        ],
+        "Text": "PDF発行",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "File/358_pdf_file_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 24.0
+      }
+    },
+    "3,20": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
+            "SessionGuid": "f178ba57-60d1-43c9-9bfa-d128d3335ac8",
+            "OpenReportName": "エンジン受払台帳"
+          }
+        ],
+        "Text": "ビューワー表示",
+        "TemplateKey": "_RS_Normal_Style2",
+        "IconSize": 24.0
+      }
+    },
+    "7,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_v_engineukebarai",
+        "RowIndex": 7,
+        "ColumnIndex": 2,
+        "RowCount": 19,
+        "ColumnCount": 51,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "8,2": {
+      "NameUsedInJavaScript": "対象年月",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "対象年月",
+        "GUID": "0404e8dc-2813-494a-9c90-a5863732f229"
+      }
+    },
+    "8,6": {
+      "NameUsedInJavaScript": "型式",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "型式",
+        "GUID": "53c6bb95-5490-4615-80e7-3f4f50defc98"
+      }
+    },
+    "8,10": {
+      "NameUsedInJavaScript": "前残",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "前残",
+        "GUID": "7247d9b1-e802-4610-b35e-de215520fb68"
+      }
+    },
+    "8,14": {
+      "NameUsedInJavaScript": "当月度入荷",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "当月度入荷",
+        "GUID": "3b257f03-7aa0-4a56-ab85-ae321c4a89dc"
+      }
+    },
+    "8,18": {
+      "NameUsedInJavaScript": "当月度出荷",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "当月度出荷",
+        "GUID": "6f602d5a-2ea0-4e3c-92e2-083a6d83fb7c"
+      }
+    },
+    "8,22": {
+      "NameUsedInJavaScript": "繰越残",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "繰越残",
+        "GUID": "630992ed-979d-4534-a84a-63bf80b2bcfd"
+      }
+    },
+    "8,26": {
+      "NameUsedInJavaScript": "前残_入荷日",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "前残＿入荷日",
+        "GUID": "350f4819-5b2b-497d-9294-c60bdf5a2107"
+      }
+    },
+    "8,30": {
+      "NameUsedInJavaScript": "前残_価格",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "前残＿価格",
+        "GUID": "e6edb156-6d50-42fc-9c05-737939b630db"
+      }
+    },
+    "8,34": {
+      "NameUsedInJavaScript": "当月度入荷_入荷日",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "当月度入荷＿入荷日",
+        "GUID": "4e46f399-978f-4cce-9d69-740a2349f1dc"
+      }
+    },
+    "8,38": {
+      "NameUsedInJavaScript": "当月度入荷_価格",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "当月度入荷＿価格",
+        "GUID": "9b8a1092-3c6a-49d8-bf8e-740c93f2a6aa"
+      }
+    },
+    "8,42": {
+      "NameUsedInJavaScript": "当月度出荷_出荷日",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "当月度出荷＿出荷日",
+        "GUID": "e1a3d505-c0d3-4156-a6f3-95c4241ef775"
+      }
+    },
+    "8,46": {
+      "NameUsedInJavaScript": "当月度出荷_工事№",
+      "BindingInfo": {
+        "TableName": "ymia_v_engineukebarai",
+        "ColumnName": "当月度出荷＿工事№",
+        "GUID": "6dc7a398-cb32-4d82-854d-379318052eb6"
+      }
+    },
+    "8,50": {
+      "NameUsedInJavaScript": "当月度出荷_倉工"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 8
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center",
+        "[AUTO]General",
+        "Accent 1 80",
+        "black",
+        "@",
+        "Accent 2 -50",
+        "yyyy/m/d"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "2,0": 1,
+      "2,1": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 2,
+      "2,17": 2,
+      "2,18": 2,
+      "2,19": 2,
+      "2,20": 2,
+      "2,21": 2,
+      "2,22": 2,
+      "2,23": 2,
+      "2,24": 2,
+      "2,25": 2,
+      "2,26": 2,
+      "2,27": 1,
+      "2,28": 1,
+      "2,29": 1,
+      "2,30": 1,
+      "2,31": 1,
+      "2,32": 1,
+      "2,33": 1,
+      "2,34": 1,
+      "2,35": 1,
+      "2,36": 1,
+      "2,37": 1,
+      "2,38": 1,
+      "2,39": 1,
+      "2,40": 1,
+      "2,41": 1,
+      "2,42": 1,
+      "2,43": 1,
+      "2,44": 1,
+      "2,45": 1,
+      "2,46": 1,
+      "2,47": 1,
+      "2,48": 1,
+      "2,49": 1,
+      "2,50": 1,
+      "2,51": 3,
+      "2,52": 3,
+      "2,53": 3,
+      "2,54": 3,
+      "2,55": 3,
+      "2,56": 1,
+      "2,57": 1,
+      "2,58": 1,
+      "2,59": 1,
+      "2,60": 4,
+      "2,61": 1,
+      "2,62": 1,
+      "2,63": 1,
+      "2,64": 1,
+      "2,65": 1,
+      "2,66": 1,
+      "2,67": 1,
+      "2,68": 1,
+      "2,69": 1,
+      "2,70": 1,
+      "3,0": 1,
+      "3,2": 5,
+      "3,3": 6,
+      "3,4": 6,
+      "3,5": 6,
+      "3,6": 6,
+      "3,7": 7,
+      "3,8": 6,
+      "3,9": 6,
+      "3,10": 6,
+      "3,11": 8,
+      "3,12": 1,
+      "3,13": 1,
+      "3,14": 9,
+      "3,15": 2,
+      "3,16": 2,
+      "3,17": 2,
+      "3,18": 2,
+      "3,19": 2,
+      "3,20": 10,
+      "3,21": 2,
+      "3,22": 2,
+      "3,23": 2,
+      "3,24": 2,
+      "3,25": 2,
+      "3,26": 2,
+      "3,27": 1,
+      "3,28": 1,
+      "3,29": 1,
+      "3,30": 1,
+      "3,31": 1,
+      "3,32": 1,
+      "3,33": 1,
+      "3,34": 1,
+      "3,35": 1,
+      "3,36": 1,
+      "3,37": 1,
+      "3,38": 1,
+      "3,39": 1,
+      "3,40": 1,
+      "3,41": 1,
+      "3,42": 1,
+      "3,43": 1,
+      "3,44": 1,
+      "3,45": 1,
+      "3,46": 1,
+      "3,47": 1,
+      "3,48": 1,
+      "3,49": 1,
+      "3,50": 1,
+      "3,51": 3,
+      "3,52": 3,
+      "3,53": 3,
+      "3,54": 3,
+      "3,55": 3,
+      "3,56": 1,
+      "3,57": 1,
+      "3,58": 1,
+      "3,59": 1,
+      "3,60": 4,
+      "3,61": 1,
+      "3,62": 1,
+      "3,63": 1,
+      "3,64": 1,
+      "3,65": 1,
+      "3,66": 1,
+      "3,67": 1,
+      "3,68": 1,
+      "3,69": 1,
+      "3,70": 1,
+      "4,0": 1,
+      "4,2": 11,
+      "4,3": 12,
+      "4,4": 12,
+      "4,5": 12,
+      "4,6": 12,
+      "4,7": 11,
+      "4,8": 12,
+      "4,9": 12,
+      "4,10": 12,
+      "4,11": 13,
+      "4,12": 1,
+      "4,13": 1,
+      "4,14": 2,
+      "4,15": 2,
+      "4,16": 2,
+      "4,17": 2,
+      "4,18": 2,
+      "4,19": 2,
+      "4,20": 2,
+      "4,21": 2,
+      "4,22": 2,
+      "4,23": 2,
+      "4,24": 2,
+      "4,25": 2,
+      "4,26": 2,
+      "4,27": 1,
+      "4,28": 1,
+      "4,29": 1,
+      "4,30": 1,
+      "4,31": 1,
+      "4,32": 1,
+      "4,33": 1,
+      "4,34": 1,
+      "4,35": 1,
+      "4,36": 1,
+      "4,37": 1,
+      "4,38": 1,
+      "4,39": 1,
+      "4,40": 1,
+      "4,41": 1,
+      "4,42": 1,
+      "4,43": 1,
+      "4,44": 1,
+      "4,45": 1,
+      "4,46": 1,
+      "4,47": 1,
+      "4,48": 1,
+      "4,49": 1,
+      "4,50": 1,
+      "4,51": 3,
+      "4,52": 3,
+      "4,53": 3,
+      "4,54": 3,
+      "4,55": 3,
+      "4,56": 1,
+      "4,57": 1,
+      "4,58": 1,
+      "4,59": 1,
+      "4,60": 1,
+      "4,61": 1,
+      "4,62": 1,
+      "4,63": 1,
+      "4,64": 14,
+      "4,65": 1,
+      "4,66": 1,
+      "4,67": 1,
+      "4,68": 1,
+      "4,69": 1,
+      "4,70": 1,
+      "5,0": 1,
+      "5,2": 15,
+      "5,3": 15,
+      "5,4": 15,
+      "5,5": 15,
+      "5,6": 15,
+      "5,7": 15,
+      "5,8": 15,
+      "5,9": 15,
+      "5,10": 15,
+      "5,11": 15,
+      "5,12": 1,
+      "5,13": 1,
+      "5,16": 2,
+      "5,17": 2,
+      "5,18": 2,
+      "5,19": 2,
+      "5,20": 2,
+      "5,21": 2,
+      "5,22": 2,
+      "5,23": 2,
+      "5,24": 2,
+      "5,25": 2,
+      "5,26": 2,
+      "5,27": 1,
+      "5,28": 1,
+      "5,29": 1,
+      "5,30": 1,
+      "5,31": 1,
+      "5,43": 1,
+      "5,44": 1,
+      "5,45": 1,
+      "5,46": 1,
+      "5,47": 1,
+      "5,48": 1,
+      "5,49": 1,
+      "5,50": 1,
+      "5,51": 3,
+      "5,52": 3,
+      "5,53": 3,
+      "5,54": 3,
+      "5,55": 3,
+      "5,56": 1,
+      "5,57": 1,
+      "5,58": 1,
+      "5,59": 1,
+      "5,60": 4,
+      "5,61": 1,
+      "5,62": 1,
+      "5,63": 1,
+      "5,64": 14,
+      "5,65": 1,
+      "5,66": 1,
+      "5,67": 1,
+      "5,68": 1,
+      "5,69": 1,
+      "5,70": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,64,1,7",
+    "3,64,1,7",
+    "4,64,1,7",
+    "5,64,1,7",
+    "3,2,2,5",
+    "3,7,2,5",
+    "3,14,2,5",
+    "3,20,2,5",
+    "9,2,17,51",
+    "8,2,1,4",
+    "7,2,1,4",
+    "8,6,1,4",
+    "7,6,1,4",
+    "8,10,1,4",
+    "7,10,1,4",
+    "8,14,1,4",
+    "7,14,1,4",
+    "8,18,1,4",
+    "7,18,1,4",
+    "8,22,1,4",
+    "7,22,1,4",
+    "8,26,1,4",
+    "7,26,1,4",
+    "8,30,1,4",
+    "7,30,1,4",
+    "8,34,1,4",
+    "7,34,1,4",
+    "8,38,1,4",
+    "7,38,1,4",
+    "8,42,1,4",
+    "7,42,1,4",
+    "8,46,1,4",
+    "7,46,1,4",
+    "8,50,1,3",
+    "7,50,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//qD4SDPTCPca26XyKwMAM33RWT0nLdSIQ49DcWY/4wuTq04abO3IO4EyP5b4bhqShz9jg+DQc0gyYtM5Z36L087tvZT4Wq8MVZ42STEu/4ms8o/xhrgmoK/f2ueaZXZEvyYWUtLrYv0hRw0C/HQjVvhhRedWLUxNRyHv5gx7VCDH6jee8s3HCHdb+x7wmFi/+CLbsDtX/iR5VdnGFiP59pKJIfvpagu2ppDTSIHIl/xzOrGopiNds9KLrSjTmzGVeylUP71VfW8KVcbvlicYECsBEq5K9LwPqeyZCx4EM38CO4vbBAHTg+kXgDli6BUI32PEfv9YmZn7lfWrJQA/HMEpZTFTL8NPrLPRW5s8NYDRUG5nLwNQa/sMadsbPiCGQkUszrzcYbB4g544cRo1ntBEj+LhQUOgZLFb2gpiQysTFbAXEUFSCLOBEnpLbyYKng8ltczs1maYNRQOU7LEotNoV9H2elQcIa3lRVr7pG6UM0IHsWr3aCwyQNhMEtqfzZAmIwaF4SBaUWDzQsNNqVfKBgI0jaJZJcoBKMf3wWxZJKPc5PXZJk56Ri0edgCT6fpjI0nmyW1nEzLi2Z3EHUdBTj1sD1ngJGsbBz5FHY3h+kBMZb5UtVVuhFck47OEUWrlcrQO/DQ5QHjKo8k/WE20OQFmZ+Aywy4aC3SRqvA16fTkBLoujFPeUeQ1z1c2zZYg4E5NYWrVcp3ivzeH6TAY4WyUsVazluC4vY1am+2cu7t2RjAW5Q4Tc2/vg4pxU1NJKjbpT6yIKTQd+ZvBl9JJ0xGXvuo46QIht3Rlw4XEL5qebtOgaSwSJEBs1kCw3NSeab1zsrkXv7ffU5hew8CWmUAH1DxwMzIolBkQxQewSnWhqkINDXHsk62s1FTuZKqJGv/6pb+nhc2H6hker6w==|920

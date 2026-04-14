@@ -232,20 +232,6 @@
     "ModuleType": 41
   },
   {
-    "ModuleName": "PCPage/エンジン・ドライブ一覧",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T15:56:29.0093487+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\エンジン・ドライブ受払台帳\\エンジン・ドライブ一覧.json",
-      "Pages\\エンジン・ドライブ受払台帳\\エンジン・ドライブ一覧.rd"
-    ]
-  },
-  {
     "ModuleName": "Pages/エンジン・ドライブ受払台帳",
     "ModuleType": 6
   },
@@ -295,32 +281,14 @@
   },
   {
     "ModuleName": "PCPage/PZD190_エンジンドライブ台帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T15:53:37.8864733+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ドライブ受払台帳_帳票画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T16:39:52.5192432+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/エンジン受払台帳_帳票画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T16:39:03.3535371+09:00",
     "ModuleType": 1
   }
 ]
