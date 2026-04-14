@@ -314,13 +314,13 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/エンジン受払台帳_発行画面",
+    "ModuleName": "PCPage/エンジン受払台帳_帳票画面",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\AA093025",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-04-14T15:56:29.0093593+09:00",
+    "LockDateTime": "2026-04-14T16:39:03.3535371+09:00",
     "ModuleType": 1
   }
 ]
