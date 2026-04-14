@@ -282,5 +282,15 @@
   {
     "ModuleName": "Reports/エンジン受払台帳",
     "ModuleType": 19
+  },
+  {
+    "ModuleName": "PCPage/PZD190_エンジンドライブ台帳",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-14T15:53:37.8864733+09:00",
+    "ModuleType": 1
   }
 ]
