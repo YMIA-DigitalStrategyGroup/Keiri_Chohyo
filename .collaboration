@@ -322,16 +322,6 @@
     "ModuleType": 23
   },
   {
-    "ModuleName": "PageReport/レポート1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:43:34.8744108+09:00",
-    "ModuleType": 17
-  },
-  {
     "ModuleName": "Reports/インポートフォルダー1",
     "State": 3,
     "LockedBy": {
@@ -339,16 +329,6 @@
       "Email": "example@example.com"
     },
     "LockDateTime": "2026-04-14T10:43:34.8744377+09:00",
-    "ModuleType": 19
-  },
-  {
-    "ModuleName": "Reports/インポートフォルダー1/テスト",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-14T10:43:34.8744732+09:00",
     "ModuleType": 19
   },
   {
