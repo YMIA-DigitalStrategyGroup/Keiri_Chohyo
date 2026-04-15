@@ -350,5 +350,15 @@
   {
     "ModuleName": "PageReport/製品売上・出荷明細",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "Tables/部品お買上げ明細書",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T10:59:51.0241178+09:00",
+    "ModuleType": 22
   }
 ]
