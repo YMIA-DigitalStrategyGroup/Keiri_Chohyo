@@ -237,7 +237,17 @@
   },
   {
     "ModuleName": "PCPage/ビュー作成のメモ",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T11:32:52.4580905+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\エンジン・ドライブ受払台帳\\ビュー作成のメモ.json",
+      "Pages\\エンジン・ドライブ受払台帳\\ビュー作成のメモ.rd"
+    ]
   },
   {
     "ModuleName": "Table/tkansayo_zaiko_summary",
