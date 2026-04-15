@@ -450,5 +450,15 @@
     },
     "LockDateTime": "2026-04-15T14:59:58.5434873+09:00",
     "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/お買い上げ明細書_発行画面",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T15:00:15.7215802+09:00",
+    "ModuleType": 1
   }
 ]
