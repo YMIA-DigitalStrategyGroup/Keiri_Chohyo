@@ -400,5 +400,15 @@
     },
     "LockDateTime": "2026-04-15T11:14:38.2383053+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/エンジン受払台帳_発行画面",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T11:27:33.7255217+09:00",
+    "ModuleType": 1
   }
 ]
