@@ -285,7 +285,17 @@
   },
   {
     "ModuleName": "PCPage/ドライブ受払台帳_帳票画面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T11:13:20.2803983+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\エンジン・ドライブ受払台帳\\ドライブ受払台帳_帳票画面.json",
+      "Pages\\エンジン・ドライブ受払台帳\\ドライブ受払台帳_帳票画面.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/エンジン受払台帳_帳票画面",
