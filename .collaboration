@@ -510,5 +510,15 @@
     },
     "LockDateTime": "2026-04-15T11:50:26.4896559+09:00",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "PageReport/ドライブ受払台帳 (2)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T11:50:51.2052715+09:00",
+    "ModuleType": 17
   }
 ]
