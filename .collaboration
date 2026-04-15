@@ -430,5 +430,15 @@
     },
     "LockDateTime": "2026-04-15T14:38:40.6723814+09:00",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "TableView/ymia_v_buhin_seikyu_header",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T14:59:23.9047078+09:00",
+    "ModuleType": 23
   }
 ]
