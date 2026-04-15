@@ -1,0 +1,372 @@
+{
+  "Rows": {
+    "Count": 48
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "0,2": "対象From",
+    "0,12": "対象To",
+    "0,22": "取引先コード",
+    "4,2": "対象年月",
+    "4,7": "取引先コード",
+    "4,14": "検索",
+    "4,22": "帳票発行",
+    "7,51": "月FROM",
+    "7,53": "月TO"
+  },
+  "AttachInfos": {
+    "4,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ymia_v_buhin_seikyu_header",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_buhin_seikyu_header",
+                    "ColumnName": "対象年月",
+                    "GUID": "1e44b7e5-3c5a-45ab-8c42-305b0829b14f"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=お買い上げ明細書_発行画面!C6"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_buhin_seikyu_header",
+                    "ColumnName": "取引先コード",
+                    "GUID": "addbdc86-fff6-408a-8794-abab473737f1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=お買い上げ明細書_発行画面!H6"
+                  }
+                }
+              ]
+            },
+            "ID": "c873bec6c53d4feea60941ddbb5ad330"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/044_search_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 24.0
+      }
+    },
+    "4,22": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "帳票発行",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/072_print_3.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 24.0
+      }
+    },
+    "5,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_v_buhin_seikyu_header",
+        "RowIndex": 7,
+        "ColumnIndex": 1,
+        "RowCount": 27,
+        "ColumnCount": 56,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=お買い上げ明細書_発行画面!AB1"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=お買い上げ明細書_発行画面!H9"
+                }
+              }
+            ]
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "8,2": {
+      "BindingInfo": {
+        "TableName": "ymia_v_buhin_seikyu_header",
+        "ColumnName": "対象年月",
+        "GUID": "ddde3051-6e56-47c3-a5ba-91d7b18e251e"
+      }
+    },
+    "8,7": {
+      "BindingInfo": {
+        "TableName": "ymia_v_buhin_seikyu_header",
+        "ColumnName": "取引先コード",
+        "GUID": "32aec297-29a0-4ca0-a1c1-15a66e1aa333"
+      }
+    },
+    "8,13": {
+      "BindingInfo": {
+        "TableName": "ymia_v_buhin_seikyu_header",
+        "ColumnName": "請求先名称",
+        "GUID": "537478b6-7e5e-472f-8954-719cfe08743b"
+      }
+    },
+    "8,25": {
+      "BindingInfo": {
+        "TableName": "ymia_v_buhin_seikyu_header",
+        "ColumnName": "住所",
+        "GUID": "51bbb650-335a-4ad5-8fe9-8ac61e37ade0"
+      }
+    },
+    "8,36": {
+      "BindingInfo": {
+        "TableName": "ymia_v_buhin_seikyu_header",
+        "ColumnName": "明細件数",
+        "GUID": "ca756cf9-ffb0-4709-b9dc-d004b5c7e531"
+      }
+    },
+    "8,40": {
+      "BindingInfo": {
+        "TableName": "ymia_v_buhin_seikyu_header",
+        "ColumnName": "ご請求額",
+        "GUID": "76e51d03-fc94-48e2-ba8c-73659d2141e0"
+      }
+    },
+    "8,46": {
+      "BindingInfo": {
+        "TableName": "ymia_v_buhin_seikyu_header",
+        "ColumnName": "消費税額",
+        "GUID": "fb735934-2068-4921-a084-9489e89c11bb"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "Background": 4,
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "black",
+        "Body",
+        "[AUTO]General",
+        "Accent 1 80",
+        "Accent 6 -25",
+        "@"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 1,
+      "0,8": 2,
+      "0,9": 2,
+      "0,10": 2,
+      "0,11": 2,
+      "0,12": 2,
+      "0,13": 2,
+      "0,14": 2,
+      "0,15": 2,
+      "0,16": 2,
+      "0,17": 1,
+      "0,18": 2,
+      "0,19": 2,
+      "0,20": 2,
+      "0,21": 2,
+      "0,22": 1,
+      "0,23": 2,
+      "0,24": 2,
+      "0,25": 2,
+      "0,26": 2,
+      "0,27": 1,
+      "0,28": 2,
+      "0,29": 2,
+      "0,30": 2,
+      "0,31": 2,
+      "4,2": 3,
+      "4,3": 0,
+      "4,4": 0,
+      "4,5": 0,
+      "4,6": 0,
+      "4,7": 3,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,21": 4,
+      "4,22": 5,
+      "4,23": 6,
+      "4,24": 6,
+      "4,25": 6,
+      "4,26": 6,
+      "5,2": 7,
+      "5,3": 0,
+      "5,4": 0,
+      "5,5": 0,
+      "5,6": 0,
+      "5,7": 0,
+      "5,8": 0,
+      "5,9": 0,
+      "5,10": 0,
+      "5,11": 0,
+      "5,12": 0,
+      "5,21": 6,
+      "5,22": 6,
+      "5,23": 6,
+      "5,24": 6,
+      "5,25": 6,
+      "5,26": 6,
+      "8,53": 6,
+      "8,54": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "8,2,1,5",
+    "8,7,1,6",
+    "8,13,1,12",
+    "8,25,1,11",
+    "8,36,1,4",
+    "8,40,1,6",
+    "8,46,1,5",
+    "8,51,1,2",
+    "8,53,1,2",
+    "4,2,1,5",
+    "5,2,1,5",
+    "4,7,1,6",
+    "5,7,1,6",
+    "4,14,2,5",
+    "4,22,2,5",
+    "9,1,25,56",
+    "0,2,1,5",
+    "0,7,1,5",
+    "0,12,1,5",
+    "0,17,1,5",
+    "0,22,1,5",
+    "0,27,1,5",
+    "7,2,1,5",
+    "7,7,1,6",
+    "7,13,1,12",
+    "7,25,1,11",
+    "7,36,1,4",
+    "7,40,1,6",
+    "7,46,1,5",
+    "7,51,1,2",
+    "7,53,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//JZuCartVrAUuNlw7D2zvKn2V+Z1iEKu+3spibRvP1g+f4QX7zOSr+TDDQOP0HquWzPpPvO94PpDG9+5WI14VtGTIxrXSNmcxujo60i+VYXSt7aklILdI7+oYmuPOPyWarcR4qoK2yWjJiYel8W1BHp+Mke1kMk114IEpqg8MYXmq4yIIVi5F3Mvo/49x5HYSBdIlWjS2P8yXOFfmPuSEsYdjDM4WrXAWKLCc6T79vHV4TOFAUBHLt4K1T32py5BhmK/JD7Qcl79jcWGwfPykoxRszgvqSFbQXLBxIoLMD9i1gBnojA/Fd9gUDgQt2srbUA83opJHM9DQJ9glxPVqdnq13DqN0Rm34G7Bw29fJWlD9XbQa+kbXdSY2jqrK7kSL3AxxW6f8nBHdb1z/hiAvXY4T/zLrrbpAyKPbEn0yzT/6WOt7LXGaygq6NY4Ks+0pjUYfSW2vNz5Kq31kk/Wxqidwugbodk2haiIJB9O5zjzvzUUJNe+zUDoW/1brJlFcl9gAi/1MJB0isJG+A9is/eU+u8Wfi8XKkvtv+9tiiDDdKvMW/uN7c7qBg6GC7ZLG+XMTDpQ6GGlEExs7NeLh++uo5RYBgs1/H1WVrmjNJxOcwZwhJfdlHaaYMsm7qabVeoGGjrYiUXatYYKqTGYv2Hy5Jf9AdLdnCpGR8GrqehG0+Cdx74KM+WNUFsTgVvlAkiZkKUj7KMRW91ZAnpMrP2txpKUvOqhCUsUISpV8bfPln/lY6VxKyoOODcvgvmO0CudciUN2h7XNf5fUIElFDEhmA1lrfZ5HM4qkrH4tGh224nyv7ixD2rus8g2e2YX96QngS/4uHAv9YW83y7Z8SmlBgRw5K9TtMGTaUu//FNQiRiNZ8WKYnzx6BvQB3zp1rAfLnE36JvRLVBkRIV6Hg==|920

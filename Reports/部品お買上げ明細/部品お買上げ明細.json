@@ -1,0 +1,221 @@
+{
+  "Name": "部品お買上げ明細",
+  "DataSources": [
+    {
+      "Name": "部品お買上げ明細",
+      "GUID": "20987449-4186-46a2-a153-e43541dbd63b",
+      "DataSourceSetting": {
+        "TableName": "ymia_v_buhin_seikyu_meisai",
+        "BindingInfos": [
+          {
+            "GUID": "f946ff18-77b3-4ce8-b18a-bcbaf0fe01de",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "請求先名称",
+              "GUID": "b4080005-fc05-4f27-9326-493f32808889"
+            },
+            "ColumnName": "請求先名称"
+          },
+          {
+            "GUID": "832e55bd-8013-453f-8e3d-13a5e3708202",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "郵便番号",
+              "GUID": "c6efc429-9d79-4364-8d2c-a45b6f8d4ae7"
+            },
+            "ColumnName": "郵便番号"
+          },
+          {
+            "GUID": "6820c3e9-e78a-4981-ab55-fc9187003556",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "住所",
+              "GUID": "167bd7e7-8af9-4dc2-be99-885eda7780be"
+            },
+            "ColumnName": "住所"
+          },
+          {
+            "GUID": "68bac46c-2f01-4f54-b80f-219342f4fc88",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "取引先コード",
+              "GUID": "961ce4fb-63a6-4436-833a-36100673227a"
+            },
+            "ColumnName": "取引先コード"
+          },
+          {
+            "GUID": "fc0fa840-6cf0-4604-8a29-c9ff7b910823",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "対象年月",
+              "GUID": "9539210b-d5bb-4af8-82da-2089a1583d39"
+            },
+            "ColumnName": "対象年月"
+          },
+          {
+            "GUID": "133d711e-962c-4872-b405-723df9fdc088",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "出荷日",
+              "GUID": "4b54b668-2354-4029-b4fa-581a4ada859e"
+            },
+            "ColumnName": "出荷日"
+          },
+          {
+            "GUID": "61085221-aab2-4968-a9f1-db05a45be234",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "伝種",
+              "GUID": "442776c2-4bcb-4729-ba3c-5d65e2de8d19"
+            },
+            "ColumnName": "伝種"
+          },
+          {
+            "GUID": "b9cfb1b6-8b45-442a-a55c-c12d463cc85e",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "売上番号",
+              "GUID": "d78668e1-7623-434f-9ce6-979d9c09996f"
+            },
+            "ColumnName": "売上番号"
+          },
+          {
+            "GUID": "f84c2683-54e2-4927-abe3-4c0cd7b70996",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "納入先",
+              "GUID": "737c9344-f90b-4fb9-b39d-0f02593ce5c6"
+            },
+            "ColumnName": "納入先"
+          },
+          {
+            "GUID": "e1fc1981-f741-4a31-9001-afca2f1afcaf",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "部品コード",
+              "GUID": "9323fc08-6589-45af-83fa-e655fa9e9fc3"
+            },
+            "ColumnName": "部品コード"
+          },
+          {
+            "GUID": "ea22a525-f470-4b9e-8448-3ac5178eae87",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "部品名称",
+              "GUID": "ea66488b-5ca1-4395-8d92-588d722f468b"
+            },
+            "ColumnName": "部品名称"
+          },
+          {
+            "GUID": "f668266f-31ac-4887-b9d0-0a6fef4f4857",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "規格寸法",
+              "GUID": "37508d95-316b-442e-933b-7a19028877a4"
+            },
+            "ColumnName": "規格寸法"
+          },
+          {
+            "GUID": "5e84b1a9-4527-44d7-8a96-29db008485f7",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "数量",
+              "GUID": "987c0514-3254-434b-894a-c7314289f606"
+            },
+            "ColumnName": "数量"
+          },
+          {
+            "GUID": "178b9532-e0b0-4a09-a655-0ef7d98814d9",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "単価",
+              "GUID": "aada6885-600d-4292-96a6-46cd760f625e"
+            },
+            "ColumnName": "単価"
+          },
+          {
+            "GUID": "5c1b4fce-2c06-4d3e-9925-7003d314e13a",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "金額",
+              "GUID": "05b0eeec-f250-402f-88cf-853dd6c4c66f"
+            },
+            "ColumnName": "金額"
+          },
+          {
+            "GUID": "09b9460f-92fa-4641-bee5-e1efa7d7861c",
+            "BindingInfo": {
+              "TableName": "ymia_v_buhin_seikyu_meisai",
+              "ColumnName": "単位",
+              "GUID": "74e2af26-0baa-4874-b06e-2d8cf988d245"
+            },
+            "ColumnName": "単位"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_v_buhin_seikyu_meisai",
+            "ColumnName": "取引先コード",
+            "GUID": "cdeb6036-476d-4cfb-8cfe-8284f82bd17f"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=取引先"
+          }
+        }
+      },
+      "ReportDataSourceParams": [
+        {
+          "Name": "取引先"
+        },
+        {
+          "Name": "出荷日FROM"
+        },
+        {
+          "Name": "出荷日TO"
+        }
+      ],
+      "ColumnsType": [
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "date-time",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "number",
+        "number",
+        "number",
+        "string"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}
