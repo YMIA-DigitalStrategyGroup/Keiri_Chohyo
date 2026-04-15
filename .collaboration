@@ -291,7 +291,17 @@
   },
   {
     "ModuleName": "PCPage/PZD190_エンジンドライブ台帳",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T11:35:04.5095816+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\エンジン・ドライブ受払台帳\\PZD190_エンジンドライブ台帳.json",
+      "Pages\\エンジン・ドライブ受払台帳\\PZD190_エンジンドライブ台帳.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/ドライブ受払台帳_帳票画面",
