@@ -470,5 +470,15 @@
     },
     "LockDateTime": "2026-04-15T11:34:39.4749783+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/PZD190_エンジンドライブ台帳_帳票画面",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T11:35:52.900474+09:00",
+    "ModuleType": 1
   }
 ]
