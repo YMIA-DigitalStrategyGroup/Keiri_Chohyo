@@ -389,17 +389,7 @@
   },
   {
     "ModuleName": "PageReport/エンジンドライブ台帳",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T15:47:36.0826275+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\エンジンドライブ台帳\\エンジンドライブ台帳.json",
-      "Reports\\エンジンドライブ台帳\\エンジンドライブ台帳.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "Reports/部品お買上げ明細",
