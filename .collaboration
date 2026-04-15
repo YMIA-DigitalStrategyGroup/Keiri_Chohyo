@@ -346,16 +346,6 @@
     "ModuleType": 22
   },
   {
-    "ModuleName": "TableView/ymia_v_buhin_seikyu_header",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:00:19.5261923+09:00",
-    "ModuleType": 23
-  },
-  {
     "ModuleName": "TableView/ymia_v_buhin_seikyu_meisai",
     "State": 3,
     "LockedBy": {
