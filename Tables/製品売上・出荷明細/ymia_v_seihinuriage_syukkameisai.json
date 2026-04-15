@@ -1,0 +1,115 @@
+{
+  "Name": "ymia_v_seihinuriage_syukkameisai",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 15,
+      "Name": "製番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "date",
+      "MaxLength": -1,
+      "Name": "出荷日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "受注番号",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "製品価格",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "付帯工事価格",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "売上合計",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "売上値引",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "直材費",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "直接経費",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "直労費",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "加工費",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "原価合計",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "対象年月",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "MySql1",
+    "SourceTableName": "ymia_v_seihinuriage_syukkameisai",
+    "SourceTableSchema": "",
+    "CreateViewSql": "select `tkansayo_seihinuriage_sonotashukka`.`KOJI_NO` AS `製番`,`tkansayo_seihinuriage_sonotashukka`.`SHUKKA_DATE` AS `出荷日`,`tkansayo_seihinuriage_sonotashukka`.`JYUCHU_NO` AS `受注番号`,`tkansayo_seihinuriage_sonotashukka`.`SEIHIN_KAKAKU` AS `製品価格`,`tkansayo_seihinuriage_sonotashukka`.`FUTAI_KOJI_KAKAKU` AS `付帯工事価格`,(`tkansayo_seihinuriage_sonotashukka`.`SEIHIN_KAKAKU` + `tkansayo_seihinuriage_sonotashukka`.`FUTAI_KOJI_KAKAKU`) AS `売上合計`,`tkansayo_seihinuriage_sonotashukka`.`URIAGE_NEBIKI` AS `売上値引`,`tkansayo_seihinuriage_sonotashukka`.`CHOKUZAIKEI` AS `直材費`,`tkansayo_seihinuriage_sonotashukka`.`CHOKKEI` AS `直接経費`,`tkansayo_seihinuriage_sonotashukka`.`CHOKURO` AS `直労費`,`tkansayo_seihinuriage_sonotashukka`.`KAKOHI` AS `加工費`,(((`tkansayo_seihinuriage_sonotashukka`.`CHOKUZAIKEI` + `tkansayo_seihinuriage_sonotashukka`.`CHOKKEI`) + `tkansayo_seihinuriage_sonotashukka`.`CHOKURO`) + `tkansayo_seihinuriage_sonotashukka`.`KAKOHI`) AS `原価合計`,`tkansayo_seihinuriage_sonotashukka`.`TARGET_YEAR_MONTH` AS `対象年月` from `tkansayo_seihinuriage_sonotashukka`",
+    "ViewInfo": {
+      "ViewName": "ymia_v_seihinuriage_syukkameisai",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "PrimaryKey": [
+    "製番",
+    "対象年月"
+  ],
+  "Indexes": []
+}

@@ -1,0 +1,185 @@
+{
+  "Name": "製品売上・出荷明細",
+  "DataSources": [
+    {
+      "Name": "製品売上_出荷明細",
+      "GUID": "1dcbf091-cc70-4f06-85a3-9c8e16db998f",
+      "DataSourceSetting": {
+        "TableName": "ymia_v_seihinuriage_syukkameisai",
+        "BindingInfos": [
+          {
+            "GUID": "a4e70f33-942b-478e-aeb7-d891f6d2acfa",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "製番",
+              "GUID": "d8026964-1f7a-450e-8b79-4b5bc4693198"
+            },
+            "ColumnName": "製番"
+          },
+          {
+            "GUID": "13187937-6cf6-4118-9479-57455ba173c6",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "出荷日",
+              "GUID": "2d1e821a-2587-4a80-9754-e25189db1d3c"
+            },
+            "ColumnName": "出荷日"
+          },
+          {
+            "GUID": "64279209-5d56-4326-9612-2e8e7c3d6fd3",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "受注番号",
+              "GUID": "9705e80f-2314-4198-b646-eebcdc63f6e4"
+            },
+            "ColumnName": "受注番号"
+          },
+          {
+            "GUID": "ebfec793-84e6-4154-a612-30c8309517ed",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "製品価格",
+              "GUID": "be58908e-345e-4926-a613-888535fe8fb4"
+            },
+            "ColumnName": "製品価格"
+          },
+          {
+            "GUID": "0cdc22b4-1622-454c-ad40-f78b48649dbb",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "付帯工事価格",
+              "GUID": "c9646244-985a-4bc7-a1a4-eb63acd88e81"
+            },
+            "ColumnName": "付帯工事価格"
+          },
+          {
+            "GUID": "88fbef8b-2183-4a04-a911-d5df960dcad3",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "売上合計",
+              "GUID": "05725df0-d0b6-4883-bce2-108c36d23123"
+            },
+            "ColumnName": "売上合計"
+          },
+          {
+            "GUID": "4796d34f-21d3-4c8c-84f6-232f19f5abdd",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "売上値引",
+              "GUID": "93508f82-9b0e-464c-9f47-032d230ad30c"
+            },
+            "ColumnName": "売上値引"
+          },
+          {
+            "GUID": "faa5a722-a510-4316-8963-b10ed4adbb5b",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "直材費",
+              "GUID": "168c9a16-ae6c-4676-8ac6-93415f8f853f"
+            },
+            "ColumnName": "直材費"
+          },
+          {
+            "GUID": "45530e1e-571d-4b60-9d76-c0ca8c7ef5b1",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "直接経費",
+              "GUID": "8aa26cf6-8315-4a80-b652-fd0fceaa742b"
+            },
+            "ColumnName": "直接経費"
+          },
+          {
+            "GUID": "1a469be9-b746-44fc-b6d1-c97b1ad80316",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "直労費",
+              "GUID": "6e9a8d27-fd2d-4ae5-99b4-cf5b427223a7"
+            },
+            "ColumnName": "直労費"
+          },
+          {
+            "GUID": "f5b85343-3b1e-4bc7-a71a-a029d0b19e7b",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "加工費",
+              "GUID": "24e4f0d2-6b8e-463a-97b5-aa74b270a070"
+            },
+            "ColumnName": "加工費"
+          },
+          {
+            "GUID": "15df297a-df2f-4ef6-962a-7440a664d661",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "原価合計",
+              "GUID": "1cd098ce-bb3c-46fc-887a-014063760ccc"
+            },
+            "ColumnName": "原価合計"
+          },
+          {
+            "GUID": "f6ad532f-33d6-499c-9154-99865807012c",
+            "BindingInfo": {
+              "TableName": "ymia_v_seihinuriage_syukkameisai",
+              "ColumnName": "対象年月",
+              "GUID": "4facf3ed-19ca-4b38-96c9-b19f00ae186a"
+            },
+            "ColumnName": "対象年月"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_v_seihinuriage_syukkameisai",
+            "ColumnName": "対象年月",
+            "GUID": "6e73469f-86d2-4c55-8362-41b3b1c1d720"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=対象年月"
+          }
+        }
+      },
+      "ReportDataSourceParams": [
+        {
+          "Name": "対象年月"
+        }
+      ],
+      "ColumnsType": [
+        "string",
+        "date-time",
+        "integer",
+        "number",
+        "number",
+        "number",
+        "number",
+        "number",
+        "number",
+        "number",
+        "number",
+        "number",
+        "string"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}

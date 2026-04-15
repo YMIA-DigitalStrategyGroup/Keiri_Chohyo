@@ -329,62 +329,26 @@
   },
   {
     "ModuleName": "Pages/製品売上・出荷明細",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:46:37.7288643+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "PCPage/製品売上_出荷明細_発行画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:48:03.1357799+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Tables/製品売上・出荷明細",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:48:24.5645746+09:00",
     "ModuleType": 22
   },
   {
     "ModuleName": "TableView/ymia_v_seihinuriage_syukkameisai",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:48:42.320983+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "Reports/製品売上・出荷明細",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:49:19.7757797+09:00",
     "ModuleType": 19
   },
   {
     "ModuleName": "PageReport/製品売上・出荷明細",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T08:49:45.9596342+09:00",
     "ModuleType": 17
   }
 ]
