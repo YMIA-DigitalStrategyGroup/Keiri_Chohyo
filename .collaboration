@@ -490,5 +490,15 @@
     },
     "LockDateTime": "2026-04-15T11:37:41.2019569+09:00",
     "ModuleType": 23
+  },
+  {
+    "ModuleName": "Reports/エンジンドライブ台帳",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T11:50:04.285522+09:00",
+    "ModuleType": 19
   }
 ]
