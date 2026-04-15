@@ -440,5 +440,15 @@
     },
     "LockDateTime": "2026-04-15T14:59:23.9047078+09:00",
     "ModuleType": 23
+  },
+  {
+    "ModuleName": "Pages/部品お買上げ明細書",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-15T14:59:58.5434873+09:00",
+    "ModuleType": 6
   }
 ]
