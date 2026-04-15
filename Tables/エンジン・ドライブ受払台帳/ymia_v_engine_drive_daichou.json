@@ -1,0 +1,107 @@
+{
+  "Name": "ymia_v_engine_drive_daichou",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "型式",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "№",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "入荷日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "仕入先",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "仕入価格",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "出荷日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 15,
+      "Name": "工事№",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 5,
+      "Name": "倉工",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "売上先",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "売上価格",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 6,
+      "Name": "相手費目",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "MySql1",
+    "SourceTableName": "ymia_v_engine_drive_daichou",
+    "SourceTableSchema": "",
+    "CreateViewSql": "with `targetserial` as (select distinct `m`.`HINBAN` AS `HINBAN`,`m`.`ZAISHITSU` AS `ZAISHITSU`,`m`.`DRIVE_KEISHIKI` AS `DRIVE_KEISHIKI`,`m`.`ENGINE_KATASHIKI` AS `ENGINE_KATASHIKI`,`m`.`KEISHIKI` AS `KEISHIKI`,`t`.`SERIAL_NBR` AS `SERIAL_NBR` from (`mhinban` `m` join `tukebarai` `t` on((`m`.`HINBAN` = `t`.`HINBAN`))) where (((`m`.`ZAISHITSU` like '%DRIVE%') or (`m`.`ZAISHITSU` like '%ENGINE%')) and (`t`.`SERIAL_NBR` is not null) and (`t`.`SERIAL_NBR` <> 0))), `nyuka` as (select `t`.`HINBAN` AS `HINBAN`,`t`.`SERIAL_NBR` AS `SERIAL_NBR`,`t`.`UKEBARAI_DATE` AS `NYUKA_DATE`,`th`.`TORIHIKISAKI_NAME` AS `SHIIRESAKI`,`tm`.`TANKA` AS `SHIIRE_KAKAKU`,row_number() OVER (PARTITION BY `t`.`HINBAN`,`t`.`SERIAL_NBR` ORDER BY `t`.`UKEBARAI_DATE` desc )  AS `rn` from ((`tukebarai` `t` left join `thatchum` `tm` on((`t`.`DENPYO_NBR` = `tm`.`DENPYO_NBR`))) left join `thatchu` `th` on((`tm`.`HATCHU_NBR` = `th`.`HATCHU_NBR`))) where (`t`.`UKEBARAI_KUBUN` = 4)), `shukka` as (select `t`.`HINBAN` AS `HINBAN`,`t`.`SERIAL_NBR` AS `SERIAL_NBR`,`t`.`UKEBARAI_DATE` AS `SHUKKA_DATE`,`jc`.`TEHAI_KOBAN` AS `KOJI_NO`,`bk`.`KURADASHI_KOTEI` AS `KURAKO`,`mt`.`TORIHIKISAKI_NAME` AS `URIAGESAKI`,`jm`.`HANBAI_TANKA` AS `URIAGE_KAKAKU`,`td`.`AITEHIMOKU_CODE` AS `AITE_HIMOKU`,row_number() OVER (PARTITION BY `t`.`HINBAN`,`t`.`SERIAL_NBR` ORDER BY `t`.`UKEBARAI_DATE` desc )  AS `rn` from ((((((`tukebarai` `t` left join `tjuchu` `jc` on((`t`.`JUCHU_NBR` = `jc`.`JUCHU_NBR`))) left join `mtorihiki` `mt` on((`jc`.`TORIHIKISAKI_CODE` = `mt`.`TORIHIKISAKI_CODE`))) left join `tjuchum` `jm` on(((`t`.`JUCHU_NBR` = `jm`.`JUCHU_NBR`) and (`t`.`HINBAN` = `jm`.`HINBAN`)))) left join `thatchum` `tm` on((`t`.`DENPYO_NBR` = `tm`.`DENPYO_NBR`))) left join `tbuhink` `bk` on((`tm`.`BUHIN_KOSEI_ID` = `bk`.`ID`))) left join `ttorihiki_denpyo` `td` on((`t`.`UKEBARAI_NBR` = `td`.`UKEHARAI_NBR`))) where (`t`.`UKEBARAI_KUBUN` in (3,5))) select (case when (`ts`.`ZAISHITSU` like '%DRIVE%') then `ts`.`DRIVE_KEISHIKI` when (`ts`.`ZAISHITSU` like '%ENGINE%') then `ts`.`ENGINE_KATASHIKI` else `ts`.`KEISHIKI` end) AS `型式`,`ts`.`SERIAL_NBR` AS `№`,`n`.`NYUKA_DATE` AS `入荷日`,`n`.`SHIIRESAKI` AS `仕入先`,`n`.`SHIIRE_KAKAKU` AS `仕入価格`,`s`.`SHUKKA_DATE` AS `出荷日`,`s`.`KOJI_NO` AS `工事№`,`s`.`KURAKO` AS `倉工`,`s`.`URIAGESAKI` AS `売上先`,`s`.`URIAGE_KAKAKU` AS `売上価格`,`s`.`AITE_HIMOKU` AS `相手費目` from ((`targetserial` `ts` left join `nyuka` `n` on(((`ts`.`HINBAN` = `n`.`HINBAN`) and (`ts`.`SERIAL_NBR` = `n`.`SERIAL_NBR`) and (`n`.`rn` = 1)))) left join `shukka` `s` on(((`ts`.`HINBAN` = `s`.`HINBAN`) and (`ts`.`SERIAL_NBR` = `s`.`SERIAL_NBR`) and (`s`.`rn` = 1)))) order by `ts`.`HINBAN`,`ts`.`SERIAL_NBR`",
+    "ViewInfo": {
+      "ViewName": "ymia_v_engine_drive_daichou",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "型式",
+        "№",
+        "入荷日",
+        "仕入先",
+        "仕入価格",
+        "出荷日",
+        "工事№",
+        "倉工",
+        "売上先",
+        "売上価格",
+        "相手費目"
+      ]
+    }
+  },
+  "Indexes": []
+}

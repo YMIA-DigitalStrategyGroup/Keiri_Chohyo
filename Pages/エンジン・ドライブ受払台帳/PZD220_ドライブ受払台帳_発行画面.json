@@ -1,0 +1,359 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "Count": 45
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "Count": 60
+  },
+  "Values": {
+    "0,47": "本日日付",
+    "1,1": "帳票発行年月",
+    "1,22": "<",
+    "1,25": ">",
+    "1,47": "前月日付",
+    "5,1": "発行",
+    "5,20": "閉じる"
+  },
+  "Formulas": {
+    "0,51": "TODAY()",
+    "1,51": "EDATE(AZ1,-1)"
+  },
+  "AttachInfos": {
+    "1,8": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=PZD220_ドライブ受払台帳_発行画面!AZ2"
+        },
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "1,22": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=PZD220_ドライブ受払台帳_発行画面!I2"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=EDATE(PZD220_ドライブ受払台帳_発行画面!I2,-1)"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "<",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "1,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=PZD220_ドライブ受払台帳_発行画面!I2"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=EDATE(PZD220_ドライブ受払台帳_発行画面!I2,+1)"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": ">",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "5,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "発行",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "5,20": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "閉じる",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 4,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "Accent 1 80",
+        "black",
+        "yyyyMM",
+        "@"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,47": 0,
+      "0,48": 1,
+      "0,49": 1,
+      "0,50": 1,
+      "0,51": 1,
+      "0,52": 1,
+      "0,53": 1,
+      "0,54": 1,
+      "0,55": 1,
+      "0,56": 1,
+      "0,57": 1,
+      "1,1": 2,
+      "1,2": 3,
+      "1,3": 3,
+      "1,4": 3,
+      "1,5": 3,
+      "1,6": 3,
+      "1,7": 3,
+      "1,8": 4,
+      "1,9": 5,
+      "1,10": 5,
+      "1,11": 5,
+      "1,12": 5,
+      "1,13": 5,
+      "1,14": 5,
+      "1,15": 5,
+      "1,16": 5,
+      "1,17": 5,
+      "1,18": 5,
+      "1,19": 5,
+      "1,20": 6,
+      "1,25": 1,
+      "1,26": 1,
+      "1,51": 1,
+      "1,52": 1,
+      "1,53": 1,
+      "1,54": 1,
+      "1,55": 1,
+      "1,56": 1,
+      "1,57": 1,
+      "2,1": 3,
+      "2,2": 3,
+      "2,3": 3,
+      "2,4": 3,
+      "2,5": 3,
+      "2,6": 3,
+      "2,7": 3,
+      "2,8": 7,
+      "2,9": 8,
+      "2,10": 8,
+      "2,11": 8,
+      "2,12": 8,
+      "2,13": 8,
+      "2,14": 8,
+      "2,15": 8,
+      "2,16": 8,
+      "2,17": 8,
+      "2,18": 8,
+      "2,19": 8,
+      "2,20": 9,
+      "2,25": 1,
+      "2,26": 1,
+      "2,47": 0,
+      "2,48": 1,
+      "2,49": 1,
+      "2,50": 1,
+      "2,51": 10,
+      "5,20": 0,
+      "5,21": 1,
+      "5,22": 1,
+      "5,23": 1,
+      "5,24": 1,
+      "5,25": 1,
+      "5,26": 1,
+      "6,20": 1,
+      "6,21": 1,
+      "6,22": 1,
+      "6,23": 1,
+      "6,24": 1,
+      "6,25": 1,
+      "6,26": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,51,1,7",
+    "1,51,1,7",
+    "2,51,1,7",
+    "1,1,2,7",
+    "1,22,2,2",
+    "1,25,2,2",
+    "5,1,2,7",
+    "5,20,2,7",
+    "1,8,2,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "tkansayo_torihiki"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Ui6+YdDPpmx9vhPm8EOLBnuQMa0bAsrnbwSIW5ejJ7pCBeS3cOlMa/E+5LEY+fZ6ShaPqerpmUwnhtBvaqoeVTzgZFYcgMteXwXWwGNvMimJkGJwEfXZXg+1O9G/PVtDbDV7VxK7/gjsJL+EtrdNqAGmkjnZhuh/0hvwqaR9DV7K5onh/Fy4Zh2id5j+ahCkZqkoiaG9ta17ianAGAZlqiWXKC6JwMNUdy5amoj6INMeglgIHh3CPiOLs2v+LOxl57puIzNkgxSMZNOtOiP0/ZBOtwQab50OX98G8Gx9A5neYVCzsSb6+YeTP1kgwxsaqAzTj96sefXFoLKdiCOlbyo2Z6zJwDQswCoqjmbMusLvtTqPfACZK9KZSeS5qAvHLXIecXSMv3Y6WV699F/+XDBI429lHSYu7qtIXcNAZf0A20cpa73EbfCX2t7t6FhWH6oGL96JcmULh2G0enzzHH5HawLjZadCn8vUpNEq8NyX8qutt6Pp/e/EL1h8mCgNLQpXGSRqMs1PLiZVopuCIBzpOZ9aTcdgTHe8JB5vuDft2atrldYNqh4ORWq7apMFmsn6+1wdMjyD5YMD+z0i80IyQC5i2iJxW4Lvqrnpd3tGZuJqx89+mIvG4CqEJkTAWorDp82cgmeDpjd33tSDaNN1FYJU8aXpdRYyW+Nf6bQ2ixY8nx8GOQnIUYLW8V2AzKdQg4YmsGNuz2jovpkbXwhbj26T/9pxQ0W97npPyDJVd11ubKpv1DXFBCDqBo/3Y76fJGY35SxAODYClUrayIFqD/0bIdsDJnRTw7I5b/XkDA1SHP1VZ5VwxhqwazhfkL9Mc1dDTL+A+kgL1MVfsKyFDE20aWJd8OqIA4JiYUDa5k1aqr/hAM7x1N9tXxkddyEUu97xs8dJzmtXoxtTrg==|920

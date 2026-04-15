@@ -236,20 +236,6 @@
     "ModuleType": 6
   },
   {
-    "ModuleName": "PCPage/ビュー作成のメモ",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:32:52.4580905+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\エンジン・ドライブ受払台帳\\ビュー作成のメモ.json",
-      "Pages\\エンジン・ドライブ受払台帳\\ビュー作成のメモ.rd"
-    ]
-  },
-  {
     "ModuleName": "Table/tkansayo_zaiko_summary",
     "ModuleType": 7
   },
@@ -288,48 +274,6 @@
   {
     "ModuleName": "Reports/エンジン受払台帳",
     "ModuleType": 19
-  },
-  {
-    "ModuleName": "PCPage/PZD190_エンジンドライブ台帳",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:35:04.5095816+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\エンジン・ドライブ受払台帳\\PZD190_エンジンドライブ台帳.json",
-      "Pages\\エンジン・ドライブ受払台帳\\PZD190_エンジンドライブ台帳.rd"
-    ]
-  },
-  {
-    "ModuleName": "PCPage/ドライブ受払台帳_帳票画面",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:32:06.8844653+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\エンジン・ドライブ受払台帳\\ドライブ受払台帳_帳票画面.json",
-      "Pages\\エンジン・ドライブ受払台帳\\ドライブ受払台帳_帳票画面.rd"
-    ]
-  },
-  {
-    "ModuleName": "PCPage/エンジン受払台帳_帳票画面",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:31:42.4035728+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\エンジン・ドライブ受払台帳\\エンジン受払台帳_帳票画面.json",
-      "Pages\\エンジン・ドライブ受払台帳\\エンジン受払台帳_帳票画面.rd"
-    ]
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
@@ -423,92 +367,38 @@
   },
   {
     "ModuleName": "PCPage/PZD220_ドライブ受払台帳_発行画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:31:55.3975271+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/PZD220_エンジン受払台帳_発行画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:31:27.6741147+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/PZD220_エンジン受払台帳_帳票画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:31:42.4035886+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/PZD220_ドライブ受払台帳_帳票画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:32:06.8844818+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/PZD190_エンジンドライブ台帳_発行画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:34:39.4749783+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/PZD190_エンジンドライブ台帳_帳票画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:35:52.900474+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:37:41.2019569+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "Reports/エンジンドライブ台帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:50:04.285522+09:00",
     "ModuleType": 19
   },
   {
     "ModuleName": "PageReport/エンジンドライブ台帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T11:51:52.6059263+09:00",
     "ModuleType": 17
   },
   {

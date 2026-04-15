@@ -6,7 +6,7 @@
     "Count": 81
   },
   "Values": {
-    "1,2": "ドライブ受払台帳_帳票画面",
+    "1,2": "PZD190：エンジンドライブ台帳_帳票画面",
     "2,58": "本日日付",
     "3,2": "対象年月度",
     "3,14": "PDF発行",
@@ -25,9 +25,9 @@
           {
             "$type": "Forguncy.Model.ExportActiveReportCommand, ServerDesignerCommon",
             "ExportReportNameList": [
-              "エンジン受払台帳"
+              "ドライブ受払台帳"
             ],
-            "CustomName": "エンジン受払台帳",
+            "CustomName": "ドライブ受払台帳",
             "ExportSettings": {
               "MultiSheet": true
             },
@@ -36,7 +36,7 @@
                 "TargetParameter": "処理月度",
                 "SourceValue": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=#REF!"
+                  "SerializeProperty": "=PZD190_エンジンドライブ台帳_帳票画面!C9"
                 }
               }
             ],
@@ -65,8 +65,8 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
-            "SessionGuid": "f178ba57-60d1-43c9-9bfa-d128d3335ac8",
-            "OpenReportName": "エンジン受払台帳"
+            "SessionGuid": "d659c7a9-ebf5-4709-a7dc-603c44826333",
+            "OpenReportName": "ドライブ受払台帳"
           }
         ],
         "Text": "ビューワー表示",
@@ -77,7 +77,7 @@
     "7,2": {
       "ListViewInfo": {
         "Name": "リストビュー1",
-        "TableName": "ymia_v_driveukebarai",
+        "TableName": "ymia_v_engine_drive_daichou",
         "RowIndex": 7,
         "ColumnIndex": 2,
         "RowCount": 19,
@@ -91,107 +91,91 @@
       }
     },
     "8,2": {
-      "NameUsedInJavaScript": "対象年月",
+      "NameUsedInJavaScript": "型式",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "対象年月",
-        "GUID": "f7795d28-55ef-410f-a7a4-3061472ccc9b"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "型式",
+        "GUID": "e4a89425-42fc-4731-8ccb-6b016e56d2f4"
       }
     },
     "8,6": {
-      "NameUsedInJavaScript": "型式",
+      "NameUsedInJavaScript": "_№",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "型式",
-        "GUID": "25deb6b8-3738-4e0d-8e68-a26eac6888dc"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "№",
+        "GUID": "941aa850-2d6e-4459-82ae-65dfd8aba5e2"
       }
     },
     "8,10": {
-      "NameUsedInJavaScript": "前残",
+      "NameUsedInJavaScript": "入荷日",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "前残",
-        "GUID": "952736b1-08a8-44ba-8a77-ae3df849a6fa"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "入荷日",
+        "GUID": "7c209304-87ab-4cff-bd98-7f5373cec828"
       }
     },
     "8,14": {
-      "NameUsedInJavaScript": "当月度入荷",
+      "NameUsedInJavaScript": "仕入先",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "当月度入荷",
-        "GUID": "9aa19fd8-8e40-4310-844f-20e3846fd348"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "仕入先",
+        "GUID": "7f825498-1746-4b11-93d1-9ac16e24ef4a"
       }
     },
     "8,18": {
-      "NameUsedInJavaScript": "当月度出荷",
+      "NameUsedInJavaScript": "仕入価格",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "当月度出荷",
-        "GUID": "f0b976a9-9fd7-41df-ae4b-7457a827e60f"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "仕入価格",
+        "GUID": "5a26f4b1-3a4f-4d81-b46c-a050c874df42"
       }
     },
     "8,22": {
-      "NameUsedInJavaScript": "繰越残",
+      "NameUsedInJavaScript": "出荷日",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "繰越残",
-        "GUID": "7a126b99-a21a-4157-bed2-72e77844bd50"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "出荷日",
+        "GUID": "5a86d559-09cc-4af5-949a-a2c920bb9af1"
       }
     },
     "8,26": {
-      "NameUsedInJavaScript": "前残_入荷日",
+      "NameUsedInJavaScript": "工事№",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "前残＿入荷日",
-        "GUID": "a6b445ab-0b92-492e-9da9-6eeceeef1bc4"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "工事№",
+        "GUID": "30238d47-72ac-48d0-bfdf-7c02a2d0dab8"
       }
     },
     "8,30": {
-      "NameUsedInJavaScript": "前残_価格",
+      "NameUsedInJavaScript": "倉工",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "前残＿価格",
-        "GUID": "469726f3-bbcd-4a29-85cb-f537769c858e"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "倉工",
+        "GUID": "4e666da2-77de-4b0f-9ca3-0da7e7e60057"
       }
     },
     "8,34": {
-      "NameUsedInJavaScript": "当月度入荷_入荷日",
+      "NameUsedInJavaScript": "売上先",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "当月度入荷＿入荷日",
-        "GUID": "82fda807-46f4-497e-95d9-8576744cfd62"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "売上先",
+        "GUID": "1e537339-c381-4fab-82e3-3469b84bd194"
       }
     },
     "8,38": {
-      "NameUsedInJavaScript": "当月度入荷_価格",
+      "NameUsedInJavaScript": "売上価格",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "当月度入荷＿価格",
-        "GUID": "f16c3da6-6837-4c02-8772-507d6a108375"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "売上価格",
+        "GUID": "6bce3248-e7f2-4b11-8898-6435fff5987b"
       }
     },
     "8,42": {
-      "NameUsedInJavaScript": "当月度出荷_出荷日",
+      "NameUsedInJavaScript": "相手費目",
       "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "当月度出荷＿出荷日",
-        "GUID": "d8ade410-c9c1-4200-a301-1272c2599bdc"
-      }
-    },
-    "8,46": {
-      "NameUsedInJavaScript": "当月度出荷_工事№",
-      "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "当月度出荷＿工事№",
-        "GUID": "62e60a97-54ab-4c95-a421-6f21d5f6a0ad"
-      }
-    },
-    "8,50": {
-      "NameUsedInJavaScript": "当月度出荷_倉工",
-      "BindingInfo": {
-        "TableName": "ymia_v_driveukebarai",
-        "ColumnName": "当月度出荷＿倉工",
-        "GUID": "6d751ea6-a03a-4c33-95bf-0959129eddba"
+        "TableName": "ymia_v_engine_drive_daichou",
+        "ColumnName": "相手費目",
+        "GUID": "1a8e4110-287b-4a34-974b-b85a257a5206"
       }
     }
   },
@@ -774,41 +758,37 @@
     }
   },
   "Spans": [
-    "8,2,1,4",
-    "8,6,1,4",
-    "8,10,1,4",
-    "8,14,1,4",
-    "8,18,1,4",
-    "8,22,1,4",
-    "8,26,1,4",
-    "8,30,1,4",
-    "8,34,1,4",
-    "8,38,1,4",
-    "8,42,1,4",
-    "8,46,1,4",
-    "8,50,1,3",
     "2,62,1,7",
     "3,62,1,7",
     "4,62,1,7",
     "5,62,1,7",
-    "9,2,17,51",
     "3,2,2,5",
     "3,7,2,5",
     "3,14,2,5",
     "3,20,2,5",
+    "9,2,17,51",
     "7,2,1,4",
+    "8,2,1,4",
     "7,6,1,4",
+    "8,6,1,4",
     "7,10,1,4",
+    "8,10,1,4",
     "7,14,1,4",
+    "8,14,1,4",
     "7,18,1,4",
+    "8,18,1,4",
     "7,22,1,4",
+    "8,22,1,4",
     "7,26,1,4",
+    "8,26,1,4",
     "7,30,1,4",
+    "8,30,1,4",
     "7,34,1,4",
+    "8,34,1,4",
     "7,38,1,4",
+    "8,38,1,4",
     "7,42,1,4",
-    "7,46,1,4",
-    "7,50,1,3"
+    "8,42,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -833,4 +813,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//G02OCVPIIgjSCqwYoaH962QsrweoSCeQiEpuzuGbRIJt7ZTLMbnT25012YXsO+rk/f4QaHVTsPkYpSdZkzo5q7FSSog5XQL/uUFPvsQqcXda+6kXJHdWe0+5EUnsgaYF1VH/grYjpiIYzOtOYhJn50a8Cpqiqk9xEJAMKNnWqrIzvhsFtA+p4gp/zNl8CasQ/PPoLn2CTby0chu1QNi5bC5jPKUpLGjXuMaYgIvberCfPNUxF/OBMS2AIlJa4/Puh2AKnc+VzM3T/9qsmnlE8cqY4YAUZ/4JB3CInL5EBahwGgrdZG1rAJuROZLtvKhJqgEHhkaP+y3dwGHPWW4ZTszPUNZ/33vJ/5Z7ypAD1wvM3xdDSUI7Y3p95kFhF+hKkK0iaUeBpsJvvwXf+THjkJvwyTbt3Dt70POc5/yLD3awN51K3R/lwVS4F+xQHSP1MUPd19KlkmGwt4zM4iBZ10cqa0m5Pi7tjK1DXZE6X+BZRh+r3TLJ7Aq2kIb1yqkMh+w8zqbxP8XapoYnH08EdVWl1E5Z4ck0wPh0x8deTnhP0Hh4++iMiKffi+SdMmIAHISuM8UXiZagA0Z/rfxGVdvMS3+r+OFjIDp5RqFfypsYUC2+MvS+Tro2WO1vww/vOon7AGpMfXCxIfU1EUXhlq9RPJQ12TIn/cd9iCneJ0/jn9ND3iMbcFwtKHQXOso4oz+lMPUHVWn+18TlUDHHSgo3qUrS5fEhsC3rF+gvokLG5UQCOVTibR+Wbj45SX2WK+3inL1xw9BsEZX93mbtmwN7ZJwBtWBjgWnqelNI5RUmr/Kuka2plUw1FMlafq32kYRxG1yd4TEJ1szfoCugYqS/adoPkuGrTzEO9N7zXU2nAiNyoaW9f7CUC+VjhsAm+9gcdR8dJ5Ve4JVJ+a2V8g==|920
+}//PAIBQfka68W3bbtuVpVVL82574UH48W2Y1uycbK/w0bfB71wShD4skxY1CQcPOp/bqP5N7+5HgehAN3ccdhcbP8IarmX0AJ+wNIElDDAuSnU2kFpr7giLLo1XrNSJRaML2wG1Bmofw+vUBKSXrQg2URsSiJRtXFjjaDqCBjASxnLgyb9qPJ8EpDJBqrr4snrzc/kRINmaDih/aLG+q92w4WWYsYOWy2nSSR6d7wN/w4bd0LCXxWxIVo3hFKgQ0GBuawNnOMd+YXNpEA7z0VuAZ6cF/AoX3ADCDb545YaiT4uc2zzCJQVTRwU0QtlefMTRl6i4v8DaLD86UNE4NAK6hgTrz4K+Z0jGiPd1IoGMmNAWFZQtGKRpRhpMWeR+14P6G5fcO3yq79q7BDB1bJGYt/tpt4owWfJ6i1iMeNy8ccompIsAmUh1U5YtKvgyx19V3NgYkLIjLbzcMmRNpkJb2BDcZnCaXo3EF79/+xSCaZ4Bh4o+Qdxs6HIoUPXbjTSsBcQ17MycobaQWyCQk6FQEHBwQ7kSyFuAVF5Wrrj4mfxc6v/5pgJmonB8+ukdhoc88TNwpm2z3A8PAuhAWJ8JUexcIVG9yLld73dYbIBSFozWza8Y6rUzPUPq9NlKetK9pudsFeJRd/CAQUx9CpGnf3dS8hxG9URqR8FdpZjNibbwmTbLztmBsKF4X4ys3jqSRzMYIhHn81AkhbxhWl0U4P6bEcPnjT1Z1szaUVRq//kBE/OaKAxkPcL8myLm9uPUvFdRddGaZhzMkFW66aXcNEI1+V7hJEyYVGWU8KE+gz+OsAtCXRuJ04F+5PuCuRwqr1+CJ+qsFS82zM5+G7BiFwf3zpvcio3YHUVxGRwh1jvTGOEQ6vEpexruc+/mq+qe0tliuplsau7Acf5wju/4Q==|920
