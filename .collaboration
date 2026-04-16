@@ -269,7 +269,17 @@
   },
   {
     "ModuleName": "PageReport/エンジン受払台帳",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-16T15:49:42.2640671+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\エンジン受払台帳\\エンジン受払台帳.json",
+      "Reports\\エンジン受払台帳\\エンジン受払台帳.rdlx"
+    ]
   },
   {
     "ModuleName": "Reports/エンジン受払台帳",
