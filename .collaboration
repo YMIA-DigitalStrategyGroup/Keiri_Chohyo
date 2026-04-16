@@ -438,5 +438,15 @@
   {
     "ModuleName": "PCPage/お買い上げ明細書_発行画面",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/ページ1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-16T14:56:37.3633514+09:00",
+    "ModuleType": 1
   }
 ]
