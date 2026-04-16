@@ -3,9 +3,8 @@
   "Columns": [
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "Required": true,
       "DatabaseColumnType": "varchar",
-      "MaxLength": 10,
+      "MaxLength": 7,
       "Name": "対象年月",
       "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     },
@@ -18,6 +17,13 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "シリアルナンバー",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "Required": true,
       "DatabaseColumnType": "varchar",
       "MaxLength": 20,
@@ -26,6 +32,8 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0.0000,
+      "Required": true,
       "DatabaseColumnType": "decimal",
       "MaxLength": -1,
       "Name": "前残",
@@ -33,6 +41,8 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0.0000,
+      "Required": true,
       "DatabaseColumnType": "decimal",
       "MaxLength": -1,
       "Name": "当月度入荷",
@@ -132,7 +142,7 @@
     "ConnectionId": "MySql1",
     "SourceTableName": "ymia_v_engineukebarai",
     "SourceTableSchema": "",
-    "CreateViewSql": "with `targetsummary` as (select `tkansayo_zaiko_summary`.`RECORD_NO` AS `RECORD_NO`,`tkansayo_zaiko_summary`.`TARGET_YEAR_MONTH` AS `TARGET_YEAR_MONTH`,`tkansayo_zaiko_summary`.`KOJO` AS `KOJO`,`tkansayo_zaiko_summary`.`BUHIN_CODE` AS `BUHIN_CODE`,`tkansayo_zaiko_summary`.`MAE_ZENZAN` AS `MAE_ZENZAN`,`tkansayo_zaiko_summary`.`MAE_SHIIRE` AS `MAE_SHIIRE`,`tkansayo_zaiko_summary`.`MAE_URIAGE_YUSHOSHIKYU` AS `MAE_URIAGE_YUSHOSHIKYU`,`tkansayo_zaiko_summary`.`MAE_MUSYOSHIKYU` AS `MAE_MUSYOSHIKYU`,`tkansayo_zaiko_summary`.`MAE_BANAI_KURADASHI` AS `MAE_BANAI_KURADASHI`,`tkansayo_zaiko_summary`.`MAE_SONOTA_KURADASHI` AS `MAE_SONOTA_KURADASHI`,`tkansayo_zaiko_summary`.`MAE_ZAIKOCHOSEI` AS `MAE_ZAIKOCHOSEI`,`tkansayo_zaiko_summary`.`MAE_TOZAN` AS `MAE_TOZAN`,`tkansayo_zaiko_summary`.`TO_ZENZAN` AS `TO_ZENZAN`,`tkansayo_zaiko_summary`.`TO_SHIIRE` AS `TO_SHIIRE`,`tkansayo_zaiko_summary`.`TO_URIAGE_YUSHOSHIKYU` AS `TO_URIAGE_YUSHOSHIKYU`,`tkansayo_zaiko_summary`.`TO_MUSYOSHIKYU` AS `TO_MUSYOSHIKYU`,`tkansayo_zaiko_summary`.`TO_BANAI_KURADASHI` AS `TO_BANAI_KURADASHI`,`tkansayo_zaiko_summary`.`TO_SONOTA_KURADASHI` AS `TO_SONOTA_KURADASHI`,`tkansayo_zaiko_summary`.`TO_ZAIKOCHOSEI` AS `TO_ZAIKOCHOSEI`,`tkansayo_zaiko_summary`.`TO_TOZAN` AS `TO_TOZAN`,`tkansayo_zaiko_summary`.`SAISHU_NYUKO_DATE` AS `SAISHU_NYUKO_DATE`,`tkansayo_zaiko_summary`.`SAISHU_SHUKKO_DATE` AS `SAISHU_SHUKKO_DATE`,`tkansayo_zaiko_summary`.`MAENENKAN_NYUKO_RUISEKI` AS `MAENENKAN_NYUKO_RUISEKI`,`tkansayo_zaiko_summary`.`MAENENKAN_SHUKKO_RUISEKI` AS `MAENENKAN_SHUKKO_RUISEKI`,`tkansayo_zaiko_summary`.`TO_NYUKO_RUISEKI` AS `TO_NYUKO_RUISEKI`,`tkansayo_zaiko_summary`.`TO_SHUKKO_RUISEKI` AS `TO_SHUKKO_RUISEKI`,`tkansayo_zaiko_summary`.`TOROKU_TIMESTAMP` AS `TOROKU_TIMESTAMP`,`tkansayo_zaiko_summary`.`TOROKUSHA_CODE` AS `TOROKUSHA_CODE`,`tkansayo_zaiko_summary`.`KOSHIN_TIMESTAMP` AS `KOSHIN_TIMESTAMP`,`tkansayo_zaiko_summary`.`KOSHINSHA_CODE` AS `KOSHINSHA_CODE` from `tkansayo_zaiko_summary`), `zenuke` as (select `tukebarai`.`HINBAN` AS `HINBAN`,`tukebarai`.`UKEBARAI_DATE` AS `UKEBARAI_DATE`,`tukebarai`.`DENPYO_NBR` AS `DENPYO_NBR`,row_number() OVER (PARTITION BY `tukebarai`.`HINBAN`,date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') ORDER BY `tukebarai`.`UKEBARAI_DATE` desc,`tukebarai`.`DENPYO_NBR` desc )  AS `rn` from `tukebarai` where (`tukebarai`.`UKEBARAI_KUBUN` = 4)), `tonyuka` as (select `tukebarai`.`HINBAN` AS `HINBAN`,`tukebarai`.`UKEBARAI_DATE` AS `UKEBARAI_DATE`,`tukebarai`.`DENPYO_NBR` AS `DENPYO_NBR`,row_number() OVER (PARTITION BY `tukebarai`.`HINBAN`,date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') ORDER BY `tukebarai`.`UKEBARAI_DATE` desc,`tukebarai`.`DENPYO_NBR` desc )  AS `rn` from `tukebarai` where (`tukebarai`.`UKEBARAI_KUBUN` = 4)), `toshukka` as (select `tukebarai`.`HINBAN` AS `HINBAN`,`tukebarai`.`UKEBARAI_DATE` AS `UKEBARAI_DATE`,`tukebarai`.`DENPYO_NBR` AS `DENPYO_NBR`,`tukebarai`.`JUCHU_NBR` AS `JUCHU_NBR`,row_number() OVER (PARTITION BY `tukebarai`.`HINBAN`,date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') ORDER BY `tukebarai`.`UKEBARAI_DATE` desc,`tukebarai`.`DENPYO_NBR` desc )  AS `rn` from `tukebarai` where (`tukebarai`.`UKEBARAI_KUBUN` = 5)) select `s`.`TARGET_YEAR_MONTH` AS `対象年月`,`m`.`DRIVE_KEISHIKI` AS `型式`,`s`.`BUHIN_CODE` AS `品番`,`s`.`TO_ZENZAN` AS `前残`,`s`.`TO_SHIIRE` AS `当月度入荷`,(((coalesce(`s`.`TO_URIAGE_YUSHOSHIKYU`,0) + coalesce(`s`.`TO_MUSYOSHIKYU`,0)) + coalesce(`s`.`TO_BANAI_KURADASHI`,0)) + coalesce(`s`.`TO_SONOTA_KURADASHI`,0)) AS `当月度出荷`,((coalesce(`s`.`TO_ZENZAN`,0) + coalesce(`s`.`TO_SHIIRE`,0)) - (((coalesce(`s`.`TO_URIAGE_YUSHOSHIKYU`,0) + coalesce(`s`.`TO_MUSYOSHIKYU`,0)) + coalesce(`s`.`TO_BANAI_KURADASHI`,0)) + coalesce(`s`.`TO_SONOTA_KURADASHI`,0))) AS `繰越残`,`zu`.`UKEBARAI_DATE` AS `前残＿入荷日`,`zh`.`KINGAKU` AS `前残＿価格`,`tn`.`UKEBARAI_DATE` AS `当月度入荷＿入荷日`,`tnh`.`KINGAKU` AS `当月度入荷＿価格`,`ts`.`UKEBARAI_DATE` AS `当月度出荷＿出荷日`,`jc`.`TEHAI_KOBAN` AS `当月度出荷＿工事№`,`bk`.`KURADASHI_KOTEI` AS `当月度出荷＿倉工`,NULL AS `繰越残＿価格`,NULL AS `型式計`,NULL AS `エンジン計` from (((((((((`targetsummary` `s` join `mhinban` `m` on(((`s`.`BUHIN_CODE` = `m`.`HINBAN`) and (`m`.`ZAISHITSU` like '%ENGINE%')))) left join `zenuke` `zu` on(((`s`.`BUHIN_CODE` = `zu`.`HINBAN`) and (`zu`.`rn` = 1) and (date_format(`zu`.`UKEBARAI_DATE`,'%Y/%m') < `s`.`TARGET_YEAR_MONTH`)))) left join `thatchum` `zh` on((`zu`.`DENPYO_NBR` = `zh`.`DENPYO_NBR`))) left join `tonyuka` `tn` on(((`s`.`BUHIN_CODE` = `tn`.`HINBAN`) and (`tn`.`rn` = 1) and (date_format(`tn`.`UKEBARAI_DATE`,'%Y/%m') = `s`.`TARGET_YEAR_MONTH`)))) left join `thatchum` `tnh` on((`tn`.`DENPYO_NBR` = `tnh`.`DENPYO_NBR`))) left join `toshukka` `ts` on(((`s`.`BUHIN_CODE` = `ts`.`HINBAN`) and (`ts`.`rn` = 1) and (date_format(`ts`.`UKEBARAI_DATE`,'%Y/%m') = `s`.`TARGET_YEAR_MONTH`)))) left join `tjuchu` `jc` on((`ts`.`JUCHU_NBR` = `jc`.`JUCHU_NBR`))) left join `thatchum` `tsh` on((`ts`.`DENPYO_NBR` = `tsh`.`DENPYO_NBR`))) left join `tbuhink` `bk` on((`tsh`.`BUHIN_KOSEI_ID` = `bk`.`ID`))) where exists(select 1 from `tkansayo_torihiki` `t` where ((`t`.`TARGET_YEAR_MONTH` = `s`.`TARGET_YEAR_MONTH`) and (`t`.`HINBAN` = `s`.`BUHIN_CODE`) and (`t`.`DENKU` in ('C0E','D0E'))))",
+    "CreateViewSql": "with `targetserial` as (select distinct `m`.`HINBAN` AS `HINBAN`,`m`.`ENGINE_KATASHIKI` AS `KATASHIKI`,`t`.`SERIAL_NBR` AS `SERIAL_NBR` from (`mhinban` `m` join `tukebarai` `t` on((`m`.`HINBAN` = `t`.`HINBAN`))) where ((`m`.`ZAISHITSU` like '%ENGINE%') and (`t`.`SERIAL_NBR` is not null) and (`t`.`SERIAL_NBR` <> '0'))), `serialsummary` as (select `tukebarai`.`HINBAN` AS `HINBAN`,`tukebarai`.`SERIAL_NBR` AS `SERIAL_NBR`,sum((case when ((date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') < date_format(curdate(),'%Y/%m')) and (`tukebarai`.`UKEBARAI_KUBUN` = 4)) then `tukebarai`.`SU` when ((date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') < date_format(curdate(),'%Y/%m')) and (`tukebarai`.`UKEBARAI_KUBUN` in (3,5))) then -(`tukebarai`.`SU`) else 0 end)) AS `ZENZAN`,sum((case when ((date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') = date_format(curdate(),'%Y/%m')) and (`tukebarai`.`UKEBARAI_KUBUN` = 4)) then `tukebarai`.`SU` else 0 end)) AS `TO_NYUKA`,sum((case when ((date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') = date_format(curdate(),'%Y/%m')) and (`tukebarai`.`UKEBARAI_KUBUN` in (3,5))) then `tukebarai`.`SU` else 0 end)) AS `TO_SHUKKA` from `tukebarai` where ((`tukebarai`.`SERIAL_NBR` is not null) and (`tukebarai`.`SERIAL_NBR` <> '0')) group by `tukebarai`.`HINBAN`,`tukebarai`.`SERIAL_NBR`), `zenuke` as (select `tukebarai`.`HINBAN` AS `HINBAN`,`tukebarai`.`SERIAL_NBR` AS `SERIAL_NBR`,`tukebarai`.`UKEBARAI_DATE` AS `UKEBARAI_DATE`,`tukebarai`.`DENPYO_NBR` AS `DENPYO_NBR`,row_number() OVER (PARTITION BY `tukebarai`.`HINBAN`,`tukebarai`.`SERIAL_NBR` ORDER BY `tukebarai`.`UKEBARAI_DATE` desc )  AS `rn` from `tukebarai` where ((`tukebarai`.`UKEBARAI_KUBUN` = 4) and (date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') < date_format(curdate(),'%Y/%m')))), `tonyuka` as (select `tukebarai`.`HINBAN` AS `HINBAN`,`tukebarai`.`SERIAL_NBR` AS `SERIAL_NBR`,`tukebarai`.`UKEBARAI_DATE` AS `UKEBARAI_DATE`,`tukebarai`.`DENPYO_NBR` AS `DENPYO_NBR`,row_number() OVER (PARTITION BY `tukebarai`.`HINBAN`,`tukebarai`.`SERIAL_NBR` ORDER BY `tukebarai`.`UKEBARAI_DATE` desc )  AS `rn` from `tukebarai` where ((`tukebarai`.`UKEBARAI_KUBUN` = 4) and (date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') = date_format(curdate(),'%Y/%m')))), `toshukka` as (select `tukebarai`.`HINBAN` AS `HINBAN`,`tukebarai`.`SERIAL_NBR` AS `SERIAL_NBR`,`tukebarai`.`UKEBARAI_DATE` AS `UKEBARAI_DATE`,`tukebarai`.`DENPYO_NBR` AS `DENPYO_NBR`,`tukebarai`.`JUCHU_NBR` AS `JUCHU_NBR`,row_number() OVER (PARTITION BY `tukebarai`.`HINBAN`,`tukebarai`.`SERIAL_NBR` ORDER BY `tukebarai`.`UKEBARAI_DATE` desc )  AS `rn` from `tukebarai` where ((`tukebarai`.`UKEBARAI_KUBUN` in (3,5)) and (date_format(`tukebarai`.`UKEBARAI_DATE`,'%Y/%m') = date_format(curdate(),'%Y/%m')))) select date_format(curdate(),'%Y/%m') AS `対象年月`,`ts`.`KATASHIKI` AS `型式`,`ts`.`SERIAL_NBR` AS `シリアルナンバー`,`ts`.`HINBAN` AS `品番`,coalesce(`ss`.`ZENZAN`,0) AS `前残`,coalesce(`ss`.`TO_NYUKA`,0) AS `当月度入荷`,coalesce(`ss`.`TO_SHUKKA`,0) AS `当月度出荷`,((coalesce(`ss`.`ZENZAN`,0) + coalesce(`ss`.`TO_NYUKA`,0)) - coalesce(`ss`.`TO_SHUKKA`,0)) AS `繰越残`,`zu`.`UKEBARAI_DATE` AS `前残＿入荷日`,`zh`.`KINGAKU` AS `前残＿価格`,`tn`.`UKEBARAI_DATE` AS `当月度入荷＿入荷日`,`tnh`.`KINGAKU` AS `当月度入荷＿価格`,`ts_shukka`.`UKEBARAI_DATE` AS `当月度出荷＿出荷日`,`jc`.`TEHAI_KOBAN` AS `当月度出荷＿工事№`,`bk`.`KURADASHI_KOTEI` AS `当月度出荷＿倉工`,NULL AS `繰越残＿価格`,NULL AS `型式計`,NULL AS `エンジン計` from (((((((((`targetserial` `ts` left join `serialsummary` `ss` on(((`ts`.`HINBAN` = `ss`.`HINBAN`) and (`ts`.`SERIAL_NBR` = `ss`.`SERIAL_NBR`)))) left join `zenuke` `zu` on(((`ts`.`HINBAN` = `zu`.`HINBAN`) and (`ts`.`SERIAL_NBR` = `zu`.`SERIAL_NBR`) and (`zu`.`rn` = 1)))) left join `thatchum` `zh` on((`zu`.`DENPYO_NBR` = `zh`.`DENPYO_NBR`))) left join `tonyuka` `tn` on(((`ts`.`HINBAN` = `tn`.`HINBAN`) and (`ts`.`SERIAL_NBR` = `tn`.`SERIAL_NBR`) and (`tn`.`rn` = 1)))) left join `thatchum` `tnh` on((`tn`.`DENPYO_NBR` = `tnh`.`DENPYO_NBR`))) left join `toshukka` `ts_shukka` on(((`ts`.`HINBAN` = `ts_shukka`.`HINBAN`) and (`ts`.`SERIAL_NBR` = `ts_shukka`.`SERIAL_NBR`) and (`ts_shukka`.`rn` = 1)))) left join `tjuchu` `jc` on((`ts_shukka`.`JUCHU_NBR` = `jc`.`JUCHU_NBR`))) left join `thatchum` `tsh` on((`ts_shukka`.`DENPYO_NBR` = `tsh`.`DENPYO_NBR`))) left join `tbuhink` `bk` on((`tsh`.`BUHIN_KOSEI_ID` = `bk`.`ID`))) where ((coalesce(`ss`.`ZENZAN`,0) > 0) or (coalesce(`ss`.`TO_NYUKA`,0) > 0) or (coalesce(`ss`.`TO_SHUKKA`,0) > 0))",
     "ViewInfo": {
       "ViewName": "ymia_v_engineukebarai",
       "IsUpdatable": true,
@@ -157,9 +167,5 @@
       ]
     }
   },
-  "PrimaryKey": [
-    "対象年月",
-    "品番"
-  ],
   "Indexes": []
 }

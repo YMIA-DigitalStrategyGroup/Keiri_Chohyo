@@ -8,7 +8,7 @@
         "TableName": "ymia_v_engineukebarai",
         "BindingInfos": [
           {
-            "GUID": "a4adeb8e-cf78-4ff0-b957-11e80c34b084",
+            "GUID": "846f135d-7f77-4761-9781-ef8355db91a9",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "対象年月",
@@ -17,7 +17,7 @@
             "ColumnName": "対象年月"
           },
           {
-            "GUID": "7710d8c4-bb48-43e6-b5ae-e446517679e4",
+            "GUID": "1efb3a02-351f-472a-bfa3-91545149ee07",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "型式",
@@ -26,7 +26,16 @@
             "ColumnName": "型式"
           },
           {
-            "GUID": "2cea8270-4b90-448c-a402-30b831fb56ec",
+            "GUID": "e59c3f98-4fe0-451f-afd5-6861a3c0cd4e",
+            "BindingInfo": {
+              "TableName": "ymia_v_engineukebarai",
+              "ColumnName": "シリアルナンバー",
+              "GUID": "6cf6e2e7-fdc1-4a12-919e-933f82ac034e"
+            },
+            "ColumnName": "シリアルナンバー"
+          },
+          {
+            "GUID": "90e2f5ec-d844-4ba8-9a8e-445a54302cce",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "品番",
@@ -35,7 +44,7 @@
             "ColumnName": "品番"
           },
           {
-            "GUID": "5fbe600b-c944-40cd-a842-dca158655d47",
+            "GUID": "6e5693f3-5a8f-499c-b3d4-fd4860e3322f",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "前残",
@@ -44,7 +53,7 @@
             "ColumnName": "前残"
           },
           {
-            "GUID": "2ddc9dc3-1bc7-4a23-b413-356e3ed443c9",
+            "GUID": "5737edd0-e3e1-44a9-a4c7-fcb881030396",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "当月度入荷",
@@ -53,7 +62,7 @@
             "ColumnName": "当月度入荷"
           },
           {
-            "GUID": "50581ccd-dba6-464a-8da5-f08dee44d04c",
+            "GUID": "a6e2782d-e9b2-46b7-84b5-d00c4b4fbdca",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "当月度出荷",
@@ -62,7 +71,7 @@
             "ColumnName": "当月度出荷"
           },
           {
-            "GUID": "b6921984-64a3-419c-99f0-72ea143fe755",
+            "GUID": "edd99699-dbb4-4e3d-8cec-1ac3fe3145cd",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "繰越残",
@@ -71,7 +80,7 @@
             "ColumnName": "繰越残"
           },
           {
-            "GUID": "d6d267b5-0159-498d-bff8-5f7b1f99dcae",
+            "GUID": "2b290cab-72c1-45de-afa0-28afcc931a03",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "前残＿入荷日",
@@ -80,7 +89,7 @@
             "ColumnName": "前残＿入荷日"
           },
           {
-            "GUID": "981b36ae-dcb7-45e0-b978-8055d24ee563",
+            "GUID": "a2f512b0-8e2a-4b6d-a143-d6cfa2dd42ac",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "前残＿価格",
@@ -89,7 +98,7 @@
             "ColumnName": "前残＿価格"
           },
           {
-            "GUID": "4abc9824-6784-4988-b0ce-323f6cd3f7a8",
+            "GUID": "2374bc5d-49ad-4ee9-aefe-6470f7201f42",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "当月度入荷＿入荷日",
@@ -98,7 +107,7 @@
             "ColumnName": "当月度入荷＿入荷日"
           },
           {
-            "GUID": "1f312a55-85a1-4d51-8a3d-4132bb3ca153",
+            "GUID": "9a2e367d-bd16-4c74-9f51-ec37b371f7f1",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "当月度入荷＿価格",
@@ -107,7 +116,7 @@
             "ColumnName": "当月度入荷＿価格"
           },
           {
-            "GUID": "6a145355-3af6-499b-9d54-4b58ce62c570",
+            "GUID": "ff0b91ca-f018-40c2-90e1-cde5a3329c13",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "当月度出荷＿出荷日",
@@ -116,7 +125,7 @@
             "ColumnName": "当月度出荷＿出荷日"
           },
           {
-            "GUID": "65dc874b-06ca-4620-9e8d-9352800f8d60",
+            "GUID": "c2b06143-70fe-4c5a-9900-9196bd3914ff",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "当月度出荷＿工事№",
@@ -125,7 +134,7 @@
             "ColumnName": "当月度出荷＿工事_"
           },
           {
-            "GUID": "af201fbd-16e6-46c9-a3ab-7812363a6ed8",
+            "GUID": "20eec261-fdd0-4a31-988c-5119aa654958",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "当月度出荷＿倉工",
@@ -134,7 +143,7 @@
             "ColumnName": "当月度出荷＿倉工"
           },
           {
-            "GUID": "0ae9e48e-27b8-4e87-a039-425165a1e11e",
+            "GUID": "e0ab566c-6b3e-4b86-8760-eeba8adf404f",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "繰越残＿価格",
@@ -143,7 +152,7 @@
             "ColumnName": "繰越残＿価格"
           },
           {
-            "GUID": "ae0de582-b8b2-4223-b883-550a1d4e58e1",
+            "GUID": "5abe309e-ee10-41f2-af61-8917d02c4d48",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "型式計",
@@ -152,7 +161,7 @@
             "ColumnName": "型式計"
           },
           {
-            "GUID": "248b8aaf-e091-4119-9b87-ec7ebc72f518",
+            "GUID": "3dd050a1-b0ca-464a-976e-1091b1850a0d",
             "BindingInfo": {
               "TableName": "ymia_v_engineukebarai",
               "ColumnName": "エンジン計",
@@ -165,6 +174,7 @@
       "ColumnsType": [
         "string",
         "string",
+        "integer",
         "string",
         "number",
         "number",
