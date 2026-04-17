@@ -477,5 +477,15 @@
     },
     "LockDateTime": "2026-04-17T10:16:37.157597+09:00",
     "ModuleType": 7
+  },
+  {
+    "ModuleName": "Tables/材料残高内訳帳",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-17T13:03:17.9748569+09:00",
+    "ModuleType": 22
   }
 ]
