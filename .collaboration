@@ -507,5 +507,15 @@
     },
     "LockDateTime": "2026-04-17T13:38:38.368278+09:00",
     "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/材料残高内訳情報一覧",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-17T13:40:11.9636552+09:00",
+    "ModuleType": 1
   }
 ]
