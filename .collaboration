@@ -9,7 +9,16 @@
   },
   {
     "ModuleName": "Table/mhinban",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-17T10:02:44.0207032+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\mhinban.json"
+    ]
   },
   {
     "ModuleName": "Table/mgentani",
