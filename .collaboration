@@ -487,5 +487,15 @@
     },
     "LockDateTime": "2026-04-17T13:03:17.9748569+09:00",
     "ModuleType": 22
+  },
+  {
+    "ModuleName": "TableView/ymia_v_zairyozandaka_utiwake",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-17T13:03:40.7725189+09:00",
+    "ModuleType": 23
   }
 ]
