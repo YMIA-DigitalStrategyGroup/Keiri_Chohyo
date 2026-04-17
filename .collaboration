@@ -497,5 +497,15 @@
     },
     "LockDateTime": "2026-04-17T13:03:40.7725189+09:00",
     "ModuleType": 23
+  },
+  {
+    "ModuleName": "Pages/材料残高内訳帳",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-17T13:38:38.368278+09:00",
+    "ModuleType": 6
   }
 ]
