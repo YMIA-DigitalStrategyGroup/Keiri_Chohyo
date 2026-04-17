@@ -9,16 +9,7 @@
   },
   {
     "ModuleName": "Table/mhinban",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-17T10:02:44.0207032+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\mhinban.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/mgentani",
@@ -26,29 +17,11 @@
   },
   {
     "ModuleName": "Table/thatchum",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-17T10:15:44.3904875+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\thatchum.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "TableView/ymia_v_thatchu",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-17T10:04:28.617065+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ymia_v_thatchu.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "Table/mtorihiki",
@@ -276,16 +249,7 @@
   },
   {
     "ModuleName": "Table/tbuhink",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-17T10:17:14.7139372+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\tbuhink.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "TableView/ymia_v_driveukebarai",
@@ -293,16 +257,7 @@
   },
   {
     "ModuleName": "TableView/ymia_v_engineukebarai",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-17T10:04:04.2408181+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engineukebarai.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "PageReport/ドライブ受払台帳",
@@ -458,12 +413,6 @@
   },
   {
     "ModuleName": "Table/tjuchu",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-17T10:16:37.157597+09:00",
     "ModuleType": 7
   },
   {
