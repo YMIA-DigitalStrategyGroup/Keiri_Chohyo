@@ -1,0 +1,153 @@
+{
+  "Name": "材料残高内訳帳",
+  "DataSources": [
+    {
+      "Name": "材料残高内訳",
+      "GUID": "dce2c511-308d-4993-8e7c-f61f57ba38b4",
+      "DataSourceSetting": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "BindingInfos": [
+          {
+            "GUID": "806b338a-e5ed-4f00-a6de-8659de14f5e7",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "対象年月",
+              "GUID": "ae8d0d69-1ee3-4418-882e-2269d095e5b3"
+            },
+            "ColumnName": "対象年月"
+          },
+          {
+            "GUID": "c4694f74-a207-440a-a9a9-1e8e35d00354",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "費目",
+              "GUID": "c1647d4a-9ab8-4df7-b136-3646b26b359f"
+            },
+            "ColumnName": "費目"
+          },
+          {
+            "GUID": "92ed1138-382a-46c5-a7a4-7e146c781abc",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "費目名称",
+              "GUID": "be9cd8f4-93ad-4340-99b3-b663097bdadb"
+            },
+            "ColumnName": "費目名称"
+          },
+          {
+            "GUID": "d677b5cc-9e02-4cfe-8d28-4c71e15e79f6",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "勘定",
+              "GUID": "965e966a-f531-41d3-8c35-ebedca874f69"
+            },
+            "ColumnName": "勘定"
+          },
+          {
+            "GUID": "0273123a-3aef-4ec9-a062-257d2270fe29",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "補助",
+              "GUID": "2fcb61fb-5c72-4cfa-9183-0e407bed70d5"
+            },
+            "ColumnName": "補助"
+          },
+          {
+            "GUID": "a33906f7-440e-42f9-9fb0-b25d3491e2ef",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "補助科目名称",
+              "GUID": "7e494629-9d43-431d-8b3c-094ca9bfb70c"
+            },
+            "ColumnName": "補助科目名称"
+          },
+          {
+            "GUID": "c2351de4-ae30-4943-8a71-829fcd317aa3",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "前月度残高",
+              "GUID": "583bf500-7c45-4c86-8427-ea2d74d93ab3"
+            },
+            "ColumnName": "前月度残高"
+          },
+          {
+            "GUID": "b58ce4fa-d0ee-4168-8a39-f0b5c8170e37",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "当月度残高",
+              "GUID": "dc7b830d-8eb5-4445-a2bd-9ef892f94872"
+            },
+            "ColumnName": "当月度残高"
+          },
+          {
+            "GUID": "8c7158f8-4854-482a-9322-60f7056d6fde",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "当月物流発生",
+              "GUID": "f40f12d1-e2c7-441e-8068-713186a2c2f8"
+            },
+            "ColumnName": "当月物流発生"
+          },
+          {
+            "GUID": "097bd4e3-d34b-413c-aee7-3be77349bcc8",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "評価差額",
+              "GUID": "68ad0119-7972-4ceb-92a4-7f13ba27b2f9"
+            },
+            "ColumnName": "評価差額"
+          },
+          {
+            "GUID": "31655338-7743-480c-a090-68e90e85b0e2",
+            "BindingInfo": {
+              "TableName": "ymia_v_zairyozandaka_utiwake",
+              "ColumnName": "副資材付替",
+              "GUID": "6e13bb8c-f643-4dee-a96a-a7ba08e8a330"
+            },
+            "ColumnName": "副資材付替"
+          }
+        ]
+      },
+      "ReportDataSourceParams": [
+        {
+          "Name": "対象年月"
+        }
+      ],
+      "ColumnsType": [
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "number",
+        "number",
+        "number",
+        "number",
+        "number"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}

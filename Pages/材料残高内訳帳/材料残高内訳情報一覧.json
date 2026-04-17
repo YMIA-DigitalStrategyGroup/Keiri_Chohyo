@@ -1,0 +1,258 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "4,4": "対象年月"
+  },
+  "AttachInfos": {
+    "4,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
+            "SessionGuid": "5f2e8c77-b339-4e7d-8ffd-6baf0d3fb210",
+            "OpenReportName": "材料残高内訳帳",
+            "SideBarPosition": 0,
+            "PassParameters": [
+              {
+                "TargetParameter": "対象年月",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料残高内訳情報一覧!J5"
+                }
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "8,4": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "RowIndex": 8,
+        "ColumnIndex": 4,
+        "RowCount": 23,
+        "ColumnCount": 45,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料残高内訳情報一覧!J5"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=材料残高内訳情報一覧!E10"
+                }
+              }
+            ]
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "9,4": {
+      "NameUsedInJavaScript": "対象年月",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "対象年月",
+        "GUID": "7970aeab-247f-476f-ac0b-07d2e63665ca"
+      }
+    },
+    "9,8": {
+      "NameUsedInJavaScript": "費目",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "費目",
+        "GUID": "b6560854-1926-4344-8857-d0db1b9bad86"
+      }
+    },
+    "9,12": {
+      "NameUsedInJavaScript": "費目名称",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "費目名称",
+        "GUID": "4bd8fd02-4dbe-46c0-9938-5082f1a18524"
+      }
+    },
+    "9,16": {
+      "NameUsedInJavaScript": "勘定",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "勘定",
+        "GUID": "4f542598-e345-4403-9564-42127a25de8f"
+      }
+    },
+    "9,20": {
+      "NameUsedInJavaScript": "補助",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "補助",
+        "GUID": "03374291-7d2b-4e28-9b88-60d5a550a09a"
+      }
+    },
+    "9,24": {
+      "NameUsedInJavaScript": "補助科目名称",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "補助科目名称",
+        "GUID": "54874659-7ec0-4fbd-9e12-ecdcbe239b1a"
+      }
+    },
+    "9,28": {
+      "NameUsedInJavaScript": "前月度残高",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "前月度残高",
+        "GUID": "71e8a759-f674-45c3-8e2d-0da6936e8b37"
+      }
+    },
+    "9,32": {
+      "NameUsedInJavaScript": "当月度残高",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "当月度残高",
+        "GUID": "4c7c4c0f-2a0f-44c4-840b-e901d39dc5a6"
+      }
+    },
+    "9,36": {
+      "NameUsedInJavaScript": "当月物流発生",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "当月物流発生",
+        "GUID": "dc3e1760-48ec-404d-9068-580275d619d8"
+      }
+    },
+    "9,40": {
+      "NameUsedInJavaScript": "評価差額",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "評価差額",
+        "GUID": "2bd49496-af34-445e-8f05-852e845c845d"
+      }
+    },
+    "9,44": {
+      "NameUsedInJavaScript": "副資材付替",
+      "BindingInfo": {
+        "TableName": "ymia_v_zairyozandaka_utiwake",
+        "ColumnName": "副資材付替",
+        "GUID": "b196488a-9642-424e-9f19-1b2a18bc8606"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "black",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "4,4": 0,
+      "4,5": 0,
+      "4,6": 0,
+      "4,7": 0,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 0,
+      "5,4": 0,
+      "5,5": 0,
+      "5,6": 0,
+      "5,7": 0,
+      "5,8": 0,
+      "5,9": 0,
+      "5,10": 0,
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 0,
+      "5,15": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "10,4,21,45",
+    "8,4,1,4",
+    "9,4,1,4",
+    "8,8,1,4",
+    "9,8,1,4",
+    "8,12,1,4",
+    "9,12,1,4",
+    "8,16,1,4",
+    "9,16,1,4",
+    "8,20,1,4",
+    "9,20,1,4",
+    "8,24,1,4",
+    "9,24,1,4",
+    "8,28,1,4",
+    "9,28,1,4",
+    "8,32,1,4",
+    "9,32,1,4",
+    "8,36,1,4",
+    "9,36,1,4",
+    "8,40,1,4",
+    "9,40,1,4",
+    "8,44,1,4",
+    "9,44,1,4",
+    "4,4,2,5",
+    "4,9,2,7",
+    "4,24,2,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//jyfXQ9ZpuOjk3ADIJCdIJ/zgOvPD09Qr9vBNqX6EJYtzNundCmOfnr/XwyVnVX/NkNn6UGsE+/iRbvPQcMC82q2LPuoK+dV46Crz+FyZFQJ33sSdj1MSxOi+iZqTfF6C7UbFhKvXA4UKQbmMem36d8YFuuwPv2LGbnL0CHADEDfyaW+Frsnk9LkhjUOaXiRHq2MnABlpeFuENJoOr3FSdoY6tVqy0qC9I9JMOJzaML4Lv8Rt5gMfYfKnrw9JjjQwe4JARA3g0eMlYMONQWI0Xmp0kMaYYitlEck2k90AU29ifdZijM6Toa3QyNRhk9oLytBwHmdh+ZHYaKMSo5dG6NvBYrMO++oE1Vj7gDlnGA0ifNDuUcBFqzGQKQcv/5vnfLathiE8Na4IQFbDCTSlI6MU6/76L2xDkKKHOO6hFVmSAIdP+NYMyzrzl0a45KLWEUMln7bX1gnyDKbiJC+q8baeUzOPwtk9CFPnCZDQOp5XV0eBpG0kKXTxULRO38WHNBz9cQPnPXFj/Tkg6AnTWs/MIQ99o3wjF8y88EAe8GJzvYcbo38wAhFeoTcMR+Ahvbnx9nmbsUi3vm7XlX56PoRgQzc3vb1AVB7k4Thcb8LBqhjbQUBuaAMsGLfuWRzkD9FGA00KGazsCioUcagVxRMrZo6PrMXaMaASD6ampaxHdvTLUQ03Qbi2+BF2KYe2qBSQEEVqMrdAXPoOMcEV8ycskQmw7Nzh1xiOHwNZmqTV0VXkXcxWcUO3o92gVldJ0O6dRXdmLGCUxE5E23yMQtVjgls7F77yTw9aRa7axK5H5WAdyechX3kfbucT1Olw6PjKghpVjoJKHSy+L+ZCy5K3HeldyKY28BKdnkvkSPA8x3FZyf7OdCuiqoKfbwqQUofaNENwfr0WH6H1sXXcvw==|920

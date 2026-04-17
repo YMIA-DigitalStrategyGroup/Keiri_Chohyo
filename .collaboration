@@ -434,22 +434,10 @@
   },
   {
     "ModuleName": "Reports/材料残高内訳帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T14:33:08.03398+09:00",
     "ModuleType": 19
   },
   {
     "ModuleName": "PageReport/材料残高内訳帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-15T14:38:40.6723814+09:00",
     "ModuleType": 17
   },
   {
@@ -480,42 +468,18 @@
   },
   {
     "ModuleName": "Tables/材料残高内訳帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-17T13:03:17.9748569+09:00",
     "ModuleType": 22
   },
   {
     "ModuleName": "TableView/ymia_v_zairyozandaka_utiwake",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-17T13:03:40.7725189+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "Pages/材料残高内訳帳",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-17T13:38:38.368278+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "PCPage/材料残高内訳情報一覧",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-17T13:40:11.9636552+09:00",
     "ModuleType": 1
   }
 ]

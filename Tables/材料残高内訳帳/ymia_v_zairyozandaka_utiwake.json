@@ -1,0 +1,97 @@
+{
+  "Name": "ymia_v_zairyozandaka_utiwake",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "対象年月",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 4,
+      "Name": "費目",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 20,
+      "Name": "費目名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 4,
+      "Name": "勘定",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 4,
+      "Name": "補助",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 100,
+      "Name": "補助科目名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "前月度残高",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "当月度残高",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "当月物流発生",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "評価差額",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "副資材付替",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "MySql1",
+    "SourceTableName": "ymia_v_zairyozandaka_utiwake",
+    "SourceTableSchema": "",
+    "CreateViewSql": "select `s`.`TARGET_YEAR_MONTH` AS `対象年月`,`kh`.`HIMOKU_CODE` AS `費目`,`hm`.`MEISHO1_KANJI` AS `費目名称`,`kh`.`KANJO_KAMOKU` AS `勘定`,`kh`.`HOJO_KAMOKU` AS `補助`,`kh`.`HOJO_KAMOKU_SEISHIKI_MEISHO` AS `補助科目名称`,sum(`s`.`MAE_ZENZAN`) AS `前月度残高`,sum(`s`.`TO_TOZAN`) AS `当月度残高`,sum(((((`s`.`TO_SHIIRE` + `s`.`TO_URIAGE_YUSHOSHIKYU`) + `s`.`TO_MUSYOSHIKYU`) + `s`.`TO_BANAI_KURADASHI`) + `s`.`TO_SONOTA_KURADASHI`)) AS `当月物流発生`,sum(((`s`.`TO_TOZAN` - `s`.`MAE_ZENZAN`) - ((((`s`.`TO_SHIIRE` + `s`.`TO_URIAGE_YUSHOSHIKYU`) + `s`.`TO_MUSYOSHIKYU`) + `s`.`TO_BANAI_KURADASHI`) + `s`.`TO_SONOTA_KURADASHI`))) AS `評価差額`,(((select ifnull(sum(((`u`.`SEIHIN_KAKAKU` + `u`.`FUTAI_KOJI_KAKAKU`) - `u`.`URIAGE_NEBIKI`)),0) from `tkansayo_seihinuriage_sonotashukka` `u` where (`u`.`TARGET_YEAR_MONTH` = `s`.`TARGET_YEAR_MONTH`)) + (select ifnull(sum(`t`.`KINGAKU1`),0) from `tkansayo_torihiki` `t` where ((`t`.`TARGET_YEAR_MONTH` = `s`.`TARGET_YEAR_MONTH`) and ((`t`.`SAKI_HIMOKU` = 'Z01') or (`t`.`MOTO_HIMOKU` = 'Z01'))))) * 0.002) AS `副資材付替` from (((`tkansayo_zaiko_summary` `s` join `mgentani` `g` on(((`s`.`BUHIN_CODE` = `g`.`HINBAN`) and (`g`.`AVAILABLE_DATE` = (select max(`m2`.`AVAILABLE_DATE`) from `mgentani` `m2` where ((`m2`.`HINBAN` = `g`.`HINBAN`) and (`m2`.`AVAILABLE_DATE` <= `s`.`TARGET_YEAR_MONTH`))))))) join `mhimoku` `hm` on((`g`.`HIMOKU_CODE` = `hm`.`HIMOKU_CODE`))) join `mkanjo_kamoku_henkan` `kh` on((`g`.`HIMOKU_CODE` = `kh`.`HIMOKU_CODE`))) group by `s`.`TARGET_YEAR_MONTH`,`kh`.`KANJO_KAMOKU`,`kh`.`HOJO_KAMOKU`,`kh`.`HIMOKU_CODE`,`hm`.`MEISHO1_KANJI`,`kh`.`HOJO_KAMOKU_SEISHIKI_MEISHO`",
+    "ViewInfo": {
+      "ViewName": "ymia_v_zairyozandaka_utiwake",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": []
+}
