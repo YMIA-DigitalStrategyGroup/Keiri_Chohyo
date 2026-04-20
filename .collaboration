@@ -270,7 +270,17 @@
   },
   {
     "ModuleName": "PageReport/ドライブ受払台帳",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA093025",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-20T10:52:59.8023855+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\ドライブ受払台帳\\ドライブ受払台帳.json",
+      "Reports\\ドライブ受払台帳\\ドライブ受払台帳.rdlx"
+    ]
   },
   {
     "ModuleName": "Reports/ドライブ受払台帳",
