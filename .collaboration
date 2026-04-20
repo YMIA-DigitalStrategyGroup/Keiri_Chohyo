@@ -257,30 +257,11 @@
   },
   {
     "ModuleName": "TableView/ymia_v_engineukebarai",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-20T09:58:53.8818564+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engineukebarai.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "PageReport/ドライブ受払台帳",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-20T10:52:59.8023855+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\ドライブ受払台帳\\ドライブ受払台帳.json",
-      "Reports\\ドライブ受払台帳\\ドライブ受払台帳.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "Reports/ドライブ受払台帳",
@@ -288,17 +269,7 @@
   },
   {
     "ModuleName": "PageReport/エンジン受払台帳",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-20T10:44:55.9685415+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\エンジン受払台帳\\エンジン受払台帳.json",
-      "Reports\\エンジン受払台帳\\エンジン受払台帳.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "Reports/エンジン受払台帳",
@@ -406,17 +377,7 @@
   },
   {
     "ModuleName": "PageReport/エンジンドライブ台帳",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA093025",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-20T10:16:29.7920412+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\エンジンドライブ台帳\\エンジンドライブ台帳.json",
-      "Reports\\エンジンドライブ台帳\\エンジンドライブ台帳.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "Reports/部品お買上げ明細",

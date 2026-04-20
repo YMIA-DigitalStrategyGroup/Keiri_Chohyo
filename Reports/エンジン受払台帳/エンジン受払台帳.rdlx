@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report11111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -97,7 +97,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>前残</Value>
+															<Value>&lt;----------------前残----------------&gt;</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -132,7 +132,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>当月度入荷</Value>
+															<Value>&lt;------------当月度入荷------------&gt;</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -167,7 +167,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>当月度出荷</Value>
+															<Value>&lt;-----------------当月度出荷-----------------&gt;</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -201,7 +201,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>繰越残＿価格</Value>
+															<Value>&lt;--繰越残--&gt;</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -272,7 +272,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>前残＿入荷日</Value>
+															<Value>入荷日</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -306,7 +306,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>前残＿価格</Value>
+															<Value>価格</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -340,7 +340,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>当月度入荷＿入荷日</Value>
+															<Value>入荷日</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -374,7 +374,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>当月度入荷＿価格</Value>
+															<Value>価格</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -408,7 +408,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>当月度出荷＿出荷日</Value>
+															<Value>出荷日</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -442,7 +442,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>当月度出荷＿工事№</Value>
+															<Value>工事№</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -476,7 +476,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>当月度出荷＿倉工</Value>
+															<Value>倉工</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -510,7 +510,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>繰越残＿価格</Value>
+															<Value>価格</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -1145,15 +1145,15 @@
 								</TableColumns>
 							</Table>
 							<Textbox Name="TextBox10">
-								<Top>0.582cm</Top>
-								<Left>0.635cm</Left>
+								<Top>0.106cm</Top>
+								<Left>0.053cm</Left>
 								<Width>2.5cm</Width>
 								<Height>0.75cm</Height>
 								<Style>
 									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 									<Color>=Theme.Colors!Dark1</Color>
 									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-									<FontSize>14pt</FontSize>
+									<FontSize>12pt</FontSize>
 									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
 									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
 									<PaddingBottom>2pt</PaddingBottom>
