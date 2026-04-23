@@ -405,7 +405,17 @@
   },
   {
     "ModuleName": "PCPage/お買い上げ明細書_発行画面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-23T13:09:37.6117597+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\部品お買上げ明細書\\お買い上げ明細書_発行画面.json",
+      "Pages\\部品お買上げ明細書\\お買い上げ明細書_発行画面.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/ページ1",
