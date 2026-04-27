@@ -49,6 +49,7 @@
         "TemplateKey": "_RS_Dark_ThemeStyle2",
         "Items": [
           {
+            "Value": "メニュ  1",
             "Text": "メニュ  1",
             "IconPath": "Navigation/165_home_3.svg",
             "IconColorUseItemColor": true,
@@ -58,12 +59,14 @@
             ],
             "SubItems": [
               {
+                "Value": "メニュ 1_1",
                 "Text": "メニュ 1_1",
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ]
               },
               {
+                "Value": "メニュ  1_2",
                 "Text": "メニュ  1_2",
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
@@ -72,6 +75,7 @@
             ]
           },
           {
+            "Value": "メニュ  2",
             "Text": "メニュ  2",
             "IconPath": "Navigation/183_table_2.svg",
             "IconColorUseItemColor": true,
@@ -81,12 +85,14 @@
             ],
             "SubItems": [
               {
+                "Value": "メニュ  2_1",
                 "Text": "メニュ  2_1",
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ]
               },
               {
+                "Value": "メニュ 2_2",
                 "Text": "メニュ 2_2",
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
@@ -95,6 +101,7 @@
             ]
           },
           {
+            "Value": "メニュ 3",
             "Text": "メニュ 3",
             "IconPath": "Chart/363_column_chart_2.svg",
             "IconColorUseItemColor": true,
@@ -104,12 +111,14 @@
             ],
             "SubItems": [
               {
+                "Value": "メニュ  3_1",
                 "Text": "メニュ  3_1",
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ]
               },
               {
+                "Value": "メニュ  3_2",
                 "Text": "メニュ  3_2",
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
@@ -197,4 +206,4 @@
       "Size": "1380,100"
     }
   ]
-}//t2zXnzclkr+NhxZoKQ8cuGgVmel+jsDIckN8Mrb2+Hw1XF+uduXEk/PnRIIe2xX5a/uCcxNxFuVBJvU8Kjx4KqOluaSWIod5rPZ1YBzQyjNr3ir8ydqv88iAZL9BCXqGUBvNbqTgSt1iiynT4n6jZgZEzwIP2APTCioFUslqPI6Gt7oE4UsLCk0wnshCx7Pt78pyhSouKmmmnWho0Ho22y160r5BY+/l9wgx2gxveCorMYLEdJYkzJ4/mXCsj979YZaROoMchj1uZHoeHE9ajIuwiesH2mL5nGq355FhjRtCj9C1pp272c5kRUnz45TWxOUlWCGnBHR4PNfjmoJXc92iR9P7llRvtbDSVzQeqhj2bNb9NdMBgGhfm8tSH+RRowzNvy7YRh5136Gkzrn/VBcvrtIJwiUUvedGed9gC03+rzBHQGdPnlebO5ll7KYXJrNwj6rIlasrde+hsecM6tVeJSMiddugW7X6bsOJiaNY8223+Yh1491WPm+lHcvf3qbun93MjEzTxZwFznlviRwzfkPyyGYtsyOKS/BvJq+D64c4V/ZifoP/eAiB1+sMG65/BhOjJD6/RYQzHYjeJ+tQehyiUENoO3prsdlcOx2/lEniFBVesn61GLcgkYBlOhtLB9mfQvq/dO2Zyrmv1/Ufvgxr1WwnyeT4DgQxv6iLWZleU9904vDalEwvw4wFQzNdWO3pjl0vAWHjvhRLADKDhs/b5pzA8wh9anr9tNzDUwFgCEOpKA5f3BiZFP2sUMZk7Px54Vh2D2l1r9sFE/2UrLFBKihM09nPdWEfyvVrI0u1IBaEXa/y+WMDEeEpVQ87vXFlW3co0pY/DnypPxnmXVclczHGKJq137uWpOt+A/8dhhXkCqPEh6CJ/9/WtyGyDpPAuY0sSV/AvrnKKg==|920
+}//I7dr/umsq1qu8jypGRwrEZCj/LxIgIyH5salhVSS8mlPvLE6B8ZqHTzNvt4CbujZCOZQem/tcrC1TzBjfsX83MA+wvkZXfQLNd7XiumltEYU1Uhu5A0oLY86U9DQShmJSIUaDfciHOX5xsIVVcFA0iJvMsqcbItdv+z+jJVMklL7+36wyEFandGpU6MBBn8A7zp3kpPnQyKOQZDWKZeORCns4RX5xVOQp+mpXYegpM+6vTD8Fgfx3/fY6aYr8dZeMEeC/qNhUBiORfFJveSqiaOZRGWSpJX8W0w0XjSXKMkNuhOf0FYAnYbT4+pRF6FdpHPf5UugLOJYUTvyvJegu46oHdgt/OJn+TfVTDRlGZr9VFTAKoafL+O4g1G/szMFGkcLrvcoRX46yTfpnVKN41TYuMwaZHwhshhGFhHOaIh0hKJFzjylKf5w/+dkt4D187apsCHXZek6K6LglIkH6AdpdWysRysOBw3Z7wpGLLBY32t5fElBPa6EihXkCkEN6DYFDOFJ/Uz1q40pNXfCFptTq25VIJ66sxU/pdp67E7Or4gHKoImwId7vpl1NAA4Ks7NTIuvacisSvkuXZiBUXDoQNbcYGmow772oqhvsI7FyyO+k5VVkvMGbq5Y0DkR7nbVzmutx+Y3xEAaEBq8QtiEK4NLA40gle+NaQd/Lk42Q8pdrjKmkEnDFTdJqYnMq0JdoCDF4GLWSvBH6sZ17+70tD5Zz/3HS4Q49y5/woyj1Xv8CZKd82oXcOAln7A2ehnm2QKkjgtJnUXlCxGd8y7vZrRxt+HYmMrvsEj9xLWVTzIQzCqfDnnF7N1ZiKx73aXijtaXuK+azjMY8K16c1u/43k5t1xpotuCrgAduWIz7jnjBptQ6cIExMqMx4JiyqLo4b6temM4606VP06FPA==|920

@@ -7,7 +7,7 @@
   "GlobalProperties": [],
   "WebSitePort": 57770,
   "UserServicePort": 60146,
-  "StartPage": "材料受入明細表_帳票画面",
+  "StartPage": "",
   "StartDateFiscalYear": 4,
   "BaseOnStartingMonth": true,
   "MultipleLanguageSettings": {
