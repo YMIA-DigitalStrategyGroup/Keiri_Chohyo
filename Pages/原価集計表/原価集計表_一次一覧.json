@@ -1,0 +1,122 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "AttachInfos": {
+    "4,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_v_genkasyukei_mikan",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 30,
+        "ColumnCount": 57,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "5,1": {
+      "NameUsedInJavaScript": "KOJI_NO",
+      "BindingInfo": {
+        "TableName": "ymia_v_genkasyukei_mikan",
+        "ColumnName": "KOJI_NO",
+        "GUID": "e1bf25a3-6beb-4c29-8e6b-5a2774bb9324"
+      }
+    },
+    "5,5": {
+      "NameUsedInJavaScript": "PL_BS_SHUKEI",
+      "BindingInfo": {
+        "TableName": "ymia_v_genkasyukei_mikan",
+        "ColumnName": "PL_BS_SHUKEI",
+        "GUID": "b383d766-cc4e-46bb-a572-af2f7c3769bd"
+      }
+    },
+    "5,9": {
+      "NameUsedInJavaScript": "MEISHO1_KANJI",
+      "BindingInfo": {
+        "TableName": "ymia_v_genkasyukei_mikan",
+        "ColumnName": "MEISHO1_KANJI",
+        "GUID": "a472a39c-2ba1-43f1-96dc-7350b5d4aab1"
+      }
+    },
+    "5,13": {
+      "NameUsedInJavaScript": "前月繰越",
+      "BindingInfo": {
+        "TableName": "ymia_v_genkasyukei_mikan",
+        "ColumnName": "前月繰越",
+        "GUID": "84bd4991-8e92-4b5b-b787-5f66e5112d72"
+      }
+    },
+    "5,17": {
+      "NameUsedInJavaScript": "当月発生",
+      "BindingInfo": {
+        "TableName": "ymia_v_genkasyukei_mikan",
+        "ColumnName": "当月発生",
+        "GUID": "e06afbae-6d8f-4ff0-b383-df5f520f3e41"
+      }
+    },
+    "5,21": {
+      "NameUsedInJavaScript": "合計",
+      "BindingInfo": {
+        "TableName": "ymia_v_genkasyukei_mikan",
+        "ColumnName": "合計",
+        "GUID": "f7c06bfb-dd28-4585-95c3-ce0795cf945c"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "6,1,28,57",
+    "4,1,1,4",
+    "5,1,1,4",
+    "4,5,1,4",
+    "5,5,1,4",
+    "4,9,1,4",
+    "5,9,1,4",
+    "4,13,1,4",
+    "5,13,1,4",
+    "4,17,1,4",
+    "5,17,1,4",
+    "4,21,1,4",
+    "5,21,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//F84vXF4m3vZ1GGOntO6jgtdSQ7+B+Yp+fAQRa50m9nzxi1NWftkns/oQVe+gClmUXtu49wQIc6TjEiMyaK0za7IoS/GOPM+FoIGyOCpp2qqbrLhaJmih2GJex+VP9prZBDy/7wkTsEt+YVqXkS28F1KrPEeZ/7dRSFZukgadnfFrMqS5OywX+luf8fen2LrK66WiLUDIMvhwzIr39viUX48aydyKzKTIIngitDSx4+Jos8189B2U02TCydyBxv856wG1jdg/F5mICoPxxi9GLlfmS8CPevyWZn8NgaQusOrE6hWGwPJb/7pThOTPs3BOCmsfjKzvXp2ZvLMe/ma4ZEMf7tg05k41TphjhdymLczfQ1Wt2UTPgnQt0LHICVHXKMXWM+/fIj0Q0rOgsJEQYXPfQ2tukmCOj/Ws0tRoDrvR/zd4sYmG6tozTUNImzJppuPdYFQazwD3nZ2vc3VEZcg1dk3qX3jtyvFYWEK1wty/Kz8xwwiqcuFmeAnM7gwwczDewbiFX9eTDGbR4YSVQ4DAWRLB36ZKo4ORlE/UD5niHxv+BcjmrFIRYfgk9zwR63wOSjjNIhefCjNHGebfINPAKK3B07Q6acjzlxYOY0K2X/H4NsMOJt0GKGlrRIyjzrwNXR4JuHm4Fj58Jda0jBG1vTBRsYxs7FgTVm8vXJMGO7PtQ/XnOQUVsrpr3vHZ7BSBjPHmuaWY2Kr+/DzUpm9rc/Q7F5x9XeuU99rihHTkuvaTl7rdTuueA7aAZUq9hnl5zsDlfIUxvGuNq/dsZfuH7xAIXarImKW+4qq3rxueiOjmo4W/yQVsH+E0lHrQP7u4HO0IdbngWjGUclgMvQUs/dsw7jSvOAiuGWEv3unulJGhzZi5SFHChCZIAnL+NIsh4NZOhwvHEwxx7s4iBw==|920

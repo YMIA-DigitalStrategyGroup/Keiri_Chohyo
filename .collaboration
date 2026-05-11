@@ -261,17 +261,7 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-07T09:03:29.7782564+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧.json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
@@ -443,72 +433,30 @@
   },
   {
     "ModuleName": "PageReport/レポート1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-07T09:07:04.5808173+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "Tables/原価集計表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-11T10:45:42.0723794+09:00",
     "ModuleType": 22
   },
   {
     "ModuleName": "Pages/原価集計表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-11T10:45:56.2954788+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "Reports/原価集計表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-11T10:46:07.4566293+09:00",
     "ModuleType": 19
   },
   {
     "ModuleName": "TableView/ymia_v_genkasyukei_mikan",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-11T10:46:44.8381503+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "PCPage/原価集計表_一次一覧",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-11T10:47:13.5681025+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PageReport/原価集計表_第一次_未完成",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-11T10:48:30.549244+09:00",
     "ModuleType": 17
   }
 ]
