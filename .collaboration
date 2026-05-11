@@ -458,5 +458,15 @@
   {
     "ModuleName": "PageReport/原価集計表_第一次_未完成",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "Pages/マスタ管理画面",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-12T07:19:53.7854224+09:00",
+    "ModuleType": 6
   }
 ]
