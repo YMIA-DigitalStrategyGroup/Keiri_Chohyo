@@ -1,0 +1,506 @@
+{
+  "Rows": {
+    "Count": 39
+  },
+  "Cols": {
+    "Count": 64
+  },
+  "Values": {
+    "1,2": "費目コード",
+    "1,13": "検索",
+    "4,2": "費目コード",
+    "4,6": "材料費目",
+    "4,10": "PL/BS",
+    "4,13": "貸借",
+    "4,16": "PL・BS集計",
+    "4,24": "原価明細",
+    "4,28": "管販費明細",
+    "4,32": "区分名称-1",
+    "4,39": "区分名称-2",
+    "4,46": "区分名称-3",
+    "4,53": "税区分",
+    "4,56": "予算処理区分",
+    "4,60": "??",
+    "36,2": "更新",
+    "36,10": "Excel出力"
+  },
+  "AttachInfos": {
+    "1,6": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "1,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "mhimoku",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "mhimoku",
+                "ColumnName": "HIMOKU_CODE",
+                "GUID": "e25a9ed4-f7b5-48c1-9a44-50cb278f6033"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=費目マスタ管理画面!G2"
+              }
+            },
+            "ID": "61af25631c074ab2903dbab5eeb59269"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "4,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "mhimoku",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 31,
+        "ColumnCount": 62,
+        "TopCondition": {
+          "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
+          "TopCount": 100
+        },
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true
+        },
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "5,2": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "HIMOKU_CODE",
+        "GUID": "383b2c4a-eb04-46d8-bd7a-606842ac7574"
+      }
+    },
+    "5,6": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "ZAIRYO_HIMOKU_CODE",
+        "GUID": "fef12f38-76ad-4c43-9e6f-16849061a200"
+      }
+    },
+    "5,10": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "PL_BS",
+        "GUID": "72711bde-f01e-4cb2-8f67-0e921b42a52f"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "mhimoku",
+        "ValueColumnBindingInfo": {
+          "TableName": "mhimoku",
+          "ColumnName": "PL_BS",
+          "GUID": "2d9eb05d-329a-431f-af8a-7fad28045a90"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "mhimoku",
+          "ColumnName": "PL_BS",
+          "GUID": "58b8f1bb-a076-497b-87e8-2a6da9122e3f"
+        }
+      }
+    },
+    "5,13": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "TAISHAKU",
+        "GUID": "47fc12ba-41e4-4593-a2b0-3ea3d4dd4865"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "mhimoku",
+        "ValueColumnBindingInfo": {
+          "TableName": "mhimoku",
+          "ColumnName": "TAISHAKU",
+          "GUID": "1bd2d3d2-4059-44d9-af5a-5cd134df7141"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "mhimoku",
+          "ColumnName": "TAISHAKU",
+          "GUID": "c14f4463-c52b-4d6a-a2ef-98d255c1fcc6"
+        }
+      }
+    },
+    "5,16": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "PL_BS_SHUKEI",
+        "GUID": "39942575-7ccd-464f-ada7-d43d938987c7"
+      }
+    },
+    "5,24": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "GENKA_MEISAI",
+        "GUID": "a1374651-9d07-44fa-9498-be80fe14b1bd"
+      }
+    },
+    "5,28": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "KANHANHI_MEISAI",
+        "GUID": "20c13ae7-d70a-49a1-9069-401fb2c60a55"
+      }
+    },
+    "5,32": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "MEISHO1_KANJI",
+        "GUID": "304a6a6a-334c-4487-98ea-d1851b610936"
+      }
+    },
+    "5,39": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "MEISHO2_KANJI",
+        "GUID": "161a356c-bd0b-422b-8414-1512e1a2783e"
+      }
+    },
+    "5,46": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "MEISHO3_KANJI",
+        "GUID": "bc0e1369-c4e7-497b-a641-b0e7545c047f"
+      }
+    },
+    "5,53": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "SHOHIZEI_KUBUN",
+        "GUID": "7d21e7b2-445e-488a-bccf-4d43d3642a67"
+      }
+    },
+    "5,56": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "YOSAN_SHORI_KUBUN",
+        "GUID": "fe458738-0210-4131-89ba-9e842fc5f89d"
+      }
+    },
+    "5,60": {
+      "BindingInfo": {
+        "TableName": "mhimoku",
+        "ColumnName": "Z22070",
+        "GUID": "92663bec-1f82-46ef-8702-e63b822fff4b"
+      }
+    },
+    "36,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "費目マスタを更新しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "リストビューを更新しました！！"
+                  }
+                ],
+                "ID": "567705e1-966a-4aa0-8ce1-e1ed20796709"
+              }
+            ]
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/145_check_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "36,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "Excelに出力しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+                    "ExportExcelListviewNameMode": 1,
+                    "ListViewName": "リストビュー1",
+                    "NewOtherName": "費目マスタ",
+                    "IsOnlyExportValue": false
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "費目マスタをExcelに出力しました！！"
+                  }
+                ],
+                "ID": "ecbe39a3-eb8c-437d-8ebc-9f63d5407c25"
+              }
+            ]
+          }
+        ],
+        "Text": "Excel出力",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "File/349_excel_file_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 4,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 4
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1 80",
+        "black",
+        "@",
+        "Center",
+        "Body",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 2,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "4,1": 3,
+      "4,2": 3,
+      "4,6": 3,
+      "4,10": 3,
+      "4,13": 3,
+      "4,16": 3,
+      "4,24": 3,
+      "4,28": 3,
+      "4,32": 3,
+      "4,39": 3,
+      "4,46": 3,
+      "4,53": 3,
+      "4,56": 3,
+      "4,60": 3,
+      "4,62": 3,
+      "5,1": 3,
+      "5,2": 3,
+      "5,6": 3,
+      "5,10": 4,
+      "5,13": 4,
+      "5,16": 3,
+      "5,24": 3,
+      "5,28": 5,
+      "5,32": 3,
+      "5,39": 5,
+      "5,46": 5,
+      "5,53": 3,
+      "5,56": 3,
+      "5,57": 3,
+      "5,60": 3,
+      "5,62": 3,
+      "36,10": 6,
+      "36,11": 7,
+      "36,12": 7,
+      "36,13": 7,
+      "36,14": 7,
+      "36,15": 7,
+      "37,10": 7,
+      "37,11": 7,
+      "37,12": 7,
+      "37,13": 7,
+      "37,14": 7,
+      "37,15": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "5,2,1,4",
+    "4,2,1,4",
+    "5,6,1,4",
+    "4,6,1,4",
+    "5,16,1,8",
+    "4,16,1,8",
+    "5,24,1,4",
+    "4,24,1,4",
+    "5,28,1,4",
+    "4,28,1,4",
+    "5,32,1,7",
+    "4,32,1,7",
+    "5,39,1,7",
+    "4,39,1,7",
+    "5,46,1,7",
+    "4,46,1,7",
+    "5,53,1,3",
+    "4,53,1,3",
+    "5,56,1,4",
+    "4,56,1,4",
+    "5,60,1,2",
+    "4,60,1,2",
+    "1,2,2,4",
+    "1,6,2,6",
+    "1,13,2,4",
+    "5,10,1,3",
+    "4,10,1,3",
+    "5,13,1,3",
+    "4,13,1,3",
+    "36,2,2,6",
+    "6,1,29,62",
+    "36,10,2,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "経理帳票",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//BXaRkKXBjAWJdRYZZyRVJJZa7HEj2WSmwEqWSW3JnjePYdyjDKyt2U6sP4qBns6Cb3do79J0Tu3F8/t6RK2fbQ4yh7sDNMmIK+bSJ5Xl81k73bCHNtGdh/MsGBYvg8PhTDaJX8odyBM9qk6bx9K1BpDrxIUIwaBRCF8YHrmct9yz6lwHiKaF4aI6sT614KhcAE4J28txZNrQmlD6qir7pGaLRGyPo61mMXh0m4HGbe9Ph9ZNcKHMwXaWyUOR7uRFpHJ8DnBBxQbuIrueVUHoLSCF3a1JpABATEmp+r/5A5HixKJ97qkmT1ACWaN7pdzRPGKk7awelmaS4QQE0fGqLh0fquF7kyJw6sQS07/VioyOVwujK2Gt4dzvn+CENDN7s9K2NDFhB6CuaBO7AwN+9eYD+RPvLAogYnTmS691UlA+91kfSXJlkTE5ewB5WmoonGPXTvzce/0zykugwLIVlIh0IHY/+UP9MwwGA0mtSVBFKd2bMWMM8tuxbHKqIZQkw3a+HIe8WCowdNm/PuETpifraLT3iUbEqRoxL+kSOklxQd8tmM2YS4m+Ttt7wBklK7yqM+yHS9ciw9+mRGSpdGPPYoTqzjwm9HsQ3+yPeq45r93rnRL2jEMt82Ann0wFdm8eziL4LDYJRljx2ptL+6aAW1ch898VrUxAab37wQEMlJQG+gunhNcRGUk7kixIPPgJd+1itZ8h5sZ/Xkkr4mPBmPn83VxQdM400/D0A/zIH78RemqndBwCUUaPi/aI0dk8RCaQsOah40n+w7vqMBfyG0G5qmYQdUd67MKNIoOWC3fjHOTlho+KoMcZkmXA7lHGcSIHUEAPYrN88V0lZzqwojr99aajZvsQaj3bOPG6L8MaPMH59DyqYzgZaveIoh2DN/Jp7iiZBwHGCuRGSQ==|920

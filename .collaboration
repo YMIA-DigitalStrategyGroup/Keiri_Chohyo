@@ -293,17 +293,7 @@
   },
   {
     "ModuleName": "MasterPCPage/経理帳票",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-12T07:29:07.4342046+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\経理帳票.json",
-      "MasterPages\\経理帳票.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
@@ -471,32 +461,14 @@
   },
   {
     "ModuleName": "Pages/マスタ管理画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-12T07:19:53.7854224+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "PCPage/費目マスタ管理画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-12T07:20:07.1954104+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Table/mhimoku",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-12T07:20:54.4453589+09:00",
     "ModuleType": 7
   }
 ]

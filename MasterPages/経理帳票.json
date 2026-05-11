@@ -52,6 +52,8 @@
             "Value": "メニュ  1",
             "Text": "メニュ  1",
             "IconPath": "Navigation/165_home_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
@@ -61,6 +63,10 @@
               {
                 "Value": "メニュ 1_1",
                 "Text": "メニュ 1_1",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ]
@@ -68,6 +74,10 @@
               {
                 "Value": "メニュ  1_2",
                 "Text": "メニュ  1_2",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ]
@@ -78,6 +88,8 @@
             "Value": "メニュ  2",
             "Text": "メニュ  2",
             "IconPath": "Navigation/183_table_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
@@ -87,6 +99,10 @@
               {
                 "Value": "メニュ  2_1",
                 "Text": "メニュ  2_1",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ]
@@ -94,6 +110,10 @@
               {
                 "Value": "メニュ 2_2",
                 "Text": "メニュ 2_2",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ]
@@ -101,9 +121,11 @@
             ]
           },
           {
-            "Value": "メニュ 3",
-            "Text": "メニュ 3",
-            "IconPath": "Chart/363_column_chart_2.svg",
+            "Value": "マスタメンテ",
+            "Text": "マスタメンテ",
+            "IconPath": "Navigation/245_settings_10.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
             "CanVisitRoleList": [
@@ -111,15 +133,19 @@
             ],
             "SubItems": [
               {
-                "Value": "メニュ  3_1",
-                "Text": "メニュ  3_1",
-                "CanVisitRoleList": [
-                  "FGC_Anonymous"
-                ]
-              },
-              {
-                "Value": "メニュ  3_2",
-                "Text": "メニュ  3_2",
+                "Value": "費目マスタメンテ",
+                "Text": "費目マスタメンテ",
+                "IconPath": "Application/031_edit_file_2.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "費目マスタ管理画面"
+                  }
+                ],
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
                 ]
@@ -206,4 +232,4 @@
       "Size": "1380,100"
     }
   ]
-}//I7dr/umsq1qu8jypGRwrEZCj/LxIgIyH5salhVSS8mlPvLE6B8ZqHTzNvt4CbujZCOZQem/tcrC1TzBjfsX83MA+wvkZXfQLNd7XiumltEYU1Uhu5A0oLY86U9DQShmJSIUaDfciHOX5xsIVVcFA0iJvMsqcbItdv+z+jJVMklL7+36wyEFandGpU6MBBn8A7zp3kpPnQyKOQZDWKZeORCns4RX5xVOQp+mpXYegpM+6vTD8Fgfx3/fY6aYr8dZeMEeC/qNhUBiORfFJveSqiaOZRGWSpJX8W0w0XjSXKMkNuhOf0FYAnYbT4+pRF6FdpHPf5UugLOJYUTvyvJegu46oHdgt/OJn+TfVTDRlGZr9VFTAKoafL+O4g1G/szMFGkcLrvcoRX46yTfpnVKN41TYuMwaZHwhshhGFhHOaIh0hKJFzjylKf5w/+dkt4D187apsCHXZek6K6LglIkH6AdpdWysRysOBw3Z7wpGLLBY32t5fElBPa6EihXkCkEN6DYFDOFJ/Uz1q40pNXfCFptTq25VIJ66sxU/pdp67E7Or4gHKoImwId7vpl1NAA4Ks7NTIuvacisSvkuXZiBUXDoQNbcYGmow772oqhvsI7FyyO+k5VVkvMGbq5Y0DkR7nbVzmutx+Y3xEAaEBq8QtiEK4NLA40gle+NaQd/Lk42Q8pdrjKmkEnDFTdJqYnMq0JdoCDF4GLWSvBH6sZ17+70tD5Zz/3HS4Q49y5/woyj1Xv8CZKd82oXcOAln7A2ehnm2QKkjgtJnUXlCxGd8y7vZrRxt+HYmMrvsEj9xLWVTzIQzCqfDnnF7N1ZiKx73aXijtaXuK+azjMY8K16c1u/43k5t1xpotuCrgAduWIz7jnjBptQ6cIExMqMx4JiyqLo4b6temM4606VP06FPA==|920
+}//GzLngoU9pGxWDwfzvq5rEJg9GA0FusEpVd7qqeKQ6cCVdeNVMBnp1QbwOLn8OoY7i9okfYOpD8Nr1NdpdiSAGqhEfAcv0TwP0VfP68H2VqEqwQDg1Gxqt4Hvx8WQ+jq4rmyX4foeexquFsKQUy/IVeSeU8q0CY+OEnzMYNiCD6r5Q5PHU4CrtTc8tGszB6m8cq3NRbmfj+iYfOCmfRGl2uwPGeoJA6HCl3xu+NTb/s6vRlxuX1EPvBhjpUpSEWD01s1u4mxlo/VX8zH1/jCYK1eAePeTecsHNWwCUm7rEh4Ne4sgGYSvo6nFKEwEmDw3r3GhPArw5zYgIWNp4enI3ujPK8TH1JsFBTVsq9KZ7rivZ5bue7KshVpqdXW/wSZNxCFE4KN5SwwaLuWPRDhp+xeg6U1GM7AlYDdQ1IWLk+GMHyX2k3LYuryyReU32laqstQyE2LzIPmfkSu1WFtEG/2pfZO78X1i3oWG6RydA6Q38+6GPFPmRS6DJJocXN4dh9tIs80W7hrbanjEF5HLxyFaAenVsdFZkX/inlC1BYx3EjD21zKC9/fr+365aQMPCGnvCWDh3VEz7XUIipiJ66n0nDPANjbYH5J5JCTDj9T5QngONOaPIp1vd/YTj5xlr17+HCujb6BskOufXDUZeqKWrdgzajDSh/6cpbyl2vJ2HRhwyo/mo8hSzuEFC1GJ6HBK0HIRAyMdTI+F35cBUkTMc+SUvgfmeM94rgHbbMj+iP5hFWbB5mZ1dSVMe294ZN22y6us8vmHLF3Krstl1mUF592kOZ6f9qADnRrWUiZ4ys8CLKOAnKp1nLOpIDfkznWU09rCZuLxuEVQIXSID99IUKdlACt45kqi2Xb/6Qa/KycBZ6ok09OWT5nWNYJMTclSs7JOb+V87TlvPFHAZg==|920
