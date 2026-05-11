@@ -293,7 +293,17 @@
   },
   {
     "ModuleName": "MasterPCPage/経理帳票",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-12T07:29:07.4342046+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\経理帳票.json",
+      "MasterPages\\経理帳票.rd"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
