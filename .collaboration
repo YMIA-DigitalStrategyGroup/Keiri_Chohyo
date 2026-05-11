@@ -470,5 +470,15 @@
     },
     "LockDateTime": "2026-05-11T10:45:56.2954788+09:00",
     "ModuleType": 6
+  },
+  {
+    "ModuleName": "Reports/原価集計表",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-11T10:46:07.4566293+09:00",
+    "ModuleType": 19
   }
 ]
