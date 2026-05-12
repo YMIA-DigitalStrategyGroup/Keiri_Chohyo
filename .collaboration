@@ -478,15 +478,5 @@
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou_1",
     "ModuleType": 23
-  },
-  {
-    "ModuleName": "PageReport/レポート2(島添練習）",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-12T14:32:21.9575461+09:00",
-    "ModuleType": 17
   }
 ]
