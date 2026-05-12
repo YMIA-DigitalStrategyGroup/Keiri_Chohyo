@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111111111111111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report111111111111111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -9,10 +9,10 @@
 					<Page>
 						<ReportItems>
 							<Table Name="Table1">
-								<Top>3.186cm</Top>
-								<Left>0.183cm</Left>
-								<Width>27.384cm</Width>
-								<Height>3.917cm</Height>
+								<Top>3.345cm</Top>
+								<Left>0.106cm</Left>
+								<Width>27.49cm</Width>
+								<Height>3.811cm</Height>
 								<Style>
 									<Color>=Theme.Colors!Dark1</Color>
 									<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
@@ -30,7 +30,7 @@
 									<RepeatOnNewPage>true</RepeatOnNewPage>
 									<TableRows>
 										<TableRow>
-											<Height>0.803cm</Height>
+											<Height>0.781cm</Height>
 											<TableCells>
 												<TableCell>
 													<ReportItems>
@@ -52,10 +52,6 @@
 																	<Bottom>=Theme.Colors!Accent1</Bottom>
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
-																<BorderStyle>
-																	<Bottom>Solid</Bottom>
-																	<Top>Solid</Top>
-																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>1pt</Bottom>
 																	<Top>1pt</Top>
@@ -86,10 +82,6 @@
 																	<Bottom>=Theme.Colors!Accent1</Bottom>
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
-																<BorderStyle>
-																	<Bottom>Solid</Bottom>
-																	<Top>Solid</Top>
-																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>1pt</Bottom>
 																	<Top>1pt</Top>
@@ -121,10 +113,6 @@
 																	<Bottom>=Theme.Colors!Accent1</Bottom>
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
-																<BorderStyle>
-																	<Bottom>Solid</Bottom>
-																	<Top>Solid</Top>
-																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>1pt</Bottom>
 																	<Top>1pt</Top>
@@ -156,10 +144,6 @@
 																	<Bottom>=Theme.Colors!Accent1</Bottom>
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
-																<BorderStyle>
-																	<Bottom>Solid</Bottom>
-																	<Top>Solid</Top>
-																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
 																	<Top>2pt</Top>
@@ -173,7 +157,7 @@
 											</TableCells>
 										</TableRow>
 										<TableRow>
-											<Height>0.759cm</Height>
+											<Height>0.738cm</Height>
 											<TableCells>
 												<TableCell>
 													<ReportItems>
@@ -405,7 +389,8 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>工事№</Value>
+															<DataElementName>工事No</DataElementName>
+															<Value>工事No</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -552,7 +537,7 @@
 								<Details>
 									<TableRows>
 										<TableRow>
-											<Height>0.803cm</Height>
+											<Height>0.781cm</Height>
 											<TableCells>
 												<TableCell>
 													<ReportItems>
@@ -561,7 +546,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -587,7 +572,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<Format>d</Format>
@@ -614,7 +599,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<Format>#,##0</Format>
@@ -641,7 +626,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<Format>d</Format>
@@ -668,7 +653,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<Format>#,##0</Format>
@@ -695,9 +680,10 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<Format>yyyy/MM/dd</Format>
 																<PaddingBottom>2pt</PaddingBottom>
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
@@ -721,7 +707,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<Format>d</Format>
@@ -736,8 +722,8 @@
 																</BorderColor>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<DataElementName>工事_</DataElementName>
-															<Value>=Fields!工事_.Value</Value>
+															<DataElementName>工事No</DataElementName>
+															<Value>=Fields!工事No.Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -748,7 +734,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -774,7 +760,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -800,7 +786,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -826,7 +812,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<Format>#,##0</Format>
@@ -853,7 +839,7 @@
 								<Footer>
 									<TableRows>
 										<TableRow>
-											<Height>0.75cm</Height>
+											<Height>0.73cm</Height>
 											<TableCells>
 												<TableCell>
 													<ReportItems>
@@ -1078,7 +1064,7 @@
 											</TableCells>
 										</TableRow>
 										<TableRow>
-											<Height>0.802cm</Height>
+											<Height>0.781cm</Height>
 											<TableCells>
 												<TableCell>
 													<ReportItems>
@@ -1120,7 +1106,7 @@
 																<VerticalAlign>Middle</VerticalAlign>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>=Sum(Fields!仕入価格.Value) &amp; "台"</Value>
+															<Value>=Sum(Fields!No.Value) &amp; "台"</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -1309,41 +1295,41 @@
 										</TableRow>
 									</TableRows>
 								</Footer>
-								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">12.585cm</dd:FixedHeight>
-								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">27.517cm</dd:FixedWidth>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">13.759cm</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">27.489cm</dd:FixedWidth>
 								<TableColumns>
 									<TableColumn>
-										<Width>2.452cm</Width>
+										<Width>2.433cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.627cm</Width>
+										<Width>2.397cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.627cm</Width>
+										<Width>2.449cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.627cm</Width>
+										<Width>2.449cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.627cm</Width>
+										<Width>2.607cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.304cm</Width>
+										<Width>2.286cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.625cm</Width>
+										<Width>2.605cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.521cm</Width>
+										<Width>2.185cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.238cm</Width>
+										<Width>3.379cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.5cm</Width>
+										<Width>2.481cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.236cm</Width>
+										<Width>2.219cm</Width>
 									</TableColumn>
 								</TableColumns>
 							</Table>
@@ -1477,7 +1463,7 @@
 	<DataSources>
 		<DataSource Name="データソース1">
 			<ConnectionProperties>
-				<ConnectString>jsondoc=http://localhost:57770/Forguncy/ARDataSource/GetDataSource/fb1becba-1f3b-4cba-84f0-608e34f1724c;schemadata={"type":"array","items":{"type":"object","properties":{"型式":{"type":"string"},"No":{"type":"integer"},"入荷日":{"type":"date-time"},"仕入先":{"type":"string"},"仕入価格":{"type":"number"},"出荷日":{"type":"date-time"},"工事_":{"type":"string"},"倉工":{"type":"string"},"売上先":{"type":"string"},"売上価格":{"type":"number"},"相手費目":{"type":"string"}}}}</ConnectString>
+				<ConnectString>jsondoc=http://localhost:57770/Forguncy/ARDataSource/GetDataSource/fb1becba-1f3b-4cba-84f0-608e34f1724c;schemadata={"type":"array","items":{"type":"object","properties":{"型式":{"type":"string"},"シリアルNo":{"type":"string"},"入荷日":{"type":"date-time"},"仕入先":{"type":"string"},"仕入価格":{"type":"number"},"出荷日":{"type":"date-time"},"工事No":{"type":"string"},"倉工":{"type":"string"},"売上先":{"type":"string"},"売上価格":{"type":"string"},"相手費目":{"type":"string"}}}}</ConnectString>
 				<DataProvider>JSON</DataProvider>
 			</ConnectionProperties>
 		</DataSource>
@@ -1488,8 +1474,8 @@
 				<Field Name="型式">
 					<DataField>型式</DataField>
 				</Field>
-				<Field Name="No">
-					<DataField>No</DataField>
+				<Field Name="シリアルNo">
+					<DataField>シリアルNo</DataField>
 				</Field>
 				<Field Name="入荷日">
 					<DataField>入荷日</DataField>
@@ -1503,8 +1489,8 @@
 				<Field Name="出荷日">
 					<DataField>出荷日</DataField>
 				</Field>
-				<Field Name="工事_">
-					<DataField>工事_</DataField>
+				<Field Name="工事No">
+					<DataField>工事No</DataField>
 				</Field>
 				<Field Name="倉工">
 					<DataField>倉工</DataField>
@@ -1533,6 +1519,10 @@
 		<CustomProperty>
 			<Name>SizeType</Name>
 			<Value>Default</Value>
+		</CustomProperty>
+		<CustomProperty>
+			<Name>CollapseWhiteSpace</Name>
+			<Value>True</Value>
 		</CustomProperty>
 		<CustomProperty>
 			<Name>PaperOrientation</Name>

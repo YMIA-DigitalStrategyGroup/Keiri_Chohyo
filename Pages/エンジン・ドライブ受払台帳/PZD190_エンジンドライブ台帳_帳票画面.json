@@ -11,11 +11,13 @@
     "3,2": "対象年月度",
     "3,14": "PDF発行",
     "3,20": "ビューワー表示",
-    "3,58": "前月日付"
+    "3,58": "前月日付",
+    "7,6": "№",
+    "7,26": "工事№"
   },
   "Formulas": {
-    "3,62": "EDATE(BK3,-1)",
-    "2,62": "TODAY()"
+    "2,62": "TODAY()",
+    "3,62": "EDATE(BK3,-1)"
   },
   "AttachInfos": {
     "3,14": {
@@ -77,7 +79,7 @@
     "7,2": {
       "ListViewInfo": {
         "Name": "リストビュー1",
-        "TableName": "ymia_v_engine_drive_daichou",
+        "TableName": "ymia_v_engine_drive_daichou_1",
         "RowIndex": 7,
         "ColumnIndex": 2,
         "RowCount": 19,
@@ -93,89 +95,89 @@
     "8,2": {
       "NameUsedInJavaScript": "型式",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
+        "TableName": "ymia_v_engine_drive_daichou_1",
         "ColumnName": "型式",
-        "GUID": "e4a89425-42fc-4731-8ccb-6b016e56d2f4"
+        "GUID": "52032bdd-71f5-44a8-9480-b07f54aea473"
       }
     },
     "8,6": {
       "NameUsedInJavaScript": "_№",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
-        "ColumnName": "№",
-        "GUID": "941aa850-2d6e-4459-82ae-65dfd8aba5e2"
+        "TableName": "ymia_v_engine_drive_daichou_1",
+        "ColumnName": "シリアルNo",
+        "GUID": "2d8b178a-3c98-4dd3-bf17-6cc3c4fc4dae"
       }
     },
     "8,10": {
       "NameUsedInJavaScript": "入荷日",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
+        "TableName": "ymia_v_engine_drive_daichou_1",
         "ColumnName": "入荷日",
-        "GUID": "7c209304-87ab-4cff-bd98-7f5373cec828"
+        "GUID": "c5e763fb-323e-4c7f-b735-9f485b06cad4"
       }
     },
     "8,14": {
       "NameUsedInJavaScript": "仕入先",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
+        "TableName": "ymia_v_engine_drive_daichou_1",
         "ColumnName": "仕入先",
-        "GUID": "7f825498-1746-4b11-93d1-9ac16e24ef4a"
+        "GUID": "8375e5c1-34dd-4f31-8827-5d6c286c5be2"
       }
     },
     "8,18": {
       "NameUsedInJavaScript": "仕入価格",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
+        "TableName": "ymia_v_engine_drive_daichou_1",
         "ColumnName": "仕入価格",
-        "GUID": "5a26f4b1-3a4f-4d81-b46c-a050c874df42"
+        "GUID": "7b07ba1e-62b6-484e-89f3-49c615ded55c"
       }
     },
     "8,22": {
       "NameUsedInJavaScript": "出荷日",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
+        "TableName": "ymia_v_engine_drive_daichou_1",
         "ColumnName": "出荷日",
-        "GUID": "5a86d559-09cc-4af5-949a-a2c920bb9af1"
+        "GUID": "1fca96ab-dbf4-4366-99e7-efbb15ab0f45"
       }
     },
     "8,26": {
       "NameUsedInJavaScript": "工事№",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
-        "ColumnName": "工事№",
-        "GUID": "30238d47-72ac-48d0-bfdf-7c02a2d0dab8"
+        "TableName": "ymia_v_engine_drive_daichou_1",
+        "ColumnName": "工事No",
+        "GUID": "620eceb4-977e-4c5a-b24e-4bebc2ff13cd"
       }
     },
     "8,30": {
       "NameUsedInJavaScript": "倉工",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
+        "TableName": "ymia_v_engine_drive_daichou_1",
         "ColumnName": "倉工",
-        "GUID": "4e666da2-77de-4b0f-9ca3-0da7e7e60057"
+        "GUID": "ecb907eb-9b3b-4f18-a5e7-71d0995828e3"
       }
     },
     "8,34": {
       "NameUsedInJavaScript": "売上先",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
+        "TableName": "ymia_v_engine_drive_daichou_1",
         "ColumnName": "売上先",
-        "GUID": "1e537339-c381-4fab-82e3-3469b84bd194"
+        "GUID": "c87c59e6-e9e9-4139-bfe4-2c36388383c1"
       }
     },
     "8,38": {
       "NameUsedInJavaScript": "売上価格",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
+        "TableName": "ymia_v_engine_drive_daichou_1",
         "ColumnName": "売上価格",
-        "GUID": "6bce3248-e7f2-4b11-8898-6435fff5987b"
+        "GUID": "0d868c8a-4f06-492e-9f7d-2a6b78681764"
       }
     },
     "8,42": {
       "NameUsedInJavaScript": "相手費目",
       "BindingInfo": {
-        "TableName": "ymia_v_engine_drive_daichou",
+        "TableName": "ymia_v_engine_drive_daichou_1",
         "ColumnName": "相手費目",
-        "GUID": "1a8e4110-287b-4a34-974b-b85a257a5206"
+        "GUID": "05e02a8b-ba00-4e6e-a136-3d4ced371d63"
       }
     }
   },
@@ -277,6 +279,12 @@
       {
         "FontFamily": 0,
         "Formatter": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -747,7 +755,43 @@
       "5,75": 0,
       "5,76": 0,
       "5,77": 0,
-      "5,78": 0
+      "5,78": 0,
+      "7,14": 0,
+      "7,18": 0,
+      "7,22": 0,
+      "7,26": 0,
+      "7,30": 0,
+      "7,34": 0,
+      "7,38": 0,
+      "7,42": 0,
+      "7,43": 13,
+      "7,44": 13,
+      "7,45": 13,
+      "7,46": 13,
+      "7,47": 13,
+      "7,48": 13,
+      "7,49": 13,
+      "7,50": 13,
+      "7,51": 13,
+      "7,52": 13,
+      "8,14": 0,
+      "8,18": 0,
+      "8,22": 0,
+      "8,26": 0,
+      "8,30": 0,
+      "8,34": 0,
+      "8,38": 0,
+      "8,42": 0,
+      "8,43": 13,
+      "8,44": 13,
+      "8,45": 13,
+      "8,46": 13,
+      "8,47": 13,
+      "8,48": 13,
+      "8,49": 13,
+      "8,50": 13,
+      "8,51": 13,
+      "8,52": 13
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -767,28 +811,28 @@
     "3,14,2,5",
     "3,20,2,5",
     "9,2,17,51",
-    "7,2,1,4",
     "8,2,1,4",
-    "7,6,1,4",
+    "7,2,1,4",
     "8,6,1,4",
-    "7,10,1,4",
+    "7,6,1,4",
     "8,10,1,4",
-    "7,14,1,4",
+    "7,10,1,4",
     "8,14,1,4",
-    "7,18,1,4",
+    "7,14,1,4",
     "8,18,1,4",
-    "7,22,1,4",
+    "7,18,1,4",
     "8,22,1,4",
-    "7,26,1,4",
+    "7,22,1,4",
     "8,26,1,4",
-    "7,30,1,4",
+    "7,26,1,4",
     "8,30,1,4",
-    "7,34,1,4",
+    "7,30,1,4",
     "8,34,1,4",
-    "7,38,1,4",
+    "7,34,1,4",
     "8,38,1,4",
-    "7,42,1,4",
-    "8,42,1,4"
+    "7,38,1,4",
+    "8,42,1,4",
+    "7,42,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -813,4 +857,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//PAIBQfka68W3bbtuVpVVL82574UH48W2Y1uycbK/w0bfB71wShD4skxY1CQcPOp/bqP5N7+5HgehAN3ccdhcbP8IarmX0AJ+wNIElDDAuSnU2kFpr7giLLo1XrNSJRaML2wG1Bmofw+vUBKSXrQg2URsSiJRtXFjjaDqCBjASxnLgyb9qPJ8EpDJBqrr4snrzc/kRINmaDih/aLG+q92w4WWYsYOWy2nSSR6d7wN/w4bd0LCXxWxIVo3hFKgQ0GBuawNnOMd+YXNpEA7z0VuAZ6cF/AoX3ADCDb545YaiT4uc2zzCJQVTRwU0QtlefMTRl6i4v8DaLD86UNE4NAK6hgTrz4K+Z0jGiPd1IoGMmNAWFZQtGKRpRhpMWeR+14P6G5fcO3yq79q7BDB1bJGYt/tpt4owWfJ6i1iMeNy8ccompIsAmUh1U5YtKvgyx19V3NgYkLIjLbzcMmRNpkJb2BDcZnCaXo3EF79/+xSCaZ4Bh4o+Qdxs6HIoUPXbjTSsBcQ17MycobaQWyCQk6FQEHBwQ7kSyFuAVF5Wrrj4mfxc6v/5pgJmonB8+ukdhoc88TNwpm2z3A8PAuhAWJ8JUexcIVG9yLld73dYbIBSFozWza8Y6rUzPUPq9NlKetK9pudsFeJRd/CAQUx9CpGnf3dS8hxG9URqR8FdpZjNibbwmTbLztmBsKF4X4ys3jqSRzMYIhHn81AkhbxhWl0U4P6bEcPnjT1Z1szaUVRq//kBE/OaKAxkPcL8myLm9uPUvFdRddGaZhzMkFW66aXcNEI1+V7hJEyYVGWU8KE+gz+OsAtCXRuJ04F+5PuCuRwqr1+CJ+qsFS82zM5+G7BiFwf3zpvcio3YHUVxGRwh1jvTGOEQ6vEpexruc+/mq+qe0tliuplsau7Acf5wju/4Q==|920
+}//bV+PPegHYNYGNxetD3ZdoyabSeSmfwIDedlWDlPl9nxPCS4od38bimsLanocVHkH4MnIYSIRiip6Ytaoe4Ra8SOI2P/BYmI2Gx0jwEbn9NBRQK1XZjhME4XnrFzZsdhAkmfBqJADyaBtLU03gIOvbLwlgyhUWQ4jUTIhl/6ynfhVWqI2QplnkEr2ODM/ghPsALt9jg5kPToHdB3kCOdhxEAca30wB4ju1sbNm2ZmKuhInwEd2IyDjzmWwjOGiMDS0MgDqXo3/rwQKTaxRswH9nUuHzi/yRvIsC8OVHFmG6jKHpLEutzJhd+gokeoksJe7pkiR/p2+QwtXee2sKvQjC7Luj8YP2eqAf5/FFm6kGj/sJM0IIJbc/ewsh7jWRMEnYRD0D/G4DeFfRJHcMvKoWCp65CKSU63bR7yfAGJds2AjaEtPPl2rfpPks22NupFtvXr9y+dduYusqee7B/S8avCr5WJTCjzW2pGXtKavfU6CBIuVq8nQccMxSpU0BwbejCdmOzTxcAFyyJbucWI60GUyCsoqF9gDe6VFX4D5qyesA8eXtt9lwzw7vxDZttAovnQQoidthPpWIqB+EJZqMI7H0tf613I48WD76ZQYRwK8BfrDglNY7kl8TzK+9nRaucJlYZaEn632cINaBUz6/ANiE5pJ4XBfU4vJ74D7TxmJ24/5oiObi3j5bRtCASlvCWB5ZIOkchzLGyo6N/38J7ExTmBQUfj0QWGYQg2ZrlIMVJPeJg7CCSx0kDsKZNG9C47Ls8sL+WJIuiGfYDtnmaRzH/Qeq2AjgS8VHJm+XcBLNpY4/cYLJ+ZvtH1fq08JB0nzvk/JcoBsO09dQVRsfPSs6VVFTXr63Wo3f8loyXiOteLfuN4A6g5sq2tGsAPPnspi1kp7KtqBdJee2/JaQ==|920
