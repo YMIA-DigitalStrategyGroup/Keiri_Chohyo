@@ -467,17 +467,7 @@
   },
   {
     "ModuleName": "PageReport/原価集計表_第一次_未完成",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-18T16:12:52.7201301+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\原価集計表\\原価集計表_第一次_未完成.json",
-      "Reports\\原価集計表\\原価集計表_第一次_未完成.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "Pages/マスタ管理画面",
