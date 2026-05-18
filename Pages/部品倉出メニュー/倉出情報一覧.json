@@ -114,15 +114,22 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
-            "SessionGuid": "89fc0961-3575-48c6-91c5-7092dd07bf05",
-            "OpenReportName": "レポート1",
+            "SessionGuid": "fc1333c8-b5a4-45c6-809f-6afc001889ae",
+            "OpenReportName": "倉出しメニュー（ひもつき品）",
             "SideBarPosition": 0,
             "PassParameters": [
               {
-                "TargetParameter": "Param製番",
+                "TargetParameter": "工事No.",
                 "SourceValue": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=倉出情報一覧!G4"
+                }
+              },
+              {
+                "TargetParameter": "倉出工程",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!AH8"
                 }
               }
             ]
@@ -159,6 +166,33 @@
           "IsEnabled": true
         },
         "ListViewStyleName": "_RS_Medium2",
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!G4"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!BB8"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!S4"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!O8"
+                }
+              }
+            ]
+          }
+        ],
         "ShowColumnHeaderInDesigner": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
@@ -670,4 +704,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//caZMOopXQLW6w7zlmI58oMHgYl6CNCWkKSZ4qFXTt34df89ta6r+c9IG6et7tyNBH03MHuNSKlKfUDcNG3rwSHV876Dac8w8a8puYSZorLiGbrVuX+nkrvTjs5b1syQAKH3B9WHELeZcbmCcZ8/NBpWt4vyKoJFVnfo2xaA7jN5MEMRlYZsewoy0xuNm4MG6KbAHJmz3hSoEOsIb5qeUrGI52gTIG03DDlp2f8BDJp88qA13pcRaNc5BCJ8e3ki/jq4eYDlPngBgIKw1aah9mN3othBp3RzoSt0BKpEBDHVxGzXAwPEqUFu7DZbTArq0Wo51FTTAjj6en+RUeo8/8l5xPatjtO9egdu9gnFXRzxpQv5WowTjT0x5Grx1jDRP7wIwxRQyx1qSIOoOfB8S4KRMc7iiNfXZtIQ6mPjCBXUlrsmK+F02HF3IEMJE0ah5Iv/mHMaAtkyga63MCILVqVSGjGbPtqiK1Og3w47tfThgS6uVxptWCfoUHO0kWjuR+L8dDC34wJcCuGixY6X52/WEgBUKd2PXOLctSpsF5XiPFcLCMXCJrVTRb1RQNJ19Hv7jzhtJWr7A8j2RaLlOUOVOaG7dJc5aKlVq4W4O56UvdQGKbZW4gxMWPTCKXcbH5y14oqume27QL02yTPpdgkcDbN9IoFjwu4jh/aXiW3uJks7gE+k1pD8KplNxLaMhGY+EBQBjXaWHuvz+p61eHag8WySs7D0hPzad9nphu3SWTTaTjvSAdUWaMjPdSYk3hRliWuIZJR2e3hsR1DEuNKOyD8pwnZsp7hH8Ea3t3hq9Txn8RzO99qyt8Swh8vnERfOJTnoJzTIa/N5ILx5EVaW8o7tuwknhyIROWnwEvm1sda22xQDVRFQXACJF1nOCUq7iIFd/+7eAS0zj1XulpQ==|920
+}//NHd/U6+W8XiLdh//1H+CkkR5gvEkDmvpFWimWlD9wyUaKHyOu/1ar+U2h7gaXEO+iMHJqpt5owF8q+YdGjZ/dHL00c3/RQH5Q4mM1srQnmEnnYKjwCDVSMvW7sMPkt6kF4vDu7bffXrVpGxGLcdf2nIrjrq6mB+Ho8HM1QcwNvrNwzPxC7ANGiVzeu+mHAbyk/7grnXDroMzlNZOVjqwHIUIzkptcXif+9f+dxtNqdnhCLpyLbMGH8AjJ0a9ayCiIBKZei4SOtOtaUYVTgQFyqbwh177Wydh4dwfu4P9GrCkzuraU51C+bUEJ7sErouDbpFqn7oIgVUaOVa2KO1h4BVkNxuK3c7CQe0LlhhtKim8sL9/B+6SBodn0RiKFhkTa+MPdZQnZi6pcEVLfHN4CC7Zn5sD8iczEAnLmtHPoe0Tb0CDnH2MYJMOZJubGDh+3fcdEV157/ki8XB6ngXkmVUpeiNJWEwUVyjP3n+ylJQ9jU/yu1eBxQHS0YHxEwVqHCHMhOHlEQiqLzlwvdvWX4BVrFMz5JnYSmDuOrskaIqyPNcNW4BoTguSZLplcIRvAEBVNYiSrOEqF3Gf4mdBKDt0to/dSsVqSpm9VwkXw0DPo6ru1VyteowtcM+0ECjRvnXDxTA3yHRXICpBXQlWskF9HH3hIujyBz85HCnTUi+wcLjk0/Ut+fWwn1w3ijhQs40qsO8FOZ08RUO/kFCnk/Iotp0ESDn03lRCeRSdoormz2LTYJP67jqLBMT6a4hUghB9dtZDs3xOZQ19ILPjPjbTy0g/WfvYaIlVWL1/wBmuLlttIWuzKYqez/ENP2EOvCjFpdVI7lcxEA6yD55aSWd1iT7VFVu1TxcLD0zkQQQA1qbrPpuDb6izVDCnQ5uof7HSmTYl0uXTEySkn1jy3g==|920

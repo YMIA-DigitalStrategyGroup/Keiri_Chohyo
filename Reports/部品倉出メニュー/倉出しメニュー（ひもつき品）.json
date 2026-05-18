@@ -1,0 +1,195 @@
+{
+  "Name": "倉出しメニュー（ひもつき品）",
+  "DataSources": [
+    {
+      "Name": "ひもつき品",
+      "GUID": "e24ffa96-9c3a-4b9c-ba74-24cfcbddbf87",
+      "DataSourceSetting": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "BindingInfos": [
+          {
+            "GUID": "edf85433-7709-47fe-81c5-4a5f8befcd07",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "製番",
+              "GUID": "aee00b47-1048-41c2-aa0f-8ac8b0c6b2bc"
+            },
+            "ColumnName": "製番"
+          },
+          {
+            "GUID": "7e8cfcdc-9ae1-4cbc-aabc-ac3b8739f158",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "倉出品番",
+              "GUID": "b3e6c564-6edc-4a58-900e-2ec59a14dd21"
+            },
+            "ColumnName": "倉出品番"
+          },
+          {
+            "GUID": "57eda655-5bc9-4be4-99c2-1499a60f0ff1",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "品名",
+              "GUID": "a8c4f3ab-545e-43f8-87d8-3e1758cc5e93"
+            },
+            "ColumnName": "品名"
+          },
+          {
+            "GUID": "75f47a56-2162-46ea-aa13-0673e5f6c656",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "規格・寸法",
+              "GUID": "8ef9fdce-0389-4c8f-bae9-1b47be9ddb7a"
+            },
+            "ColumnName": "規格_寸法"
+          },
+          {
+            "GUID": "88e559b3-0e40-4818-ba46-c6421944db03",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "倉出工程",
+              "GUID": "756a9283-83a1-4cbe-ad57-194a0d10c6b6"
+            },
+            "ColumnName": "倉出工程"
+          },
+          {
+            "GUID": "499f62f1-94b1-4b1b-9acc-796d4927c71a",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "伝票番号",
+              "GUID": "774b3a63-eaff-48f0-88f8-01fdf467fb76"
+            },
+            "ColumnName": "伝票番号"
+          },
+          {
+            "GUID": "3c25477c-862a-4d18-9e89-fc059bbfe749",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "倉出予定日",
+              "GUID": "4e730d04-e657-4249-9313-c5a49291a38a"
+            },
+            "ColumnName": "倉出予定日"
+          },
+          {
+            "GUID": "bda41c80-da80-4302-9c05-3141202e718c",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "倉出4日前",
+              "GUID": "5923bd74-855f-4ab3-ab8b-b92b5dad32ec"
+            },
+            "ColumnName": "倉出4日前"
+          },
+          {
+            "GUID": "cc4868c5-6326-4df0-ab3f-e8d276b35ff7",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "予定数量",
+              "GUID": "ddb95bdb-b308-4a67-9830-bfc462afd8a8"
+            },
+            "ColumnName": "予定数量"
+          },
+          {
+            "GUID": "a68cf0f1-fbd6-4ca1-a26e-e2520e74adf1",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "単位",
+              "GUID": "b78ea367-e1e6-4bf0-b479-4051b2be08c8"
+            },
+            "ColumnName": "単位"
+          },
+          {
+            "GUID": "1a478b67-52a5-4dff-b3f3-9c790f14a34b",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "ロケーション（棚番）",
+              "GUID": "33da3f8e-c224-4df8-9a3e-c1888b024da0"
+            },
+            "ColumnName": "ロケーション_棚番_"
+          },
+          {
+            "GUID": "02281079-a2bb-4f0a-8cdc-6f013d9b532e",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "購買区分",
+              "GUID": "a4307767-5bfe-4694-9af2-1d234bf2eb8b"
+            },
+            "ColumnName": "購買区分"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_v_kuradashi_buhin",
+                "ColumnName": "製番",
+                "GUID": "f9f3c350-deeb-48e8-bc95-a45251b979ad"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=工事No."
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_v_kuradashi_buhin",
+                "ColumnName": "倉出工程",
+                "GUID": "25084be4-cfa4-45f1-b8f3-cf9848890ce6"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=倉出工程"
+              }
+            }
+          ]
+        }
+      },
+      "ReportDataSourceParams": [
+        {
+          "Name": "工事No."
+        },
+        {
+          "Name": "倉出工程"
+        }
+      ],
+      "ColumnsType": [
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "number",
+        "string",
+        "string",
+        "string"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}
