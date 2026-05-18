@@ -433,7 +433,17 @@
   },
   {
     "ModuleName": "PageReport/レポート1",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D5061",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-18T14:38:06.9970678+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\部品倉出メニュー\\レポート1.json",
+      "Reports\\部品倉出メニュー\\レポート1.rdlx"
+    ]
   },
   {
     "ModuleName": "Tables/原価集計表",
