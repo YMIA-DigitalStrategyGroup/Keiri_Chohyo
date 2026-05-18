@@ -498,5 +498,15 @@
     },
     "LockDateTime": "2026-05-18T14:45:40.2282603+09:00",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "PageReport/在庫品",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D5061",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-18T14:47:14.5716703+09:00",
+    "ModuleType": 17
   }
 ]
