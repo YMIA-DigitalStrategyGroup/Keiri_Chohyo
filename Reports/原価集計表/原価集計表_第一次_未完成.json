@@ -8,7 +8,7 @@
         "TableName": "ymia_v_genkasyukei_mikan",
         "BindingInfos": [
           {
-            "GUID": "44d9c136-da11-4ab5-a6dc-48236c1b4053",
+            "GUID": "5dc28c5e-1c02-4864-a0c3-7933f30a585c",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "KOJI_NO",
@@ -17,7 +17,7 @@
             "ColumnName": "KOJI_NO"
           },
           {
-            "GUID": "70e82bcc-4957-46d1-b5e9-a9570e75a410",
+            "GUID": "331c04df-03f5-4fc7-a99b-8f7e81648826",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "PL_BS_SHUKEI",
@@ -26,7 +26,7 @@
             "ColumnName": "PL_BS_SHUKEI"
           },
           {
-            "GUID": "c84f192d-9483-42c5-85b8-7d64a5b4cc4c",
+            "GUID": "3110ef5e-bc5c-435b-904e-af7d5037269d",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "MEISHO1_KANJI",
@@ -35,7 +35,7 @@
             "ColumnName": "MEISHO1_KANJI"
           },
           {
-            "GUID": "dcdf6eb1-830e-49d1-8bc6-6239b4b4e9cf",
+            "GUID": "29d8bd35-54c3-4e57-a505-e6652a663229",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "前月繰越",
@@ -44,7 +44,7 @@
             "ColumnName": "前月繰越"
           },
           {
-            "GUID": "245f8b83-847d-4806-a30e-ef8cffa655e2",
+            "GUID": "ac4c5580-5c25-46f4-8650-227cb0181b05",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "当月発生",
@@ -53,7 +53,7 @@
             "ColumnName": "当月発生"
           },
           {
-            "GUID": "371e8579-cef9-4a3d-a154-003f10da17ae",
+            "GUID": "a7c6e4b1-c9aa-4f41-a05f-9689488a1730",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "合計",
