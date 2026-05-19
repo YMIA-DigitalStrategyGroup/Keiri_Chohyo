@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report11111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -19,7 +19,7 @@
 									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
 									<FontSize>20pt</FontSize>
 									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
-									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<FontWeight>700</FontWeight>
 									<PaddingBottom>2pt</PaddingBottom>
 									<PaddingLeft>2pt</PaddingLeft>
 									<PaddingRight>2pt</PaddingRight>
@@ -34,15 +34,15 @@
 								<Value>倉出しメニュー</Value>
 							</Textbox>
 							<Textbox Name="TextBox2">
-								<Top>0.609cm</Top>
-								<Left>7.911cm</Left>
-								<Width>2.5cm</Width>
-								<Height>0.697cm</Height>
+								<Top>0.5in</Top>
+								<Left>3in</Left>
+								<Width>1.25in</Width>
+								<Height>0.2744in</Height>
 								<Style>
 									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 									<Color>=Theme.Colors!Dark1</Color>
 									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+									<FontSize>18pt</FontSize>
 									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
 									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
 									<PaddingBottom>2pt</PaddingBottom>
@@ -57,13 +57,13 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-								<Value>在庫品</Value>
+								<Value>ひもつき品</Value>
 							</Textbox>
 							<Table Name="Table1">
 								<Top>3in</Top>
 								<Left>0.25in</Left>
 								<Width>17.78cm</Width>
-								<Height>3cm</Height>
+								<Height>2.54cm</Height>
 								<Style>
 									<Color>=Theme.Colors!Dark1</Color>
 									<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
@@ -82,7 +82,7 @@
 									<RepeatOnNewPage>true</RepeatOnNewPage>
 									<TableRows>
 										<TableRow>
-											<Height>0.75cm</Height>
+											<Height>0.635cm</Height>
 											<TableCells>
 												<TableCell>
 													<ReportItems>
@@ -104,7 +104,9 @@
 																</BorderColor>
 																<BorderStyle>
 																	<Bottom>Solid</Bottom>
-																	<Top>Solid</Top>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																	<Top>Groove</Top>
 																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
@@ -135,8 +137,7 @@
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
 																<BorderStyle>
-																	<Bottom>Solid</Bottom>
-																	<Top>Solid</Top>
+																	<Default>Double</Default>
 																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
@@ -167,8 +168,7 @@
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
 																<BorderStyle>
-																	<Bottom>Solid</Bottom>
-																	<Top>Solid</Top>
+																	<Default>Double</Default>
 																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
@@ -198,8 +198,7 @@
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
 																<BorderStyle>
-																	<Bottom>Solid</Bottom>
-																	<Top>Solid</Top>
+																	<Default>Double</Default>
 																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
@@ -229,8 +228,8 @@
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
 																<BorderStyle>
-																	<Bottom>Solid</Bottom>
-																	<Top>Solid</Top>
+																	<Default>Double</Default>
+																	<Right>Groove</Right>
 																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
@@ -249,7 +248,7 @@
 								<Details>
 									<TableRows>
 										<TableRow>
-											<Height>0.75cm</Height>
+											<Height>0.635cm</Height>
 											<TableCells>
 												<TableCell>
 													<ReportItems>
@@ -265,6 +264,10 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																</BorderStyle>
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>倉出予定日</DataElementName>
@@ -286,6 +289,10 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																</BorderStyle>
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>倉出品番</DataElementName>
@@ -307,6 +314,10 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																</BorderStyle>
 															</Style>
 															<DataElementName>品名</DataElementName>
 															<Value>=Fields.Item("品名").Value</Value>
@@ -327,6 +338,9 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Left>Groove</Left>
+																</BorderStyle>
 															</Style>
 															<DataElementName>予定数量</DataElementName>
 															<Value>=Fields.Item("予定数量").Value &amp; Fields.Item("単位").Value</Value>
@@ -347,6 +361,10 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																</BorderStyle>
 															</Style>
 															<CanGrow>true</CanGrow>
 															<Value />
@@ -356,7 +374,7 @@
 											</TableCells>
 										</TableRow>
 										<TableRow>
-											<Height>0.75cm</Height>
+											<Height>0.635cm</Height>
 											<TableCells>
 												<TableCell>
 													<ReportItems>
@@ -372,6 +390,10 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																</BorderStyle>
 															</Style>
 															<Value />
 														</Textbox>
@@ -391,6 +413,10 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																</BorderStyle>
 															</Style>
 															<Value />
 														</Textbox>
@@ -410,6 +436,10 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																</BorderStyle>
 															</Style>
 															<DataElementName>規格_寸法</DataElementName>
 															<Value>=Fields.Item("規格_寸法").Value</Value>
@@ -430,6 +460,9 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Left>Groove</Left>
+																</BorderStyle>
 															</Style>
 															<Value />
 														</Textbox>
@@ -449,6 +482,10 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																</BorderStyle>
 															</Style>
 															<Value />
 														</Textbox>
@@ -461,7 +498,7 @@
 								<Footer>
 									<TableRows>
 										<TableRow>
-											<Height>0.75cm</Height>
+											<Height>0.635cm</Height>
 											<TableCells>
 												<TableCell>
 													<ReportItems>
@@ -477,6 +514,11 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Default>Double</Default>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																</BorderStyle>
 															</Style>
 															<CanGrow>true</CanGrow>
 															<Value />
@@ -497,6 +539,9 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Default>Double</Default>
+																</BorderStyle>
 															</Style>
 															<CanGrow>true</CanGrow>
 															<Value />
@@ -517,6 +562,9 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Default>Double</Default>
+																</BorderStyle>
 															</Style>
 															<Value />
 														</Textbox>
@@ -536,6 +584,9 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Default>Double</Default>
+																</BorderStyle>
 															</Style>
 															<Value />
 														</Textbox>
@@ -555,6 +606,10 @@
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Default>Double</Default>
+																	<Right>Groove</Right>
+																</BorderStyle>
 															</Style>
 															<CanGrow>true</CanGrow>
 															<Value />
@@ -601,6 +656,9 @@
 									<PaddingLeft>2pt</PaddingLeft>
 									<PaddingRight>2pt</PaddingRight>
 									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Groove</Default>
+									</BorderStyle>
 								</Style>
 								<ZIndex>3</ZIndex>
 								<Custom><ReportStyle>
@@ -640,7 +698,7 @@
 								<Top>2in</Top>
 								<Left>3.25in</Left>
 								<Width>2.5in</Width>
-								<Height>0.2953in</Height>
+								<Height>0.25in</Height>
 								<Style>
 									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 									<Color>=Theme.Colors!Dark1</Color>
@@ -652,6 +710,9 @@
 									<PaddingLeft>2pt</PaddingLeft>
 									<PaddingRight>2pt</PaddingRight>
 									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Groove</Default>
+									</BorderStyle>
 								</Style>
 								<ZIndex>5</ZIndex>
 								<Custom><ReportStyle>
@@ -676,6 +737,9 @@
 									<PaddingLeft>2pt</PaddingLeft>
 									<PaddingRight>2pt</PaddingRight>
 									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Groove</Default>
+									</BorderStyle>
 								</Style>
 								<ZIndex>6</ZIndex>
 								<Custom><ReportStyle>
@@ -700,6 +764,9 @@
 									<PaddingLeft>2pt</PaddingLeft>
 									<PaddingRight>2pt</PaddingRight>
 									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Groove</Default>
+									</BorderStyle>
 								</Style>
 								<ZIndex>7</ZIndex>
 								<Custom><ReportStyle>
@@ -724,6 +791,9 @@
 									<PaddingLeft>2pt</PaddingLeft>
 									<PaddingRight>2pt</PaddingRight>
 									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Groove</Default>
+									</BorderStyle>
 								</Style>
 								<ZIndex>8</ZIndex>
 								<Custom><ReportStyle>
@@ -731,6 +801,87 @@
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
 								<Value>倉出工程</Value>
+							</Textbox>
+							<Textbox Name="TextBox29">
+								<Top>0.25in</Top>
+								<Left>6.5in</Left>
+								<Width>0.75in</Width>
+								<Height>0.75in</Height>
+								<Style>
+									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+									<Color>=Theme.Colors!Dark1</Color>
+									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Groove</Default>
+									</BorderStyle>
+								</Style>
+								<ZIndex>9</ZIndex>
+								<Custom><ReportStyle>
+	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
+	<StyleName>Dark 1 Major</StyleName>
+</ReportStyle></Custom>
+								<Value />
+							</Textbox>
+							<Textbox Name="TextBox32">
+								<Top>0.25in</Top>
+								<Left>5.75in</Left>
+								<Width>0.75in</Width>
+								<Height>0.75in</Height>
+								<Style>
+									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+									<Color>=Theme.Colors!Dark1</Color>
+									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Groove</Default>
+									</BorderStyle>
+								</Style>
+								<ZIndex>12</ZIndex>
+								<Custom><ReportStyle>
+	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
+	<StyleName>Dark 1 Major</StyleName>
+</ReportStyle></Custom>
+								<Value />
+							</Textbox>
+							<Textbox Name="TextBox33">
+								<Top>0.25in</Top>
+								<Left>5in</Left>
+								<Width>0.75in</Width>
+								<Height>0.75in</Height>
+								<Style>
+									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+									<Color>=Theme.Colors!Dark1</Color>
+									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Groove</Default>
+									</BorderStyle>
+								</Style>
+								<ZIndex>13</ZIndex>
+								<Custom><ReportStyle>
+	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
+	<StyleName>Dark 1 Major</StyleName>
+</ReportStyle></Custom>
+								<Value />
 							</Textbox>
 						</ReportItems>
 						<PaperOrientation>Portrait</PaperOrientation>
