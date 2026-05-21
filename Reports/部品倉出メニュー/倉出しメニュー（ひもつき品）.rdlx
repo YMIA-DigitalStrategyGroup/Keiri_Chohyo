@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report111111111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report11111111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -60,7 +60,7 @@
 								<Value>ひもつき品</Value>
 							</Textbox>
 							<Table Name="Table1">
-								<Top>3in</Top>
+								<Top>2.25in</Top>
 								<Left>0.25in</Left>
 								<Width>17.979cm</Width>
 								<Height>2.54cm</Height>
@@ -91,22 +91,23 @@
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontSize>9pt</FontSize>
 																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
-																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<FontWeight>700</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
 																<BorderColor>
 																	<Bottom>=Theme.Colors!Accent1</Bottom>
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
 																<BorderStyle>
-																	<Bottom>Solid</Bottom>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
-																	<Top>Groove</Top>
+																	<Top>Double</Top>
 																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
@@ -125,19 +126,23 @@
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontSize>9pt</FontSize>
 																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
-																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<FontWeight>700</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
 																<BorderColor>
 																	<Bottom>=Theme.Colors!Accent1</Bottom>
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
 																<BorderStyle>
-																	<Default>Double</Default>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																	<Top>Double</Top>
 																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
@@ -156,19 +161,23 @@
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontSize>9pt</FontSize>
 																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
-																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<FontWeight>700</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
 																<BorderColor>
 																	<Bottom>=Theme.Colors!Accent1</Bottom>
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
 																<BorderStyle>
-																	<Default>Double</Default>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																	<Top>Double</Top>
 																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
@@ -186,19 +195,23 @@
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontSize>9pt</FontSize>
 																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
-																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<FontWeight>700</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
 																<BorderColor>
 																	<Bottom>=Theme.Colors!Accent1</Bottom>
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
 																<BorderStyle>
-																	<Default>Double</Default>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																	<Top>Double</Top>
 																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
@@ -216,20 +229,23 @@
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontSize>9pt</FontSize>
 																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
-																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<FontWeight>700</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
 																<BorderColor>
 																	<Bottom>=Theme.Colors!Accent1</Bottom>
 																	<Top>=Theme.Colors!Accent1</Top>
 																</BorderColor>
 																<BorderStyle>
-																	<Default>Double</Default>
+																	<Left>Groove</Left>
 																	<Right>Groove</Right>
+																	<Top>Double</Top>
 																</BorderStyle>
 																<BorderWidth>
 																	<Bottom>2pt</Bottom>
@@ -257,7 +273,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -267,6 +283,7 @@
 																<BorderStyle>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
+																	<Top>Double</Top>
 																</BorderStyle>
 															</Style>
 															<CanGrow>true</CanGrow>
@@ -282,7 +299,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -292,6 +309,7 @@
 																<BorderStyle>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
+																	<Top>Double</Top>
 																</BorderStyle>
 															</Style>
 															<CanGrow>true</CanGrow>
@@ -317,6 +335,7 @@
 																<BorderStyle>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
+																	<Top>Double</Top>
 																</BorderStyle>
 															</Style>
 															<DataElementName>品名</DataElementName>
@@ -331,7 +350,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -340,6 +359,8 @@
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
 																	<Left>Groove</Left>
+																	<Right>Groove</Right>
+																	<Top>Double</Top>
 																</BorderStyle>
 															</Style>
 															<DataElementName>予定数量</DataElementName>
@@ -354,7 +375,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -364,6 +385,7 @@
 																<BorderStyle>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
+																	<Top>Double</Top>
 																</BorderStyle>
 															</Style>
 															<CanGrow>true</CanGrow>
@@ -383,7 +405,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -391,6 +413,7 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
+																	<Bottom>Groove</Bottom>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
 																</BorderStyle>
@@ -406,7 +429,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -414,6 +437,7 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
+																	<Bottom>Groove</Bottom>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
 																</BorderStyle>
@@ -437,6 +461,7 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
+																	<Bottom>Groove</Bottom>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
 																</BorderStyle>
@@ -453,7 +478,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -461,7 +486,9 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
+																	<Bottom>Groove</Bottom>
 																	<Left>Groove</Left>
+																	<Right>Groove</Right>
 																</BorderStyle>
 															</Style>
 															<Value />
@@ -475,7 +502,7 @@
 																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -483,6 +510,7 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
+																	<Bottom>Groove</Bottom>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
 																</BorderStyle>
@@ -507,7 +535,7 @@
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -515,7 +543,7 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
-																	<Default>Double</Default>
+																	<Bottom>Groove</Bottom>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
 																</BorderStyle>
@@ -532,7 +560,7 @@
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -540,7 +568,9 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
-																	<Default>Double</Default>
+																	<Bottom>Groove</Bottom>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
 																</BorderStyle>
 															</Style>
 															<CanGrow>true</CanGrow>
@@ -555,7 +585,7 @@
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -563,7 +593,9 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
-																	<Default>Double</Default>
+																	<Bottom>Groove</Bottom>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
 																</BorderStyle>
 															</Style>
 															<Value />
@@ -577,7 +609,7 @@
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -585,7 +617,9 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
-																	<Default>Double</Default>
+																	<Bottom>Groove</Bottom>
+																	<Left>Groove</Left>
+																	<Right>Groove</Right>
 																</BorderStyle>
 															</Style>
 															<Value />
@@ -599,7 +633,7 @@
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontSize>8pt</FontSize>
 																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
 																<PaddingBottom>2pt</PaddingBottom>
@@ -607,7 +641,8 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 																<BorderStyle>
-																	<Default>Double</Default>
+																	<Bottom>Groove</Bottom>
+																	<Left>Groove</Left>
 																	<Right>Groove</Right>
 																</BorderStyle>
 															</Style>
@@ -621,7 +656,7 @@
 									</TableRows>
 								</Footer>
 								<dd:PreventOrphanedHeader xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:PreventOrphanedHeader>
-								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">16.753cm</dd:FixedHeight>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">21.591cm</dd:FixedHeight>
 								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">18.365cm</dd:FixedWidth>
 								<TableColumns>
 									<TableColumn>
@@ -642,7 +677,7 @@
 								</TableColumns>
 							</Table>
 							<Textbox Name="TextBox23">
-								<Top>2.25in</Top>
+								<Top>1.5in</Top>
 								<Left>0.25in</Left>
 								<Width>3in</Width>
 								<Height>0.5in</Height>
@@ -669,7 +704,7 @@
 								<Value>=Fields.Item("製番").Value</Value>
 							</Textbox>
 							<Textbox Name="TextBox24">
-								<Top>2in</Top>
+								<Top>1.25in</Top>
 								<Left>0.25in</Left>
 								<Width>3in</Width>
 								<Height>0.25in</Height>
@@ -696,7 +731,7 @@
 								<Value>工事No.</Value>
 							</Textbox>
 							<Textbox Name="TextBox25">
-								<Top>2in</Top>
+								<Top>1.25in</Top>
 								<Left>3.25in</Left>
 								<Width>2.5in</Width>
 								<Height>0.25in</Height>
@@ -723,7 +758,7 @@
 								<Value>工事名称</Value>
 							</Textbox>
 							<Textbox Name="TextBox26">
-								<Top>2.25in</Top>
+								<Top>1.5in</Top>
 								<Left>3.25in</Left>
 								<Width>2.5in</Width>
 								<Height>0.5in</Height>
@@ -750,7 +785,7 @@
 								<Value />
 							</Textbox>
 							<Textbox Name="TextBox27">
-								<Top>2.25in</Top>
+								<Top>1.5in</Top>
 								<Left>5.75in</Left>
 								<Width>0.75in</Width>
 								<Height>0.5in</Height>
@@ -777,7 +812,7 @@
 								<Value>=Fields.Item("倉出工程").Value</Value>
 							</Textbox>
 							<Textbox Name="TextBox28">
-								<Top>2in</Top>
+								<Top>1.25in</Top>
 								<Left>5.75in</Left>
 								<Width>0.75in</Width>
 								<Height>0.25in</Height>
