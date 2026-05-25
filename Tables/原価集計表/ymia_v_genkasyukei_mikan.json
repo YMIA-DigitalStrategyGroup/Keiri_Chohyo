@@ -24,6 +24,27 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 2,
+      "Name": "区分",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "テーブル名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 100,
+      "Name": "テーブル名_漢字",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "DatabaseColumnType": "decimal",
       "MaxLength": -1,
       "Name": "前月繰越",
@@ -49,7 +70,7 @@
     "ConnectionId": "MySql1",
     "SourceTableName": "ymia_v_genkasyukei_mikan",
     "SourceTableSchema": "",
-    "CreateViewSql": "select `a`.`KOJI_NO` AS `KOJI_NO`,`b`.`PL_BS_SHUKEI` AS `PL_BS_SHUKEI`,`b`.`MEISHO1_KANJI` AS `MEISHO1_KANJI`,sum(`a`.`ZENGETU_MIZANKINGAKU`) AS `前月繰越`,sum(`a`.`TOGETU_HASSEIGAKU`) AS `当月発生`,sum(`a`.`TOGETU_ZANKINGAKU`) AS `合計` from (`tkansayo_shikakari` `a` left join `mhimoku` `b` on((`a`.`HIMOKU_CODE` = `b`.`HIMOKU_CODE`))) group by `a`.`KOJI_NO`,`b`.`PL_BS_SHUKEI`,`b`.`MEISHO1_KANJI` order by `a`.`KOJI_NO`,`b`.`PL_BS_SHUKEI`",
+    "CreateViewSql": "select `a`.`KOJI_NO` AS `KOJI_NO`,`b`.`PL_BS_SHUKEI` AS `PL_BS_SHUKEI`,`b`.`MEISHO1_KANJI` AS `MEISHO1_KANJI`,`b`.`KUBUN` AS `区分`,`b`.`TABLE_NAME` AS `テーブル名`,`b`.`TABLE_NAME_KANJI` AS `テーブル名_漢字`,sum(`a`.`ZENGETU_MIZANKINGAKU`) AS `前月繰越`,sum(`a`.`TOGETU_HASSEIGAKU`) AS `当月発生`,sum(`a`.`TOGETU_ZANKINGAKU`) AS `合計` from (`tkansayo_shikakari` `a` left join `mhimoku` `b` on((`a`.`HIMOKU_CODE` = `b`.`HIMOKU_CODE`))) group by `a`.`KOJI_NO`,`b`.`PL_BS_SHUKEI`,`b`.`MEISHO1_KANJI`,`b`.`KUBUN`,`b`.`TABLE_NAME`,`b`.`TABLE_NAME_KANJI` order by `a`.`KOJI_NO`,`b`.`PL_BS_SHUKEI`",
     "ViewInfo": {
       "ViewName": "ymia_v_genkasyukei_mikan",
       "IsUpdatable": true,
