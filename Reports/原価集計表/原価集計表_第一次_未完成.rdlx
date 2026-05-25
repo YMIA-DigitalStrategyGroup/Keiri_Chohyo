@@ -10,7 +10,7 @@
 						<ReportItems>
 							<Textbox Name="TextBox1">
 								<Top>1.349cm</Top>
-								<Left>5.054cm</Left>
+								<Left>6.033cm</Left>
 								<Width>2.5cm</Width>
 								<Height>0.75cm</Height>
 								<Style>
@@ -56,8 +56,8 @@
 								<Value>=Fields!KOJI_NO.Value</Value>
 							</Textbox>
 							<Textbox Name="TextBox3">
-								<Top>0.265cm</Top>
-								<Left>8.811cm</Left>
+								<Top>0.291cm</Top>
+								<Left>10.584cm</Left>
 								<Width>9.591cm</Width>
 								<Height>0.75cm</Height>
 								<Style>
@@ -66,7 +66,7 @@
 									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
 									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
 									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
-									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<FontWeight>700</FontWeight>
 									<PaddingBottom>2pt</PaddingBottom>
 									<PaddingLeft>2pt</PaddingLeft>
 									<PaddingRight>2pt</PaddingRight>
@@ -153,8 +153,8 @@
 								<Value>=Format(Today(), "yyyy年MM月dd日")</Value>
 							</Textbox>
 							<Textbox Name="TextBox7">
-								<Top>0.371cm</Top>
-								<Left>25.109cm</Left>
+								<Top>0.424cm</Top>
+								<Left>25.162cm</Left>
 								<Width>2.5cm</Width>
 								<Height>0.75cm</Height>
 								<Style>
@@ -456,8 +456,8 @@
 								</TableColumns>
 							</Table>
 							<Textbox Name="TextBox17">
-								<Top>1.323cm</Top>
-								<Left>2.249cm</Left>
+								<Top>1.376cm</Top>
+								<Left>2.858cm</Left>
 								<Width>2.5cm</Width>
 								<Height>0.75cm</Height>
 								<Style>
