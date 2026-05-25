@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report11111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -9,8 +9,8 @@
 					<Page>
 						<ReportItems>
 							<Textbox Name="TextBox1">
-								<Top>0.053cm</Top>
-								<Left>7.752cm</Left>
+								<Top>1.349cm</Top>
+								<Left>5.054cm</Left>
 								<Width>2.5cm</Width>
 								<Height>0.75cm</Height>
 								<Style>
@@ -32,9 +32,9 @@
 								<Value>工事番号</Value>
 							</Textbox>
 							<Textbox Name="TextBox2">
-								<Top>0cm</Top>
-								<Left>0cm</Left>
-								<Width>2.5cm</Width>
+								<Top>1.349cm</Top>
+								<Left>7.726cm</Left>
+								<Width>6.284cm</Width>
 								<Height>0.75cm</Height>
 								<Style>
 									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
@@ -54,6 +54,430 @@
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
 								<Value>=Fields!KOJI_NO.Value</Value>
+							</Textbox>
+							<Textbox Name="TextBox3">
+								<Top>0.265cm</Top>
+								<Left>8.811cm</Left>
+								<Width>9.591cm</Width>
+								<Height>0.75cm</Height>
+								<Style>
+									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+									<Color>=Theme.Colors!Dark1</Color>
+									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<ZIndex>2</ZIndex>
+								<Custom><ReportStyle>
+	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
+	<StyleName>Dark 1 Major</StyleName>
+</ReportStyle></Custom>
+								<Value>原価集計表　（第二次　未完）</Value>
+							</Textbox>
+							<Textbox Name="TextBox4">
+								<Top>0cm</Top>
+								<Left>0cm</Left>
+								<Width>2.5cm</Width>
+								<Height>0.75cm</Height>
+								<Style>
+									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+									<Color>=Theme.Colors!Dark1</Color>
+									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<ZIndex>3</ZIndex>
+								<Custom><ReportStyle>
+	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
+	<StyleName>Dark 1 Major</StyleName>
+</ReportStyle></Custom>
+								<Value>（PZF010）</Value>
+							</Textbox>
+							<Textbox Name="TextBox5">
+								<Top>1.376cm</Top>
+								<Left>0.053cm</Left>
+								<Width>2.5cm</Width>
+								<Height>0.75cm</Height>
+								<Style>
+									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+									<Color>=Theme.Colors!Dark1</Color>
+									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<ZIndex>4</ZIndex>
+								<Custom><ReportStyle>
+	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
+	<StyleName>Dark 1 Major</StyleName>
+</ReportStyle></Custom>
+								<DataElementName>TextBox1</DataElementName>
+								<Value>艇種</Value>
+							</Textbox>
+							<Textbox Name="TextBox6">
+								<Top>0.397cm</Top>
+								<Left>21.378cm</Left>
+								<Width>5.105cm</Width>
+								<Height>0.75cm</Height>
+								<Style>
+									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+									<Color>=Theme.Colors!Dark1</Color>
+									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<ZIndex>5</ZIndex>
+								<Custom><ReportStyle>
+	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
+	<StyleName>Dark 1 Major</StyleName>
+</ReportStyle></Custom>
+								<Value>=Format(Today(), "yyyy年MM月dd日")</Value>
+							</Textbox>
+							<Textbox Name="TextBox7">
+								<Top>0.371cm</Top>
+								<Left>25.109cm</Left>
+								<Width>2.5cm</Width>
+								<Height>0.75cm</Height>
+								<Style>
+									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+									<Color>=Theme.Colors!Dark1</Color>
+									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<ZIndex>6</ZIndex>
+								<Custom><ReportStyle>
+	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
+	<StyleName>Dark 1 Major</StyleName>
+</ReportStyle></Custom>
+								<Value>作成</Value>
+							</Textbox>
+							<Table Name="Table1">
+								<Top>4.604cm</Top>
+								<Left>2.196cm</Left>
+								<Width>24.036cm</Width>
+								<Height>3.52cm</Height>
+								<Style>
+									<Color>=Theme.Colors!Dark1</Color>
+									<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+									<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+								</Style>
+								<ZIndex>7</ZIndex>
+								<Custom><ReportStyle>
+	<StyleId>c728fbbc-6ae5-47bd-8e20-d710772a5858</StyleId>
+	<StyleName>Light Style 1 Accent 1</StyleName>
+</ReportStyle></Custom>
+								<DetailDataElementOutput>Auto</DetailDataElementOutput>
+								<Header>
+									<RepeatOnNewPage>true</RepeatOnNewPage>
+									<TableRows>
+										<TableRow>
+											<Height>1.173cm</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox8">
+															<Style>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<BorderColor>
+																	<Bottom>=Theme.Colors!Accent1</Bottom>
+																	<Top>=Theme.Colors!Accent1</Top>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																	<Top>Solid</Top>
+																</BorderStyle>
+																<BorderWidth>
+																	<Bottom>2pt</Bottom>
+																	<Top>2pt</Top>
+																</BorderWidth>
+															</Style>
+															<Custom><ReportStyle>
+	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
+	<StyleName>Dark 1 Major</StyleName>
+</ReportStyle></Custom>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox9">
+															<Style>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<BorderColor>
+																	<Bottom>=Theme.Colors!Accent1</Bottom>
+																	<Top>=Theme.Colors!Accent1</Top>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																	<Top>Solid</Top>
+																</BorderStyle>
+																<BorderWidth>
+																	<Bottom>2pt</Bottom>
+																	<Top>2pt</Top>
+																</BorderWidth>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox10">
+															<Style>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<BorderColor>
+																	<Bottom>=Theme.Colors!Accent1</Bottom>
+																	<Top>=Theme.Colors!Accent1</Top>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																	<Top>Solid</Top>
+																</BorderStyle>
+																<BorderWidth>
+																	<Bottom>2pt</Bottom>
+																	<Top>2pt</Top>
+																</BorderWidth>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Header>
+								<Details>
+									<TableRows>
+										<TableRow>
+											<Height>1.173cm</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox11">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox12">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox13">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Details>
+								<Footer>
+									<TableRows>
+										<TableRow>
+											<Height>1.174cm</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox14">
+															<Style>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox15">
+															<Style>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox16">
+															<Style>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Footer>
+								<dd:PreventOrphanedHeader xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:PreventOrphanedHeader>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">3.679cm</dd:FixedHeight>
+								<TableColumns>
+									<TableColumn>
+										<Width>8.012cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>8.012cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>8.012cm</Width>
+									</TableColumn>
+								</TableColumns>
+							</Table>
+							<Textbox Name="TextBox17">
+								<Top>1.323cm</Top>
+								<Left>2.249cm</Left>
+								<Width>2.5cm</Width>
+								<Height>0.75cm</Height>
+								<Style>
+									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+									<Color>=Theme.Colors!Dark1</Color>
+									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<ZIndex>8</ZIndex>
+								<Custom><ReportStyle>
+	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
+	<StyleName>Dark 1 Major</StyleName>
+</ReportStyle></Custom>
+								<Value />
 							</Textbox>
 						</ReportItems>
 						<PaperOrientation>Landscape</PaperOrientation>
