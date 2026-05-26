@@ -77,7 +77,16 @@
   },
   {
     "ModuleName": "TableView/ymia_v_kuradashi_buhin",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-26T13:46:44.057346+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\部品倉出メニュー\\ymia_v_kuradashi_buhin.json"
+    ]
   },
   {
     "ModuleName": "Tables/製品売上・出荷明細",
