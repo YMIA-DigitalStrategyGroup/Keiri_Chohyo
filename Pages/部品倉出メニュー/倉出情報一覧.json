@@ -56,7 +56,7 @@
               "SubConditions": [
                 {
                   "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 10,
+                  "CompareType": 6,
                   "ColumnBindingInfo": {
                     "TableName": "ymia_v_kuradashi_buhin",
                     "ColumnName": "製番",
@@ -69,7 +69,7 @@
                 },
                 {
                   "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 10,
+                  "CompareType": 6,
                   "ColumnBindingInfo": {
                     "TableName": "ymia_v_kuradashi_buhin",
                     "ColumnName": "倉出品番",
@@ -80,9 +80,10 @@
                     "SerializeProperty": "=倉出情報一覧!S1"
                   }
                 }
-              ]
+              ],
+              "RelationType": 1
             },
-            "ID": "9713f89eb8d0438b918d8b2856f6a709"
+            "ID": "4cfa4afa27bd4c24b7d43343aa233ce7"
           }
         ],
         "Text": "検索",
@@ -114,15 +115,15 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
-            "SessionGuid": "fc1333c8-b5a4-45c6-809f-6afc001889ae",
+            "SessionGuid": "a3ef3839-c1b4-40c4-8d11-c604bcdfa503",
             "OpenReportName": "倉出しメニュー（ひもつき品）",
             "SideBarPosition": 0,
             "PassParameters": [
               {
-                "TargetParameter": "工事No.",
+                "TargetParameter": "工事No",
                 "SourceValue": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=倉出情報一覧!G4"
+                  "SerializeProperty": "=倉出情報一覧!G1"
                 }
               },
               {
@@ -130,6 +131,13 @@
                 "SourceValue": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=倉出情報一覧!AH8"
+                }
+              },
+              {
+                "TargetParameter": "工事番号",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!G1"
                 }
               }
             ]
@@ -704,4 +712,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//NHd/U6+W8XiLdh//1H+CkkR5gvEkDmvpFWimWlD9wyUaKHyOu/1ar+U2h7gaXEO+iMHJqpt5owF8q+YdGjZ/dHL00c3/RQH5Q4mM1srQnmEnnYKjwCDVSMvW7sMPkt6kF4vDu7bffXrVpGxGLcdf2nIrjrq6mB+Ho8HM1QcwNvrNwzPxC7ANGiVzeu+mHAbyk/7grnXDroMzlNZOVjqwHIUIzkptcXif+9f+dxtNqdnhCLpyLbMGH8AjJ0a9ayCiIBKZei4SOtOtaUYVTgQFyqbwh177Wydh4dwfu4P9GrCkzuraU51C+bUEJ7sErouDbpFqn7oIgVUaOVa2KO1h4BVkNxuK3c7CQe0LlhhtKim8sL9/B+6SBodn0RiKFhkTa+MPdZQnZi6pcEVLfHN4CC7Zn5sD8iczEAnLmtHPoe0Tb0CDnH2MYJMOZJubGDh+3fcdEV157/ki8XB6ngXkmVUpeiNJWEwUVyjP3n+ylJQ9jU/yu1eBxQHS0YHxEwVqHCHMhOHlEQiqLzlwvdvWX4BVrFMz5JnYSmDuOrskaIqyPNcNW4BoTguSZLplcIRvAEBVNYiSrOEqF3Gf4mdBKDt0to/dSsVqSpm9VwkXw0DPo6ru1VyteowtcM+0ECjRvnXDxTA3yHRXICpBXQlWskF9HH3hIujyBz85HCnTUi+wcLjk0/Ut+fWwn1w3ijhQs40qsO8FOZ08RUO/kFCnk/Iotp0ESDn03lRCeRSdoormz2LTYJP67jqLBMT6a4hUghB9dtZDs3xOZQ19ILPjPjbTy0g/WfvYaIlVWL1/wBmuLlttIWuzKYqez/ENP2EOvCjFpdVI7lcxEA6yD55aSWd1iT7VFVu1TxcLD0zkQQQA1qbrPpuDb6izVDCnQ5uof7HSmTYl0uXTEySkn1jy3g==|920
+}//ZhYJueW17KGrB/4wBZXN+YlYy+E+6VKZiy7wlTFbmuhYklx7lY6iOZ4ildetzZf3/LPaEgZC93pGRwrqS7G3XSt40uCZkOsYte1+ZLDH2XzVRa7D3Qloo4Mb4fjHfrUWPEulDchsUve1LALyRl0S2PjtRm2x/XwXoS4mszV5U/kaedwnB9zIrIw/qvsVrwAwbJdmJVIoWkilZsoPobrrYY6eLFh0NPFNZFhW852vVEuBBG0yVwrrX/lk31elDuTLI0h9d5Zxm3jZlTVyP1bQOLoS9cZySkCNoB4HioBU6Pf9vIB0npBfYZv85eqd7GJOl6nZl7ivUvMondG3qzok1jkYP6wuAI354YoWTn919DM5XWzWgAFCC9aw3u3K0x2FRzXQu/aw7jSQaWHNpRq/7oNzGQuxtxruFwuS/6JZvBhbxYVdVY7V1eRrycuRGBvZFwae90vq6JcZfN/lgJGRyOjC6OXZH2FFe46dIz2BiGd0eb7283uy1SEFAYDJGcuy/MYv6BWOfyl3ZpQ92gcmSKgtO7wBUCr2qHQ+h+jdyHEBHI0sSFSj6XQyo7z8XqPBs0D4Z68m092DzCuHsz4EH9ahMf3xVfTMomBypc633ITuPV40QaRiRVxNNadevB3GF696F3UaAdJkK1GV8zOgosVXVbp13ZG92ZX1OgT/+Rlvj4d44e+bGlORbQxsYbGhjiIkjpzSLe92acrSYa9/YpWfNSECZgW3WDeHiO8h2b5r0yV+AN0T2daavzjaXzfFTrWVw1Px+YkpT3Zgs+NseBo02V+xJ5iGvSOk+gNM+IFeHnZUqnDaHPPAFXSPH9pXssprFmkqJKX0IpJbZCcwbEc/bqONdLd1BrF1HTHtlDSZbTAWaTcvRu/snHtrXoDnWwnbGk+UNsqQw650pcOsZQ==|920
