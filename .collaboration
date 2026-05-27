@@ -479,7 +479,16 @@
   },
   {
     "ModuleName": "Table/mhimoku",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D5061",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-27T17:18:33.6130365+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\mhimoku.json"
+    ]
   },
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou_ver_ystm",
