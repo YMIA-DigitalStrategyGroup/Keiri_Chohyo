@@ -505,5 +505,15 @@
   {
     "ModuleName": "PageReport/在庫品",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "Table/tbuhinjm",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-03T14:49:32.854899+09:00",
+    "ModuleType": 7
   }
 ]
