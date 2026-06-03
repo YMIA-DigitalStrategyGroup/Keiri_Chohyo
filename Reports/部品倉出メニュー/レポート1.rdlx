@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -98,9 +98,9 @@
 							</Textbox>
 							<Table Name="Table1">
 								<Top>2.5cm</Top>
-								<Left>0.5cm</Left>
-								<Width>16.5cm</Width>
-								<Height>2.25cm</Height>
+								<Left>0.526cm</Left>
+								<Width>17.928cm</Width>
+								<Height>3cm</Height>
 								<Style>
 									<Color>=Theme.Colors!Dark1</Color>
 									<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
@@ -155,7 +155,8 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>品番</Value>
+															<DataElementName>ロケーション_棚番_</DataElementName>
+															<Value>ロケーション</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -186,7 +187,8 @@
 																	<Top>2pt</Top>
 																</BorderWidth>
 															</Style>
-															<Value />
+															<DataElementName>伝票番号</DataElementName>
+															<Value>伝票番号</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -249,6 +251,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
+															<DataElementName>品名</DataElementName>
 															<Value>品名</Value>
 														</Textbox>
 													</ReportItems>
@@ -330,7 +333,8 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
-															<Value />
+															<DataElementName>伝票番号</DataElementName>
+															<Value>=Fields!伝票番号.Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -392,6 +396,107 @@
 															<CanGrow>true</CanGrow>
 															<DataElementName>予定数量</DataElementName>
 															<Value>=Fields!予定数量.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+										<TableRow>
+											<Height>0.75cm</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox19">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox20">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox21">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox22">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<DataElementName>規格_寸法</DataElementName>
+															<Value>=Fields!規格_寸法.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox23">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value />
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -511,19 +616,19 @@
 								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">18cm</dd:FixedWidth>
 								<TableColumns>
 									<TableColumn>
-										<Width>3.833cm</Width>
+										<Width>4.165cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.5cm</Width>
+										<Width>2.716cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.5cm</Width>
+										<Width>2.716cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>3.833cm</Width>
+										<Width>4.165cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>3.834cm</Width>
+										<Width>4.166cm</Width>
 									</TableColumn>
 								</TableColumns>
 							</Table>

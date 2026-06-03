@@ -5,16 +5,7 @@
   },
   {
     "ModuleName": "TableView/ymia_v_engineukebarai",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D5061",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-03T14:06:44.7049545+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engineukebarai.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_driveukebarai",
@@ -26,16 +17,7 @@
   },
   {
     "ModuleName": "Table/tkansayo_torihiki",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D5061",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-03T14:06:44.7049403+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\tkansayo_torihiki.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/thatchu",
@@ -59,16 +41,7 @@
   },
   {
     "ModuleName": "Table/tbuhink",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D5061",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-03T14:06:44.7049359+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\tbuhink.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/mgentani",
@@ -80,16 +53,7 @@
   },
   {
     "ModuleName": "TableView/ymia_v_thatchum",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D5061",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-03T14:06:44.7049282+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ymia_v_thatchum.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "Table/mhinban",
@@ -297,17 +261,7 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D5061",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-03T13:55:25.1203936+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧.json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
@@ -479,17 +433,7 @@
   },
   {
     "ModuleName": "PageReport/レポート1",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D5061",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-18T14:38:06.9970678+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\レポート1.json",
-      "Reports\\部品倉出メニュー\\レポート1.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "Tables/原価集計表",
@@ -525,42 +469,15 @@
   },
   {
     "ModuleName": "Table/mhimoku",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D5061",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-27T17:18:33.6130365+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\mhimoku.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou_ver_ystm",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D5061",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-03T14:06:44.7051997+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engine_drive_daichou_ver_ystm.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou_1",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D5061",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-03T14:06:44.7051571+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engine_drive_daichou_1.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）",
@@ -568,12 +485,6 @@
   },
   {
     "ModuleName": "PageReport/在庫品",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D5061",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-18T14:47:14.5716703+09:00",
     "ModuleType": 17
   }
 ]

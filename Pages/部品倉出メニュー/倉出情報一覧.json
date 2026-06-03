@@ -13,6 +13,7 @@
     "3,27": "検索",
     "3,34": "印刷",
     "3,41": "閉じる",
+    "3,53": "在庫品",
     "6,2": "倉出予定日4日前",
     "6,13": "ロケーション"
   },
@@ -52,38 +53,19 @@
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "ymia_v_kuradashi_buhin",
             "SqlCondition": {
-              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-              "SubConditions": [
-                {
-                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 6,
-                  "ColumnBindingInfo": {
-                    "TableName": "ymia_v_kuradashi_buhin",
-                    "ColumnName": "製番",
-                    "GUID": "55261e0e-883d-4214-b5a6-16efef6397f6"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=倉出情報一覧!G1"
-                  }
-                },
-                {
-                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                  "CompareType": 6,
-                  "ColumnBindingInfo": {
-                    "TableName": "ymia_v_kuradashi_buhin",
-                    "ColumnName": "倉出品番",
-                    "GUID": "5f12334e-f379-42a5-96ce-b163810ddc44"
-                  },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=倉出情報一覧!S1"
-                  }
-                }
-              ],
-              "RelationType": 1
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "ymia_v_kuradashi_buhin",
+                "ColumnName": "製番",
+                "GUID": "55261e0e-883d-4214-b5a6-16efef6397f6"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=倉出情報一覧!G4"
+              }
             },
-            "ID": "4cfa4afa27bd4c24b7d43343aa233ce7"
+            "ID": "e14ab5d0a7334963991c7351df9fa6d0"
           }
         ],
         "Text": "検索",
@@ -146,6 +128,44 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
+    "3,53": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
+            "SessionGuid": "2e546414-3fbf-4c78-9f56-018bb48f1c8b",
+            "OpenReportName": "在庫品",
+            "SideBarPosition": 0,
+            "PassParameters": [
+              {
+                "TargetParameter": "工事No",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!BB8"
+                }
+              },
+              {
+                "TargetParameter": "工事番号",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!BB8"
+                }
+              },
+              {
+                "TargetParameter": "倉出工程",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!AH8"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "在庫品",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
     "6,1": {
       "ListViewInfo": {
         "Name": "リストビュー1",
@@ -160,7 +180,7 @@
               "ColumnBindingInfo": {
                 "TableName": "ymia_v_kuradashi_buhin",
                 "ColumnName": "倉出予定日",
-                "GUID": "8197b653-82a5-4485-ad33-f9d4670ea20d"
+                "GUID": "fd96dadb-4dd4-44c7-8774-868600397099"
               },
               "Order": 0
             }
@@ -495,6 +515,10 @@
       "3,46": 4,
       "3,47": 4,
       "3,48": 6,
+      "3,53": 4,
+      "3,54": 5,
+      "3,55": 5,
+      "3,56": 5,
       "4,1": 1,
       "4,2": 1,
       "4,3": 1,
@@ -536,6 +560,10 @@
       "4,45": 5,
       "4,46": 4,
       "4,47": 4,
+      "4,53": 5,
+      "4,54": 5,
+      "4,55": 5,
+      "4,56": 5,
       "6,1": 7,
       "6,2": 8,
       "6,3": 5,
@@ -687,7 +715,8 @@
     "6,45,1,4",
     "6,49,1,4",
     "6,53,1,4",
-    "3,48,2,4"
+    "3,48,2,4",
+    "3,53,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -712,4 +741,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//ZhYJueW17KGrB/4wBZXN+YlYy+E+6VKZiy7wlTFbmuhYklx7lY6iOZ4ildetzZf3/LPaEgZC93pGRwrqS7G3XSt40uCZkOsYte1+ZLDH2XzVRa7D3Qloo4Mb4fjHfrUWPEulDchsUve1LALyRl0S2PjtRm2x/XwXoS4mszV5U/kaedwnB9zIrIw/qvsVrwAwbJdmJVIoWkilZsoPobrrYY6eLFh0NPFNZFhW852vVEuBBG0yVwrrX/lk31elDuTLI0h9d5Zxm3jZlTVyP1bQOLoS9cZySkCNoB4HioBU6Pf9vIB0npBfYZv85eqd7GJOl6nZl7ivUvMondG3qzok1jkYP6wuAI354YoWTn919DM5XWzWgAFCC9aw3u3K0x2FRzXQu/aw7jSQaWHNpRq/7oNzGQuxtxruFwuS/6JZvBhbxYVdVY7V1eRrycuRGBvZFwae90vq6JcZfN/lgJGRyOjC6OXZH2FFe46dIz2BiGd0eb7283uy1SEFAYDJGcuy/MYv6BWOfyl3ZpQ92gcmSKgtO7wBUCr2qHQ+h+jdyHEBHI0sSFSj6XQyo7z8XqPBs0D4Z68m092DzCuHsz4EH9ahMf3xVfTMomBypc633ITuPV40QaRiRVxNNadevB3GF696F3UaAdJkK1GV8zOgosVXVbp13ZG92ZX1OgT/+Rlvj4d44e+bGlORbQxsYbGhjiIkjpzSLe92acrSYa9/YpWfNSECZgW3WDeHiO8h2b5r0yV+AN0T2daavzjaXzfFTrWVw1Px+YkpT3Zgs+NseBo02V+xJ5iGvSOk+gNM+IFeHnZUqnDaHPPAFXSPH9pXssprFmkqJKX0IpJbZCcwbEc/bqONdLd1BrF1HTHtlDSZbTAWaTcvRu/snHtrXoDnWwnbGk+UNsqQw650pcOsZQ==|920
+}//SkhlcKN3fXXbeNBsZh1jhBIU69zaSkHoFcV92JZB9y7C1TbyZzeJPzvNq70iVH9FIxJ7NruZ6TuSctmRCRzjH9K77YWhrf46W+52D0x6io4T4KG1dIv/5MtcdlIz7YZhEYcy595uuFBSjQLkbjSEm91bUERODKahpQDUZ+aUjroDNLQF4OzubQUlz1yRq7ZJMkPTvQjHVmNs36RvKThfVBOcDedsgsYaqAymLRld6lmDslp24cdo0UUQezFJ4S9a4QUvackrreVOVPz0zRL5VdGosgUsEqAoYMnHPxmzltWB5dFROOmDn9aP3CIEa8eqUgcD2/FhyggrXQgGlpnf2Ei9jlSP6Uf7Sk0uPKFrqSleNFJc0aHJHyWEriDe78aYYoQbZUzzaF25wmXE1zazmd8FW0MFF/DBzZlpX9N5U4v5NKZbJlevz0UuXb6APAN0qe68EnMxoWVab7X0QLS+qTZ2RkZRE7dv4S3VLDnBOkUICZeP4cMJkK+wUr4v8s2UiJwMgj9tdADAasMtcmoSfaFFzMtsM8y72BMR0k3PHOzKF0EZvkuBozZwWPCq0AFTXWgmZPU7+o3QsX2DI44kImc+GxuKzGMe1ukbwBsdOKuK2KCiaN36iVtBFe2UJ6qJJ3zGgv6xEjxBJX67iLpCPOuUOT5/w+k0jKLg+MfR4QHxxWP2kQFeRAm558OzbY8cm2O7BSRmwO1e8+On3OlCH3wLH4ORm/DOAst6BhECTGuSxZCaNq/UvnEn1446KOmIbashlTgrPQ9JjoYem4ZO9112TeEG9x+8rLBdL0GvkNubpUdEd48PitkrCrS7MfnBx2kLkS/BL3MH26/rkNy8obUj0D/+fqs6//3M9mMIV8HvPA7L+xjtdOw3VEPARZfNCFjsqUDFvVvyYrONjzYt8w==|920
