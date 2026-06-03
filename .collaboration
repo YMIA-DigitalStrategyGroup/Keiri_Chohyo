@@ -500,7 +500,17 @@
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-03T13:45:06.804651+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）.json",
+      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）.rdlx"
+    ]
   },
   {
     "ModuleName": "PageReport/在庫品",
