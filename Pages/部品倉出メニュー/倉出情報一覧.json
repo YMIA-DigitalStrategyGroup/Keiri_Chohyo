@@ -14,13 +14,11 @@
     "3,34": "印刷",
     "3,41": "閉じる",
     "3,53": "在庫品",
-    "6,2": "倉出予定日4日前",
-    "6,13": "ロケーション"
+    "6,12": "在庫管理区分"
   },
   "Formulas": {
     "0,6": "SUBSTITUTE(G4,\"*\",\"%\")",
-    "0,18": "SUBSTITUTE(S4,\"*\",\"%\")",
-    "7,2": "IF(I8=\"-\",\"-\",I8-4)"
+    "0,18": "SUBSTITUTE(S4,\"*\",\"%\")"
   },
   "AttachInfos": {
     "3,6": {
@@ -169,23 +167,11 @@
     "6,1": {
       "ListViewInfo": {
         "Name": "リストビュー1",
-        "TableName": "ymia_v_kuradashi_buhin",
+        "TableName": "tbuhink",
         "RowIndex": 6,
         "ColumnIndex": 1,
         "RowCount": 31,
         "ColumnCount": 57,
-        "OrderByCondition": {
-          "OrderByColumns": [
-            {
-              "ColumnBindingInfo": {
-                "TableName": "ymia_v_kuradashi_buhin",
-                "ColumnName": "倉出予定日",
-                "GUID": "fd96dadb-4dd4-44c7-8774-868600397099"
-              },
-              "Order": 0
-            }
-          ]
-        },
         "TopCondition": {
           "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
           "TopCount": 100
@@ -215,7 +201,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=倉出情報一覧!O8"
+                  "SerializeProperty": "=倉出情報一覧!S8"
                 }
               }
             ]
@@ -224,105 +210,64 @@
         "ShowColumnHeaderInDesigner": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
-        "ColumnOperation": 2,
-        "DoNotLoadDataWhenLoadPage": true
+        "ColumnOperation": 2
       }
     },
     "7,1": {
-      "IsAutoMergeInListview": true
-    },
-    "7,2": {
-      "IsAutoMergeInListview": true
-    },
-    "7,8": {
+      "NameUsedInJavaScript": "SEIBAN",
       "IsAutoMergeInListview": true,
       "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "倉出予定日",
-        "GUID": "1d0cf23b-4314-4c78-b42e-4129b7e763f8"
+        "TableName": "tbuhink",
+        "ColumnName": "SEIBAN",
+        "GUID": "063d5c15-d56f-4067-b99d-c808de3439f5"
       }
     },
-    "7,14": {
-      "NameUsedInJavaScript": "倉出品番",
+    "7,6": {
+      "NameUsedInJavaScript": "KURADASHI_KOTEI",
       "IsAutoMergeInListview": true,
       "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "倉出品番",
-        "GUID": "80fb0636-0691-4c6d-9520-b341bb4024ec"
+        "TableName": "tbuhink",
+        "ColumnName": "KURADASHI_KOTEI",
+        "GUID": "91587def-22df-47d4-af13-35d41daf3785"
       }
     },
-    "7,21": {
-      "NameUsedInJavaScript": "品名",
+    "7,12": {
+      "NameUsedInJavaScript": "HINBAN",
       "IsAutoMergeInListview": true,
       "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "品名",
-        "GUID": "08be08a6-52d6-4eb8-9840-5d4ce17310c1"
+        "TableName": "tbuhink",
+        "ColumnName": "HINBAN",
+        "GUID": "b6bd25ad-dcc9-4009-a335-a32a8927fd5c",
+        "RelationBinding": {
+          "RelatedTable": "mhinban",
+          "RelatedColumn": "HINBAN",
+          "DisplayColumn": "ZAIKO_KANRI_KUBUN"
+        }
       }
     },
-    "7,29": {
-      "NameUsedInJavaScript": "規格_寸法",
-      "IsAutoMergeInListview": true,
+    "7,18": {
       "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "規格・寸法",
-        "GUID": "64ea5f09-d6ce-429f-8bcc-f03ea04be4f1"
+        "TableName": "tbuhink",
+        "ColumnName": "ID",
+        "GUID": "3f4e4a52-0d57-448f-8e21-fd1ac640cb41",
+        "RelationBinding": {
+          "RelatedTable": "tbuhinjm",
+          "RelatedColumn": "BUHIN_KOSEI_ID",
+          "DisplayColumn": "KAISHI_DATE"
+        }
       }
     },
-    "7,33": {
-      "NameUsedInJavaScript": "倉出工程",
-      "IsAutoMergeInListview": true,
+    "7,22": {
       "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "倉出工程",
-        "GUID": "8bb274e7-39fb-4be6-b5ff-10d095515241"
+        "TableName": "tbuhink",
+        "ColumnName": "SEIBAN",
+        "GUID": "91d0a6dc-519b-41eb-9c24-ccfce5f879d0",
+        "RelationBinding": {
+          "RelatedTable": "tjuchu",
+          "RelatedColumn": "TEHAI_KOBAN",
+          "DisplayColumn": "HANBAI_KATASHIKI"
+        }
       }
-    },
-    "7,37": {
-      "NameUsedInJavaScript": "予定数量",
-      "IsAutoMergeInListview": true,
-      "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "予定数量",
-        "GUID": "414aad84-eb45-420d-aee7-8708ed26bb44"
-      }
-    },
-    "7,42": {
-      "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "単位",
-        "GUID": "759a644b-ccac-4115-a227-71051cfdf9bf"
-      }
-    },
-    "7,45": {
-      "NameUsedInJavaScript": "ロケーション_棚番_",
-      "IsAutoMergeInListview": true,
-      "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "ロケーション（棚番）",
-        "GUID": "36e16423-5792-49d2-a6b3-438335fe7cf0"
-      }
-    },
-    "7,49": {
-      "NameUsedInJavaScript": "購買区分",
-      "IsAutoMergeInListview": true,
-      "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "購買区分",
-        "GUID": "af07b5bf-1d87-47f5-af37-34cc43fa8d1b"
-      }
-    },
-    "7,53": {
-      "NameUsedInJavaScript": "製番",
-      "IsAutoMergeInListview": true,
-      "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "製番",
-        "GUID": "fd2e2376-aa83-40c9-88c4-5d69fd568aee"
-      }
-    },
-    "7,57": {
-      "IsAutoMergeInListview": true
     }
   },
   "StyleDatas": {
@@ -378,6 +323,10 @@
         "Formatter": 1
       },
       {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 0,
         "FontSize": 13.333333333333332,
         "BorderBottom": null,
         "BorderTop": null,
@@ -385,8 +334,6 @@
         "BorderRight": null
       },
       {
-        "FontFamily": 0,
-        "FontSize": 13.333333333333332,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -405,24 +352,7 @@
       {
         "FontFamily": 0,
         "FontSize": 13.333333333333332,
-        "HorizontalAlignment": 6,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": 13.333333333333332,
         "Formatter": 7,
-        "HorizontalAlignment": 8,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontSize": 13.333333333333332,
         "HorizontalAlignment": 6,
         "BorderBottom": null,
         "BorderTop": null,
@@ -439,8 +369,7 @@
         "@",
         "yyyy/m/d",
         "Center",
-        "#,##0.0000_);[Red](#,##0.0000)",
-        "Right"
+        "0_);[Red](0)"
       ],
       "Borders": [
         {
@@ -565,112 +494,111 @@
       "4,55": 5,
       "4,56": 5,
       "6,1": 7,
-      "6,2": 8,
-      "6,3": 5,
-      "6,4": 5,
-      "6,5": 5,
-      "6,6": 5,
+      "6,6": 8,
       "6,7": 5,
-      "6,8": 8,
+      "6,8": 5,
       "6,9": 5,
       "6,10": 5,
       "6,11": 5,
-      "6,12": 5,
-      "6,13": 4,
-      "6,14": 8,
+      "6,12": 4,
+      "6,13": 5,
+      "6,14": 5,
       "6,15": 5,
       "6,16": 5,
       "6,17": 5,
       "6,18": 5,
       "6,19": 5,
       "6,20": 5,
-      "6,21": 8,
+      "6,21": 5,
       "6,22": 5,
       "6,23": 5,
       "6,24": 5,
       "6,25": 5,
       "6,26": 5,
-      "6,27": 5,
-      "6,28": 5,
-      "6,29": 8,
-      "6,30": 5,
-      "6,31": 5,
-      "6,32": 5,
-      "6,33": 8,
-      "6,34": 5,
-      "6,35": 5,
-      "6,36": 5,
-      "6,37": 8,
-      "6,38": 5,
-      "6,39": 5,
-      "6,40": 5,
-      "6,41": 5,
-      "6,45": 8,
-      "6,46": 5,
-      "6,47": 5,
-      "6,48": 5,
-      "6,49": 8,
-      "6,50": 5,
-      "6,51": 5,
-      "6,52": 5,
-      "6,53": 8,
-      "6,54": 5,
-      "6,55": 5,
-      "6,56": 5,
+      "6,27": 9,
+      "6,28": 9,
+      "6,29": 9,
+      "6,30": 9,
+      "6,31": 9,
+      "6,32": 9,
+      "6,33": 9,
+      "6,34": 9,
+      "6,35": 9,
+      "6,36": 9,
+      "6,37": 9,
+      "6,38": 9,
+      "6,39": 9,
+      "6,40": 9,
+      "6,41": 9,
+      "6,42": 9,
+      "6,43": 9,
+      "6,44": 9,
+      "6,45": 9,
+      "6,46": 9,
+      "6,47": 9,
+      "6,48": 9,
+      "6,49": 9,
+      "6,50": 9,
+      "6,51": 9,
+      "6,52": 9,
+      "6,53": 9,
+      "6,54": 9,
+      "6,55": 9,
+      "6,56": 9,
+      "6,57": 9,
       "7,1": 7,
-      "7,2": 9,
-      "7,3": 5,
-      "7,4": 5,
-      "7,5": 5,
-      "7,6": 5,
+      "7,6": 10,
       "7,7": 5,
-      "7,8": 9,
+      "7,8": 5,
       "7,9": 5,
       "7,10": 5,
       "7,11": 5,
-      "7,12": 5,
+      "7,12": 11,
       "7,13": 5,
-      "7,14": 8,
+      "7,14": 5,
       "7,15": 5,
       "7,16": 5,
       "7,17": 5,
       "7,18": 5,
       "7,19": 5,
       "7,20": 5,
-      "7,21": 8,
+      "7,21": 5,
       "7,22": 5,
       "7,23": 5,
       "7,24": 5,
       "7,25": 5,
       "7,26": 5,
-      "7,27": 5,
-      "7,28": 5,
-      "7,29": 8,
-      "7,30": 5,
-      "7,31": 5,
-      "7,32": 5,
-      "7,33": 10,
-      "7,34": 5,
-      "7,35": 5,
-      "7,36": 5,
-      "7,37": 11,
-      "7,38": 11,
-      "7,39": 5,
-      "7,40": 5,
-      "7,41": 5,
-      "7,42": 12,
-      "7,45": 10,
-      "7,46": 5,
-      "7,47": 5,
-      "7,48": 5,
-      "7,49": 10,
-      "7,50": 5,
-      "7,51": 5,
-      "7,52": 5,
-      "7,53": 8,
-      "7,54": 5,
-      "7,55": 5,
-      "7,56": 5
+      "7,27": 9,
+      "7,28": 9,
+      "7,29": 9,
+      "7,30": 9,
+      "7,31": 9,
+      "7,32": 9,
+      "7,33": 9,
+      "7,34": 9,
+      "7,35": 9,
+      "7,36": 9,
+      "7,37": 9,
+      "7,38": 9,
+      "7,39": 9,
+      "7,40": 9,
+      "7,41": 9,
+      "7,42": 9,
+      "7,43": 9,
+      "7,44": 9,
+      "7,45": 9,
+      "7,46": 9,
+      "7,47": 9,
+      "7,48": 9,
+      "7,49": 9,
+      "7,50": 9,
+      "7,51": 9,
+      "7,52": 9,
+      "7,53": 9,
+      "7,54": 9,
+      "7,55": 9,
+      "7,56": 9,
+      "7,57": 9
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -692,31 +620,19 @@
     "3,27,2,5",
     "3,34,2,5",
     "3,41,2,5",
-    "7,2,1,6",
-    "7,8,1,6",
-    "7,14,1,7",
-    "7,21,1,8",
-    "7,29,1,4",
-    "7,33,1,4",
-    "7,37,1,5",
-    "7,42,1,3",
-    "7,45,1,4",
-    "7,49,1,4",
-    "7,53,1,4",
     "8,1,29,57",
-    "6,2,1,6",
-    "6,8,1,6",
-    "6,14,1,7",
-    "6,21,1,8",
-    "6,29,1,4",
-    "6,33,1,4",
-    "6,37,1,5",
-    "6,42,1,3",
-    "6,45,1,4",
-    "6,49,1,4",
-    "6,53,1,4",
     "3,48,2,4",
-    "3,53,2,4"
+    "3,53,2,4",
+    "7,6,1,6",
+    "6,6,1,6",
+    "7,12,1,6",
+    "6,12,1,6",
+    "7,18,1,4",
+    "6,18,1,4",
+    "7,22,1,5",
+    "6,22,1,5",
+    "6,1,1,5",
+    "7,1,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -735,10 +651,11 @@
       ]
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": []
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "tbuhink"
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//SkhlcKN3fXXbeNBsZh1jhBIU69zaSkHoFcV92JZB9y7C1TbyZzeJPzvNq70iVH9FIxJ7NruZ6TuSctmRCRzjH9K77YWhrf46W+52D0x6io4T4KG1dIv/5MtcdlIz7YZhEYcy595uuFBSjQLkbjSEm91bUERODKahpQDUZ+aUjroDNLQF4OzubQUlz1yRq7ZJMkPTvQjHVmNs36RvKThfVBOcDedsgsYaqAymLRld6lmDslp24cdo0UUQezFJ4S9a4QUvackrreVOVPz0zRL5VdGosgUsEqAoYMnHPxmzltWB5dFROOmDn9aP3CIEa8eqUgcD2/FhyggrXQgGlpnf2Ei9jlSP6Uf7Sk0uPKFrqSleNFJc0aHJHyWEriDe78aYYoQbZUzzaF25wmXE1zazmd8FW0MFF/DBzZlpX9N5U4v5NKZbJlevz0UuXb6APAN0qe68EnMxoWVab7X0QLS+qTZ2RkZRE7dv4S3VLDnBOkUICZeP4cMJkK+wUr4v8s2UiJwMgj9tdADAasMtcmoSfaFFzMtsM8y72BMR0k3PHOzKF0EZvkuBozZwWPCq0AFTXWgmZPU7+o3QsX2DI44kImc+GxuKzGMe1ukbwBsdOKuK2KCiaN36iVtBFe2UJ6qJJ3zGgv6xEjxBJX67iLpCPOuUOT5/w+k0jKLg+MfR4QHxxWP2kQFeRAm558OzbY8cm2O7BSRmwO1e8+On3OlCH3wLH4ORm/DOAst6BhECTGuSxZCaNq/UvnEn1446KOmIbashlTgrPQ9JjoYem4ZO9112TeEG9x+8rLBdL0GvkNubpUdEd48PitkrCrS7MfnBx2kLkS/BL3MH26/rkNy8obUj0D/+fqs6//3M9mMIV8HvPA7L+xjtdOw3VEPARZfNCFjsqUDFvVvyYrONjzYt8w==|920
+}//9PHn7vQyMPqcvZp+MbBnbK7FXXDFBTTDRszR7cB3YL/BHwVPMRwGWXkeS7J8c5EQHmF56YiVQb406kA951cdGQG602Bto6Mq3bmafQrnBocoNHsC/gQmdam2tZ6ZB7gz5SYtY3hAY1vUbicVx9W85YxqrbKG+pvKV6dyH1SrVXuGR98NiTBcwetNiMNCgUe3odgijRxAMgc6Kg8ZUlSEow+A/NhHR2rzQ5hD96vyLRziJVe7fHY/TJOqT5H30dTKELHN4GQLvRsMaV+nZbsXu28PCDV1B0yDKZXVCXwFXXCGOIzRTCOCvInw+Oomoalm6GUr+HDdXsLtjmfsN8AJFC4UtG8lEaKVVwDMSqa8YMd4CIRaM1CWXFCyRj8erk3JMQB46YSuYY4auGDM4z9adHpstw5lSKaPWbcN2nbQswDR3XiaDnNZclF/6CnN1q6l2RflsFEstWHmxoFCtQfLlBzp+p3duSqlCYGKEqUkgyGDnn6znBfjwHIcqPV5FSSKjdP5DWbLhaRZcsg/xUlDPmY8sLKV47I/xXSF3HcOZMzVf4t93w5rXl+SrxIkWZbiiAgbiMTDJkUHVRcfyZwm9j0bBCk/tjhhKnOhvcHQuYSwR3sLCJDNesfjZWYV9wTs1iotQyPY32269cnnO2Zul3AlX6jxPevxJU++VRVV08OrEhCvPlFZtl8Oi39Ky9Rzx1JWzXSOD9oW24I3P4QK6RFnc/le6+ehGZrJL8Zyo++4xCKIjRMBT01P+X4ubmpqwylL08bKPtN8exhp4YxV6Xs+gQ3t2jXkhdPSRMmScmWfLmp5KLRkV3otPvZFe0aQ4eAgHH06e08syOyQE6L43W6ruTiazsIocgGFo896xQZ0zkUGcVKKrQl7XqT+ZbShi3M/2TsYpmM95zTkgVmsUg==|920

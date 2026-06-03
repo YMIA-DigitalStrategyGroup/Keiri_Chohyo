@@ -41,16 +41,7 @@
   },
   {
     "ModuleName": "Table/tbuhink",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-03T14:46:39.2435096+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\tbuhink.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/mgentani",
@@ -270,17 +261,7 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-03T14:46:39.2419242+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧.json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
@@ -508,12 +489,6 @@
   },
   {
     "ModuleName": "Table/tbuhinjm",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-03T14:49:32.854899+09:00",
     "ModuleType": 7
   }
 ]
