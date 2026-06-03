@@ -41,7 +41,16 @@
   },
   {
     "ModuleName": "Table/tbuhink",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-03T14:46:39.2435096+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\tbuhink.json"
+    ]
   },
   {
     "ModuleName": "Table/mgentani",
@@ -266,7 +275,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-03T14:44:56.4593831+09:00",
+    "LockDateTime": "2026-06-03T14:46:39.2419242+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\部品倉出メニュー\\倉出情報一覧.json",
