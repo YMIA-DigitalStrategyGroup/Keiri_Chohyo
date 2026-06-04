@@ -49,7 +49,16 @@
   },
   {
     "ModuleName": "Table/tjuchu",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-04T16:16:16.7959241+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\tjuchu.json"
+    ]
   },
   {
     "ModuleName": "TableView/ymia_v_thatchum",
@@ -266,7 +275,7 @@
       "UserName": "UNITY\\999D4610",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-04T14:37:57.5026916+09:00",
+    "LockDateTime": "2026-06-04T16:16:16.7935937+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\部品倉出メニュー\\倉出情報一覧.json",
