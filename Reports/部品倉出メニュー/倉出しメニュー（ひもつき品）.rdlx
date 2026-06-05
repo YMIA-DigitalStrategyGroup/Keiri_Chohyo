@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111111111111111111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report11111111111111111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -940,8 +940,7 @@
 				<DataSetName>ひもつき品_DataSet</DataSetName>
 				<Grouping Name="FixedPage_グループ1">
 					<GroupExpressions>
-						<GroupExpression>=Fields.Item("製番").Value</GroupExpression>
-						<GroupExpression>=Fields!倉出工程.Value</GroupExpression>
+						<GroupExpression>=Fields.Item("倉出工程").Value</GroupExpression>
 					</GroupExpressions>
 				</Grouping>
 			</FixedPage>
@@ -957,7 +956,7 @@
 	<DataSources>
 		<DataSource Name="ひもつき品">
 			<ConnectionProperties>
-				<ConnectString>jsondoc=http://localhost:57770/Forguncy/ARDataSource/GetDataSource/e24ffa96-9c3a-4b9c-ba74-24cfcbddbf87;schemadata={"type":"array","items":{"type":"object","properties":{"製番":{"type":"string"},"倉出品番":{"type":"string"},"品名":{"type":"string"},"規格_寸法":{"type":"string"},"倉出工程":{"type":"string"},"伝票番号":{"type":"string"},"倉出予定日":{"type":"string"},"倉出4日前":{"type":"string"},"予定数量":{"type":"number"},"単位":{"type":"string"},"ロケーション_棚番_":{"type":"string"},"購買区分":{"type":"string"},"取引先コード":{"type":"string"},"取引先名":{"type":"string"}}}}</ConnectString>
+				<ConnectString>jsondoc=http://localhost:57770/Forguncy/ARDataSource/GetDataSource/e24ffa96-9c3a-4b9c-ba74-24cfcbddbf87;schemadata={"type":"array","items":{"type":"object","properties":{"製番":{"type":"string"},"倉出品番":{"type":"string"},"品名":{"type":"string"},"規格_寸法":{"type":"string"},"倉出工程":{"type":"string"},"伝票番号":{"type":"string"},"倉出予定日":{"type":"string"},"倉出4日前":{"type":"string"},"予定数量":{"type":"number"},"単位":{"type":"string"},"ロケーション_棚番_":{"type":"string"},"購買区分":{"type":"string"},"取引先コード":{"type":"string"},"取引先名":{"type":"string"},"区分名称":{"type":"string"}}}}</ConnectString>
 				<DataProvider>JSON</DataProvider>
 			</ConnectionProperties>
 		</DataSource>
@@ -1012,6 +1011,9 @@
 				</Field>
 				<Field Name="取引先名">
 					<DataField>取引先名</DataField>
+				</Field>
+				<Field Name="区分名称">
+					<DataField>区分名称</DataField>
 				</Field>
 			</Fields>
 			<Query>

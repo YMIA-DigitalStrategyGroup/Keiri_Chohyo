@@ -8,7 +8,7 @@
         "TableName": "ymia_v_kuradashi_buhin",
         "BindingInfos": [
           {
-            "GUID": "0b468858-dd98-4c9d-8dc0-88d44be21b45",
+            "GUID": "af4dcaea-7c4a-4fc5-81e4-0f0568a551d9",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "製番",
@@ -17,7 +17,7 @@
             "ColumnName": "製番"
           },
           {
-            "GUID": "22a9da44-f9ca-4007-993e-1bb078d3e1ee",
+            "GUID": "ae06f631-d396-450b-9e36-2d0012dd8d6f",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "倉出品番",
@@ -26,7 +26,7 @@
             "ColumnName": "倉出品番"
           },
           {
-            "GUID": "b9a44b71-7da2-4c66-87d4-5ba1b40c32b0",
+            "GUID": "6ff75c73-a605-4884-aee4-d2e59b1693bb",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "品名",
@@ -35,7 +35,7 @@
             "ColumnName": "品名"
           },
           {
-            "GUID": "a04091f8-a230-458b-9d54-597520bbd977",
+            "GUID": "425925e6-bb50-4d5e-b269-1752717022e6",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "規格・寸法",
@@ -44,7 +44,7 @@
             "ColumnName": "規格_寸法"
           },
           {
-            "GUID": "acdc3213-7fec-4437-91cd-7cf3ff8e1146",
+            "GUID": "5e075d70-78e2-467e-b1bd-d1d673bc0299",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "在庫管理区分",
@@ -53,7 +53,7 @@
             "ColumnName": "在庫管理区分"
           },
           {
-            "GUID": "dc940b7e-9ece-4e04-944e-6059138f07a2",
+            "GUID": "152bf55d-6ef3-49a1-b714-c789fc965c0a",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "倉出工程",
@@ -62,7 +62,7 @@
             "ColumnName": "倉出工程"
           },
           {
-            "GUID": "630cc92d-35f8-438c-8cba-503be8b5724f",
+            "GUID": "ab509798-e0ce-4b0b-9f7b-85bd3329c92b",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "伝票番号",
@@ -71,7 +71,7 @@
             "ColumnName": "伝票番号"
           },
           {
-            "GUID": "e5c31176-31d2-4fe5-ab08-21698ea06703",
+            "GUID": "08acd90e-f8a9-4bb9-8332-1b769b19b660",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "倉出予定日",
@@ -80,7 +80,7 @@
             "ColumnName": "倉出予定日"
           },
           {
-            "GUID": "16f55b54-b93f-4d3a-aa0a-16ef7ba7ed0c",
+            "GUID": "f5d0d9de-faba-4810-a247-478700108feb",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "倉出4日前",
@@ -89,7 +89,7 @@
             "ColumnName": "倉出4日前"
           },
           {
-            "GUID": "a5fbc859-8a5d-4bdd-a0b3-72cc83fcea19",
+            "GUID": "e72d33a0-3a43-4f28-9699-9c66f2040859",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "予定数量",
@@ -98,7 +98,7 @@
             "ColumnName": "予定数量"
           },
           {
-            "GUID": "89d8e530-72f4-4e0f-8312-53a33676f1e2",
+            "GUID": "051be789-ae63-4b5e-bdc9-b7691c1d8add",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "単位",
@@ -107,7 +107,7 @@
             "ColumnName": "単位"
           },
           {
-            "GUID": "fab6516d-9c35-4b1f-adbc-26796be6bb9f",
+            "GUID": "d858a17c-6faa-4730-a102-2fb5004a05eb",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "ロケーション（棚番）",
@@ -116,13 +116,22 @@
             "ColumnName": "ロケーション_棚番_"
           },
           {
-            "GUID": "a5bddceb-5ea0-4a40-b027-7e4e13efd7fe",
+            "GUID": "55db00e7-eebb-4d74-8b8e-559a93f8f4a3",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "購買区分",
               "GUID": "86b0101d-4e61-4a5a-a4e9-502fda1b1907"
             },
             "ColumnName": "購買区分"
+          },
+          {
+            "GUID": "872165c5-23b1-4226-a72c-4727000a14f9",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "区分名称",
+              "GUID": "1717262d-f982-4152-bbc5-bc3929c3e134"
+            },
+            "ColumnName": "区分名称"
           }
         ],
         "SqlCondition": {
@@ -144,33 +153,10 @@
               "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
               "ColumnBindingInfo": {
                 "TableName": "ymia_v_kuradashi_buhin",
-                "ColumnName": "在庫管理区分",
-                "GUID": "53a6da9b-b741-4085-92eb-95302abcba7f"
+                "ColumnName": "区分名称",
+                "GUID": "b843b1ca-87ea-4e10-a86d-3b37a0afc217"
               },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=在庫管理区分"
-              }
-            },
-            {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "CompareType": 3,
-              "ColumnBindingInfo": {
-                "TableName": "ymia_v_kuradashi_buhin",
-                "ColumnName": "在庫管理区分",
-                "GUID": "1f56276e-de7d-449e-b99b-23501de50acc"
-              },
-              "Value": "100"
-            },
-            {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "CompareType": 5,
-              "ColumnBindingInfo": {
-                "TableName": "ymia_v_kuradashi_buhin",
-                "ColumnName": "在庫管理区分",
-                "GUID": "f985f493-27bf-4900-b3cf-5c6db2fb6615"
-              },
-              "Value": "200"
+              "Value": "在庫品"
             }
           ]
         }
@@ -197,6 +183,7 @@
         "string",
         "string",
         "number",
+        "string",
         "string",
         "string",
         "string"
