@@ -559,7 +559,17 @@
   },
   {
     "ModuleName": "PageReport/在庫品",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-05T14:25:58.1883519+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\部品倉出メニュー\\在庫品.json",
+      "Reports\\部品倉出メニュー\\在庫品.rdlx"
+    ]
   },
   {
     "ModuleName": "Table/tbuhinjm",
