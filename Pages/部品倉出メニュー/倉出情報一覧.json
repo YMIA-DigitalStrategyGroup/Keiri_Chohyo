@@ -13,8 +13,8 @@
     "3,27": "検索",
     "3,34": "印刷",
     "3,41": "閉じる",
-    "3,53": "在庫品",
-    "6,12": "在庫管理区分"
+    "3,48": "ひもつき品",
+    "3,53": "在庫品"
   },
   "Formulas": {
     "0,6": "SUBSTITUTE(G4,\"*\",\"%\")",
@@ -49,21 +49,21 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "ymia_v_kuradashi_buhin",
+            "TargetTableName": "tjuchu",
             "SqlCondition": {
               "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
               "CompareType": 6,
               "ColumnBindingInfo": {
-                "TableName": "ymia_v_kuradashi_buhin",
-                "ColumnName": "製番",
-                "GUID": "55261e0e-883d-4214-b5a6-16efef6397f6"
+                "TableName": "tjuchu",
+                "ColumnName": "TEHAI_KOBAN",
+                "GUID": "1d63f70e-026f-45c6-99f6-ce50e726c428"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=倉出情報一覧!G4"
               }
             },
-            "ID": "e14ab5d0a7334963991c7351df9fa6d0"
+            "ID": "45b875b2e1294e64a697f6203f9725f1"
           }
         ],
         "Text": "検索",
@@ -95,34 +95,32 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
-            "SessionGuid": "a3ef3839-c1b4-40c4-8d11-c604bcdfa503",
+            "SessionGuid": "bdd3b6af-510f-4d74-a8f1-4f49f9590a16",
             "OpenReportName": "倉出しメニュー（ひもつき品）",
             "SideBarPosition": 0,
             "PassParameters": [
               {
-                "TargetParameter": "工事No",
-                "SourceValue": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=倉出情報一覧!G1"
-                }
-              },
-              {
-                "TargetParameter": "倉出工程",
-                "SourceValue": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=倉出情報一覧!AH8"
-                }
-              },
-              {
                 "TargetParameter": "工事番号",
                 "SourceValue": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=倉出情報一覧!G1"
+                  "SerializeProperty": "=倉出情報一覧!B8"
                 }
+              },
+              {
+                "TargetParameter": "工事No",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!B8"
+                }
+              },
+              {
+                "TargetParameter": "在庫管理区分",
+                "SourceValue": "200"
               }
             ]
           }
         ],
+        "Text": "ひもつき品",
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
@@ -167,7 +165,7 @@
     "6,1": {
       "ListViewInfo": {
         "Name": "リストビュー1",
-        "TableName": "tbuhink",
+        "TableName": "tjuchu",
         "RowIndex": 6,
         "ColumnIndex": 1,
         "RowCount": 31,
@@ -214,59 +212,12 @@
       }
     },
     "7,1": {
-      "NameUsedInJavaScript": "SEIBAN",
+      "NameUsedInJavaScript": "TEHAI_KOBAN",
       "IsAutoMergeInListview": true,
       "BindingInfo": {
-        "TableName": "tbuhink",
-        "ColumnName": "SEIBAN",
-        "GUID": "063d5c15-d56f-4067-b99d-c808de3439f5"
-      }
-    },
-    "7,6": {
-      "NameUsedInJavaScript": "KURADASHI_KOTEI",
-      "IsAutoMergeInListview": true,
-      "BindingInfo": {
-        "TableName": "tbuhink",
-        "ColumnName": "KURADASHI_KOTEI",
-        "GUID": "91587def-22df-47d4-af13-35d41daf3785"
-      }
-    },
-    "7,12": {
-      "NameUsedInJavaScript": "HINBAN",
-      "IsAutoMergeInListview": true,
-      "BindingInfo": {
-        "TableName": "tbuhink",
-        "ColumnName": "HINBAN",
-        "GUID": "b6bd25ad-dcc9-4009-a335-a32a8927fd5c",
-        "RelationBinding": {
-          "RelatedTable": "mhinban",
-          "RelatedColumn": "HINBAN",
-          "DisplayColumn": "ZAIKO_KANRI_KUBUN"
-        }
-      }
-    },
-    "7,18": {
-      "BindingInfo": {
-        "TableName": "tbuhink",
-        "ColumnName": "ID",
-        "GUID": "3f4e4a52-0d57-448f-8e21-fd1ac640cb41",
-        "RelationBinding": {
-          "RelatedTable": "tbuhinjm",
-          "RelatedColumn": "BUHIN_KOSEI_ID",
-          "DisplayColumn": "KAISHI_DATE"
-        }
-      }
-    },
-    "7,22": {
-      "BindingInfo": {
-        "TableName": "tbuhink",
-        "ColumnName": "SEIBAN",
-        "GUID": "91d0a6dc-519b-41eb-9c24-ccfce5f879d0",
-        "RelationBinding": {
-          "RelatedTable": "tjuchu",
-          "RelatedColumn": "TEHAI_KOBAN",
-          "DisplayColumn": "HANBAI_KATASHIKI"
-        }
+        "TableName": "tjuchu",
+        "ColumnName": "TEHAI_KOBAN",
+        "GUID": "702be78c-04aa-45a4-bb86-ff2a0b42e1d6"
       }
     }
   },
@@ -326,34 +277,6 @@
         "FontSize": 13.333333333333332
       },
       {
-        "FontFamily": 0,
-        "FontSize": 13.333333333333332,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": 13.333333333333332,
-        "Formatter": 5,
-        "HorizontalAlignment": 6,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": 13.333333333333332,
-        "Formatter": 7,
-        "HorizontalAlignment": 6,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -366,10 +289,7 @@
         "[AUTO]General",
         "black",
         "Accent 1 80",
-        "@",
-        "yyyy/m/d",
-        "Center",
-        "0_);[Red](0)"
+        "@"
       ],
       "Borders": [
         {
@@ -495,110 +415,110 @@
       "4,56": 5,
       "6,1": 7,
       "6,6": 8,
-      "6,7": 5,
-      "6,8": 5,
-      "6,9": 5,
-      "6,10": 5,
-      "6,11": 5,
-      "6,12": 4,
-      "6,13": 5,
-      "6,14": 5,
-      "6,15": 5,
-      "6,16": 5,
-      "6,17": 5,
-      "6,18": 5,
-      "6,19": 5,
-      "6,20": 5,
-      "6,21": 5,
-      "6,22": 5,
-      "6,23": 5,
-      "6,24": 5,
-      "6,25": 5,
-      "6,26": 5,
-      "6,27": 9,
-      "6,28": 9,
-      "6,29": 9,
-      "6,30": 9,
-      "6,31": 9,
-      "6,32": 9,
-      "6,33": 9,
-      "6,34": 9,
-      "6,35": 9,
-      "6,36": 9,
-      "6,37": 9,
-      "6,38": 9,
-      "6,39": 9,
-      "6,40": 9,
-      "6,41": 9,
-      "6,42": 9,
-      "6,43": 9,
-      "6,44": 9,
-      "6,45": 9,
-      "6,46": 9,
-      "6,47": 9,
-      "6,48": 9,
-      "6,49": 9,
-      "6,50": 9,
-      "6,51": 9,
-      "6,52": 9,
-      "6,53": 9,
-      "6,54": 9,
-      "6,55": 9,
-      "6,56": 9,
-      "6,57": 9,
+      "6,7": 8,
+      "6,8": 8,
+      "6,9": 8,
+      "6,10": 8,
+      "6,11": 8,
+      "6,12": 8,
+      "6,13": 8,
+      "6,14": 8,
+      "6,15": 8,
+      "6,16": 8,
+      "6,17": 8,
+      "6,18": 8,
+      "6,19": 8,
+      "6,20": 8,
+      "6,21": 8,
+      "6,22": 8,
+      "6,23": 8,
+      "6,24": 8,
+      "6,25": 8,
+      "6,26": 8,
+      "6,27": 8,
+      "6,28": 8,
+      "6,29": 8,
+      "6,30": 8,
+      "6,31": 8,
+      "6,32": 8,
+      "6,33": 8,
+      "6,34": 8,
+      "6,35": 8,
+      "6,36": 8,
+      "6,37": 8,
+      "6,38": 8,
+      "6,39": 8,
+      "6,40": 8,
+      "6,41": 8,
+      "6,42": 8,
+      "6,43": 8,
+      "6,44": 8,
+      "6,45": 8,
+      "6,46": 8,
+      "6,47": 8,
+      "6,48": 8,
+      "6,49": 8,
+      "6,50": 8,
+      "6,51": 8,
+      "6,52": 8,
+      "6,53": 8,
+      "6,54": 8,
+      "6,55": 8,
+      "6,56": 8,
+      "6,57": 8,
       "7,1": 7,
-      "7,6": 10,
-      "7,7": 5,
-      "7,8": 5,
-      "7,9": 5,
-      "7,10": 5,
-      "7,11": 5,
-      "7,12": 11,
-      "7,13": 5,
-      "7,14": 5,
-      "7,15": 5,
-      "7,16": 5,
-      "7,17": 5,
-      "7,18": 5,
-      "7,19": 5,
-      "7,20": 5,
-      "7,21": 5,
-      "7,22": 5,
-      "7,23": 5,
-      "7,24": 5,
-      "7,25": 5,
-      "7,26": 5,
-      "7,27": 9,
-      "7,28": 9,
-      "7,29": 9,
-      "7,30": 9,
-      "7,31": 9,
-      "7,32": 9,
-      "7,33": 9,
-      "7,34": 9,
-      "7,35": 9,
-      "7,36": 9,
-      "7,37": 9,
-      "7,38": 9,
-      "7,39": 9,
-      "7,40": 9,
-      "7,41": 9,
-      "7,42": 9,
-      "7,43": 9,
-      "7,44": 9,
-      "7,45": 9,
-      "7,46": 9,
-      "7,47": 9,
-      "7,48": 9,
-      "7,49": 9,
-      "7,50": 9,
-      "7,51": 9,
-      "7,52": 9,
-      "7,53": 9,
-      "7,54": 9,
-      "7,55": 9,
-      "7,56": 9,
-      "7,57": 9
+      "7,6": 8,
+      "7,7": 8,
+      "7,8": 8,
+      "7,9": 8,
+      "7,10": 8,
+      "7,11": 8,
+      "7,12": 8,
+      "7,13": 8,
+      "7,14": 8,
+      "7,15": 8,
+      "7,16": 8,
+      "7,17": 8,
+      "7,18": 8,
+      "7,19": 8,
+      "7,20": 8,
+      "7,21": 8,
+      "7,22": 8,
+      "7,23": 8,
+      "7,24": 8,
+      "7,25": 8,
+      "7,26": 8,
+      "7,27": 8,
+      "7,28": 8,
+      "7,29": 8,
+      "7,30": 8,
+      "7,31": 8,
+      "7,32": 8,
+      "7,33": 8,
+      "7,34": 8,
+      "7,35": 8,
+      "7,36": 8,
+      "7,37": 8,
+      "7,38": 8,
+      "7,39": 8,
+      "7,40": 8,
+      "7,41": 8,
+      "7,42": 8,
+      "7,43": 8,
+      "7,44": 8,
+      "7,45": 8,
+      "7,46": 8,
+      "7,47": 8,
+      "7,48": 8,
+      "7,49": 8,
+      "7,50": 8,
+      "7,51": 8,
+      "7,52": 8,
+      "7,53": 8,
+      "7,54": 8,
+      "7,55": 8,
+      "7,56": 8,
+      "7,57": 8
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -623,16 +543,8 @@
     "8,1,29,57",
     "3,48,2,4",
     "3,53,2,4",
-    "7,6,1,6",
-    "6,6,1,6",
-    "7,12,1,6",
-    "6,12,1,6",
-    "7,18,1,4",
-    "6,18,1,4",
-    "7,22,1,5",
-    "6,22,1,5",
-    "6,1,1,5",
-    "7,1,1,5"
+    "7,1,1,5",
+    "6,1,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -658,4 +570,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//9PHn7vQyMPqcvZp+MbBnbK7FXXDFBTTDRszR7cB3YL/BHwVPMRwGWXkeS7J8c5EQHmF56YiVQb406kA951cdGQG602Bto6Mq3bmafQrnBocoNHsC/gQmdam2tZ6ZB7gz5SYtY3hAY1vUbicVx9W85YxqrbKG+pvKV6dyH1SrVXuGR98NiTBcwetNiMNCgUe3odgijRxAMgc6Kg8ZUlSEow+A/NhHR2rzQ5hD96vyLRziJVe7fHY/TJOqT5H30dTKELHN4GQLvRsMaV+nZbsXu28PCDV1B0yDKZXVCXwFXXCGOIzRTCOCvInw+Oomoalm6GUr+HDdXsLtjmfsN8AJFC4UtG8lEaKVVwDMSqa8YMd4CIRaM1CWXFCyRj8erk3JMQB46YSuYY4auGDM4z9adHpstw5lSKaPWbcN2nbQswDR3XiaDnNZclF/6CnN1q6l2RflsFEstWHmxoFCtQfLlBzp+p3duSqlCYGKEqUkgyGDnn6znBfjwHIcqPV5FSSKjdP5DWbLhaRZcsg/xUlDPmY8sLKV47I/xXSF3HcOZMzVf4t93w5rXl+SrxIkWZbiiAgbiMTDJkUHVRcfyZwm9j0bBCk/tjhhKnOhvcHQuYSwR3sLCJDNesfjZWYV9wTs1iotQyPY32269cnnO2Zul3AlX6jxPevxJU++VRVV08OrEhCvPlFZtl8Oi39Ky9Rzx1JWzXSOD9oW24I3P4QK6RFnc/le6+ehGZrJL8Zyo++4xCKIjRMBT01P+X4ubmpqwylL08bKPtN8exhp4YxV6Xs+gQ3t2jXkhdPSRMmScmWfLmp5KLRkV3otPvZFe0aQ4eAgHH06e08syOyQE6L43W6ruTiazsIocgGFo896xQZ0zkUGcVKKrQl7XqT+ZbShi3M/2TsYpmM95zTkgVmsUg==|920
+}//H63AivPRZ6Othaxh/OoojXgq3nmkAEUuPovmB9gMPP2ZEqXCwg2NMdQZzbgiKmexaqv9wJKCucxt+xdlaeP7j612jAQkyPcIPE4JKL7Om4I9x/GE8ikHyAGAC00xpPtQs+5pElGvOTLw3NT+0tHXX4yiYeZrMYkuS83JoujbiycY546Nfkh31n6Lha6MvSb7HyT6hplvHQIIqJTMHU0dT4yrqBxp9f6NA7QLbYjNGBUxc5k0zERQrYUl69gBblz6Vpy4Nt1JiHxtFRxcC8lJh77jKSCfSOroW0Igd5HHcaVR04uRh5uRcUmf4tBeY9EAWxTaWL0s/O5jDB54yYoD4ehhNVbe6j7t6MOZzMi2ha4xlq/8Put4UfsQft6QfaAPwm6i00zi1JTvU2xstJlZtknmRlyteu6WX0U6eJWxbp2DRNf/FMo4fMUmAUcB/XLsZpvm/twoxY6UT9IBKPPY/hHf8ijIEDZelYm6kpCcHKIkXZ4XW8Ia0l16SJsQm58PwijymydrL3nyELaIHeq2lypdl8pzRUlcjKUpXKhBcXot9xqJFegM3EC7qhR1ikHmPLxdWiHcbtH0lDQ+2PGA4P/DDiQFC+ENVnCUBEp/ZZZ9Nsnwj6WZwqQSIWus9X/CC2UA6bNjCn4bTOYnJgj+u4vQa81amM8cJCj+72D7LyJrsC/t/tJT6aUC5HaBYfZ8J1zRGufmCvGFxeV024M/lN4B5bhywUiPu8JBTGhM/5IQW5/kaSnpLW3LPbB7Zij0+ZqyrRflCsxGgQjT5gN4FzXFX64V8LBteeWNdrxdut29TGUeZhwtMHMLLkwv/I4E8fAxHZV2XJDhysoN9DrphxkLVeoTbIuq53k7KBI6VN4NF2ZT4URlVRr3FpcdxvibcVt9kTNRxxUN/IR7WOnaaA==|920
