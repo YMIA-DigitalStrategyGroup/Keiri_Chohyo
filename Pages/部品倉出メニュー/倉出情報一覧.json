@@ -130,7 +130,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
-            "SessionGuid": "2e546414-3fbf-4c78-9f56-018bb48f1c8b",
+            "SessionGuid": "4403a47d-1637-4e2a-84e1-4b6121ce70ec",
             "OpenReportName": "在庫品",
             "SideBarPosition": 0,
             "PassParameters": [
@@ -138,22 +138,19 @@
                 "TargetParameter": "工事No",
                 "SourceValue": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=倉出情報一覧!BB8"
+                  "SerializeProperty": "=倉出情報一覧!B8"
                 }
               },
               {
                 "TargetParameter": "工事番号",
                 "SourceValue": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=倉出情報一覧!BB8"
+                  "SerializeProperty": "=倉出情報一覧!B8"
                 }
               },
               {
-                "TargetParameter": "倉出工程",
-                "SourceValue": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=倉出情報一覧!AH8"
-                }
+                "TargetParameter": "在庫管理区分",
+                "SourceValue": "111"
               }
             ]
           }
@@ -570,4 +567,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//H63AivPRZ6Othaxh/OoojXgq3nmkAEUuPovmB9gMPP2ZEqXCwg2NMdQZzbgiKmexaqv9wJKCucxt+xdlaeP7j612jAQkyPcIPE4JKL7Om4I9x/GE8ikHyAGAC00xpPtQs+5pElGvOTLw3NT+0tHXX4yiYeZrMYkuS83JoujbiycY546Nfkh31n6Lha6MvSb7HyT6hplvHQIIqJTMHU0dT4yrqBxp9f6NA7QLbYjNGBUxc5k0zERQrYUl69gBblz6Vpy4Nt1JiHxtFRxcC8lJh77jKSCfSOroW0Igd5HHcaVR04uRh5uRcUmf4tBeY9EAWxTaWL0s/O5jDB54yYoD4ehhNVbe6j7t6MOZzMi2ha4xlq/8Put4UfsQft6QfaAPwm6i00zi1JTvU2xstJlZtknmRlyteu6WX0U6eJWxbp2DRNf/FMo4fMUmAUcB/XLsZpvm/twoxY6UT9IBKPPY/hHf8ijIEDZelYm6kpCcHKIkXZ4XW8Ia0l16SJsQm58PwijymydrL3nyELaIHeq2lypdl8pzRUlcjKUpXKhBcXot9xqJFegM3EC7qhR1ikHmPLxdWiHcbtH0lDQ+2PGA4P/DDiQFC+ENVnCUBEp/ZZZ9Nsnwj6WZwqQSIWus9X/CC2UA6bNjCn4bTOYnJgj+u4vQa81amM8cJCj+72D7LyJrsC/t/tJT6aUC5HaBYfZ8J1zRGufmCvGFxeV024M/lN4B5bhywUiPu8JBTGhM/5IQW5/kaSnpLW3LPbB7Zij0+ZqyrRflCsxGgQjT5gN4FzXFX64V8LBteeWNdrxdut29TGUeZhwtMHMLLkwv/I4E8fAxHZV2XJDhysoN9DrphxkLVeoTbIuq53k7KBI6VN4NF2ZT4URlVRr3FpcdxvibcVt9kTNRxxUN/IR7WOnaaA==|920
+}///VOuTAXPYqZVX+Y0K0jsk9HCIz2JJ1hPB4n5KL3e1ovXo9FTzeFRnXylDqMf8SrStX2HorRdgD1xEZn4FREYaVAj2sKLY+JZq0dWOTngk9SHeJqyWzByYYQnFWTyKOB3os4zAhusTN+dNh6eU64YEgPFsMSsPxk8mTzDK7oHDDisHw4kf6cUd2p1XvULi8eRMOaE2inKE4o2XnQKs+TMnnRf6cF7rDrL6URqcqqvyahJtSdukKg3oYyjw3Yi9YB48wPdHmcfVikYZgLqWtvmI9vHE8O9Z0K9WeqGQ8ldB2lmXDfBVIu651vRIlLYoEv0CJKJLqAXvPcOAM5RqPCWLju4I0QEeJQLbXK7Q3ih7v+VVS/egmzM+p1ywI3672O63NsIEhUcskFMv8PD+hRPyKAuf9vRQsoq7Oo8hmXz0neC9N7MjScOrUjfy5ltUzU4KDEJmEhvh5B57kmN7KUbQm0ADSnJGitjKEj8Ec0IqJanDefA2ztQ6Q+xGMIeQM/m4RqNdjYQoH1BK+6UTkDq9d4Q/1wWQhYEDqIcB3bbvUs0zxQI5dDIWDCOFDyv7w8iYQWsHyCjkjFh9zxMGqccu/pi1l8SqYIPZYNDdZV7S8JyzSRCrb+CxZ46/YHXs3Mm2Nm0nZV9om5nuswNNIexBOxf+EuMXsJ58gQTOpAfzY9P9t1Ad+2gWWzv9DiafdLRYhUbiVaCGub4rXhia7/Hyygw1yIkzJ52uNnV27wfnkBo8n9qnRAZCksnZSPQIIo2mmARCYF2VUa/1W4qMSFYfeDpmvMIHw/5OqGqr198aCJck+MUY/C9FQyIyvWEEv4wd0FkW95k2jGy35EVghmVYt1Rn6rAY66l5uzaf33uYpHyifVFEaXwzjp6sL49F7oB1+69dhhHmuKlk80O9NTNMg==|920
