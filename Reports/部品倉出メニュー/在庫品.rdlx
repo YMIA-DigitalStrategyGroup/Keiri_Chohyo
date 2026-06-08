@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report111111111111111111111111111111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111111111111111111111111111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -760,10 +760,10 @@
 								<Value />
 							</Textbox>
 							<Textbox Name="TextBox26">
-								<Top>0.238cm</Top>
-								<Left>15.557cm</Left>
+								<Top>0.079cm</Top>
+								<Left>15.372cm</Left>
 								<Width>3.029cm</Width>
-								<Height>1.332cm</Height>
+								<Height>1.676cm</Height>
 								<Style>
 									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 									<Color>#f44336</Color>
@@ -781,7 +781,8 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-								<Value>192も含めてる
+								<Value>在庫管理区分
+192も含めてる
 ０は含まない</Value>
 							</Textbox>
 						</ReportItems>
