@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111111111111111111111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report11111111111111111111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -101,8 +101,7 @@
 																<TextAlign>Center</TextAlign>
 																<VerticalAlign>Middle</VerticalAlign>
 																<BorderColor>
-																	<Bottom>=Theme.Colors!Accent1</Bottom>
-																	<Top>=Theme.Colors!Accent1</Top>
+																	<Default>=Theme.Colors!Dark1</Default>
 																</BorderColor>
 																<BorderStyle>
 																	<Left>Groove</Left>
@@ -136,8 +135,7 @@
 																<TextAlign>Center</TextAlign>
 																<VerticalAlign>Middle</VerticalAlign>
 																<BorderColor>
-																	<Bottom>=Theme.Colors!Accent1</Bottom>
-																	<Top>=Theme.Colors!Accent1</Top>
+																	<Default>=Theme.Colors!Dark1</Default>
 																</BorderColor>
 																<BorderStyle>
 																	<Left>Groove</Left>
@@ -171,8 +169,7 @@
 																<TextAlign>Center</TextAlign>
 																<VerticalAlign>Middle</VerticalAlign>
 																<BorderColor>
-																	<Bottom>=Theme.Colors!Accent1</Bottom>
-																	<Top>=Theme.Colors!Accent1</Top>
+																	<Default>=Theme.Colors!Dark1</Default>
 																</BorderColor>
 																<BorderStyle>
 																	<Left>Groove</Left>
@@ -205,8 +202,7 @@
 																<TextAlign>Center</TextAlign>
 																<VerticalAlign>Middle</VerticalAlign>
 																<BorderColor>
-																	<Bottom>=Theme.Colors!Accent1</Bottom>
-																	<Top>=Theme.Colors!Accent1</Top>
+																	<Default>=Theme.Colors!Dark1</Default>
 																</BorderColor>
 																<BorderStyle>
 																	<Left>Groove</Left>
@@ -239,8 +235,7 @@
 																<TextAlign>Center</TextAlign>
 																<VerticalAlign>Middle</VerticalAlign>
 																<BorderColor>
-																	<Bottom>=Theme.Colors!Accent1</Bottom>
-																	<Top>=Theme.Colors!Accent1</Top>
+																	<Default>=Theme.Colors!Dark1</Default>
 																</BorderColor>
 																<BorderStyle>
 																	<Left>Groove</Left>
@@ -270,7 +265,7 @@
 													<ReportItems>
 														<Textbox Name="TextBox6">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>8pt</FontSize>
@@ -296,7 +291,7 @@
 													<ReportItems>
 														<Textbox Name="TextBox7">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>8pt</FontSize>
@@ -322,7 +317,7 @@
 													<ReportItems>
 														<Textbox Name="TextBox13">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>8pt</FontSize>
@@ -348,7 +343,7 @@
 													<ReportItems>
 														<Textbox Name="TextBox16">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>8pt</FontSize>
@@ -361,6 +356,7 @@
 																<TextAlign>Center</TextAlign>
 																<VerticalAlign>Middle</VerticalAlign>
 																<BorderStyle>
+																	<Bottom>Groove</Bottom>
 																	<Left>Groove</Left>
 																	<Right>Groove</Right>
 																	<Top>Double</Top>
@@ -375,7 +371,7 @@
 													<ReportItems>
 														<Textbox Name="TextBox8">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>8pt</FontSize>
@@ -406,7 +402,7 @@
 													<ReportItems>
 														<Textbox Name="TextBox18">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>8pt</FontSize>
@@ -430,7 +426,7 @@
 													<ReportItems>
 														<Textbox Name="TextBox19">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>8pt</FontSize>
@@ -454,7 +450,7 @@
 													<ReportItems>
 														<Textbox Name="TextBox20">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>8pt</FontSize>
@@ -479,7 +475,7 @@
 													<ReportItems>
 														<Textbox Name="TextBox22">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>8pt</FontSize>
