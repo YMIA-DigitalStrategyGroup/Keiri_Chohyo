@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111111111111111111111111111111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report111111111111111111111111111111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -598,7 +598,7 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-								<Value>=Fields!製番.Value</Value>
+								<Value>=Fields.Item("製番").Value</Value>
 							</Textbox>
 							<Textbox Name="TextBox16">
 								<Top>1.1141in</Top>
@@ -733,31 +733,7 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-								<Value>=Fields!倉出工程.Value</Value>
-							</Textbox>
-							<Textbox Name="TextBox25">
-								<Top>0cm</Top>
-								<Left>0cm</Left>
-								<Width>2.5cm</Width>
-								<Height>0.75cm</Height>
-								<Style>
-									<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
-									<Color>=Theme.Colors!Dark1</Color>
-									<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
-									<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
-									<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
-									<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
-									<PaddingBottom>2pt</PaddingBottom>
-									<PaddingLeft>2pt</PaddingLeft>
-									<PaddingRight>2pt</PaddingRight>
-									<PaddingTop>2pt</PaddingTop>
-								</Style>
-								<ZIndex>20</ZIndex>
-								<Custom><ReportStyle>
-	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
-	<StyleName>Dark 1 Major</StyleName>
-</ReportStyle></Custom>
-								<Value />
+								<Value>=Fields.Item("倉出工程").Value</Value>
 							</Textbox>
 							<Textbox Name="TextBox26">
 								<Top>0.079cm</Top>
@@ -786,6 +762,9 @@
 ０は含まない</Value>
 							</Textbox>
 						</ReportItems>
+						<Style>
+							<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+						</Style>
 						<PaperOrientation>Portrait</PaperOrientation>
 						<Width>21cm</Width>
 						<Height>29.7cm</Height>
