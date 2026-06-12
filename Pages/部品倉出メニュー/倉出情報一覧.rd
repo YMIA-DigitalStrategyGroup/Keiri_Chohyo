@@ -5,6 +5,6 @@
   "Formulas": {
     "0,6": "SUBSTITUTE(G4,\"*\",\"%\")",
     "1,42": "SUBSTITUTE(AQ5,\"*\",\"%\")",
-    "0,42": "SUBSTITUTE(Q4,\"*\",\"%\")"
+    "0,42": "SUBSTITUTE(Q7,\"*\",\"%\")"
   }
 }

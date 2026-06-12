@@ -73,16 +73,7 @@
   },
   {
     "ModuleName": "TableView/ymia_v_kuradashi_kotei",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-12T13:25:44.8435354+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\部品倉出メニュー\\ymia_v_kuradashi_kotei.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_kuradashi_buhin",
@@ -270,17 +261,7 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-11T16:21:13.0973462+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧.json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
@@ -504,17 +485,7 @@
   },
   {
     "ModuleName": "PageReport/在庫品",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-11T16:10:27.6525743+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\在庫品.json",
-      "Reports\\部品倉出メニュー\\在庫品.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "Table/tbuhinjm",

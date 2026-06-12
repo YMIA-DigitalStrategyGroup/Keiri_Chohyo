@@ -61,5 +61,21 @@
       "QueryColumns": []
     }
   },
+  "Relations": [
+    {
+      "PrimaryTable": "ymia_v_kuradashi_buhin",
+      "PrimaryColumn": "製番",
+      "ForeignTable": "ymia_v_kuradashi_kotei",
+      "ForeignColumn": "製番",
+      "IsDetailTableRelation": false
+    },
+    {
+      "PrimaryTable": "ymia_v_kuradashi_buhin",
+      "PrimaryColumn": "倉出工程",
+      "ForeignTable": "ymia_v_kuradashi_kotei",
+      "ForeignColumn": "倉出工程コード",
+      "IsDetailTableRelation": false
+    }
+  ],
   "Indexes": []
 }

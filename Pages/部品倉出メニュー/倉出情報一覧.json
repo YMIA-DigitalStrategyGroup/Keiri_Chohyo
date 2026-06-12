@@ -15,11 +15,6 @@
   },
   "Cols": {
     "InLogicalVisibleIndexes": [
-      31,
-      32,
-      33,
-      34,
-      35,
       36,
       37,
       38,
@@ -49,16 +44,16 @@
     "0,37": "品番",
     "1,37": "製番",
     "3,1": "製番",
-    "3,13": "検索",
-    "3,19": "印刷",
-    "3,25": "閉じる",
-    "7,13": "ひもつき品",
-    "10,13": "在庫品"
+    "6,13": "検索",
+    "6,19": "印刷",
+    "6,25": "閉じる",
+    "10,13": "ひもつき品",
+    "13,13": "在庫品"
   },
   "Formulas": {
     "0,6": "SUBSTITUTE(G4,\"*\",\"%\")",
     "1,42": "SUBSTITUTE(AQ5,\"*\",\"%\")",
-    "0,42": "SUBSTITUTE(Q4,\"*\",\"%\")"
+    "0,42": "SUBSTITUTE(Q7,\"*\",\"%\")"
   },
   "AttachInfos": {
     "3,6": {
@@ -71,52 +66,6 @@
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "WaterMark": "艇種・艇番を入力"
-      }
-    },
-    "3,13": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
-            "TargetTableName": "tjuchu",
-            "SqlCondition": {
-              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-              "CompareType": 6,
-              "ColumnBindingInfo": {
-                "TableName": "tjuchu",
-                "ColumnName": "TEHAI_KOBAN",
-                "GUID": "1d63f70e-026f-45c6-99f6-ce50e726c428"
-              },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=倉出情報一覧!G4"
-              }
-            },
-            "ID": "45b875b2e1294e64a697f6203f9725f1"
-          }
-        ],
-        "Text": "検索",
-        "TemplateKey": "_RS_Normal_Style2"
-      }
-    },
-    "3,19": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "Text": "印刷",
-        "TemplateKey": "_RS_Normal_Style2"
-      }
-    },
-    "3,25": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
-          }
-        ],
-        "Text": "閉じる",
-        "TemplateKey": "_RS_Normal_Style2"
       }
     },
     "6,1": {
@@ -158,6 +107,52 @@
         "ColumnOperation": 2
       }
     },
+    "6,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "tjuchu",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "tjuchu",
+                "ColumnName": "TEHAI_KOBAN",
+                "GUID": "1d63f70e-026f-45c6-99f6-ce50e726c428"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=倉出情報一覧!G4"
+              }
+            },
+            "ID": "45b875b2e1294e64a697f6203f9725f1"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,19": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "印刷",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "閉じる",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
     "7,1": {
       "NameUsedInJavaScript": "TEHAI_KOBAN",
       "IsAutoMergeInListview": true,
@@ -167,7 +162,7 @@
         "GUID": "702be78c-04aa-45a4-bb86-ff2a0b42e1d6"
       }
     },
-    "7,13": {
+    "10,13": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -204,7 +199,7 @@
         }
       }
     },
-    "10,13": {
+    "13,13": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -239,6 +234,61 @@
           "Color": "Background 1",
           "UseCellTypeForeColor": true
         }
+      }
+    },
+    "16,13": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "ymia_v_kuradashi_kotei",
+        "RowIndex": 16,
+        "ColumnIndex": 13,
+        "RowCount": 20,
+        "ColumnCount": 23,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_v_kuradashi_kotei",
+            "ColumnName": "製番",
+            "GUID": "baf927c9-04a8-4918-aef6-66284841ce13"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=倉出情報一覧!G1"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "IsTotalRowVisible": true,
+        "IsTotalRowAtFirstRow": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "17,14": {
+      "NameUsedInJavaScript": "製番",
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_kotei",
+        "ColumnName": "製番",
+        "GUID": "c41159fc-d92c-4dc0-8adf-420de7a4be74"
+      }
+    },
+    "17,21": {
+      "NameUsedInJavaScript": "倉出工程コード",
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_kotei",
+        "ColumnName": "倉出工程コード",
+        "GUID": "22a2cb38-e5dc-437e-ac29-1ed0bfccddf8"
+      }
+    },
+    "17,26": {
+      "NameUsedInJavaScript": "倉出工程名",
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_kotei",
+        "ColumnName": "倉出工程名",
+        "GUID": "b2443f8c-0b17-4c17-ac13-8169d1b26d1d"
       }
     }
   },
@@ -284,6 +334,9 @@
         "BorderRight": null
       },
       {
+        "FontSize": 13.333333333333332
+      },
+      {
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": null,
@@ -291,7 +344,7 @@
         "BorderRight": null
       },
       {
-        "FontSize": 13.333333333333332
+        "FontFamily": 0
       }
     ],
     "Types": {
@@ -357,21 +410,6 @@
       "3,10": 1,
       "3,11": 1,
       "3,12": 1,
-      "3,13": 4,
-      "3,14": 5,
-      "3,15": 5,
-      "3,16": 5,
-      "3,17": 5,
-      "3,19": 4,
-      "3,20": 5,
-      "3,21": 5,
-      "3,22": 5,
-      "3,23": 5,
-      "3,25": 4,
-      "3,26": 5,
-      "3,27": 5,
-      "3,28": 5,
-      "3,29": 5,
       "3,44": 4,
       "3,45": 4,
       "4,1": 1,
@@ -386,131 +424,177 @@
       "4,10": 1,
       "4,11": 1,
       "4,12": 1,
-      "4,13": 5,
-      "4,14": 5,
-      "4,15": 5,
-      "4,16": 5,
-      "4,17": 5,
-      "4,19": 5,
-      "4,20": 5,
-      "4,21": 5,
-      "4,22": 5,
-      "4,23": 5,
-      "4,25": 5,
-      "4,26": 5,
-      "4,27": 5,
-      "4,28": 5,
-      "4,29": 5,
       "4,44": 4,
       "4,45": 4,
-      "5,13": 5,
-      "5,14": 5,
-      "5,15": 5,
-      "5,16": 5,
-      "5,17": 5,
-      "5,18": 5,
-      "5,19": 5,
-      "5,20": 5,
-      "5,21": 5,
-      "5,22": 5,
-      "5,23": 5,
-      "5,24": 5,
-      "6,1": 6,
-      "7,1": 6,
-      "7,13": 4,
-      "7,14": 5,
-      "7,15": 5,
-      "7,16": 5,
-      "7,17": 5,
-      "7,18": 5,
-      "7,19": 5,
-      "7,20": 5,
-      "7,21": 5,
-      "7,22": 5,
-      "7,23": 5,
-      "7,24": 5,
-      "7,25": 5,
-      "7,26": 5,
-      "7,27": 5,
-      "7,28": 5,
-      "7,29": 5,
-      "8,13": 5,
-      "8,14": 5,
-      "8,15": 5,
-      "8,16": 5,
-      "8,17": 5,
-      "8,18": 5,
-      "8,19": 5,
-      "8,20": 5,
-      "8,21": 5,
-      "8,22": 5,
-      "8,23": 5,
-      "8,24": 5,
-      "8,25": 5,
-      "8,26": 5,
-      "8,27": 5,
-      "8,28": 5,
-      "8,29": 5,
-      "9,13": 5,
-      "9,14": 5,
-      "9,15": 5,
-      "9,16": 5,
-      "9,17": 5,
-      "9,18": 5,
-      "9,19": 5,
-      "9,20": 5,
-      "9,21": 5,
-      "9,22": 5,
-      "9,23": 5,
-      "9,24": 5,
-      "9,25": 5,
-      "9,26": 5,
-      "9,27": 5,
-      "9,28": 5,
-      "9,29": 5,
+      "6,1": 5,
+      "6,13": 4,
+      "6,14": 6,
+      "6,15": 6,
+      "6,16": 6,
+      "6,17": 6,
+      "6,18": 6,
+      "6,19": 4,
+      "6,20": 6,
+      "6,21": 6,
+      "6,22": 6,
+      "6,23": 6,
+      "6,24": 6,
+      "6,25": 4,
+      "6,26": 6,
+      "6,27": 6,
+      "6,28": 6,
+      "6,29": 6,
+      "7,1": 5,
+      "7,13": 6,
+      "7,14": 6,
+      "7,15": 6,
+      "7,16": 6,
+      "7,17": 6,
+      "7,18": 6,
+      "7,19": 6,
+      "7,20": 6,
+      "7,21": 6,
+      "7,22": 6,
+      "7,23": 6,
+      "7,24": 6,
+      "7,25": 6,
+      "7,26": 6,
+      "7,27": 6,
+      "7,28": 6,
+      "7,29": 6,
+      "8,13": 6,
+      "8,14": 6,
+      "8,15": 6,
+      "8,16": 6,
+      "8,17": 6,
+      "8,18": 6,
+      "8,19": 6,
+      "8,20": 6,
+      "8,21": 6,
+      "8,22": 6,
+      "8,23": 6,
+      "8,24": 6,
+      "8,25": 6,
+      "8,26": 6,
+      "8,27": 6,
+      "8,28": 6,
+      "8,29": 6,
+      "9,13": 6,
+      "9,14": 6,
+      "9,15": 6,
+      "9,16": 6,
+      "9,17": 6,
+      "9,18": 6,
+      "9,19": 6,
+      "9,20": 6,
+      "9,21": 6,
+      "9,22": 6,
+      "9,23": 6,
+      "9,24": 6,
+      "9,25": 6,
+      "9,26": 6,
+      "9,27": 6,
+      "9,28": 6,
+      "9,29": 6,
       "10,13": 4,
-      "10,14": 5,
-      "10,15": 5,
-      "10,16": 5,
-      "10,17": 5,
-      "10,18": 5,
-      "10,19": 5,
-      "10,20": 5,
-      "10,21": 5,
-      "10,22": 5,
-      "10,23": 5,
-      "10,24": 5,
-      "10,25": 5,
-      "10,26": 5,
-      "10,27": 5,
-      "10,28": 5,
-      "10,29": 5,
-      "11,13": 5,
-      "11,14": 5,
-      "11,15": 5,
-      "11,16": 5,
-      "11,17": 5,
-      "11,18": 5,
-      "11,19": 5,
-      "11,20": 5,
-      "11,21": 5,
-      "11,22": 5,
-      "11,23": 5,
-      "11,24": 5,
-      "11,25": 5,
-      "11,26": 5,
-      "11,27": 5,
-      "11,28": 5,
-      "11,29": 5,
-      "13,18": 5,
-      "13,19": 5,
-      "13,20": 5,
-      "13,21": 5,
-      "14,17": 5,
-      "14,18": 5,
-      "14,19": 5,
-      "14,20": 5,
-      "14,21": 5
+      "10,14": 6,
+      "10,15": 6,
+      "10,16": 6,
+      "10,17": 6,
+      "10,18": 6,
+      "10,19": 6,
+      "10,20": 6,
+      "10,21": 6,
+      "10,22": 6,
+      "10,23": 6,
+      "10,24": 6,
+      "10,25": 6,
+      "10,26": 6,
+      "10,27": 6,
+      "10,28": 6,
+      "10,29": 6,
+      "11,13": 6,
+      "11,14": 6,
+      "11,15": 6,
+      "11,16": 6,
+      "11,17": 6,
+      "11,18": 6,
+      "11,19": 6,
+      "11,20": 6,
+      "11,21": 6,
+      "11,22": 6,
+      "11,23": 6,
+      "11,24": 6,
+      "11,25": 6,
+      "11,26": 6,
+      "11,27": 6,
+      "11,28": 6,
+      "11,29": 6,
+      "12,13": 6,
+      "12,14": 6,
+      "12,15": 6,
+      "12,16": 6,
+      "12,17": 6,
+      "12,18": 6,
+      "12,19": 6,
+      "12,20": 6,
+      "12,21": 6,
+      "12,22": 6,
+      "12,23": 6,
+      "12,24": 6,
+      "12,25": 6,
+      "12,26": 6,
+      "12,27": 6,
+      "12,28": 6,
+      "12,29": 6,
+      "13,13": 4,
+      "13,14": 6,
+      "13,15": 6,
+      "13,16": 6,
+      "13,17": 6,
+      "13,18": 6,
+      "13,19": 6,
+      "13,20": 6,
+      "13,21": 6,
+      "13,22": 6,
+      "13,23": 6,
+      "13,24": 6,
+      "13,25": 6,
+      "13,26": 6,
+      "13,27": 6,
+      "13,28": 6,
+      "13,29": 6,
+      "14,13": 6,
+      "14,14": 6,
+      "14,15": 6,
+      "14,16": 6,
+      "14,17": 6,
+      "14,18": 6,
+      "14,19": 6,
+      "14,20": 6,
+      "14,21": 6,
+      "14,22": 6,
+      "14,23": 6,
+      "14,24": 6,
+      "14,25": 6,
+      "14,26": 6,
+      "14,27": 6,
+      "14,28": 6,
+      "14,29": 6,
+      "16,14": 7,
+      "16,21": 6,
+      "16,22": 6,
+      "16,23": 6,
+      "16,24": 6,
+      "16,25": 6,
+      "16,26": 7,
+      "17,14": 7,
+      "17,21": 6,
+      "17,22": 6,
+      "17,23": 6,
+      "17,24": 6,
+      "17,25": 6,
+      "17,26": 7
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -532,11 +616,18 @@
     "0,42,1,7",
     "1,37,1,5",
     "1,42,1,7",
-    "3,13,2,5",
-    "7,13,2,17",
+    "6,13,2,5",
     "10,13,2,17",
-    "3,19,2,5",
-    "3,25,2,5"
+    "13,13,2,17",
+    "6,19,2,5",
+    "6,25,2,5",
+    "18,13,18,23",
+    "17,21,1,5",
+    "16,21,1,5",
+    "16,14,1,7",
+    "17,14,1,7",
+    "16,26,1,10",
+    "17,26,1,10"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -562,4 +653,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//6Kr/Hiu3te/sT7fkv4RVwUKRh8i90/QLXF1Rjh+yTIibUw2AkooB9rAthB1TbmG98akNDk/q9T6m6ISsU4Spn/3o/uYYZZEO2q6ulg0nwaiAggJ8GYKTXa1Iighqdd7z1xt+flZzVTX6RulDXv88BBGtw8QDWTu1y7/7uhMg5ggvjEsiYGILUMLwOyWkUBBsZqeLnYVF3Y02pazH/VWR7Il9xIe8qM2Ah97VhN5yUHEwZVt9hgTGvbw+JyxvFpejAimc8vC8/QwBHY8MY0TKyWb6BSG1UtpGyfFJQtdryuS9+tktD4+d6n0PomRPtxK9DqZWr57iGoF72pSMTUUlFDU6MOA0TMdQdy6IXE3s6zmfgD945I2hozmFf8SCfwzYmGMGOcikIhOHj9KIHlIatG39WghnVchoT6LuBDjUPl5C9+DqeMam5OMtu7iDzuQxFaRpRL+LKU9fg3Fj04TcEGxwOhSlnsdLhtclmP113hW19LKdfWUMQeNZiC2a2XPyCVviEYN6JHdkyj5kJlzNtWD3X4ddMHC+8yDyYm12Pr9TrjJ75RPnz4MOqJkwNL9TntC04XhlCaeBCoae+1JDc1uQTXJzzKuguX+Sq3Ftme9QPwWXCEImUT04iaUVsk/NmXkIPR8CgDxOJscnENoAKCOJKWVdEEe9QA3zt3uhs7yB0yWONRWzDIHDSr2sCzJwaPRjCM10vOQMfExWVmVe4orR6vxVOr50hVGmgtDhUiELX6UbtTnrbf9xkaOSZYCX/T2Kztup195X86wOuJWbrYOtjxv8HJbsXQ0pQwUq85FRwt2fOpOTvdbY+fbfQrmmrt/dDr3K59CbaNYnyY4ZN3rnlkENK+aedRKxddNc2fGLBY2WyvU0M1P1vlkOfiuOAOdhumw3Nr6rdACKsJyCTg==|920
+}//jN20PCpWV76HNqf8TD7Juu3yxFGp9DQAkR0xDCbixIKHjwMQQWTkHUufIxk+cF2gCTXqnqRwXes2nKvkaa2PcztDh2+6KebjaTVvKld/epS6WsRIiJ0hh84AlCudAdV1clvs7qRosiUFgKQ/T4cl0+kwtktdAQNdR9cLPH+aHIRU5dLx2iZDTIuKWP1XWPq0k/qdphiHebQuntfSTG6nq1DjqgcK8YioUsNPmQ7mfyIiUNfbiyzTg737S3p/wzmn0ePv8rdsUkeZYBlnEZr3vb04h0upv6KiKNyzZcVFXghCphywZ8u6ChCZap8P8unuc5qxReFATg8JVncDHTfFyr3nZuElsunewYvTMp9tUdNWYrSzGuaHvt9hi2UhPpUTz31fw+4EpUpyCbYYwet2zAlsVH/uXmUPK7kmwCvwRrk5i+z/kouYpJOAhDo78ZPrmU42iClUsHr1E/zmnI29I+by59OOd1UxKmy46q2G/3AGsXJwdX4aYOKujYT5clCI76BcZty4DOJwufyBR4PJbymqQGVP7YmyOliv7aZd1bjCSjJ3lIlTGR5rlldGCsF3P8bjUkBLHCQ/d3iKmhYLQ4NPCZOUNQzpRUnEHqHcXLWszFEU17pb1C39F4SnWKGun8uYtKP6Jp7+G+AiLf3jgHLJ94aAgzkQ1DDAYC4DXfeM7NSb/tc1WhFFzKsRhGF88Y/Rir2IjhN2YZMC3ULi21BUBiQOxppAZ7jruPVyXW5GfKADPdwaam08prhD2ftaBcP13lmkdofwbUEX7/Kxuaq0wmmKd+Te+wYJrorwa1+gYaDPpwz17CCcduRVim6EPcbYWLLWzY45DowNSsIi4fM899BhA9vIHq01SvbrnEi+PocQ/oeQiZt+gpfktd2gOrSLyR6Bs9SlwAAOHFmM9g==|920
