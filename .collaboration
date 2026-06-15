@@ -510,5 +510,15 @@
     },
     "LockDateTime": "2026-06-15T12:29:50.1938998+09:00",
     "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/ymia_t_kuradashi_report_work",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-15T13:53:07.2413334+09:00",
+    "ModuleType": 7
   }
 ]
