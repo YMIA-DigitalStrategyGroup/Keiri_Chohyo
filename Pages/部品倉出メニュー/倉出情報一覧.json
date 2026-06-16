@@ -24,7 +24,8 @@
     "6,13": "検索",
     "6,19": "印刷",
     "6,25": "閉じる",
-    "10,13": "ひもつき品",
+    "10,13": "ひもつき品（SQLパターン）",
+    "10,31": "ひもつき品（データセット内の設定のみパターン）",
     "13,13": "在庫品"
   },
   "Formulas": {
@@ -145,8 +146,8 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
-            "SessionGuid": "225ba2d2-fb2f-488b-bf9b-656793d9d413",
-            "OpenReportName": "倉出しメニュー（ひもつき品）",
+            "SessionGuid": "b580b804-6be7-4774-946b-2dbf7de57492",
+            "OpenReportName": "倉出しメニュー（ひもつき品）A　データセット内の設定のみパター",
             "SideBarPosition": 0,
             "PassParameters": [
               {
@@ -164,6 +165,7 @@
                 }
               }
             ],
+            "Comments": "",
             "Disabled": true
           },
           {
@@ -200,7 +202,7 @@
                     "BindingInfo": {
                       "TableName": "ymia_t_kuradashi_report_work",
                       "ColumnName": "USER_ID",
-                      "GUID": "82824aa0-d000-4de6-9a06-9586f779d334"
+                      "GUID": "e84dd0b8-b6aa-47d8-8d6f-31d6b3ecd21a"
                     },
                     "Value": "%CurrentUser.UserName%"
                   },
@@ -208,7 +210,7 @@
                     "BindingInfo": {
                       "TableName": "ymia_t_kuradashi_report_work",
                       "ColumnName": "SEIBAN",
-                      "GUID": "d455c61a-7187-4300-84c4-fb3c9b45e1bd"
+                      "GUID": "acaf8538-89e3-40ed-8e8f-aec19034b5f7"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -219,7 +221,7 @@
                     "BindingInfo": {
                       "TableName": "ymia_t_kuradashi_report_work",
                       "ColumnName": "KOTEI_CODE",
-                      "GUID": "09abc658-2890-4ed5-b354-db2ed09c3875"
+                      "GUID": "34e444d0-4455-4abd-a8b6-44771aa74601"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -232,8 +234,8 @@
           },
           {
             "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
-            "SessionGuid": "669d58dd-d42b-4f6b-ae94-27f216592744",
-            "OpenReportName": "倉出しメニュー（ひもつき品）",
+            "SessionGuid": "f15c8b31-da9b-41db-9e0d-16e65b49affa",
+            "OpenReportName": "倉出しメニュー（ひもつき品）A　データセット内の設定のみパター",
             "SideBarPosition": 0,
             "PassParameters": [
               {
@@ -254,10 +256,169 @@
                 "TargetParameter": "UserID",
                 "SourceValue": "%CurrentUser.UserName%"
               }
-            ]
+            ],
+            "Comments": "倉出しメニュー（ひもつき品）データセット内の設定のみパターン用",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
+            "SessionGuid": "e1c758ce-dd63-4d4b-84ca-ea29b6d40d54",
+            "OpenReportName": "倉出しメニュー（ひもつき品）B　SQLパターン",
+            "SideBarPosition": 0,
+            "PassParameters": [
+              {
+                "TargetParameter": "工事No",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!B8"
+                }
+              },
+              {
+                "TargetParameter": "工事番号",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!B8"
+                }
+              },
+              {
+                "TargetParameter": "UserID",
+                "SourceValue": "%CurrentUser.UserName%"
+              }
+            ],
+            "Comments": "倉出しメニュー（ひもつき品）データセット内にSQL適用パターン"
           }
         ],
-        "Text": "ひもつき品",
+        "Text": "ひもつき品（SQLパターン）",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/030_edit_file_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "10,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
+            "SessionGuid": "3a7d682d-546e-4c61-a92c-109307d3f0f5",
+            "OpenReportName": "倉出しメニュー（ひもつき品）A　データセット内の設定のみパター",
+            "SideBarPosition": 0,
+            "PassParameters": [
+              {
+                "TargetParameter": "工事番号",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!T8"
+                }
+              },
+              {
+                "TargetParameter": "工事No",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!T8"
+                }
+              }
+            ],
+            "Comments": "",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "ymia_t_kuradashi_report_work",
+            "UpdateType": "delete",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_t_kuradashi_report_work",
+                "ColumnName": "USER_ID",
+                "GUID": "2a2fa796-3911-49dd-9520-107ac66b213f"
+              },
+              "Value": "%CurrentUser.UserName%"
+            }
+          },
+          {
+            "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+            "LoopInfo": {
+              "$type": "Forguncy.Model.ListviewKindLoopInfo, ServerDesignerCommon",
+              "ListviewName": "倉出工程表示用リストビュー",
+              "ListViewLoopMode": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                "TableName": "ymia_t_kuradashi_report_work",
+                "UpdateType": "add",
+                "ShowConfirm": false,
+                "UpdateBindingValues": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "ymia_t_kuradashi_report_work",
+                      "ColumnName": "USER_ID",
+                      "GUID": "a39e7677-718b-483c-99e8-a253d13ad038"
+                    },
+                    "Value": "%CurrentUser.UserName%"
+                  },
+                  {
+                    "BindingInfo": {
+                      "TableName": "ymia_t_kuradashi_report_work",
+                      "ColumnName": "SEIBAN",
+                      "GUID": "f97153d3-dd9a-48f6-bc11-38b2dfd57344"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=倉出情報一覧!Y1"
+                    }
+                  },
+                  {
+                    "BindingInfo": {
+                      "TableName": "ymia_t_kuradashi_report_work",
+                      "ColumnName": "KOTEI_CODE",
+                      "GUID": "a906e8de-3326-4e6a-86df-ab3c37a3669f"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=倉出情報一覧!BM18"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
+            "SessionGuid": "8acc1871-b97c-4dcf-9106-5c044809ccde",
+            "OpenReportName": "倉出しメニュー（ひもつき品）A　データセット内の設定のみパター",
+            "SideBarPosition": 0,
+            "PassParameters": [
+              {
+                "TargetParameter": "工事No",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!T8"
+                }
+              },
+              {
+                "TargetParameter": "工事番号",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!T8"
+                }
+              },
+              {
+                "TargetParameter": "UserID",
+                "SourceValue": "%CurrentUser.UserName%"
+              }
+            ],
+            "Comments": "倉出しメニュー（ひもつき品）データセット内の設定のみパターン"
+          }
+        ],
+        "Text": "ひもつき品（データセット内の設定のみパターン）",
         "TemplateKey": "_RS_Normal_Style2",
         "Icon": {
           "Name": "Application/030_edit_file_1.svg",
@@ -317,7 +478,7 @@
           "ColumnBindingInfo": {
             "TableName": "ymia_v_kuradashi_kotei_select",
             "ColumnName": "製番",
-            "GUID": "7f8d6416-9a81-423f-ae18-e448f56b0fea"
+            "GUID": "2df5ae17-23b1-48f2-94f1-799ba01e541e"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -348,7 +509,7 @@
           "ColumnBindingInfo": {
             "TableName": "ymia_v_kuradashi_kotei",
             "ColumnName": "製番",
-            "GUID": "baf927c9-04a8-4918-aef6-66284841ce13"
+            "GUID": "fc86dcbb-eec9-44d2-a50e-1b24e84c2d98"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -636,6 +797,23 @@
       "10,27": 6,
       "10,28": 6,
       "10,29": 6,
+      "10,31": 4,
+      "10,32": 6,
+      "10,33": 6,
+      "10,34": 6,
+      "10,35": 6,
+      "10,36": 6,
+      "10,37": 6,
+      "10,38": 6,
+      "10,39": 6,
+      "10,40": 6,
+      "10,41": 6,
+      "10,42": 6,
+      "10,43": 6,
+      "10,44": 6,
+      "10,45": 6,
+      "10,46": 6,
+      "10,47": 6,
       "11,13": 6,
       "11,14": 6,
       "11,15": 6,
@@ -653,6 +831,23 @@
       "11,27": 6,
       "11,28": 6,
       "11,29": 6,
+      "11,31": 6,
+      "11,32": 6,
+      "11,33": 6,
+      "11,34": 6,
+      "11,35": 6,
+      "11,36": 6,
+      "11,37": 6,
+      "11,38": 6,
+      "11,39": 6,
+      "11,40": 6,
+      "11,41": 6,
+      "11,42": 6,
+      "11,43": 6,
+      "11,44": 6,
+      "11,45": 6,
+      "11,46": 6,
+      "11,47": 6,
       "12,13": 6,
       "12,14": 6,
       "12,15": 6,
@@ -1663,7 +1858,8 @@
     "17,51,1,10",
     "8,1,28,10",
     "18,13,18,23",
-    "18,38,18,23"
+    "18,38,18,23",
+    "10,31,2,17"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1689,4 +1885,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//aYO+ZueR+8zzL5ScBO+itWeiYt6xxLzhJxxjsZPpCKSlCF17HAFBAGlaV+qJGuRrj465ANyA9tpLxsqaBMBwOB3ma9lD7rpHd1eXDBDlMaQ0/61fOgG71bhLHIFXOMwXpquLm6oh1OgsToUUI1MSEMPMcaSAlXv9fcvDo5h2G3eqf4xw8xa2AAgfiArlW6RoCHmEH+GELdiqL1L/7gAEnmfZY0SDEqdND/JUl9+AfpqSi6G6M5cLhrvz0R/XqVCDRhmd73EuopGEvRCbk+gEg3RMZj5qBNAHZLw7Itn5duKoQdvhrRr7xpmcYYAql4M7P7GaqXr4Jtq680I18n7w7KZbcdu9GyVuhFwymPFUNnr8SbuS1tmyOYb9nc93R/IibrHY5eYQLmw3PGKH+Yn3wI2XADAkmNZVrGxe2DkBr1fCQaT9ZrLGGgXXbNDuWruPZH4Mb/zvttDZmvn8eb0tK6ka7sLoEKwbJPUhdbOoia2a38OI94oCMJb7e1poGCbn9JBE92aoa9t0rrOvxDtSuvrBXmNg7hx+LFhvlt2UDPXHRUVi3wHXmJXWyzkZR6Nk59CUILID5d7JwG/ioEykqRVmsxoMnxn7j7ZuIrK8qDXffJJ3jiwRxnEzonyTB4sIOPbpOa3XXXlsyTnY4v5g6wv1O1xDTNsw9cslEwrjrOt+cEgspMXkMhbhkb6mqghOsVqJZCo5gDfRRHdeJ/VT894QAUSUxtpxjU/4Mtjdo0Y4VMQsFljuGPW7+crMOM6pMWHsjzaLkzJA1kRdJHA9/wjuAVB4gkbFzYdst5mj0nFarIDEDKYcfShhpuvjghl4G9t6v/Es4NikhVAyGLoypfWzAQ5N3nhPfLPyD1lztW4lg1i3mDYtRuDTOvvjfW0pInCsAlUbxLBpGsfaZxATGw==|920
+}//t4VajFxXA5uCXpwAnxPn8ZEQSF3prbxXfOlb1y1JjqMQIMpi19hewIAXGkDayls5nLwlowX9nKU7xGhiwZnrk8IInbH10ePc6tEJPEJsGdvD+0vHhkM6wFmqBWJaBtxu4L7AlVX8dHwuiSxi45Pga53tTfh/32PKSGdiPGlVn7Ahqb/k6236rR8SsE+3Qgh+/dH0uTL2KAJOvXMYEUFaCc98ot18ZmJJirXDwCVwK/UkwATNxO6xFPGcJ6bmbljaXiQq3+lsXHzekmUF4l4sGZa+c0Ku34zqA8A9h0mmQIM/WERCKis/KJmHpp5kbBMAsStMvr5T22Y7zmgprJxgk0hXj2coN6nMNzMuwe3Vghr8f2IpKS8RoLTotRDq/O27206klknHxp+Nc8iiGzJo5qhTYqxyuzABJxCaGdjPQam1SEz7GUxo+snbFaswho+KAT2OWJfpEPSrjGAP+ItGaIM4557vXuku3ci8OoZak19kf/sga7wyCVPQsT0JIcx8I5JEwPLi9Ww13D7z+c3SSh9saWhmrOVzx9LHnh/olZvuz6fLqIM8b9HxSYAh2y6FQlXLp6NDpipqUs1wDf8p/2s6D6wY3pxJvXp4q8zOUDo06IIIjwYRaSvefw4o+hnMixv0RT9eiL2/AYylQgm3xxYJZUCxbAa++bNcoyNbWA1SlNsiVC4FZUwzax4ms3Ch5rqjZAtZ8HKXcBihpXrOCbZb+vjGuaRCQ+LxZ98lFk8U5xGAwSzrs95NiE2a7U38dmp7gnheyRvWLNtgnLMiRGk+BEWLj0vnUdSIN2uMtmD9uVzQKhW+dG9WNt2gK5s5C5sjktf7HRro2TDtBI8DhVWEFHCY42h9MfSHioRQhCH1sq5QggaufncIQN8x+lDg4KmB6ugIgiXj9c0Qp5lMqg==|920
