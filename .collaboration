@@ -517,5 +517,15 @@
   {
     "ModuleName": "Table/ymia_t_kuradashi_report_work",
     "ModuleType": 7
+  },
+  {
+    "ModuleName": "PageReport/倉出しメニュー（ひもつき品※バックアップレポート）",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-16T12:24:53.5093972+09:00",
+    "ModuleType": 17
   }
 ]
