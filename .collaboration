@@ -533,6 +533,16 @@
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）A　データセット内の設定のみパター",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-17T07:29:03.3957848+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）A　データセット内の設定のみパター.json",
+      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）A　データセット内の設定のみパター.rdlx"
+    ]
   }
 ]
