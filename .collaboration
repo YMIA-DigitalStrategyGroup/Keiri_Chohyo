@@ -275,7 +275,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-16T11:48:30.429978+09:00",
+    "LockDateTime": "2026-06-16T14:38:07.4388968+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\部品倉出メニュー\\倉出情報一覧.json",
@@ -500,12 +500,12 @@
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-16T13:52:16.5752994+09:00",
+    "LockDateTime": "2026-06-16T14:38:07.4386167+09:00",
     "ModuleType": 17,
     "ToRemoveFiles": [
       "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）.json",
@@ -545,7 +545,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-16T12:26:06.3176878+09:00",
+    "LockDateTime": "2026-06-16T14:38:07.43897+09:00",
     "ModuleType": 1
   },
   {
@@ -566,6 +566,16 @@
       "Email": "example@example.com"
     },
     "LockDateTime": "2026-06-16T14:37:24.4977462+09:00",
+    "ModuleType": 17
+  },
+  {
+    "ModuleName": "PageReport/倉出しメニュー（ひもつき品）データセット内の設定のみパターン",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-16T14:38:07.4386241+09:00",
     "ModuleType": 17
   }
 ]
