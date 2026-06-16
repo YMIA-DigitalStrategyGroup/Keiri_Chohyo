@@ -557,5 +557,15 @@
     },
     "LockDateTime": "2026-06-16T13:52:42.5041882+09:00",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "PageReport/倉出しメニュー（ひもつき品）SQLパターン",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-16T14:37:24.4977462+09:00",
+    "ModuleType": 17
   }
 ]
