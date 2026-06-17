@@ -606,13 +606,13 @@
     "ModuleType": 19
   },
   {
-    "ModuleName": "PageReport/材料受入明細表_レポート (2)",
+    "ModuleName": "PageReport/材料請求書入手明細表",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME001384",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-17T11:24:48.6283189+09:00",
+    "LockDateTime": "2026-06-17T11:25:06.3056209+09:00",
     "ModuleType": 17
   }
 ]
