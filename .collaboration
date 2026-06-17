@@ -261,17 +261,7 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-17T07:29:24.0105558+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧.json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
@@ -507,31 +497,11 @@
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品※バックアップレポート）",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-17T07:28:55.0013343+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品※バックアップレポート）.json",
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品※バックアップレポート）.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "PCPage/倉出情報一覧 (※バックアップ用ページ)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-17T07:29:12.0056767+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ).json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ).rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PageReport/在庫品 (※バックアップ用レポート)",
@@ -539,31 +509,11 @@
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）B　SQLパターン",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-17T07:28:43.7429202+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）B　SQLパターン.json",
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）B　SQLパターン.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）A　データセット内の設定のみパター",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-17T07:29:03.3957848+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）A　データセット内の設定のみパター.json",
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）A　データセット内の設定のみパター.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "Pages/材料請求書入手明細表",
