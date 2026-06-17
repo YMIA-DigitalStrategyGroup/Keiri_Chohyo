@@ -564,5 +564,15 @@
       "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）A　データセット内の設定のみパター.json",
       "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）A　データセット内の設定のみパター.rdlx"
     ]
+  },
+  {
+    "ModuleName": "Pages/材料請求書入手明細表",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME001384",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-17T11:10:44.0631143+09:00",
+    "ModuleType": 6
   }
 ]
