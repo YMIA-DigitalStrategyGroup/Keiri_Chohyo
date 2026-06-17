@@ -1,0 +1,157 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 94.0
+        }
+      }
+    },
+    "Count": 60
+  },
+  "Values": {
+    "1,1": "PZF100：経理画面・仕訳リスト(材料仕入）",
+    "3,2": "対象年月",
+    "3,17": "PDF発行",
+    "7,5": "伝種",
+    "7,9": "費目",
+    "7,13": "仕入金額",
+    "7,17": "標準金額",
+    "7,21": "購入価格差"
+  },
+  "AttachInfos": {
+    "3,17": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportPageToPdfCommand, ServerDesignerCommon",
+            "TargetPageName": "経理画面・仕訳リスト（材料仕入）_発行画面",
+            "NewOtherName": ""
+          }
+        ],
+        "Text": "PDF発行",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "File/358_pdf_file_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "7,5": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "tkansayo_torihiki",
+        "RowIndex": 7,
+        "ColumnIndex": 5,
+        "RowCount": 9,
+        "ColumnCount": 23,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "8,5": {
+      "NameUsedInJavaScript": "伝種",
+      "BindingInfo": {
+        "TableName": "tkansayo_torihiki",
+        "ColumnName": "DENSHU",
+        "GUID": "cd3944a2-4466-47e5-827d-1636242db929"
+      }
+    },
+    "8,9": {
+      "NameUsedInJavaScript": "費目",
+      "BindingInfo": {
+        "TableName": "tkansayo_torihiki",
+        "ColumnName": "SAKI_HIMOKU",
+        "GUID": "1ffc5b8c-e4e9-4cda-8bdc-2aefe90e5645"
+      }
+    },
+    "8,13": {
+      "NameUsedInJavaScript": "仕入金額",
+      "BindingInfo": {
+        "TableName": "tkansayo_torihiki",
+        "ColumnName": "KINGAKU1",
+        "GUID": "bbed9b04-8fef-4e69-981e-6dcaf4f87d51"
+      }
+    },
+    "8,17": {
+      "NameUsedInJavaScript": "標準金額",
+      "BindingInfo": {
+        "TableName": "tkansayo_torihiki",
+        "ColumnName": "KINGAKU2",
+        "GUID": "4a9798d8-0414-404d-b68a-c326986fbe54"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0
+      },
+      {
+        "Background": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Accent 1 80",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "3,2": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "3,2,2,5",
+    "3,7,2,6",
+    "3,17,2,6",
+    "9,5,7,23",
+    "7,5,1,4",
+    "8,5,1,4",
+    "7,9,1,4",
+    "8,9,1,4",
+    "7,13,1,4",
+    "8,13,1,4",
+    "7,17,1,4",
+    "8,17,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//bLxblKIwM1ATdE9OHVItnNs/e7kOmVHnLwjlUkbxTgY7X2nYFNjeTSE3Mzp5jbtAEm9NP+tipinRT0mJpwyY58BWKKjPonCBVvBRbuPD7oVP/dweYdzhoAkGzkCpi+d+TrSgRdY6UCE+xX5/gjCy3MWwqzhw03Bdri0D+Ghvj+F1YOswBYFyur7MYjuBf7fFN39KEnLUl0mj7x1kVGErBsDbxQd+0BkiaYuvVVzDPp7SXSIqb/X/vZXG5PxE66gmKbYuohId9dhY33BZNPa6ttozN09vkSwjs04ZlX+fBXMvPp9DzXOZGmrI90jl+EQI+TyDKpB5j3tKmg6ket1vhyAFQwufZ5uxKaShKRXZOgDgodG7v6i8OcFBK30UhPSv6d2QEGK+IjF2JX4Pt1eLFVo8utmq8igGEi7N/zLp69LOT0dXCindG9ZRKq6EXNMC8ywwlPDSOmvGcliYu7lbgR/WawvtvGZY+JojvucNuzcJsv4vSQM6KaqpoPeZmzm4FNt2c4nEw+9QSOR7tOrDKfPVXZC9ha9YiOOfDipePI2wWVlwrLMkri4uwndfOTuN9jfr2az6AvEZWlm+OIj9+r5Lp0jH1Fa/YbiFGR6K10oEs6F6X9Rpj5Y5sXPsiM9xHB8b01rFzdpquPVBr61NOSZWEziVBUnWy07L0fAG8ii6nUYSxuC4joz9MorSYAHEK+itbLyGOZfxP8CGlKrqWp9MH9KgTEn91xM74Crh/OqJ1eH73uUnUdAqHW+vf9lj7n5ydB1F4ojkbwGAXRTniPBroZjGjZbIIoGlI+pica349GHpnwSEFBQhKNNlSR5YuRU73B6ouqkDxtsNEAdrsAUmqDKkp32siYcjuEJKCJ3nW04Z11HUp1PPvpQ8/luLbLwAZ7LtMBkq2qyyjUcDiA==|920
