@@ -584,5 +584,15 @@
     },
     "LockDateTime": "2026-06-17T11:17:54.2303244+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/材料受入明細表_帳票画面 (2)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME001384",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-17T11:18:12.0421069+09:00",
+    "ModuleType": 1
   }
 ]
