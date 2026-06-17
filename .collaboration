@@ -666,16 +666,6 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/経理画面・仕訳リスト（材料仕入)_発行画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001384",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-17T11:40:50.4215133+09:00",
-    "ModuleType": 1
-  },
-  {
     "ModuleName": "PCPage/経理画面・仕訳リスト（材料仕入）_発行画面",
     "State": 3,
     "LockedBy": {
