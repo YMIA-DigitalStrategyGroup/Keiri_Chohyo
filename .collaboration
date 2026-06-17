@@ -644,5 +644,15 @@
     },
     "LockDateTime": "2026-06-17T11:27:03.6998183+09:00",
     "ModuleType": 6
+  },
+  {
+    "ModuleName": "Pages/経理画面・仕訳リスト（材料仕入）",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME001384",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-17T11:32:31.883287+09:00",
+    "ModuleType": 6
   }
 ]
