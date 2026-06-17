@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report111111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report11111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -125,7 +125,6 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-								<DataElementName>TextBox1</DataElementName>
 								<Value>艇種</Value>
 							</Textbox>
 							<Textbox Name="TextBox6">
@@ -177,10 +176,10 @@
 								<Value>作成</Value>
 							</Textbox>
 							<Table Name="Table1">
-								<Top>4.604cm</Top>
-								<Left>2.196cm</Left>
-								<Width>24.036cm</Width>
-								<Height>3.52cm</Height>
+								<Top>4.551cm</Top>
+								<Left>1.244cm</Left>
+								<Width>25.504cm</Width>
+								<Height>4.27cm</Height>
 								<Style>
 									<Color>=Theme.Colors!Dark1</Color>
 									<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
@@ -193,6 +192,7 @@
 	<StyleId>c728fbbc-6ae5-47bd-8e20-d710772a5858</StyleId>
 	<StyleName>Light Style 1 Accent 1</StyleName>
 </ReportStyle></Custom>
+								<DataSetName>監査用仕掛_DataSet</DataSetName>
 								<DetailDataElementOutput>Auto</DetailDataElementOutput>
 								<Header>
 									<RepeatOnNewPage>true</RepeatOnNewPage>
@@ -231,7 +231,38 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-															<Value />
+															<Value>MEISHO 1 _KANJI</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox18">
+															<Style>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<BorderColor>
+																	<Bottom>=Theme.Colors!Accent1</Bottom>
+																	<Top>=Theme.Colors!Accent1</Top>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																	<Top>Solid</Top>
+																</BorderStyle>
+																<BorderWidth>
+																	<Bottom>2pt</Bottom>
+																	<Top>2pt</Top>
+																</BorderWidth>
+															</Style>
+															<Value>前月繰越</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -263,7 +294,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value />
+															<Value>当月発生</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -295,7 +326,7 @@
 																</BorderWidth>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value />
+															<Value>合計</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -304,6 +335,11 @@
 									</TableRows>
 								</Header>
 								<Details>
+									<Grouping Name="Table1_詳細グループ1">
+										<GroupExpressions>
+											<GroupExpression>=Fields!区分.Value</GroupExpression>
+										</GroupExpressions>
+									</Grouping>
 									<TableRows>
 										<TableRow>
 											<Height>1.173cm</Height>
@@ -324,7 +360,28 @@
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value />
+															<DataElementName>MEISHO1_KANJI</DataElementName>
+															<Value>=Fields!MEISHO1_KANJI.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox19">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<DataElementName>前月繰越</DataElementName>
+															<Value>=Fields.Item("前月繰越").Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -344,7 +401,8 @@
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value />
+															<DataElementName>当月発生</DataElementName>
+															<Value>=Fields.Item("当月発生").Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -364,7 +422,89 @@
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
 															<CanGrow>true</CanGrow>
+															<DataElementName>合計</DataElementName>
+															<Value>=Fields.Item("合計").Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+										<TableRow>
+											<Height>0.75cm</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox21">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
 															<Value />
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox22">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value>=Sum(Fields!前月繰越.Value)</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox23">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value>=Sum(Fields!当月発生.Value)</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox24">
+															<Style>
+																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value>=Sum(Fields!合計.Value)</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -399,6 +539,25 @@
 												</TableCell>
 												<TableCell>
 													<ReportItems>
+														<Textbox Name="TextBox20">
+															<Style>
+																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
+																<Color>=Theme.Colors!Dark1</Color>
+																<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+																<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+																<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+																<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<Value>=Sum(Fields!前月繰越.Value)</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
 														<Textbox Name="TextBox15">
 															<Style>
 																<BackgroundColor>=Theme.Colors!Light1</BackgroundColor>
@@ -413,7 +572,7 @@
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value />
+															<Value>=Sum(Fields!当月発生.Value)</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -433,7 +592,7 @@
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value />
+															<Value>=Sum(Fields!合計.Value)</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -442,10 +601,13 @@
 									</TableRows>
 								</Footer>
 								<dd:PreventOrphanedHeader xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:PreventOrphanedHeader>
-								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">3.679cm</dd:FixedHeight>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">13.98cm</dd:FixedHeight>
 								<TableColumns>
 									<TableColumn>
-										<Width>8.012cm</Width>
+										<Width>4.255cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>5.225cm</Width>
 									</TableColumn>
 									<TableColumn>
 										<Width>8.012cm</Width>
@@ -508,7 +670,7 @@
 	<DataSources>
 		<DataSource Name="監査用仕掛">
 			<ConnectionProperties>
-				<ConnectString>jsondoc=http://localhost:57770/Forguncy/ARDataSource/GetDataSource/856dd3f0-67bd-4c7c-bf25-9aaed168ce69;schemadata={"type":"array","items":{"type":"object","properties":{"KOJI_NO":{"type":"string"},"PL_BS_SHUKEI":{"type":"string"},"MEISHO1_KANJI":{"type":"string"},"前月繰越":{"type":"number"},"当月発生":{"type":"number"},"合計":{"type":"number"}}}}</ConnectString>
+				<ConnectString>jsondoc=http://localhost:57770/Forguncy/ARDataSource/GetDataSource/856dd3f0-67bd-4c7c-bf25-9aaed168ce69;schemadata={"type":"array","items":{"type":"object","properties":{"KOJI_NO":{"type":"string"},"PL_BS_SHUKEI":{"type":"string"},"MEISHO1_KANJI":{"type":"string"},"前月繰越":{"type":"number"},"当月発生":{"type":"number"},"合計":{"type":"number"},"区分":{"type":"string"},"テーブル名_漢字":{"type":"string"},"テーブル名":{"type":"string"}}}}</ConnectString>
 				<DataProvider>JSON</DataProvider>
 			</ConnectionProperties>
 		</DataSource>
@@ -533,6 +695,15 @@
 				</Field>
 				<Field Name="合計">
 					<DataField>合計</DataField>
+				</Field>
+				<Field Name="区分">
+					<DataField>区分</DataField>
+				</Field>
+				<Field Name="テーブル名_漢字">
+					<DataField>テーブル名_漢字</DataField>
+				</Field>
+				<Field Name="テーブル名">
+					<DataField>テーブル名</DataField>
 				</Field>
 			</Fields>
 			<Query>

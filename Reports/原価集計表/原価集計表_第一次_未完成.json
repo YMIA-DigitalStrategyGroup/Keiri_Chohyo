@@ -8,7 +8,7 @@
         "TableName": "ymia_v_genkasyukei_mikan",
         "BindingInfos": [
           {
-            "GUID": "5dc28c5e-1c02-4864-a0c3-7933f30a585c",
+            "GUID": "e46a54fa-fa04-45e1-8085-baa246c09fcf",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "KOJI_NO",
@@ -17,7 +17,7 @@
             "ColumnName": "KOJI_NO"
           },
           {
-            "GUID": "331c04df-03f5-4fc7-a99b-8f7e81648826",
+            "GUID": "73ed0cdd-9de7-4315-a046-31ab755527c2",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "PL_BS_SHUKEI",
@@ -26,7 +26,7 @@
             "ColumnName": "PL_BS_SHUKEI"
           },
           {
-            "GUID": "3110ef5e-bc5c-435b-904e-af7d5037269d",
+            "GUID": "c397d4ab-7ac5-4c7a-8eb0-9bd643cacc5f",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "MEISHO1_KANJI",
@@ -35,7 +35,7 @@
             "ColumnName": "MEISHO1_KANJI"
           },
           {
-            "GUID": "29d8bd35-54c3-4e57-a505-e6652a663229",
+            "GUID": "db8b172c-4d82-4739-aac1-2c4f8e3e3e2a",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "前月繰越",
@@ -44,7 +44,7 @@
             "ColumnName": "前月繰越"
           },
           {
-            "GUID": "ac4c5580-5c25-46f4-8650-227cb0181b05",
+            "GUID": "1f25043c-5967-4c38-9286-12c60b642e9a",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "当月発生",
@@ -53,13 +53,40 @@
             "ColumnName": "当月発生"
           },
           {
-            "GUID": "a7c6e4b1-c9aa-4f41-a05f-9689488a1730",
+            "GUID": "d2123bcf-92a8-4394-9910-b12e100e3879",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "合計",
               "GUID": "548ca0d9-1c0d-4563-b6bb-e2e226c93087"
             },
             "ColumnName": "合計"
+          },
+          {
+            "GUID": "023ae0b9-8b99-41e7-96d2-d760338f0195",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "区分",
+              "GUID": "5b3f8b8c-235f-42cb-a668-9dccae1de178"
+            },
+            "ColumnName": "区分"
+          },
+          {
+            "GUID": "0e21e52f-a160-420d-b9b4-84b0ec0c94b0",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "テーブル名_漢字",
+              "GUID": "6fcdfb35-f3ec-461c-a1ed-ad94b9241c85"
+            },
+            "ColumnName": "テーブル名_漢字"
+          },
+          {
+            "GUID": "ec5678d2-7d0f-404e-be42-25cd3bbfc09a",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "テーブル名",
+              "GUID": "1537c904-4648-4310-b816-fb59a35d12d2"
+            },
+            "ColumnName": "テーブル名"
           }
         ]
       },
@@ -69,7 +96,10 @@
         "string",
         "number",
         "number",
-        "number"
+        "number",
+        "string",
+        "string",
+        "string"
       ]
     }
   ],
