@@ -261,17 +261,7 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-17T17:11:11.4635678+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧.json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
