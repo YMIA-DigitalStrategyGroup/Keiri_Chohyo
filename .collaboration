@@ -586,13 +586,13 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/材料受入明細表_帳票画面 (2)",
+    "ModuleName": "PCPage/材料請求書入手明細表_帳票画面",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME001384",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-17T11:18:12.0421069+09:00",
+    "LockDateTime": "2026-06-17T11:19:40.3562953+09:00",
     "ModuleType": 1
   }
 ]
