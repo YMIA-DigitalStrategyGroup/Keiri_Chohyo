@@ -507,17 +507,7 @@
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品※バックアップレポート）",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-19T16:16:35.8584827+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品※バックアップレポート）.json",
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品※バックアップレポート）.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "PCPage/倉出情報一覧 (※バックアップ用ページ)",
