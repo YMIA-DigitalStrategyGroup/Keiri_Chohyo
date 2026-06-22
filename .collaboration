@@ -261,17 +261,7 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T15:42:08.7873725+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧.json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
@@ -521,49 +511,11 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧 (※バックアップ用ページ)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T15:42:08.787439+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ).json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ).rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PageReport/在庫品 (※バックアップ用レポート)",
     "ModuleType": 17
-  },
-  {
-    "ModuleName": "PageReport/倉出しメニュー（ひもつき品）B　SQLパターン",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T14:43:36.2020228+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）B　SQLパターン.json",
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）B　SQLパターン.rdlx"
-    ]
-  },
-  {
-    "ModuleName": "PageReport/倉出しメニュー（ひもつき品）A　データセット内の設定のみパター",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T15:42:08.7870954+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）A　データセット内の設定のみパター.json",
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）A　データセット内の設定のみパター.rdlx"
-    ]
   },
   {
     "ModuleName": "Pages/材料請求書入手明細表",
@@ -637,22 +589,10 @@
   },
   {
     "ModuleName": "PageReport/※削除※",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T14:43:36.2020405+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T15:42:08.7871036+09:00",
     "ModuleType": 17
   }
 ]
