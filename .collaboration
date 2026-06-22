@@ -521,7 +521,17 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧 (※バックアップ用ページ)",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-22T14:45:24.9699131+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ).json",
+      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ).rd"
+    ]
   },
   {
     "ModuleName": "PageReport/在庫品 (※バックアップ用レポート)",
