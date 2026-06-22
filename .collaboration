@@ -529,7 +529,17 @@
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）B　SQLパターン",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-22T14:43:11.618142+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）B　SQLパターン.json",
+      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）B　SQLパターン.rdlx"
+    ]
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）A　データセット内の設定のみパター",
