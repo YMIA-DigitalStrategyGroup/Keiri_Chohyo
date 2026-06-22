@@ -609,7 +609,17 @@
   },
   {
     "ModuleName": "PageReport/※削除※",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T07:03:13.5840506+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\部品倉出メニュー\\※削除※.json",
+      "Reports\\部品倉出メニュー\\※削除※.rdlx"
+    ]
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）",
