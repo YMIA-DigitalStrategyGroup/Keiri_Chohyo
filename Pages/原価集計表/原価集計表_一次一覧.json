@@ -6,10 +6,69 @@
     "Count": 60
   },
   "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=原価集計表_一次一覧!N6"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
+                    "SessionGuid": "6fc4faec-bb77-4954-816e-bc5f6f601db7",
+                    "OpenReportName": "原価集計表_第一次_未完成",
+                    "SideBarPosition": 0,
+                    "PassParameters": [
+                      {
+                        "TargetParameter": "機種",
+                        "SourceValue": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=原価集計表_一次一覧!B6"
+                        }
+                      },
+                      {
+                        "TargetParameter": "機番",
+                        "SourceValue": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=原価集計表_一次一覧!F6"
+                        }
+                      },
+                      {
+                        "TargetParameter": "仕様コード",
+                        "SourceValue": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=原価集計表_一次一覧!J6"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "04e867d1-fa5a-400f-8977-3328f1664319"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
     "4,1": {
       "ListViewInfo": {
         "Name": "リストビュー1",
-        "TableName": "ymia_v_genkasyukei_mikan",
+        "TableName": "tjuchu",
         "RowIndex": 4,
         "ColumnIndex": 1,
         "RowCount": 30,
@@ -23,51 +82,35 @@
       }
     },
     "5,1": {
-      "NameUsedInJavaScript": "KOJI_NO",
+      "NameUsedInJavaScript": "KISHU",
       "BindingInfo": {
-        "TableName": "ymia_v_genkasyukei_mikan",
-        "ColumnName": "KOJI_NO",
-        "GUID": "e1bf25a3-6beb-4c29-8e6b-5a2774bb9324"
+        "TableName": "tjuchu",
+        "ColumnName": "KISHU",
+        "GUID": "6a279cbc-5f73-4982-88ba-1bea6011ece9"
       }
     },
     "5,5": {
-      "NameUsedInJavaScript": "PL_BS_SHUKEI",
+      "NameUsedInJavaScript": "KIBAN",
       "BindingInfo": {
-        "TableName": "ymia_v_genkasyukei_mikan",
-        "ColumnName": "PL_BS_SHUKEI",
-        "GUID": "b383d766-cc4e-46bb-a572-af2f7c3769bd"
+        "TableName": "tjuchu",
+        "ColumnName": "KIBAN",
+        "GUID": "3d5bde2b-cbff-4785-91a3-31641acc673e"
       }
     },
     "5,9": {
-      "NameUsedInJavaScript": "MEISHO1_KANJI",
+      "NameUsedInJavaScript": "SHIYO_CODE",
       "BindingInfo": {
-        "TableName": "ymia_v_genkasyukei_mikan",
-        "ColumnName": "MEISHO1_KANJI",
-        "GUID": "a472a39c-2ba1-43f1-96dc-7350b5d4aab1"
+        "TableName": "tjuchu",
+        "ColumnName": "SHIYO_CODE",
+        "GUID": "bca62f40-8275-4a12-b6cd-9263a92ea16d"
       }
     },
     "5,13": {
-      "NameUsedInJavaScript": "前月繰越",
+      "NameUsedInJavaScript": "SHUKKA_HANTEI_FLG",
       "BindingInfo": {
-        "TableName": "ymia_v_genkasyukei_mikan",
-        "ColumnName": "前月繰越",
-        "GUID": "84bd4991-8e92-4b5b-b787-5f66e5112d72"
-      }
-    },
-    "5,17": {
-      "NameUsedInJavaScript": "当月発生",
-      "BindingInfo": {
-        "TableName": "ymia_v_genkasyukei_mikan",
-        "ColumnName": "当月発生",
-        "GUID": "e06afbae-6d8f-4ff0-b383-df5f520f3e41"
-      }
-    },
-    "5,21": {
-      "NameUsedInJavaScript": "合計",
-      "BindingInfo": {
-        "TableName": "ymia_v_genkasyukei_mikan",
-        "ColumnName": "合計",
-        "GUID": "f7c06bfb-dd28-4585-95c3-ce0795cf945c"
+        "TableName": "tjuchu",
+        "ColumnName": "SHUKKA_HANTEI_FLG",
+        "GUID": "fbbfbf91-f762-45f1-9fb2-ec82cea871cb"
       }
     }
   },
@@ -83,18 +126,15 @@
   },
   "Spans": [
     "6,1,28,57",
-    "4,1,1,4",
     "5,1,1,4",
-    "4,5,1,4",
+    "4,1,1,4",
     "5,5,1,4",
-    "4,9,1,4",
+    "4,5,1,4",
     "5,9,1,4",
-    "4,13,1,4",
+    "4,9,1,4",
     "5,13,1,4",
-    "4,17,1,4",
-    "5,17,1,4",
-    "4,21,1,4",
-    "5,21,1,4"
+    "4,13,1,4",
+    "1,2,2,9"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -119,4 +159,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//F84vXF4m3vZ1GGOntO6jgtdSQ7+B+Yp+fAQRa50m9nzxi1NWftkns/oQVe+gClmUXtu49wQIc6TjEiMyaK0za7IoS/GOPM+FoIGyOCpp2qqbrLhaJmih2GJex+VP9prZBDy/7wkTsEt+YVqXkS28F1KrPEeZ/7dRSFZukgadnfFrMqS5OywX+luf8fen2LrK66WiLUDIMvhwzIr39viUX48aydyKzKTIIngitDSx4+Jos8189B2U02TCydyBxv856wG1jdg/F5mICoPxxi9GLlfmS8CPevyWZn8NgaQusOrE6hWGwPJb/7pThOTPs3BOCmsfjKzvXp2ZvLMe/ma4ZEMf7tg05k41TphjhdymLczfQ1Wt2UTPgnQt0LHICVHXKMXWM+/fIj0Q0rOgsJEQYXPfQ2tukmCOj/Ws0tRoDrvR/zd4sYmG6tozTUNImzJppuPdYFQazwD3nZ2vc3VEZcg1dk3qX3jtyvFYWEK1wty/Kz8xwwiqcuFmeAnM7gwwczDewbiFX9eTDGbR4YSVQ4DAWRLB36ZKo4ORlE/UD5niHxv+BcjmrFIRYfgk9zwR63wOSjjNIhefCjNHGebfINPAKK3B07Q6acjzlxYOY0K2X/H4NsMOJt0GKGlrRIyjzrwNXR4JuHm4Fj58Jda0jBG1vTBRsYxs7FgTVm8vXJMGO7PtQ/XnOQUVsrpr3vHZ7BSBjPHmuaWY2Kr+/DzUpm9rc/Q7F5x9XeuU99rihHTkuvaTl7rdTuueA7aAZUq9hnl5zsDlfIUxvGuNq/dsZfuH7xAIXarImKW+4qq3rxueiOjmo4W/yQVsH+E0lHrQP7u4HO0IdbngWjGUclgMvQUs/dsw7jSvOAiuGWEv3unulJGhzZi5SFHChCZIAnL+NIsh4NZOhwvHEwxx7s4iBw==|920
+}//c6NabBRo/6fL2V07soCQeKf49oPQB93b4ixjWAeMrAj5agz8uNJr+qDDgWf3S6WylyO3J0Rbc+hN/hfSFdVKNVf5tuNjpoHlR5nGpghwFCIQTx5HP7ikstBKFscTLeAjccUwIDHQm2o+tzCQfXv6Xzzq1671GJviZdktmX7/os7e7B0R1fpcUlP58b1Xa4aQaLcYSoBRK1tYf/TXvJFDgx3fMyDQrMponhNJjGX8ff3zMlmVsQ1rKWM5sEf8uNfeNizws6dtWI8HmG53gsow4B3VArg5KwTIBZIL8h1NeCSzF6hONTZ7mL4LuverfORzJEUF54l48bgkdWeY+HqNBd44aEp9ERtpRogCXAqL1pNeT7NodYcmTjHZczwJE4c6Tp3r/2K/VIR0ikYgo9W0STCvs/PnBR3QAWIvVnOri90ywwHpHMCvZPNrlJA+gVq2lo5bWcWx6O3MnvqpIjtP/W0sO3PHFHhAGxaSdpnU5B6M+lmlfFw61tqoG8oHcSJiR5emD+d8iqZXHw6zG2JFadhPcwRvl6ys5S/JbzXxkPDQcjcxayh2N2zY90m20wUeDRplTI+7rWQAoCrSSyirQDuSY0G44HB9SK+KkzxJb8l+qPSXUYFvUHZ22mr86rWIreih26bkGw3fWZwBIW/i62IR8/fqdbQzG9LmAPS1Bw1yadnNu/z+OubFF5oQWvier6JtxGvHxPWR0kyiHzn2rHJNE/P334P03ipeYwFlFMbBoFf/iT+OtzcFzYzI26i8wM6AbF0G+2UTQoXU6m0gvq/pqChcDRUVW28U9mIeHAVfQ+K2Bb3vrZ5UlfolYYJAc9YhybsKROzjGUNh7t79dDjoZiiSJhfr05Kq7eZ5MP7jAzg/+1R4uCmHpKHWGh4Ob9GOghYGtXyrnqDyk0tdtg==|920

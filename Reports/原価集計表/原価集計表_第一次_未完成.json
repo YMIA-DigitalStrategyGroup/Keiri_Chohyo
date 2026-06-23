@@ -8,7 +8,7 @@
         "TableName": "ymia_v_genkasyukei_mikan",
         "BindingInfos": [
           {
-            "GUID": "e46a54fa-fa04-45e1-8085-baa246c09fcf",
+            "GUID": "3cbc7a82-e9e9-40a5-8cc3-bd37708c999d",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "KOJI_NO",
@@ -17,7 +17,7 @@
             "ColumnName": "KOJI_NO"
           },
           {
-            "GUID": "73ed0cdd-9de7-4315-a046-31ab755527c2",
+            "GUID": "2556a796-3a23-43a9-8ff4-2c617dddd895",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "PL_BS_SHUKEI",
@@ -26,7 +26,7 @@
             "ColumnName": "PL_BS_SHUKEI"
           },
           {
-            "GUID": "c397d4ab-7ac5-4c7a-8eb0-9bd643cacc5f",
+            "GUID": "5a988cdc-7a8e-4696-96da-8100622da12b",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "MEISHO1_KANJI",
@@ -35,7 +35,7 @@
             "ColumnName": "MEISHO1_KANJI"
           },
           {
-            "GUID": "db8b172c-4d82-4739-aac1-2c4f8e3e3e2a",
+            "GUID": "569cd190-fb4f-4114-82d6-3be1b62e8d4a",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "前月繰越",
@@ -44,7 +44,7 @@
             "ColumnName": "前月繰越"
           },
           {
-            "GUID": "1f25043c-5967-4c38-9286-12c60b642e9a",
+            "GUID": "2e124257-361e-40be-9c10-61d740fd26da",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "当月発生",
@@ -53,7 +53,7 @@
             "ColumnName": "当月発生"
           },
           {
-            "GUID": "d2123bcf-92a8-4394-9910-b12e100e3879",
+            "GUID": "dfe2dbef-fa31-49fc-a2a2-ad77253c53c1",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "合計",
@@ -62,7 +62,7 @@
             "ColumnName": "合計"
           },
           {
-            "GUID": "023ae0b9-8b99-41e7-96d2-d760338f0195",
+            "GUID": "9fe6eef9-c5aa-4330-90d7-b8cc70dfe774",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "区分",
@@ -71,7 +71,7 @@
             "ColumnName": "区分"
           },
           {
-            "GUID": "0e21e52f-a160-420d-b9b4-84b0ec0c94b0",
+            "GUID": "66a2f798-fb2c-4811-bbc2-06d5185b842a",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "テーブル名_漢字",
@@ -80,7 +80,7 @@
             "ColumnName": "テーブル名_漢字"
           },
           {
-            "GUID": "ec5678d2-7d0f-404e-be42-25cd3bbfc09a",
+            "GUID": "4f6d1949-ba90-4faa-9a5b-429184c5cd7d",
             "BindingInfo": {
               "TableName": "ymia_v_genkasyukei_mikan",
               "ColumnName": "テーブル名",
@@ -88,8 +88,32 @@
             },
             "ColumnName": "テーブル名"
           }
-        ]
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 6,
+          "ColumnBindingInfo": {
+            "TableName": "ymia_v_genkasyukei_mikan",
+            "ColumnName": "KOJI_NO",
+            "GUID": "431aedba-6a48-4605-9930-79789e90f829"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=機種"
+          }
+        }
       },
+      "ReportDataSourceParams": [
+        {
+          "Name": "機種"
+        },
+        {
+          "Name": "機番"
+        },
+        {
+          "Name": "仕様コード"
+        }
+      ],
       "ColumnsType": [
         "string",
         "string",

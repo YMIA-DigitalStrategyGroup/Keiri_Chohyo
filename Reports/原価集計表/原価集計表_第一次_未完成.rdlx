@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report11111111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111111111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -176,8 +176,8 @@
 								<Value>作成</Value>
 							</Textbox>
 							<Table Name="Table1">
-								<Top>4.551cm</Top>
-								<Left>1.244cm</Left>
+								<Top>4.87cm</Top>
+								<Left>1.27cm</Left>
 								<Width>25.504cm</Width>
 								<Height>4.27cm</Height>
 								<Style>
@@ -337,7 +337,7 @@
 								<Details>
 									<Grouping Name="Table1_詳細グループ1">
 										<GroupExpressions>
-											<GroupExpression>=Fields!区分.Value</GroupExpression>
+											<GroupExpression>=Fields.Item("区分").Value</GroupExpression>
 										</GroupExpressions>
 									</Grouping>
 									<TableRows>
@@ -348,7 +348,6 @@
 													<ReportItems>
 														<Textbox Name="TextBox11">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
@@ -369,7 +368,6 @@
 													<ReportItems>
 														<Textbox Name="TextBox19">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
@@ -389,7 +387,6 @@
 													<ReportItems>
 														<Textbox Name="TextBox12">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
@@ -410,7 +407,6 @@
 													<ReportItems>
 														<Textbox Name="TextBox13">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
@@ -436,7 +432,6 @@
 													<ReportItems>
 														<Textbox Name="TextBox21">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
@@ -455,7 +450,6 @@
 													<ReportItems>
 														<Textbox Name="TextBox22">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
@@ -466,7 +460,7 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
-															<Value>=Sum(Fields!前月繰越.Value)</Value>
+															<Value>=Sum(Fields.Item("前月繰越").Value)</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -474,7 +468,6 @@
 													<ReportItems>
 														<Textbox Name="TextBox23">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
@@ -485,7 +478,7 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
-															<Value>=Sum(Fields!当月発生.Value)</Value>
+															<Value>=Sum(Fields.Item("当月発生").Value)</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -493,7 +486,6 @@
 													<ReportItems>
 														<Textbox Name="TextBox24">
 															<Style>
-																<BackgroundColor>=IIF(RowNumber(Nothing) Mod 2, Theme.Colors(1,4), Theme.Colors!Light1)</BackgroundColor>
 																<Color>=Theme.Colors!Dark1</Color>
 																<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
 																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
@@ -504,7 +496,7 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
-															<Value>=Sum(Fields!合計.Value)</Value>
+															<Value>=Sum(Fields.Item("合計").Value)</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -552,7 +544,7 @@
 																<PaddingRight>2pt</PaddingRight>
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
-															<Value>=Sum(Fields!前月繰越.Value)</Value>
+															<Value>=Sum(Fields.Item("前月繰越").Value)</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -572,7 +564,7 @@
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>=Sum(Fields!当月発生.Value)</Value>
+															<Value>=Sum(Fields.Item("当月発生").Value)</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -592,7 +584,7 @@
 																<PaddingTop>2pt</PaddingTop>
 															</Style>
 															<CanGrow>true</CanGrow>
-															<Value>=Sum(Fields!合計.Value)</Value>
+															<Value>=Sum(Fields.Item("合計").Value)</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -601,7 +593,6 @@
 									</TableRows>
 								</Footer>
 								<dd:PreventOrphanedHeader xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:PreventOrphanedHeader>
-								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">13.98cm</dd:FixedHeight>
 								<TableColumns>
 									<TableColumn>
 										<Width>4.255cm</Width>
