@@ -261,17 +261,7 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T07:02:40.7038849+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧.json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
@@ -507,31 +497,11 @@
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品※バックアップレポート）",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T07:03:19.3347742+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品※バックアップレポート）.json",
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品※バックアップレポート）.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "PCPage/倉出情報一覧 (※バックアップ用ページ)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T07:02:48.169824+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ).json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ).rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PageReport/在庫品 (※バックアップ用レポート)",
@@ -591,31 +561,11 @@
   },
   {
     "ModuleName": "PageReport/※削除※",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T07:03:13.5840506+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\※削除※.json",
-      "Reports\\部品倉出メニュー\\※削除※.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T07:03:07.3953505+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）.json",
-      "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "PCPage/材料倉出明細表_発行画面",
