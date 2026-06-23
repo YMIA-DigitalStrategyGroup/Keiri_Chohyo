@@ -594,7 +594,7 @@
       "UserName": "UNITY\\ME001333",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-17T11:27:03.6998183+09:00",
+    "LockDateTime": "2026-06-23T09:11:20.6114616+09:00",
     "ModuleType": 6
   },
   {
@@ -664,15 +664,5 @@
     },
     "LockDateTime": "2026-06-23T09:10:05.8632833+09:00",
     "ModuleType": 1
-  },
-  {
-    "ModuleName": "Pages/材料倉出名差",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001333",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T09:11:04.6365677+09:00",
-    "ModuleType": 6
   }
 ]
