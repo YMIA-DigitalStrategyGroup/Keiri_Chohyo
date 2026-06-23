@@ -644,5 +644,15 @@
       "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）.json",
       "Reports\\部品倉出メニュー\\倉出しメニュー（ひもつき品）.rdlx"
     ]
+  },
+  {
+    "ModuleName": "PCPage/材料倉出明細表_発行画面",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME001333",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T09:09:17.5472176+09:00",
+    "ModuleType": 1
   }
 ]
