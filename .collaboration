@@ -713,15 +713,5 @@
     },
     "LockDateTime": "2026-06-23T09:53:43.7697796+09:00",
     "ModuleType": 23
-  },
-  {
-    "ModuleName": "TableView/denshu_himoku_hyoujungaku",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001384",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T10:47:37.6401132+09:00",
-    "ModuleType": 23
   }
 ]
