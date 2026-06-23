@@ -8,6 +8,16 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 94.0
         }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 59.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 54.0
+        }
       }
     },
     "Count": 60
@@ -21,6 +31,9 @@
     "7,13": "仕入金額",
     "7,17": "標準金額",
     "7,21": "購入価格差"
+  },
+  "Formulas": {
+    "8,21": "N9-R9"
   },
   "AttachInfos": {
     "3,17": {
@@ -46,7 +59,7 @@
     "7,5": {
       "ListViewInfo": {
         "Name": "リストビュー1",
-        "TableName": "tkansayo_torihiki",
+        "TableName": "denshu_himoku_sirekingaku",
         "RowIndex": 7,
         "ColumnIndex": 5,
         "RowCount": 9,
@@ -62,33 +75,33 @@
     "8,5": {
       "NameUsedInJavaScript": "伝種",
       "BindingInfo": {
-        "TableName": "tkansayo_torihiki",
+        "TableName": "denshu_himoku_sirekingaku",
         "ColumnName": "DENSHU",
-        "GUID": "cd3944a2-4466-47e5-827d-1636242db929"
+        "GUID": "7a45a546-4c1c-4192-aa6d-ca88de83049a"
       }
     },
     "8,9": {
       "NameUsedInJavaScript": "費目",
       "BindingInfo": {
-        "TableName": "tkansayo_torihiki",
+        "TableName": "denshu_himoku_sirekingaku",
         "ColumnName": "SAKI_HIMOKU",
-        "GUID": "1ffc5b8c-e4e9-4cda-8bdc-2aefe90e5645"
+        "GUID": "6de99621-7a5d-41c0-ae4c-a95e8b5afdab"
       }
     },
     "8,13": {
       "NameUsedInJavaScript": "仕入金額",
       "BindingInfo": {
-        "TableName": "tkansayo_torihiki",
+        "TableName": "denshu_himoku_sirekingaku",
         "ColumnName": "KINGAKU1",
-        "GUID": "bbed9b04-8fef-4e69-981e-6dcaf4f87d51"
+        "GUID": "1989ac01-1cc5-47f3-bc8b-5e6eb8284e3c"
       }
     },
     "8,17": {
       "NameUsedInJavaScript": "標準金額",
       "BindingInfo": {
-        "TableName": "tkansayo_torihiki",
+        "TableName": "denshu_himoku_sirekingaku",
         "ColumnName": "KINGAKU2",
-        "GUID": "4a9798d8-0414-404d-b68a-c326986fbe54"
+        "GUID": "e17266fb-f8c0-499e-8722-91e3e0f451d5"
       }
     }
   },
@@ -100,28 +113,47 @@
       },
       {
         "Background": 1
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "Formatter": 3
+      },
+      {
+        "Formatter": 4
+      },
+      {
+        "Formatter": 5
       }
     ],
     "Types": {
       "Strs": [
         "Bold",
         "Accent 1 80",
+        " #,##0.00; (#,##0.00); \"-\"??;@",
+        "#,##0;[Red]#,##0",
+        "#,##0",
+        "#,##0;[Red]-#,##0",
         "Body"
       ]
     },
     "CellStyles": {
       "1,1": 0,
-      "3,2": 1
+      "3,2": 1,
+      "7,13": 2,
+      "8,13": 3,
+      "8,17": 4,
+      "8,21": 5
     },
     "SheetStyle": {
-      "FontFamily": 2
+      "FontFamily": 6
     }
   },
   "Spans": [
     "3,2,2,5",
-    "3,7,2,6",
     "3,17,2,6",
-    "9,5,7,23",
+    "3,7,2,6",
     "7,5,1,4",
     "8,5,1,4",
     "7,9,1,4",
@@ -129,7 +161,8 @@
     "7,13,1,4",
     "8,13,1,4",
     "7,17,1,4",
-    "8,17,1,4"
+    "8,17,1,4",
+    "9,5,7,23"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -154,4 +187,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//bLxblKIwM1ATdE9OHVItnNs/e7kOmVHnLwjlUkbxTgY7X2nYFNjeTSE3Mzp5jbtAEm9NP+tipinRT0mJpwyY58BWKKjPonCBVvBRbuPD7oVP/dweYdzhoAkGzkCpi+d+TrSgRdY6UCE+xX5/gjCy3MWwqzhw03Bdri0D+Ghvj+F1YOswBYFyur7MYjuBf7fFN39KEnLUl0mj7x1kVGErBsDbxQd+0BkiaYuvVVzDPp7SXSIqb/X/vZXG5PxE66gmKbYuohId9dhY33BZNPa6ttozN09vkSwjs04ZlX+fBXMvPp9DzXOZGmrI90jl+EQI+TyDKpB5j3tKmg6ket1vhyAFQwufZ5uxKaShKRXZOgDgodG7v6i8OcFBK30UhPSv6d2QEGK+IjF2JX4Pt1eLFVo8utmq8igGEi7N/zLp69LOT0dXCindG9ZRKq6EXNMC8ywwlPDSOmvGcliYu7lbgR/WawvtvGZY+JojvucNuzcJsv4vSQM6KaqpoPeZmzm4FNt2c4nEw+9QSOR7tOrDKfPVXZC9ha9YiOOfDipePI2wWVlwrLMkri4uwndfOTuN9jfr2az6AvEZWlm+OIj9+r5Lp0jH1Fa/YbiFGR6K10oEs6F6X9Rpj5Y5sXPsiM9xHB8b01rFzdpquPVBr61NOSZWEziVBUnWy07L0fAG8ii6nUYSxuC4joz9MorSYAHEK+itbLyGOZfxP8CGlKrqWp9MH9KgTEn91xM74Crh/OqJ1eH73uUnUdAqHW+vf9lj7n5ydB1F4ojkbwGAXRTniPBroZjGjZbIIoGlI+pica349GHpnwSEFBQhKNNlSR5YuRU73B6ouqkDxtsNEAdrsAUmqDKkp32siYcjuEJKCJ3nW04Z11HUp1PPvpQ8/luLbLwAZ7LtMBkq2qyyjUcDiA==|920
+}//RerH7yG8I40PigF5mYFQU1tXMRK1s96VThpYjoj3mhmVXN0lPwpNuW6CZaTgORQz257Ig4PwsFLD+eLVvWSiWMKGc6URyiwTD/GuV1QM5LV/Rbio8K2QWARqNA/CkDrXSE7HhpIV2JDnOCdjvdCFu3i6VjWT7Vh012mbmdvtYACiFiOcxuL3v2GDhpTnaJ0m4d4uQU2y4FWFXfyxe6ENuwZ1f0DIYW91/6jzN+s4DPRrk2ZTVKP7vUKT/F3iozEko4oMxh7G11wft0o9UZ9XLmBW7UrVSbPmPk2OSqB3QgC+/Ngd7svuMF+tArID4mLURkgna8lEmrYG+b6atm8mnE6Eou69sJNJmENdEI4oYt1pl66/skbBloext9yoMUxRHMQ2VaJQZZmJoipfxjAITUjh8AnKU30Ivua5ZcT/vXKlBS86X+xtwPA+/YPN2oar2q+nVczovrWGNcX4TwgMc20w5nTg4ql2CeM5t5OUJ7fudQfiDL014vEgZeWPlKtg/wyF44W9DqB+P2UmXmbfsDxlSn9olz6NLs5qfke2irdICWR+WZ394y6NWLx58SytekqeLOicXNxPbB22L3B7wPXxIvTzcattsz4szcZo97oZ2dqH9tPDHgE0w4qnMxkqIpTwR4xckbbfABbdBGvUyAEenUEWkTUVLsNy+T+pZ1PK34MR+ReelYVrvKWN3ay89h0Tdsrb6TCTcuyeim5JDe0yVuKNZloH1qaFDJmE/tegaLxqavfM3o37r0NsW2GOg/tk9sL/PdSc7EbREgIsTUIu7uOjoJPE6HpKfCfO/jx9DApwKabt16GcAqylGZFioclmpH8g/8pjljWQRP6cedH885UpjST9DgsBYc7NhyCpX6d5UU5A7LgcLsGi72ktGtknk5u3ZKSseTLtMv07jA==|920

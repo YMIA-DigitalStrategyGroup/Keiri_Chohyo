@@ -1,0 +1,48 @@
+{
+  "Name": "denshu_himoku_sirekingaku",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 2,
+      "Name": "DENSHU",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 4,
+      "Name": "SAKI_HIMOKU",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "KINGAKU1",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "KINGAKU2",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "AllowModifySchema": true,
+    "ConnectionId": "MySql1",
+    "SourceTableName": "denshu_himoku_sirekingaku",
+    "SourceTableSchema": "",
+    "CreateViewSql": "select \r\n    `tkansayo_torihiki`.`DENSHU` AS `DENSHU`,\r\n    `tkansayo_torihiki`.`SAKI_HIMOKU` AS `SAKI_HIMOKU`,\r\n    sum(`tkansayo_torihiki`.`KINGAKU1`) AS `KINGAKU1`,\r\n    sum(`tkansayo_torihiki`.`KINGAKU2`) AS `KINGAKU2` \r\nfrom \r\n    `tkansayo_torihiki` \r\ngroup by \r\n    `tkansayo_torihiki`.`DENSHU`,\r\n    `tkansayo_torihiki`.`SAKI_HIMOKU`\r\norder by\r\n    `DENSHU` ASC,\r\n    `SAKI_HIMOKU` ASC",
+    "ViewInfo": {
+      "ViewName": "denshu_himoku_sirekingaku",
+      "QueryColumns": [
+        "DENSHU"
+      ]
+    }
+  },
+  "Indexes": []
+}
