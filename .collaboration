@@ -559,32 +559,14 @@
   },
   {
     "ModuleName": "PCPage/材料倉出明細表　発行画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001333",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-17T11:25:09.0559769+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/材料倉出明細表_帳票画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001333",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-17T11:26:43.0505618+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Pages/材料倉出明細表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001333",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T09:11:20.6114616+09:00",
     "ModuleType": 6
   },
   {
@@ -637,42 +619,18 @@
   },
   {
     "ModuleName": "PCPage/材料倉出明細表_発行画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001333",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T09:09:17.5472176+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/材料倉出明細表_帳票画面_",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001333",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T09:10:05.8632833+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PageReport/材料倉出明細表_レポート",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001333",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T09:12:18.8812976+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "Reports/材料倉出明細表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001333",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T09:12:46.3285855+09:00",
     "ModuleType": 19
   },
   {
