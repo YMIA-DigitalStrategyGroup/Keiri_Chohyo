@@ -664,15 +664,5 @@
     },
     "LockDateTime": "2026-06-23T09:10:05.8632833+09:00",
     "ModuleType": 1
-  },
-  {
-    "ModuleName": "Pages/材料受入明細表/材料倉出明細表",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001333",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-23T09:10:32.206694+09:00",
-    "ModuleType": 6
   }
 ]
