@@ -640,5 +640,15 @@
   {
     "ModuleName": "TableView/denshu_himoku_sirekingaku",
     "ModuleType": 23
+  },
+  {
+    "ModuleName": "PCPage/在庫品チェックページ",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T13:47:31.2313857+09:00",
+    "ModuleType": 1
   }
 ]
