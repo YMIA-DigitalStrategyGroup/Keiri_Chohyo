@@ -624,7 +624,17 @@
   },
   {
     "ModuleName": "PageReport/経理画面・仕訳リスト（材料仕入）",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME001384",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T11:12:00.4657708+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\経理画面・仕訳リスト（材料仕入）\\経理画面・仕訳リスト（材料仕入）.json",
+      "Reports\\経理画面・仕訳リスト（材料仕入）\\経理画面・仕訳リスト（材料仕入）.rdlx"
+    ]
   },
   {
     "ModuleName": "PageReport/※削除※",
