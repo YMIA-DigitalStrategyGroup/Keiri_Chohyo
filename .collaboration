@@ -463,7 +463,17 @@
   },
   {
     "ModuleName": "PCPage/原価集計表_一次一覧",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023256",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T09:33:14.4214353+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\原価集計表\\原価集計表_一次一覧.json",
+      "Pages\\原価集計表\\原価集計表_一次一覧.rd"
+    ]
   },
   {
     "ModuleName": "PageReport/原価集計表_第一次_未完成",
