@@ -674,5 +674,15 @@
     },
     "LockDateTime": "2026-06-23T09:10:05.8632833+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PageReport/材料倉出明細表_レポート",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME001333",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T09:12:18.8812976+09:00",
+    "ModuleType": 17
   }
 ]
