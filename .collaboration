@@ -17,7 +17,16 @@
   },
   {
     "ModuleName": "Table/tkansayo_torihiki",
-    "ModuleType": 7
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME001384",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T09:34:16.2901163+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\tkansayo_torihiki.json"
+    ]
   },
   {
     "ModuleName": "Table/thatchu",
