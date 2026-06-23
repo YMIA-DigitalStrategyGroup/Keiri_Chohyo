@@ -733,5 +733,15 @@
     },
     "LockDateTime": "2026-06-23T09:32:35.0100205+09:00",
     "ModuleType": 22
+  },
+  {
+    "ModuleName": "TableView/ビュー2",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME001384",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T09:53:08.3970164+09:00",
+    "ModuleType": 23
   }
 ]
