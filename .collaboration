@@ -748,13 +748,13 @@
     ]
   },
   {
-    "ModuleName": "PCPage/区判別テスト",
+    "ModuleName": "PCPage/区分判別テスト",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-24T13:58:50.2962152+09:00",
+    "LockDateTime": "2026-06-24T13:59:06.9209167+09:00",
     "ModuleType": 1
   }
 ]
