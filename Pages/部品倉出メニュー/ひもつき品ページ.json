@@ -12,23 +12,26 @@
     "8,26": "倉出工程",
     "8,30": "区分名称",
     "9,37": "反映",
-    "13,2": "ロケーション",
-    "13,8": "部品コード",
-    "13,14": "名称"
+    "13,2": "部品コード",
+    "13,8": "名称",
+    "13,23": "数量",
+    "13,28": "納入予定日",
+    "13,36": "仕入先コード",
+    "13,40": "仕入先名"
   },
   "AttachInfos": {
     "9,2": {
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "製番",
-        "GUID": "105e61f1-60fe-4e3f-939d-235178c52d3c"
+        "GUID": "4385063f-9968-41dd-8dcc-c6f6e438b57c"
       }
     },
     "9,11": {
       "BindingInfo": {
         "TableName": "tjuchu",
         "ColumnName": "HANBAI_KATASHIKI",
-        "GUID": "99eb0a9a-a507-4368-bb26-d3e4dd4b946a"
+        "GUID": "ac84fccc-b7fa-4a78-a307-57778e2195e7"
       }
     },
     "9,26": {
@@ -40,30 +43,30 @@
         "ValueColumnBindingInfo": {
           "TableName": "ymia_v_kuradashi_kotei_select",
           "ColumnName": "倉出工程コード",
-          "GUID": "8b166c22-a969-4a4e-acf3-2e71f4228d77"
+          "GUID": "120ff90e-29c3-4e99-b4e8-07a3861a59a6"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "ymia_v_kuradashi_kotei_select",
           "ColumnName": "倉出工程コード",
-          "GUID": "f8464ff8-eea1-4ac7-bf3d-92cb363d3490"
+          "GUID": "338cdd5e-af2f-4948-a593-d2d12c74fa59"
         },
         "ItemsQuery": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
             "TableName": "ymia_v_kuradashi_kotei_select",
             "ColumnName": "製番",
-            "GUID": "3120667d-d7e9-4c8c-94ba-dea73b99036c"
+            "GUID": "711d55b5-4e03-42f1-bb7a-aac4cba828d5"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=在庫品チェックページ!C10"
+            "SerializeProperty": "=ひもつき品ページ!C10"
           }
         },
         "CommandList": [
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "ymia_v_kuradashi_buhin",
-            "ID": "66d310a013e347a89698ee77927f23d9"
+            "ID": "bef96c95889f46b6b93047edef897358"
           }
         ]
       }
@@ -103,11 +106,11 @@
                   "ColumnBindingInfo": {
                     "TableName": "ymia_v_kuradashi_buhin",
                     "ColumnName": "区分名称",
-                    "GUID": "cb9a11d2-1fe6-4a72-9426-d34eb662752d"
+                    "GUID": "39e95086-23e9-40ce-a689-9659060f0c26"
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=在庫品チェックページ!AE10"
+                    "SerializeProperty": "=ひもつき品ページ!AE10"
                   }
                 },
                 {
@@ -115,11 +118,11 @@
                   "ColumnBindingInfo": {
                     "TableName": "ymia_v_kuradashi_buhin",
                     "ColumnName": "倉出工程",
-                    "GUID": "caf63eda-3648-4653-bcb2-7478a770c591"
+                    "GUID": "b9ad70d3-5416-4644-9f0d-52a4ec6f24b5"
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=在庫品チェックページ!AA10"
+                    "SerializeProperty": "=ひもつき品ページ!AA10"
                   }
                 },
                 {
@@ -127,16 +130,16 @@
                   "ColumnBindingInfo": {
                     "TableName": "ymia_v_kuradashi_buhin",
                     "ColumnName": "製番",
-                    "GUID": "a3c16f1b-9627-4784-b3e1-917ee4aeba78"
+                    "GUID": "4d0daa99-74c8-486d-8f21-10a13e324bdb"
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=在庫品チェックページ!C10"
+                    "SerializeProperty": "=ひもつき品ページ!C10"
                   }
                 }
               ]
             },
-            "ID": "4de1657e3d4b4c30af7a1a14cca19749"
+            "ID": "6e99cfab7a274693ab65f85a0bbae5d2"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -148,7 +151,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=在庫品チェックページ!AE10"
+                        "SerializeProperty": "=ひもつき品ページ!AE10"
                       }
                     ]
                   },
@@ -173,14 +176,14 @@
                       {
                         "Location": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=在庫品チェックページ!1:45"
+                          "SerializeProperty": "=ひもつき品ページ!1:45"
                         },
                         "Value": true
                       }
                     ]
                   }
                 ],
-                "ID": "4f722bf1-a8f7-49e8-9a19-b92be4c67963"
+                "ID": "099193c7-b5c8-4394-9bee-d5f8c690f8fb"
               },
               {
                 "Condition": {
@@ -189,7 +192,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=在庫品チェックページ!AE10"
+                        "SerializeProperty": "=ひもつき品ページ!AE10"
                       }
                     ]
                   },
@@ -214,14 +217,14 @@
                       {
                         "Location": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=在庫品チェックページ!1:45"
+                          "SerializeProperty": "=ひもつき品ページ!1:45"
                         },
                         "Value": false
                       }
                     ]
                   }
                 ],
-                "ID": "63ab1dde-6da7-44ac-a48b-7c206ae97631"
+                "ID": "accdca66-0a39-4994-ab4a-96331050af48"
               }
             ]
           }
@@ -262,11 +265,11 @@
           "ColumnBindingInfo": {
             "TableName": "ymia_v_kuradashi_buhin",
             "ColumnName": "製番",
-            "GUID": "b3324ccc-761b-48a1-a472-3e1d8c0445dd"
+            "GUID": "77560db0-7e13-4acb-9062-be802f757560"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=在庫品チェックページ!C10"
+            "SerializeProperty": "=ひもつき品ページ!C10"
           }
         },
         "TopCondition": null,
@@ -281,69 +284,72 @@
       }
     },
     "14,2": {
-      "NameUsedInJavaScript": "ロケーション_棚番_",
-      "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "ロケーション（棚番）",
-        "GUID": "799a4c4c-2b33-4176-b713-949a2e76a98f"
-      }
-    },
-    "14,8": {
-      "NameUsedInJavaScript": "倉出品番",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "倉出品番",
-        "GUID": "b269cb61-cbe0-49aa-861e-0bd47c8fff84"
+        "GUID": "054c7b55-df28-430b-ad7d-b4814941a04d"
+      }
+    },
+    "14,8": {
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "品名",
+        "GUID": "2a529a26-c91e-419a-a8b3-6f1b8396f08b"
       }
     },
     "14,14": {
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "品名",
-        "GUID": "b0e9a442-cfbe-4bd9-9cfe-58e0b7055cbc"
+        "ColumnName": "規格・寸法",
+        "GUID": "116c2454-18f0-4066-af71-4b219c4330a3"
       }
     },
     "14,23": {
-      "NameUsedInJavaScript": "規格_寸法",
-      "BindingInfo": {
-        "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "規格・寸法",
-        "GUID": "2fea499d-81cd-450f-920c-d961ef322187"
-      }
-    },
-    "14,31": {
-      "NameUsedInJavaScript": "予定数量",
+      "NameUsedInJavaScript": "数量",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "予定数量",
-        "GUID": "1fddf4d0-7794-4089-8669-7404a0ea96c4"
+        "GUID": "e839ae4e-fc18-475e-b06d-3e0167626cb6"
       }
     },
-    "14,34": {
+    "14,26": {
+      "NameUsedInJavaScript": "単位",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "単位",
-        "GUID": "3da6b635-9d88-4794-8811-e0136b388c79"
+        "GUID": "37eb26b3-3f12-4a64-8cdb-d8914e325265"
+      }
+    },
+    "14,28": {
+      "NameUsedInJavaScript": "納入予定日",
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "納期",
+        "GUID": "efcbc9ee-2ee2-4315-8faa-4e9ed23e0c9b"
+      }
+    },
+    "14,32": {
+      "NameUsedInJavaScript": "受入日",
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "受入日",
+        "GUID": "88a2057e-53ad-4949-add4-a7c09510f5ed"
       }
     },
     "14,36": {
-      "CellType": {
-        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
-        "ShowOnlyEdit": false
-      }
-    },
-    "14,38": {
+      "NameUsedInJavaScript": "仕入先コード",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "製番",
-        "GUID": "d2fda245-86c9-4b84-9325-b460680e62cb"
+        "ColumnName": "取引先コード",
+        "GUID": "9e8e8e3a-190c-43a7-a1e1-644308caf0ee"
       }
     },
-    "14,41": {
+    "14,40": {
+      "NameUsedInJavaScript": "仕入先名",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
-        "ColumnName": "区分名称",
-        "GUID": "35be0e92-575c-4eca-88d4-92bfcb89082c"
+        "ColumnName": "取引先名",
+        "GUID": "c181b33d-d39e-4b95-9e1c-68a95a904a8a"
       }
     }
   },
@@ -555,77 +561,25 @@
       "10,32": 6,
       "10,33": 7,
       "13,2": 8,
-      "13,3": 9,
-      "13,4": 9,
-      "13,5": 9,
-      "13,6": 9,
-      "13,7": 9,
       "13,8": 8,
-      "13,9": 9,
-      "13,10": 9,
-      "13,11": 9,
-      "13,12": 9,
-      "13,13": 9,
       "13,14": 9,
-      "13,15": 9,
-      "13,16": 9,
-      "13,17": 9,
-      "13,18": 9,
-      "13,19": 9,
-      "13,20": 9,
-      "13,21": 9,
-      "13,22": 9,
       "13,23": 9,
-      "13,24": 9,
-      "13,25": 9,
       "13,26": 9,
       "13,27": 9,
       "13,28": 9,
-      "13,29": 9,
-      "13,30": 9,
-      "13,31": 9,
       "13,32": 9,
-      "13,33": 9,
-      "13,34": 9,
-      "13,35": 9,
       "13,36": 9,
-      "13,37": 9,
+      "13,40": 9,
       "14,2": 9,
-      "14,3": 9,
-      "14,4": 9,
-      "14,5": 9,
-      "14,6": 9,
-      "14,7": 9,
       "14,8": 9,
-      "14,9": 9,
-      "14,10": 9,
-      "14,11": 9,
-      "14,12": 9,
-      "14,13": 9,
       "14,14": 9,
-      "14,15": 9,
-      "14,16": 9,
-      "14,17": 9,
-      "14,18": 9,
-      "14,19": 9,
-      "14,20": 9,
-      "14,21": 9,
-      "14,22": 9,
       "14,23": 9,
-      "14,24": 9,
-      "14,25": 9,
-      "14,26": 9,
+      "14,26": 10,
       "14,27": 9,
       "14,28": 9,
-      "14,29": 9,
-      "14,30": 9,
-      "14,31": 10,
-      "14,32": 9,
-      "14,33": 9,
-      "14,34": 9,
-      "14,35": 9,
-      "14,36": 11,
-      "14,37": 9
+      "14,32": 11,
+      "14,36": 9,
+      "14,40": 9
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -652,20 +606,20 @@
     "13,2,1,6",
     "14,8,1,6",
     "13,8,1,6",
-    "14,34,1,2",
-    "13,34,1,2",
-    "14,31,1,3",
-    "13,31,1,3",
-    "14,23,1,8",
-    "13,23,1,8",
     "14,14,1,9",
     "13,14,1,9",
-    "14,36,1,2",
-    "13,36,1,2",
-    "14,38,1,3",
-    "13,38,1,3",
-    "14,41,1,4",
-    "13,41,1,4"
+    "14,23,1,3",
+    "13,23,1,3",
+    "14,26,1,2",
+    "13,26,1,2",
+    "14,28,1,4",
+    "13,28,1,4",
+    "14,32,1,4",
+    "13,32,1,4",
+    "14,36,1,4",
+    "13,36,1,4",
+    "14,40,1,5",
+    "13,40,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -705,4 +659,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//oYhk5wotEq6eTGpOIOGqi+vXT1R1jX0VwXjHZjw4lFrwrJugz9tB3I0Ap+d6sIFmvP4hf2JeWh2XrwZb6viPlfPPfpKU9TGIUwNF7PnahL9NzWNwF+6TfVvhNe5+DaZbKuDy3dAD0NF0glyeccGu7UKfafd+3SP5picsuIOYWaSQU7ZtyXHSXMxELYi3dsWU8ZMOpuT3XCCHlhC1AJGKTMnCKo1u1JVCZ1S3X8B+qRWU4D7MeTrEHb88UdscDD+7xuOxpryOWcnhTsdnXrho23NiMPr9+YNFZRGUzpWzpJARJeeCWAKCJTwocHoTzw/2QmF2X+0NLxVhRrmReumRzYPLwSbWHBqT+YaI7UdOfMvltBcVu03u+kgv5Dcn3Tseayj33mfFW4fdv7ipdtg5ulKtpSMrydfQziYzL9qKlH7HofT5PwxwP+X8ASjInlBBkF1/jUzKSPev0bz1VNmLzwA+AMFAU5iXidkKrndRBTNk72ZuukYy+lk/Heb9JFRc+Q1ruy4I7zzJzJGZV92kVU+nAIfLwAHzSsAgWrCt6yZ+ZCfVYTIUtxHHmQ0JEuLa+ZCWESYCaC71nD7yOrQKMzq6/EH60kaaIOObTTQ6sikjFPX3TfiOU1p7gf72ovKhox4XUPNRiG7hI7+dXV6+hkt3M5JpoP6zadseSlU39DdEC9HRkJi0Ile01g++OP/gtvChE4RmmHtUxaz5FQkDgNgF1N/ScvkvNM53B4df/MXro9IEksUa89Os4L+idlpr80RFgvBHEriPhCD60FlGnYNcEzkgW60zGQ2Ha53vY5nPWYKay2dcHL9K8fCAYFhraxOsbMecwogm1UB+kAVDTYQJwTBZodmRFjFDg5ebRIa+Ud3R4LyRHGqPEW9d5dLal3QwysbapExV9rfiRqwOlA==|920
+}//LussonLriZTjEQAoIpOROUTBOxfavUue/bnPo4hJQp8LaKzoshuMfYB0xvR0ZuBeE2Liih+WkRaRYcFZdlCx8lOo2Xge6sxwUBfM1o9oQuuFl2mneTjuOhThgoGrDuERPQ+xpuS/Ec9YnC1R09dk4+diCFdbVi66WB+JUkV0uSw/M0ZEtYpA1RhI+98zkC4zEvEDn+XcatElgX+9JDSKs/AFZpz+Cas/yDcM8Ivp1kOAMqFUTa4I7aLEcUgVnP5GlL/IupDVH4bQvY7qdpeXdJgD8ltwLbVEA1CTGjBhr9B0NJzDTt5py4ON5II3Kt4YN35hn1Pg90oqpBJmnnHOUG0kOMFylhDQpT8xHFEIk/zpBWdqMCHBATjgtKI95q257Y/Gktg+c9DBnA1OX7E0KgsKq0JSiWbVhKFFF5K7zw6ao4cV7nCBQtcF89Vs0V/RM6lA+m0UQwCxgq0HjeyMkAqaER8e2dYCBr721xtoFmhWqqoWxesTfdUkIFwqbNASKkYE/z+TVKBYaymeNGxRAHN1hodN+FvxZuwJgs/v/K5UH+854UQfg0KOORTU4QjQTzWhVX70xnhZB2jtH1Se+lLE5mfq3r/M3QnPKAbhUmTRRwy5vJ+uuURjXQFWBh23lfBklvVv7XV6w/Hem4neMzlgXigFfEsLacK0QR0B0saB94kTLaD9xxIpSoYLXD1/brjVPEtFMzWnst7DX0iG0uuxR9fAavTEA+/PAtdPz9c7aADU+2bKKcPF1BL5sGhOEzhrghyM4yr1PB/11pb8LQGS2fS2yTNIB5zz2/F+cbxqnHWkOBaugR5pkIbR6t6DGcGy1uR+yQndpCHCSLHxhXbCFa8UXjFcpy9Nnuqjffn1foxqI2YrCj31ANXNQF0AZVAFsYmWGNnzckt1gThnXg==|920

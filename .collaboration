@@ -5,16 +5,7 @@
   },
   {
     "ModuleName": "TableView/ymia_v_engineukebarai",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:36:35.0633776+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engineukebarai.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_driveukebarai",
@@ -50,16 +41,7 @@
   },
   {
     "ModuleName": "Table/tbuhink",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:36:35.0636953+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\tbuhink.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/mgentani",
@@ -71,16 +53,7 @@
   },
   {
     "ModuleName": "TableView/ymia_v_thatchum",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:36:35.063792+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ymia_v_thatchum.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "Table/mhinban",
@@ -500,29 +473,11 @@
   },
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou_ver_ystm",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:36:35.0636784+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engine_drive_daichou_ver_ystm.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou_1",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:36:35.0636655+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engine_drive_daichou_1.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "PageReport/在庫品",
@@ -664,31 +619,7 @@
   },
   {
     "ModuleName": "PCPage/在庫品チェックページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T11:21:29.4620365+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\在庫品チェックページ.json",
-      "Pages\\部品倉出メニュー\\在庫品チェックページ.rd"
-    ]
-  },
-  {
-    "ModuleName": "PCPage/倉出情報一覧 (※バックアップ用ページ) (2)",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:21:27.7847922+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ) (2).json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ) (2).rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ひもつき品チェックページ",
@@ -700,12 +631,6 @@
   },
   {
     "ModuleName": "PCPage/ひもつき品ページ",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:28:52.3774707+09:00",
     "ModuleType": 1
   }
 ]
