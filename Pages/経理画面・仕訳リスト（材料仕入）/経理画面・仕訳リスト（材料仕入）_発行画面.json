@@ -157,6 +157,12 @@
     "5,1": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "経理画面・仕訳リスト（材料仕入)_帳票画面"
+          }
+        ],
         "Text": "発行",
         "TemplateKey": "_RS_Normal_Style2"
       }
@@ -356,4 +362,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//d5um94Jrly1k59Apv7Ifud2ExrbnfLm/1m3AYNfAWWcAjQ8TehR9X8PVBaAnwjyZAjIwoqDtkkAG/53/pr8mCCxuYG3FaxfjdEKlNNMEPTRzWq/IG9hmzLP7CYp095Mkhx/Z/VpO2zuIwXmaNrE0MtwQh+LymwHU7PP2x5CWhOvMngm+0gSKhDbVlwrfp6hgKgXKBR687zyTgStYrdihkX+k1xpAdn35DejdB3Rj8L8OgMYtl7LprTs/DHpNELeTPmUutlagjY6UT2DPRYqf+xmKgurEXoy1Ur7+zuIr734tVlLXy4XTih82DOIkkoegV16wjMe1h2P3JW1kBsXxGNM/5Bat8J21YzSk77zXVf/WSSLh/qAa9DYnxHQqW9LtN+bep6WekKCv5qoozc57Bvf6ja6A3wbbBkilI9H+/sUJSdnuUHaRYICXuM+QzsdWOb8Y4B2wVJkEpZeTET/cKxpMWwuYJfVmclP2C/vqdh+bvu+f9bxvoygr9EAm6rBmXLyUR93qkSczntvW7U8XyhwPXHo2F0V0j5+i04bQHXJXaSPSCvbO4haD0YuSYl220UzE0DGa8V3KjLg6FWnDVsrpGLS4CuT28/RZM9VXSWR6K+frWPvCYxoU1moZBg7bUm4vyPfAqAytsvMx+P/iW7S5CasBHOKkupth8kAV/Pv7ctSXZ2O2gN/6adKrqrZhDAKBLSqc4BJNuxnA4BJpFVTxQO7tgASxR9NlR+kPBJ1th0KQjzxY8UiueV9JBIGIb5Os+Vl19HXajl6utHbL7+csRIQb4nlxADbRinfMkPCUxuxJKbAgB/NaLw7Uow59uYziISredbGCPJi/AjoDmZdBsnp2wvs9aH590w16bDzKFjT4pgS2jizHhEjqDioMngLAsjeF7o7cWhguGCDbRQ==|920
+}//PVNy+uE9ADYDEIdkuha4vH4z0Vme8jKLuodqJzNDRP/ehXb0amnc5/yW6p8+gOJzP0nBC0OXnw/LX28RzTVBgtYqgczX1JbBNb2kBctWVe9SHaojyILqSczgiAXdfnNwhqQXGTXA0ojIm3SzFsKHLF/0FG4/eA8Dor2Kxgos094QIJiwmLTzQF8BJclf6lx61ZpcSfNIxiODOMXEjkKPSKWF3SuhQgrWqNiI+XMMUmIXvhla2WvDRSwM4toacXpkyY+7TK25DRFIiBQHmrBG6a5qjMI+PAyUqHLkOWmqccITqN+NCV9PGaXybBqD+SuFOcSDT4DgLmvHqCW4jjMUri3IZ4bCV3K5v0d0Yk6Bf0z7c8IVG3V+t5e4ryIp3Vv2xl6m1hW0jKrkDxS22i4Cew0uBt/qynaUpsIQ6XOLEYJpm4zzcF420KlzGF4xEgGXoUmOxJILYTLOjpnIpK2yns4b4z9GMsRjPqSd8NnMISyc/pvWXI0ffyy6zu/6G4yGkhfTvv6QIyocUJVa/t5SJRzA9DLKmRFiOtB4EgYb7AGAraPZBHtZkIwTo80BUT862Ar1XQUw/Sfk/iqed57eFuLeBfp9cjBPTzOBH3H+bvnQj3o1n32lLzjwBS3fmEdWvX1bZ980Ue/VyxPuHV3y6nrLE1GSYNHnSfbHXMtJbGoRgDMnlyPiphAv/8zl8naEJL9ORvko5xx6gpPtb6RpB6Hm82d6aLYwVxS0+E+SjCrashYwihhl74PrGqdgIbzlHW9BUKbqFWt5dzOq6WfvQsp8Z8CG0aXIe4ynJrE6jgp31pZ79+wgYfAuDS+uHVSFf93uZBxaDZwRLnlP84kw+WssXhMyeOESsjOm6lnJ0dKeL7H5Mzf37Ikm+anDPl7qtu66D4zc2p+UFS6f0BO/dQ==|920

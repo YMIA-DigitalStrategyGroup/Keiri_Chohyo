@@ -545,31 +545,11 @@
   },
   {
     "ModuleName": "PCPage/経理画面・仕訳リスト（材料仕入)_帳票画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001384",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T09:51:27.326248+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\経理画面・仕訳リスト（材料仕入）\\経理画面・仕訳リスト（材料仕入)_帳票画面.json",
-      "Pages\\経理画面・仕訳リスト（材料仕入）\\経理画面・仕訳リスト（材料仕入)_帳票画面.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/経理画面・仕訳リスト（材料仕入）_発行画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001384",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T09:48:48.3946608+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\経理画面・仕訳リスト（材料仕入）\\経理画面・仕訳リスト（材料仕入）_発行画面.json",
-      "Pages\\経理画面・仕訳リスト（材料仕入）\\経理画面・仕訳リスト（材料仕入）_発行画面.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Reports/経理画面・仕訳リスト（材料仕入）",
@@ -577,17 +557,7 @@
   },
   {
     "ModuleName": "PageReport/経理画面・仕訳リスト（材料仕入）",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME001384",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T09:58:00.0488901+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\経理画面・仕訳リスト（材料仕入）\\経理画面・仕訳リスト（材料仕入）.json",
-      "Reports\\経理画面・仕訳リスト（材料仕入）\\経理画面・仕訳リスト（材料仕入）.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "PageReport/倉出しメニュー（ひもつき品）",

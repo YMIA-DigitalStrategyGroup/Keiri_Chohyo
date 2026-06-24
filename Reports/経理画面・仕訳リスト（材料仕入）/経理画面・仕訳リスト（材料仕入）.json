@@ -1,6 +1,58 @@
 {
   "Name": "経理画面・仕訳リスト（材料仕入）",
-  "DataSources": [],
+  "DataSources": [
+    {
+      "Name": "経理画面_仕訳リスト_材料仕入_",
+      "GUID": "3b632268-46cd-4363-9e7e-a441689de910",
+      "DataSourceSetting": {
+        "TableName": "denshu_himoku_sirekingaku",
+        "BindingInfos": [
+          {
+            "GUID": "fb229cde-9c37-4b08-9fe2-4057a8608556",
+            "BindingInfo": {
+              "TableName": "denshu_himoku_sirekingaku",
+              "ColumnName": "DENSHU",
+              "GUID": "007208f8-80dc-4d0d-bddd-7e9f1003dd74"
+            },
+            "ColumnName": "DENSHU"
+          },
+          {
+            "GUID": "f0c0d156-be7c-4ea2-ad91-3e0b373c4b7e",
+            "BindingInfo": {
+              "TableName": "denshu_himoku_sirekingaku",
+              "ColumnName": "SAKI_HIMOKU",
+              "GUID": "1bbc7743-72ff-4f48-aeec-d59b9935ce9f"
+            },
+            "ColumnName": "SAKI_HIMOKU"
+          },
+          {
+            "GUID": "ab790576-0eb2-4a0b-be06-53c22bf1a34f",
+            "BindingInfo": {
+              "TableName": "denshu_himoku_sirekingaku",
+              "ColumnName": "KINGAKU1",
+              "GUID": "864e9024-7eeb-4aaf-97f4-f62ea1e8aba7"
+            },
+            "ColumnName": "KINGAKU1"
+          },
+          {
+            "GUID": "8a3db61a-5e81-461d-b049-a8595d6c2aa2",
+            "BindingInfo": {
+              "TableName": "denshu_himoku_sirekingaku",
+              "ColumnName": "KINGAKU2",
+              "GUID": "c88c21d1-4306-4359-b828-d683265dbaee"
+            },
+            "ColumnName": "KINGAKU2"
+          }
+        ]
+      },
+      "ColumnsType": [
+        "string",
+        "string",
+        "number",
+        "number"
+      ]
+    }
+  ],
   "PermissionData": {
     "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
     "permissionResource": {

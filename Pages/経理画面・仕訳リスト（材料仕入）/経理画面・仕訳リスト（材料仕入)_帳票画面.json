@@ -4,11 +4,6 @@
   },
   "Cols": {
     "RowColumnAttachedInfos": {
-      "21": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 94.0
-        }
-      },
       "16": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 59.0
@@ -18,6 +13,11 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 54.0
         }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 94.0
+        }
       }
     },
     "Count": 60
@@ -26,6 +26,7 @@
     "1,1": "PZF100：経理画面・仕訳リスト(材料仕入）",
     "3,2": "対象年月",
     "3,17": "PDF発行",
+    "3,21": "エクスポート",
     "7,5": "伝種",
     "7,9": "費目",
     "7,13": "仕入金額",
@@ -41,15 +42,45 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ExportPageToPdfCommand, ServerDesignerCommon",
-            "TargetPageName": "経理画面・仕訳リスト（材料仕入）_発行画面",
-            "NewOtherName": ""
+            "$type": "Forguncy.Model.ExportActiveReportCommand, ServerDesignerCommon",
+            "ExportReportNameList": [
+              "経理画面・仕訳リスト（材料仕入）"
+            ],
+            "CustomName": "経理画面・仕訳リスト（材料仕入）",
+            "ExportSettings": {
+              "MultiSheet": true
+            },
+            "IsPageBreakBefores": [
+              false
+            ],
+            "ReportGaps": [
+              "0cm"
+            ]
           }
         ],
         "Text": "PDF発行",
         "TemplateKey": "_RS_Normal_Style2",
         "Icon": {
           "Name": "File/358_pdf_file_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,21": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportPageToExcelCommand, ServerDesignerCommon",
+            "NewOtherName": ""
+          }
+        ],
+        "Text": "エクスポート",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "File/349_excel_file_2.svg",
           "BuiltIn": true,
           "Color": "Background 1",
           "UseCellTypeForeColor": true
@@ -115,22 +146,32 @@
         "Background": 1
       },
       {
-        "Formatter": 2
+        "Background": 2,
+        "Foreground": 3
       },
       {
-        "Formatter": 3
-      },
-      {
-        "Formatter": 4
+        "Background": 4
       },
       {
         "Formatter": 5
+      },
+      {
+        "Formatter": 6
+      },
+      {
+        "Formatter": 7
+      },
+      {
+        "Formatter": 8
       }
     ],
     "Types": {
       "Strs": [
         "Bold",
         "Accent 1 80",
+        "#FFFF0000",
+        "Background 1 0",
+        "#FF92D050",
         " #,##0.00; (#,##0.00); \"-\"??;@",
         "#,##0;[Red]#,##0",
         "#,##0",
@@ -141,18 +182,19 @@
     "CellStyles": {
       "1,1": 0,
       "3,2": 1,
-      "7,13": 2,
-      "8,13": 3,
-      "8,17": 4,
-      "8,21": 5
+      "3,17": 2,
+      "3,21": 3,
+      "7,13": 4,
+      "8,13": 5,
+      "8,17": 6,
+      "8,21": 7
     },
     "SheetStyle": {
-      "FontFamily": 6
+      "FontFamily": 9
     }
   },
   "Spans": [
     "3,2,2,5",
-    "3,17,2,6",
     "3,7,2,6",
     "7,5,1,4",
     "8,5,1,4",
@@ -162,7 +204,9 @@
     "8,13,1,4",
     "7,17,1,4",
     "8,17,1,4",
-    "9,5,7,23"
+    "9,5,7,23",
+    "3,17,2,4",
+    "3,21,2,1"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -187,4 +231,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//RerH7yG8I40PigF5mYFQU1tXMRK1s96VThpYjoj3mhmVXN0lPwpNuW6CZaTgORQz257Ig4PwsFLD+eLVvWSiWMKGc6URyiwTD/GuV1QM5LV/Rbio8K2QWARqNA/CkDrXSE7HhpIV2JDnOCdjvdCFu3i6VjWT7Vh012mbmdvtYACiFiOcxuL3v2GDhpTnaJ0m4d4uQU2y4FWFXfyxe6ENuwZ1f0DIYW91/6jzN+s4DPRrk2ZTVKP7vUKT/F3iozEko4oMxh7G11wft0o9UZ9XLmBW7UrVSbPmPk2OSqB3QgC+/Ngd7svuMF+tArID4mLURkgna8lEmrYG+b6atm8mnE6Eou69sJNJmENdEI4oYt1pl66/skbBloext9yoMUxRHMQ2VaJQZZmJoipfxjAITUjh8AnKU30Ivua5ZcT/vXKlBS86X+xtwPA+/YPN2oar2q+nVczovrWGNcX4TwgMc20w5nTg4ql2CeM5t5OUJ7fudQfiDL014vEgZeWPlKtg/wyF44W9DqB+P2UmXmbfsDxlSn9olz6NLs5qfke2irdICWR+WZ394y6NWLx58SytekqeLOicXNxPbB22L3B7wPXxIvTzcattsz4szcZo97oZ2dqH9tPDHgE0w4qnMxkqIpTwR4xckbbfABbdBGvUyAEenUEWkTUVLsNy+T+pZ1PK34MR+ReelYVrvKWN3ay89h0Tdsrb6TCTcuyeim5JDe0yVuKNZloH1qaFDJmE/tegaLxqavfM3o37r0NsW2GOg/tk9sL/PdSc7EbREgIsTUIu7uOjoJPE6HpKfCfO/jx9DApwKabt16GcAqylGZFioclmpH8g/8pjljWQRP6cedH885UpjST9DgsBYc7NhyCpX6d5UU5A7LgcLsGi72ktGtknk5u3ZKSseTLtMv07jA==|920
+}//gNBsvsfKEl9hGOvtqago5G5OAU3o5+MbvG4+rFKwQmSJfH1k8AxRtTfx8OouosVAFiWETpgjFHELn1DWxG5jFT1yuyMNll1UYkXPXj1r6Lq3+tQRXI7Ed5vUYhmdxc9zH5eeuiaj7jGb2qPVzbw+/YgKewoxu6DVw0LoRQ7fH0fJm3koqq9xqhsFmqwiixSjAOqmnEMSAfSo+Hs/TdiQYYyfghKOIBXSIwWHvnv3g3n8nkLWWlfNUB5r3nHQRxNzgtrs9k16RG3s0Dft0IvJO8fzu3wm/JC65qaalJflGSeEI0QKvarH5hHwvMV5TuexGFz1mCjFfFX2nNsTIZV6aFCxAcFNou58T0nEzsw4q6fWnURR/glcxKJodRZy8j16rv1w9xUQvuZ5iNg0E3+eNcwulmyjofPryKR9wRim6SP29NwGZWjv5waSTYRHxL5bLiIVkTYrBgpsGqdbyPOGNArahbYbX+wK+iXDPIfjVJGhwnC+syUDQbaZgg+w8kooNwAA9zA53+PNQomMxFKkWwiXVBQRad5G+aQ+2NJ1epD3GBouAj8OtuZn+D3EES2CK0xM/+FBaBzcxTQlaY0HfDvyLVt9ndfKw4SP5zOgkiAoZjvvirUZk5nwuEYb34baC8GombvjiDATvGosxWopTx8PN77Oo3Xg0oKjmt3Gef0AT/twotb6SuAYor2+iPPIaMaJaOEOrx3S/GZ+1DIUXCMGRmslS86vNCGYo5ETflbJGfRjMmt2ROok+yNqrfXbg5FMN6eLwWoBNtKo1v+ks6c5NxZcb3Z24Perejc7QxqFQL2bwvZJbGuEyamUmZrNvcxAhk8uJLYEzIOzdXtL4AJDvf4Sp/7pg4+i6CvQFoXLxNpOLGgPQ4WEs++IiOBfvFjAfmUSCxiZcy2DC1PkOg==|920
