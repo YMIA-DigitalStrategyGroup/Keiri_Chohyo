@@ -746,5 +746,15 @@
       "Pages\\部品倉出メニュー\\ひもつき品チェックページ.json",
       "Pages\\部品倉出メニュー\\ひもつき品チェックページ.rd"
     ]
+  },
+  {
+    "ModuleName": "PCPage/区判別テスト",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-24T13:58:50.2962152+09:00",
+    "ModuleType": 1
   }
 ]
