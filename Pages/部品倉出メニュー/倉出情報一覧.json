@@ -38,7 +38,9 @@
     "0,63": "SUBSTITUTE(R4,\"*\",\"%\")",
     "1,63": "SUBSTITUTE(BL5,\"*\",\"%\")",
     "10,20": "N18",
-    "9,20": "G1"
+    "9,20": "AG10",
+    "9,32": "TRIM(G1)",
+    "10,32": "U18"
   },
   "AttachInfos": {
     "3,6": {
@@ -162,6 +164,29 @@
         "PrimaryColor": "#FFFF0000"
       }
     },
+    "6,30": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "ひもつき品チェックページ",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=倉出情報一覧!G1"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=ひもつき品チェックページ!C10"
+                }
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
     "7,1": {
       "NameUsedInJavaScript": "TEHAI_KOBAN",
       "IsAutoMergeInListview": true,
@@ -256,7 +281,7 @@
                     "Comments": ""
                   }
                 ],
-                "ID": "436f93f0-d98d-4d38-92ec-dc98060fa7f4"
+                "ID": "9534df76-c9a0-4ba2-99e2-88d81f719e95"
               },
               {
                 "Condition": {
@@ -307,7 +332,7 @@
                     "Comments": ""
                   }
                 ],
-                "ID": "7621c22d-299f-4eb3-afb3-d81b235fd32c"
+                "ID": "4b92973c-3fcc-4636-94ed-4b77a0ac311a"
               }
             ]
           },
@@ -2084,7 +2109,8 @@
     "16,44,1,7",
     "15,56,1,10",
     "16,56,1,10",
-    "17,43,18,23"
+    "17,43,18,23",
+    "6,30,2,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2110,4 +2136,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//SbMieX0RBgVzRTPKK6IMQxTGsykjtyMbiL7YcSi0LCR7B3TFG0opKo5BUBTPsnjMyOqeP2mG1cdss/W3QWStB1CYb2lNqw+u928IyYz8uJ31zUm2Pj9JPACSj0yttlmX1xuGGZ95CCtAw1pmtlwyBp+4An9FdTQyGhts2r4lDOhuD661Rmp6efYCnpXwu0Z4Ufe2MrsGe25blT9FBDggXB/XdX/TOPrkt9iH+SKFj+4gCEc7y6w9b8MQPbvFS6+9Ti4zLyAel9UQetmHvLKNZiBYY18Icem6J4GNgcCykfZBj9xQbINIFMHJLwyptEQKOqZwMhDKdQVj22qcdI97Vn1COkZzacWRPnCnI4OjCqXCxZkKkMRrYXk5+W1gTKU/lWESCGuKQNUcKZH5/lvEGoyhkzflxOOeCykSWgHNJp/MpIChuOIPxEVFuJ3XDGeCcxuLehvjd9rxhaY7NNRZwateM0IJVpzhh8vUUij9El7QrkiBNrjH6TojLbNt8MHq3t8x+0cLUiwRqMD14z/mGyop5LakLaUY/zXu4smWU8tuATV+UZulSjwWVedfoTtZ2prU+fKiFrxn4ddImoNhLtGkoWUzCvrG8iEtAyGBVxir3tfE7QEiPm+oHhiBzIASqbcaZGtYn5xlUv/5XzFjo7eh7p3Sgqa3N85ixcIoFlXQWV9NNCfzuv8S85xP2KLz9Q02oMOam4XF+Elb1bdEhci9iaw6J1mpSJ9jV14B2Cx8u+QtpvaiOzvLMBiQFLi0nnjTjP3HMnn2l0P+VKEcVwoNR+/oYV0HX09gEAM9Hm7BAa0cOH1AIAh1pWKMmysnhDpw/fRmRxteYZw9VgxXpnTyb4X/RRzy5+k5tblLpeSd/Jzwe4J/8gJrIq3l6jAx3rzcVKxQT0/KcPjG0eLkcg==|920
+}//kr2ECHoAJMMkteO5Z6W4c8i/NHqFsbd62LAG4NIQyArGqym651TJOddZwXiUrQ2NQ1R/gdnNBFuIz9SC5Zh4aYrdBE1kwEoj2Ptl2El1Hr0HkXLDAn4VAWvOk4swZBNsfOzNebAXB8vMWiUOn1x65GSM2u+d3y3b6BBmZpAaorz+4KjQPaCfAN5Zn8Q534s+V/sepxaC6DNd3gB2YJEZfwtGtIE23tPEWfMh6lwZCxqG4bYeJoig8vN4dWHVNlKPqVaWC4WJdEfOjQ+KThYH0mTW3vM7aQlH9S3g6vDlGNdbfz36atPEoEkPAN0tFTEyMKthzPLZiRuHCngw3Iwldrski4UDyVaKhGZemHL1gDayy8cPCqiXW/n0mH3xVrXLQT/IYwCwH6oyuB8mFX9z8Jmp0cQnGaNc30ivivQTgKe7wXYZrqtgyD+uNl2XxFZ3hacZ0K+Lwgs0xrJrAqblh5UGmCybRU7ct7LG3FQJ0wvLC+482hafbQA4GtQFJewV/Wy0ukJpqadSSGl2H8S44awEx+qiw9hEQ2/JCt6TUDR0Gm9BnSdYPIAhSGJ+11SPrBkvfDbFbDkQikmFXQ8C3y45mJl9lAAYSuDRzkkPXin6i6xrN5qT52okjZfTKeMyZSG/lujbOW3IIC5xkj9p+6EbhPPou4loXNxmP5UaSdRS41DW3GfsBQ7bcQr++cniG16MRgOR03Tv5vDtrUqYeMkY3HcpHqgNdEHKx3HTLnT0YTVIzbtoRBzGVWB0IsldrBLJvFiGZ9aWnoIeeV1Bj/wIaSIIqsCzK2ogif5dze8mUNCoieaA8C95fqNUHDeSc+/0grMv9/qJFt4UygC7mrsCIMijXwoeJkeMnN/n9U8fNYyUDkmFKSrtc4+pnGdg/8FR8jcFXh9euRURkxKc+g==|920

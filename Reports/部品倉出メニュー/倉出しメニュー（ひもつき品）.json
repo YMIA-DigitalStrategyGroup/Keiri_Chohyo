@@ -8,7 +8,7 @@
         "TableName": "ymia_v_kuradashi_buhin",
         "BindingInfos": [
           {
-            "GUID": "6b52c9cf-350b-470d-a250-109089d8b4f7",
+            "GUID": "4c26e002-6084-441d-a3df-93999903adf6",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "製番",
@@ -17,7 +17,7 @@
             "ColumnName": "製番"
           },
           {
-            "GUID": "b55728f9-bcf8-4e6f-b0f0-671247089d83",
+            "GUID": "afb5a110-5714-4f42-aa64-554b67395ebe",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "倉出品番",
@@ -26,7 +26,7 @@
             "ColumnName": "倉出品番"
           },
           {
-            "GUID": "e43fefd1-d317-45e8-a479-de02bc7399a9",
+            "GUID": "984769d8-ef6c-45bf-9abe-dd075fe74631",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "品名",
@@ -35,7 +35,7 @@
             "ColumnName": "品名"
           },
           {
-            "GUID": "69250e7a-26e0-4e1d-bfa6-33ff8d6d446d",
+            "GUID": "c8543f14-cb12-47f9-9b16-6b21b05e49f1",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "規格・寸法",
@@ -44,7 +44,7 @@
             "ColumnName": "規格_寸法"
           },
           {
-            "GUID": "367346b8-8c5e-44f1-a830-8f4e1ff50233",
+            "GUID": "485f1be1-df54-4da4-b9c3-8db3d0604d87",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "倉出工程",
@@ -53,7 +53,7 @@
             "ColumnName": "倉出工程"
           },
           {
-            "GUID": "a57cba9f-d1f6-4273-b699-7732500ec9ca",
+            "GUID": "46b09277-5df0-400b-a816-2f2b5831b056",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "伝票番号",
@@ -62,7 +62,7 @@
             "ColumnName": "伝票番号"
           },
           {
-            "GUID": "57d18caf-983e-40e7-96d8-b1ed2cce74f6",
+            "GUID": "04d81e62-f3ce-46e8-85c9-3c17d711d1b8",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "倉出予定日",
@@ -71,7 +71,7 @@
             "ColumnName": "倉出予定日"
           },
           {
-            "GUID": "1d7009ea-9d4d-4047-97de-bbc9f6d39a1b",
+            "GUID": "677ce97a-fc2c-4bc8-91a6-6d1a148fa6bc",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "倉出4日前",
@@ -80,7 +80,7 @@
             "ColumnName": "倉出4日前"
           },
           {
-            "GUID": "c5da7807-84bf-4b91-bf6e-9d4e15256aec",
+            "GUID": "2a8a2a68-0c27-4381-8c5f-75a1d13fc7e2",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "予定数量",
@@ -89,7 +89,7 @@
             "ColumnName": "予定数量"
           },
           {
-            "GUID": "85104792-7bd1-4551-822e-e4e81c3e21ca",
+            "GUID": "848df4cd-779c-4495-b0d5-6fc680965bc5",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "単位",
@@ -98,7 +98,7 @@
             "ColumnName": "単位"
           },
           {
-            "GUID": "97f684e5-8e4e-4f06-981b-93968ef1986f",
+            "GUID": "4d66eaea-310b-452f-8277-09314c9a6e9e",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "ロケーション（棚番）",
@@ -107,7 +107,7 @@
             "ColumnName": "ロケーション_棚番_"
           },
           {
-            "GUID": "c8af3d83-eebb-4dcb-bddd-e495594f4506",
+            "GUID": "bb8850f4-8870-430f-b288-fbc7245b5739",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "購買区分",
@@ -116,7 +116,7 @@
             "ColumnName": "購買区分"
           },
           {
-            "GUID": "7287bdcc-506f-4791-8ecf-c6d0ac0c8f51",
+            "GUID": "a8041c97-eda2-430b-b9b2-e2f22cd1da9c",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "取引先コード",
@@ -125,7 +125,7 @@
             "ColumnName": "取引先コード"
           },
           {
-            "GUID": "64120697-9c52-4bcb-9922-f325d5e76d2d",
+            "GUID": "41e3c1b1-1bbb-41b2-8f2a-11134aa0a14c",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "取引先名",
@@ -134,7 +134,7 @@
             "ColumnName": "取引先名"
           },
           {
-            "GUID": "1a3b1391-972c-4b8c-a19f-8191a2b17086",
+            "GUID": "f39ec050-88fa-4b41-91f2-622e9cff1797",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
               "ColumnName": "区分名称",
@@ -143,13 +143,31 @@
             "ColumnName": "区分名称"
           },
           {
-            "GUID": "b61e6d51-ec1e-475d-bd50-0f9bb88d2ccf",
+            "GUID": "2bf23534-8ab4-405d-83b3-8f23958d43a7",
             "BindingInfo": {
               "TableName": "ymia_v_kuradashi_buhin",
-              "ColumnName": "WORK_USER_ID",
-              "GUID": "e6e4bbfa-8dd1-4340-9baf-0e9e7fce7ee5"
+              "ColumnName": "在庫管理区分",
+              "GUID": "5c8dafc6-d967-4f6b-ae7f-6c464fdce8a1"
             },
-            "ColumnName": "WORK_USER_ID"
+            "ColumnName": "在庫管理区分"
+          },
+          {
+            "GUID": "6ab8bfa0-8ed5-49a6-8bbf-ab1457fc0aee",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "納期",
+              "GUID": "524d382f-5416-4451-bc40-ba3b6071298e"
+            },
+            "ColumnName": "納期"
+          },
+          {
+            "GUID": "895be6b3-d31a-4a0d-85bf-3d12c9e37ebc",
+            "BindingInfo": {
+              "TableName": "ymia_v_kuradashi_buhin",
+              "ColumnName": "受入日",
+              "GUID": "4be0894e-4dcf-4778-9ce5-631188e70d60"
+            },
+            "ColumnName": "受入日"
           }
         ],
         "SqlCondition": {
@@ -218,7 +236,9 @@
         "string",
         "string",
         "string",
-        "string"
+        "integer",
+        "date-time",
+        "date-time"
       ]
     },
     {
