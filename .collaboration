@@ -721,12 +721,12 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧 (※バックアップ用ページ) (2)",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\999D4610",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-24T11:20:01.1185246+09:00",
+    "LockDateTime": "2026-06-24T16:21:27.7847922+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ) (2).json",
