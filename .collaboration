@@ -515,7 +515,17 @@
   },
   {
     "ModuleName": "PageReport/在庫品 (※バックアップ用レポート)",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-25T08:30:17.4455524+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\部品倉出メニュー\\在庫品 (※バックアップ用レポート).json",
+      "Reports\\部品倉出メニュー\\在庫品 (※バックアップ用レポート).rdlx"
+    ]
   },
   {
     "ModuleName": "Pages/材料請求書入手明細表",
