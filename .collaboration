@@ -559,7 +559,17 @@
   },
   {
     "ModuleName": "PCPage/経理画面・仕訳リスト（材料仕入）_発行画面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME001384",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-24T09:48:48.3946608+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\経理画面・仕訳リスト（材料仕入）\\経理画面・仕訳リスト（材料仕入）_発行画面.json",
+      "Pages\\経理画面・仕訳リスト（材料仕入）\\経理画面・仕訳リスト（材料仕入）_発行画面.rd"
+    ]
   },
   {
     "ModuleName": "Reports/経理画面・仕訳リスト（材料仕入）",
