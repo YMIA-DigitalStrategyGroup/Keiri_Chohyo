@@ -261,17 +261,7 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:46:33.7447947+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\倉出情報一覧.json",
-      "Pages\\部品倉出メニュー\\倉出情報一覧.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
@@ -629,58 +619,10 @@
   },
   {
     "ModuleName": "PCPage/在庫品チェックページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:47:42.9154576+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\在庫品チェックページ.json",
-      "Pages\\部品倉出メニュー\\在庫品チェックページ.rd"
-    ]
-  },
-  {
-    "ModuleName": "PCPage/ひもつき品チェックページ",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:46:33.7446495+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\ひもつき品チェックページ.json",
-      "Pages\\部品倉出メニュー\\ひもつき品チェックページ.rd"
-    ]
-  },
-  {
-    "ModuleName": "PCPage/区分判別テスト",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:46:33.7445794+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\区分判別テスト.json",
-      "Pages\\部品倉出メニュー\\区分判別テスト.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ひもつき品ページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T16:49:29.4633667+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\ひもつき品ページ.json",
-      "Pages\\部品倉出メニュー\\ひもつき品ページ.rd"
-    ]
+    "ModuleType": 1
   }
 ]
