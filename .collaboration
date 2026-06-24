@@ -714,16 +714,6 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/ひもつき品",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-24T09:19:49.1074729+09:00",
-    "ModuleType": 1
-  },
-  {
     "ModuleName": "PCPage/ひもつき品チェックページ",
     "ModuleType": 1
   }
