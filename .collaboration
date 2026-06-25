@@ -747,5 +747,15 @@
     },
     "LockDateTime": "2026-06-25T16:55:27.6562788+09:00",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/倉出し風景.jpg",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-25T16:56:23.9447386+09:00",
+    "ModuleType": 38
   }
 ]
