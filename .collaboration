@@ -737,5 +737,15 @@
     },
     "LockDateTime": "2026-06-25T16:28:22.0946953+09:00",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/黒.jpg",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-25T16:55:27.6562788+09:00",
+    "ModuleType": 38
   }
 ]
