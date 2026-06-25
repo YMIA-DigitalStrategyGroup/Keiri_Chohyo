@@ -535,12 +535,12 @@
   },
   {
     "ModuleName": "PageReport/在庫品 (※バックアップ用レポート)",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-25T08:30:17.4455524+09:00",
+    "LockDateTime": "2026-06-25T09:17:39.3076654+09:00",
     "ModuleType": 17,
     "ToRemoveFiles": [
       "Reports\\部品倉出メニュー\\在庫品 (※バックアップ用レポート).json",
@@ -673,6 +673,16 @@
       "Email": "example@example.com"
     },
     "LockDateTime": "2026-06-25T09:16:41.4790068+09:00",
+    "ModuleType": 17
+  },
+  {
+    "ModuleName": "PageReport/倉出しメニュー（在庫品※バックアップ用レポート）",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-25T09:17:39.3076716+09:00",
     "ModuleType": 17
   }
 ]
