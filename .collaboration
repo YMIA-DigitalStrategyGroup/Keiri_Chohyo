@@ -266,7 +266,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-25T09:15:45.2773598+09:00",
+    "LockDateTime": "2026-06-25T09:41:43.0282985+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\部品倉出メニュー\\倉出情報一覧.json",
@@ -639,12 +639,12 @@
   },
   {
     "ModuleName": "PCPage/在庫品チェックページ",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-25T08:00:15.077744+09:00",
+    "LockDateTime": "2026-06-25T09:41:43.0281564+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\部品倉出メニュー\\在庫品チェックページ.json",
@@ -694,5 +694,15 @@
     },
     "LockDateTime": "2026-06-25T09:17:49.1594499+09:00",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "PCPage/在庫品ページ",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-25T09:41:43.0282115+09:00",
+    "ModuleType": 1
   }
 ]
