@@ -676,13 +676,13 @@
     "ModuleType": 17
   },
   {
-    "ModuleName": "PageReport/倉出しメニュー（在庫品※バックアップ用レポート）",
+    "ModuleName": "PageReport/倉出しメニュー（在庫品※バックアップレポート）",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-25T09:17:39.3076716+09:00",
+    "LockDateTime": "2026-06-25T09:17:49.1594499+09:00",
     "ModuleType": 17
   }
 ]
