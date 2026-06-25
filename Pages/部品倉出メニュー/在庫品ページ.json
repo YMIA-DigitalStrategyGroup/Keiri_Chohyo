@@ -1,0 +1,1146 @@
+{
+  "Rows": {
+    "Count": 43
+  },
+  "Cols": {
+    "Count": 58
+  },
+  "Values": {
+    "2,31": "検索ページへ戻る",
+    "2,40": "ひもつき品チェック",
+    "3,7": "在庫品",
+    "8,2": "工事No.",
+    "8,11": "工事名称",
+    "8,26": "倉出工程",
+    "8,31": "反映",
+    "8,37": "ALL",
+    "8,43": "レポート",
+    "13,2": "ロケーション",
+    "13,8": "部品コード",
+    "13,14": "名称"
+  },
+  "AttachInfos": {
+    "2,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "倉出情報一覧",
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "検索ページへ戻る",
+        "TemplateKey": "検索",
+        "Icon": {
+          "Name": "Arrow/347_move_first.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "2,40": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "ひもつき品ページ",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=在庫品ページ!C10"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=ひもつき品ページ!C10"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ymia_v_kuradashi_buhin",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_kuradashi_buhin",
+                    "ColumnName": "製番",
+                    "GUID": "6333dd8f-4233-46f5-b106-1f5a845e0a6a"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=在庫品ページ!C10"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_kuradashi_buhin",
+                    "ColumnName": "倉出工程",
+                    "GUID": "825571c1-3131-4970-994a-0cd4ad65490d"
+                  },
+                  "Value": "ひもつき品"
+                }
+              ]
+            },
+            "ID": "77c9d3d30e144ee187761a07b248fe36",
+            "Disabled": true
+          }
+        ],
+        "Text": "ひもつき品チェック",
+        "TemplateKey": "ひもつき品",
+        "RightIcon": {
+          "Name": "Arrow/348_move_last.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "8,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ymia_v_kuradashi_buhin",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_kuradashi_buhin",
+                    "ColumnName": "区分名称",
+                    "GUID": "cb9a11d2-1fe6-4a72-9426-d34eb662752d"
+                  },
+                  "Value": "在庫品"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_kuradashi_buhin",
+                    "ColumnName": "倉出工程",
+                    "GUID": "caf63eda-3648-4653-bcb2-7478a770c591"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=在庫品ページ!AA10"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_kuradashi_buhin",
+                    "ColumnName": "製番",
+                    "GUID": "a3c16f1b-9627-4784-b3e1-917ee4aeba78"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=在庫品ページ!C10"
+                  }
+                }
+              ]
+            },
+            "ID": "e8fb16bf306a4e95b951497d58ea7628"
+          }
+        ],
+        "Text": "反映",
+        "TemplateKey": "在庫品_反映_ALL_レポ_",
+        "Icon": {
+          "Name": "Application/045_search_6.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "8,37": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ymia_v_kuradashi_buhin",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_kuradashi_buhin",
+                    "ColumnName": "区分名称",
+                    "GUID": "d6eb8e1c-1657-48b1-9bef-71f518ab52a6"
+                  },
+                  "Value": "在庫品"
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_kuradashi_buhin",
+                    "ColumnName": "製番",
+                    "GUID": "f72bca0a-9697-4d01-8dda-b7e2c781fe79"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=在庫品ページ!C10"
+                  }
+                }
+              ]
+            },
+            "ID": "2bf81f24ee6f4fe9aca813a47b795330"
+          },
+          {
+            "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+            "ListViewName": "リストビュー1",
+            "OrderByCondition": {
+              "OrderByColumns": [
+                {
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_v_kuradashi_buhin",
+                    "ColumnName": "倉出工程",
+                    "GUID": "f4beb9e5-a255-4401-84de-c5ad8cab2815"
+                  },
+                  "Order": 0
+                }
+              ]
+            },
+            "ID": "5c24e92e28b34e9e8a1f2b64810b22e4"
+          }
+        ],
+        "Text": "ALL",
+        "TemplateKey": "在庫品_反映_ALL_レポ_"
+      }
+    },
+    "8,43": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
+            "SessionGuid": "612394bf-f0ef-4df7-8224-43250ac76b44",
+            "OpenReportName": "倉出しメニュー（在庫品）",
+            "SideBarPosition": 0,
+            "PassParameters": [
+              {
+                "TargetParameter": "工事番号",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=在庫品ページ!C10"
+                }
+              },
+              {
+                "TargetParameter": "工事No",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=在庫品ページ!C10"
+                }
+              },
+              {
+                "TargetParameter": "倉出工程",
+                "SourceValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=在庫品ページ!AA10"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "レポート",
+        "TemplateKey": "在庫品_反映_ALL_レポ_",
+        "Icon": {
+          "Name": "Application/130_list_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "9,11": {
+      "BindingInfo": {
+        "TableName": "tjuchu",
+        "ColumnName": "HANBAI_KATASHIKI",
+        "GUID": "99eb0a9a-a507-4368-bb26-d3e4dd4b946a"
+      }
+    },
+    "9,26": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "DataSource": "ymia_v_kuradashi_kotei_select",
+        "ValueColumnBindingInfo": {
+          "TableName": "ymia_v_kuradashi_kotei_select",
+          "ColumnName": "倉出工程コード",
+          "GUID": "8b166c22-a969-4a4e-acf3-2e71f4228d77"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ymia_v_kuradashi_kotei_select",
+          "ColumnName": "倉出工程コード",
+          "GUID": "f8464ff8-eea1-4ac7-bf3d-92cb363d3490"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_v_kuradashi_kotei_select",
+            "ColumnName": "製番",
+            "GUID": "3120667d-d7e9-4c8c-94ba-dea73b99036c"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=在庫品ページ!C10"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ymia_v_kuradashi_kotei_select",
+                "ColumnName": "倉出工程コード",
+                "GUID": "e3a98dea-904c-4efc-adfe-91937bcc64ed"
+              },
+              "Order": 0
+            }
+          ]
+        }
+      }
+    },
+    "13,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_v_kuradashi_buhin",
+        "RowIndex": 13,
+        "ColumnIndex": 2,
+        "RowCount": 29,
+        "ColumnCount": 52,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_v_kuradashi_buhin",
+            "ColumnName": "製番",
+            "GUID": "2a4b4a78-a063-4f3d-a330-abed6be26c5f"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=在庫品ページ!C10"
+          }
+        },
+        "TopCondition": null,
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true
+        },
+        "ListViewStyleName": "在庫品",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "14,2": {
+      "NameUsedInJavaScript": "ロケーション_棚番_",
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "ロケーション（棚番）",
+        "GUID": "799a4c4c-2b33-4176-b713-949a2e76a98f"
+      }
+    },
+    "14,8": {
+      "NameUsedInJavaScript": "倉出品番",
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "倉出品番",
+        "GUID": "b269cb61-cbe0-49aa-861e-0bd47c8fff84"
+      }
+    },
+    "14,14": {
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "品名",
+        "GUID": "b0e9a442-cfbe-4bd9-9cfe-58e0b7055cbc"
+      }
+    },
+    "14,23": {
+      "NameUsedInJavaScript": "規格_寸法",
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "規格・寸法",
+        "GUID": "2fea499d-81cd-450f-920c-d961ef322187"
+      }
+    },
+    "14,31": {
+      "NameUsedInJavaScript": "予定数量",
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "予定数量",
+        "GUID": "1fddf4d0-7794-4089-8669-7404a0ea96c4"
+      }
+    },
+    "14,34": {
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "単位",
+        "GUID": "3da6b635-9d88-4794-8811-e0136b388c79"
+      }
+    },
+    "14,36": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      }
+    },
+    "14,40": {
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "製番",
+        "GUID": "d2fda245-86c9-4b84-9325-b460680e62cb"
+      }
+    },
+    "14,46": {
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "倉出工程",
+        "GUID": "0030880c-9496-45e3-8f1b-d4d7d8e7321f"
+      }
+    },
+    "14,50": {
+      "BindingInfo": {
+        "TableName": "ymia_v_kuradashi_buhin",
+        "ColumnName": "区分名称",
+        "GUID": "35be0e92-575c-4eca-88d4-92bfcb89082c"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "Background": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "FontWeight": 4,
+        "Formatter": 3
+      },
+      {
+        "Background": 0,
+        "FontSize": 34.666666666666664,
+        "FontWeight": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 2,
+        "Foreground": 6,
+        "Formatter": 3
+      },
+      {
+        "Background": 0,
+        "FontFamily": 2
+      },
+      {
+        "Background": 7,
+        "Foreground": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664
+      },
+      {
+        "FontSize": 18.666666666666664
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "Formatter": 3
+      },
+      {
+        "Background": 6,
+        "HorizontalAlignment": 5,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 6,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 2,
+        "Foreground": 6,
+        "Formatter": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 2,
+        "Foreground": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 9
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 2,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 3 80",
+        "black",
+        "Body",
+        "[AUTO]General",
+        "Bold",
+        "Center",
+        "Background 1 0",
+        "Accent 3 -25",
+        "Right",
+        "Left"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,21": 1,
+      "2,22": 2,
+      "2,23": 2,
+      "2,24": 1,
+      "2,25": 2,
+      "2,26": 2,
+      "2,27": 1,
+      "2,28": 2,
+      "2,29": 2,
+      "2,31": 3,
+      "2,32": 4,
+      "2,33": 4,
+      "2,34": 4,
+      "2,35": 4,
+      "2,36": 4,
+      "2,37": 4,
+      "2,38": 4,
+      "2,40": 5,
+      "2,48": 3,
+      "2,49": 3,
+      "2,50": 3,
+      "2,51": 3,
+      "2,52": 3,
+      "2,53": 3,
+      "2,54": 3,
+      "2,55": 3,
+      "2,56": 3,
+      "2,57": 3,
+      "3,6": 0,
+      "3,7": 6,
+      "3,19": 0,
+      "3,21": 2,
+      "3,22": 2,
+      "3,23": 2,
+      "3,24": 2,
+      "3,25": 2,
+      "3,26": 2,
+      "3,27": 2,
+      "3,28": 2,
+      "3,29": 2,
+      "3,31": 4,
+      "3,32": 4,
+      "3,33": 4,
+      "3,34": 4,
+      "3,35": 4,
+      "3,36": 4,
+      "3,37": 4,
+      "3,38": 4,
+      "3,48": 3,
+      "3,49": 7,
+      "3,50": 3,
+      "3,51": 3,
+      "3,52": 3,
+      "3,53": 3,
+      "3,54": 3,
+      "3,55": 3,
+      "3,56": 3,
+      "3,57": 3,
+      "4,6": 0,
+      "4,19": 0,
+      "4,21": 2,
+      "4,22": 2,
+      "4,23": 2,
+      "4,24": 2,
+      "4,25": 2,
+      "4,26": 2,
+      "4,27": 2,
+      "4,28": 2,
+      "4,29": 2,
+      "5,6": 0,
+      "5,19": 0,
+      "6,6": 0,
+      "6,7": 0,
+      "6,8": 0,
+      "6,9": 0,
+      "6,10": 8,
+      "6,11": 8,
+      "6,12": 8,
+      "6,13": 8,
+      "6,14": 8,
+      "6,15": 8,
+      "6,16": 8,
+      "6,17": 8,
+      "6,18": 0,
+      "6,19": 0,
+      "8,2": 9,
+      "8,3": 2,
+      "8,4": 2,
+      "8,5": 2,
+      "8,6": 2,
+      "8,7": 2,
+      "8,8": 2,
+      "8,9": 2,
+      "8,10": 2,
+      "8,11": 9,
+      "8,12": 2,
+      "8,13": 2,
+      "8,14": 2,
+      "8,15": 2,
+      "8,16": 2,
+      "8,17": 2,
+      "8,18": 2,
+      "8,19": 2,
+      "8,20": 2,
+      "8,21": 2,
+      "8,22": 2,
+      "8,23": 2,
+      "8,24": 2,
+      "8,25": 10,
+      "8,26": 9,
+      "8,27": 2,
+      "8,28": 2,
+      "8,29": 2,
+      "8,30": 4,
+      "8,31": 11,
+      "8,36": 12,
+      "8,37": 11,
+      "8,42": 11,
+      "8,43": 13,
+      "9,2": 14,
+      "9,3": 15,
+      "9,4": 15,
+      "9,5": 15,
+      "9,6": 15,
+      "9,7": 15,
+      "9,8": 15,
+      "9,9": 15,
+      "9,10": 16,
+      "9,11": 14,
+      "9,12": 15,
+      "9,13": 15,
+      "9,14": 15,
+      "9,15": 15,
+      "9,16": 15,
+      "9,17": 15,
+      "9,18": 15,
+      "9,19": 15,
+      "9,20": 15,
+      "9,21": 15,
+      "9,22": 15,
+      "9,23": 15,
+      "9,24": 15,
+      "9,25": 15,
+      "9,26": 17,
+      "9,27": 15,
+      "9,28": 15,
+      "9,29": 16,
+      "9,30": 4,
+      "9,36": 12,
+      "9,42": 11,
+      "9,48": 3,
+      "9,49": 3,
+      "9,50": 3,
+      "9,51": 3,
+      "9,52": 3,
+      "9,53": 3,
+      "9,54": 3,
+      "9,55": 3,
+      "9,56": 3,
+      "9,57": 3,
+      "10,2": 18,
+      "10,3": 19,
+      "10,4": 19,
+      "10,5": 19,
+      "10,6": 19,
+      "10,7": 19,
+      "10,8": 19,
+      "10,9": 19,
+      "10,10": 20,
+      "10,11": 18,
+      "10,12": 19,
+      "10,13": 19,
+      "10,14": 19,
+      "10,15": 19,
+      "10,16": 19,
+      "10,17": 19,
+      "10,18": 19,
+      "10,19": 19,
+      "10,20": 19,
+      "10,21": 19,
+      "10,22": 19,
+      "10,23": 19,
+      "10,24": 19,
+      "10,25": 19,
+      "10,26": 18,
+      "10,27": 19,
+      "10,28": 19,
+      "10,29": 20,
+      "10,30": 4,
+      "10,36": 12,
+      "10,42": 12,
+      "10,48": 3,
+      "10,49": 3,
+      "10,50": 3,
+      "10,51": 3,
+      "10,52": 3,
+      "10,53": 3,
+      "10,54": 3,
+      "10,55": 3,
+      "10,56": 3,
+      "10,57": 3,
+      "11,30": 4,
+      "11,31": 4,
+      "11,32": 4,
+      "11,33": 4,
+      "12,30": 4,
+      "12,31": 4,
+      "12,32": 4,
+      "12,33": 4,
+      "13,2": 21,
+      "13,3": 22,
+      "13,4": 22,
+      "13,5": 22,
+      "13,6": 22,
+      "13,7": 22,
+      "13,8": 21,
+      "13,9": 22,
+      "13,10": 22,
+      "13,11": 22,
+      "13,12": 22,
+      "13,13": 22,
+      "13,14": 23,
+      "13,15": 22,
+      "13,16": 22,
+      "13,17": 22,
+      "13,18": 22,
+      "13,19": 22,
+      "13,20": 22,
+      "13,21": 22,
+      "13,22": 22,
+      "13,23": 23,
+      "13,24": 22,
+      "13,25": 22,
+      "13,26": 22,
+      "13,27": 22,
+      "13,28": 22,
+      "13,29": 22,
+      "13,30": 22,
+      "13,31": 23,
+      "13,32": 22,
+      "13,33": 22,
+      "13,34": 23,
+      "13,35": 22,
+      "13,36": 23,
+      "13,37": 22,
+      "13,38": 9,
+      "13,39": 9,
+      "13,40": 9,
+      "13,41": 2,
+      "13,42": 2,
+      "13,43": 2,
+      "13,44": 2,
+      "13,45": 2,
+      "13,46": 9,
+      "13,47": 2,
+      "13,48": 2,
+      "13,49": 2,
+      "13,50": 23,
+      "13,51": 2,
+      "13,52": 2,
+      "13,53": 2,
+      "14,2": 24,
+      "14,3": 4,
+      "14,4": 4,
+      "14,5": 4,
+      "14,6": 4,
+      "14,7": 4,
+      "14,8": 4,
+      "14,9": 4,
+      "14,10": 4,
+      "14,11": 4,
+      "14,12": 4,
+      "14,13": 4,
+      "14,14": 4,
+      "14,15": 4,
+      "14,16": 4,
+      "14,17": 4,
+      "14,18": 4,
+      "14,19": 4,
+      "14,20": 4,
+      "14,21": 4,
+      "14,22": 4,
+      "14,23": 4,
+      "14,24": 4,
+      "14,25": 4,
+      "14,26": 4,
+      "14,27": 4,
+      "14,28": 4,
+      "14,29": 4,
+      "14,30": 4,
+      "14,31": 25,
+      "14,32": 4,
+      "14,33": 4,
+      "14,34": 26,
+      "14,35": 4,
+      "14,36": 27,
+      "14,37": 4,
+      "14,40": 4,
+      "14,50": 4,
+      "14,51": 4,
+      "14,52": 4,
+      "14,53": 28,
+      "15,2": 29,
+      "15,53": 30,
+      "16,2": 29,
+      "16,53": 30,
+      "17,2": 29,
+      "17,53": 30,
+      "18,2": 29,
+      "18,53": 30,
+      "19,2": 29,
+      "19,53": 30,
+      "20,2": 29,
+      "20,53": 30,
+      "21,2": 29,
+      "21,53": 30,
+      "22,2": 29,
+      "22,53": 30,
+      "23,2": 29,
+      "23,53": 30,
+      "24,2": 29,
+      "24,53": 30,
+      "25,2": 29,
+      "25,53": 30,
+      "26,2": 29,
+      "26,53": 30,
+      "27,2": 29,
+      "27,53": 30,
+      "28,2": 29,
+      "28,53": 30,
+      "29,2": 29,
+      "29,53": 30,
+      "30,2": 29,
+      "30,53": 30,
+      "31,2": 29,
+      "31,53": 30,
+      "32,2": 29,
+      "32,53": 30,
+      "33,2": 29,
+      "33,53": 30,
+      "34,2": 29,
+      "34,53": 30,
+      "35,2": 29,
+      "35,53": 30,
+      "36,2": 29,
+      "36,53": 30,
+      "37,2": 29,
+      "37,53": 30,
+      "38,2": 29,
+      "38,53": 30,
+      "39,2": 29,
+      "39,53": 30,
+      "40,2": 29,
+      "40,53": 30,
+      "41,2": 18,
+      "41,3": 19,
+      "41,4": 19,
+      "41,5": 19,
+      "41,6": 19,
+      "41,7": 19,
+      "41,8": 19,
+      "41,9": 19,
+      "41,10": 19,
+      "41,11": 19,
+      "41,12": 19,
+      "41,13": 19,
+      "41,14": 19,
+      "41,15": 19,
+      "41,16": 19,
+      "41,17": 19,
+      "41,18": 19,
+      "41,19": 19,
+      "41,20": 19,
+      "41,21": 19,
+      "41,22": 19,
+      "41,23": 19,
+      "41,24": 19,
+      "41,25": 19,
+      "41,26": 19,
+      "41,27": 19,
+      "41,28": 19,
+      "41,29": 19,
+      "41,30": 19,
+      "41,31": 19,
+      "41,32": 19,
+      "41,33": 19,
+      "41,34": 19,
+      "41,35": 19,
+      "41,36": 19,
+      "41,37": 19,
+      "41,38": 19,
+      "41,39": 19,
+      "41,40": 19,
+      "41,41": 19,
+      "41,42": 19,
+      "41,43": 19,
+      "41,44": 19,
+      "41,45": 19,
+      "41,46": 19,
+      "41,47": 19,
+      "41,48": 19,
+      "41,49": 19,
+      "41,50": 19,
+      "41,51": 19,
+      "41,52": 19,
+      "41,53": 20
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "8,2,1,9",
+    "8,11,1,15",
+    "8,26,1,4",
+    "9,11,2,15",
+    "9,26,2,4",
+    "13,2,1,6",
+    "14,2,1,6",
+    "13,8,1,6",
+    "14,8,1,6",
+    "13,23,1,8",
+    "14,23,1,8",
+    "13,31,1,3",
+    "14,31,1,3",
+    "13,34,1,2",
+    "14,34,1,2",
+    "13,36,1,2",
+    "14,36,1,2",
+    "13,40,1,6",
+    "14,40,1,6",
+    "13,46,1,4",
+    "14,46,1,4",
+    "13,50,1,4",
+    "14,50,1,4",
+    "9,2,2,9",
+    "8,31,3,5",
+    "8,37,3,5",
+    "8,43,3,5",
+    "2,31,2,8",
+    "2,40,2,8",
+    "3,7,3,12",
+    "2,21,3,3",
+    "2,24,3,3",
+    "2,27,3,3",
+    "13,14,1,9",
+    "14,14,1,9",
+    "15,2,27,52"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "ymia_v_kuradashi_buhin",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_v_kuradashi_buhin",
+                "ColumnName": "製番",
+                "GUID": "cad8e053-c91b-4dec-bf3d-d015e593b846"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=在庫品ページ!C10"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_v_kuradashi_buhin",
+                "ColumnName": "区分名称",
+                "GUID": "52e0fe56-1123-4737-b5bd-1891a3e39fc5"
+              },
+              "Value": "在庫品"
+            }
+          ]
+        },
+        "ID": "b0182105ffcb43139149d0abc644833c"
+      },
+      {
+        "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+        "ListViewName": "リストビュー1",
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ymia_v_kuradashi_buhin",
+                "ColumnName": "倉出工程",
+                "GUID": "4942ef12-3023-4d85-966f-b008bcac5b0b"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "ID": "b7345099cb104046b7aaa359fd6a3072"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "ymia_v_kuradashi_buhin"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "1f0b4f23-ade8-4808-a1a0-3d6eb074defb.png",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "RepeatBackground/Sources/20.png",
+      "ForguncyPictureSourceType": 3,
+      "Stretch": 0,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Size": "31.99599838256836,29.329666137695312"
+    }
+  ]
+}//upPUO1zdYLRHeDfKl7SRKO+EFkJz6sACZkkreq5cBLHK7WdSP2CSVx8m7R9GDojhtLthTLoIav1DDycbJ/QPsAgtdOYAw/nds7D8kT/zYkLjrsbPkhoOjfmcEMxkCoYtu1eni/yXhHsNu/dN57UlVtW7I8OgPFeut4wrg2oqNAT3vy7/wSq/Om64nf4Vnc1x3qnX5k+BODJlUe2Bxo6PTUKfRHKhWm4gYNFt9jBTLBXqfqo3SPppWgzntUISFBvzC82lF/hZ1EnS1z79dCmft/boz4U6spdK4Utv9pVy9NrscyHUKjy6yjfStStoK3eLEY1vbxXcbCK65rriljppn1DOKYOpUtJOhO3PGoeDU9v9yithQVSRPz9bD5UDT1oVdvGovGgXsbdiXq/jHU6I3A/EQKUKsYAFDlNnwZPzfjTXXx7YboovqRqvga+HdquJExkejYVLxgEvsLg0vwdhxp9Wk9BxljJWwlNODS3lXKwnea9zmKJu/OtXXnvdOTdOIbAWtuhAe6X9wl9lnM0+k05eDRiI2wV+0hTPYfI8Cfla2zGrTalIfMVcmYvPannvV27CUzS4TuvUsf63wk5dTsHE1G2rY1DGHCk3zcGy+ibFXz0skr2pU4TMv/nhSlSmbWn7JbXrDK4Qq3ZJ1luzvLt2TpRGjy1p3bqef8AE7LayAsQfXleig1hF76GyxvVEeuXQyLpizmTkt8WcGWRH4YbJFPSjCG20YU+9OdRfnS1ggVXPTjtMReWukaVo8DWQ5cozbSUGuRl1eVceN9rcmGxYdnzcw78tTluVtgmsQ7X/G0IbBRLauSkM3bpfjVZREQKMiaxXr2Q+U4558YQerpjwbk4h7S7pmFzjRJ3oBWBXLLd0kbqza2dzQ7WiOOLNK2vlavXR1t44PDyRvuP5IQ==|920

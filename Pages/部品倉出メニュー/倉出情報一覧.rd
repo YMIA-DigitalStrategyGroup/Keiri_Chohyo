@@ -1,12 +1,12 @@
 {
   "PageType": 0,
-  "ColumnCount": 78,
-  "RowCount": 46,
+  "ColumnCount": 65,
+  "RowCount": 38,
   "Formulas": {
     "0,6": "SUBSTITUTE(G4,\"*\",\"%\")",
-    "0,63": "SUBSTITUTE(R4,\"*\",\"%\")",
-    "1,63": "SUBSTITUTE(BL5,\"*\",\"%\")",
-    "9,20": "AG10",
-    "9,32": "TRIM(G1)"
+    "2,43": "TRIM(G1)",
+    "1,43": "SUBSTITUTE(BL5,\"*\",\"%\")",
+    "3,30": "AR3",
+    "0,43": "SUBSTITUTE(R4,\"*\",\"%\")"
   }
 }

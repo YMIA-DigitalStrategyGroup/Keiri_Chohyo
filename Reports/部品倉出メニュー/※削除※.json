@@ -1,9 +1,9 @@
 {
-  "Name": "在庫品 (※バックアップ用レポート)",
+  "Name": "※削除※",
   "DataSources": [
     {
       "Name": "データソース1",
-      "GUID": "ce84df7b-dd9e-4275-88de-ec5970985d18",
+      "GUID": "11ccba43-546f-4920-99d8-825b6e4ab06b",
       "DataSourceSetting": {
         "TableName": "ymia_v_kuradashi_buhin",
         "BindingInfos": [
@@ -191,7 +191,7 @@
     },
     {
       "Name": "データソース2",
-      "GUID": "902202ef-32c0-4328-8c23-8d3c866969a5",
+      "GUID": "a1522a35-e6b8-4dca-b459-9f9867790b69",
       "DataSourceSetting": {
         "TableName": "tjuchu",
         "BindingInfos": [
