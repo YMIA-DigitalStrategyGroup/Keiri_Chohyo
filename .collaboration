@@ -261,7 +261,17 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-25T09:15:45.2773598+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\部品倉出メニュー\\倉出情報一覧.json",
+      "Pages\\部品倉出メニュー\\倉出情報一覧.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/生産進捗一覧",
@@ -481,12 +491,12 @@
   },
   {
     "ModuleName": "PageReport/在庫品",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-25T08:13:19.9201737+09:00",
+    "LockDateTime": "2026-06-25T09:15:45.2771186+09:00",
     "ModuleType": 17,
     "ToRemoveFiles": [
       "Reports\\部品倉出メニュー\\在庫品.json",
@@ -511,7 +521,17 @@
   },
   {
     "ModuleName": "PCPage/倉出情報一覧 (※バックアップ用ページ)",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-25T09:15:45.2774182+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ).json",
+      "Pages\\部品倉出メニュー\\倉出情報一覧 (※バックアップ用ページ).rd"
+    ]
   },
   {
     "ModuleName": "PageReport/在庫品 (※バックアップ用レポート)",
@@ -634,5 +654,15 @@
       "Pages\\部品倉出メニュー\\ひもつき品ページ.json",
       "Pages\\部品倉出メニュー\\ひもつき品ページ.rd"
     ]
+  },
+  {
+    "ModuleName": "PageReport/※削除※",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-25T09:15:45.2771453+09:00",
+    "ModuleType": 17
   }
 ]
