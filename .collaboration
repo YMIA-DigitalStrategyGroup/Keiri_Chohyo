@@ -369,20 +369,7 @@
   },
   {
     "ModuleName": "Theme",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-26T11:25:47.363584+09:00",
-    "ModuleType": 9,
-    "ToRemoveFiles": [
-      "Theme\\CellTypeStyles",
-      "Theme\\ListViewStyles",
-      "Theme\\StyleDefaultNames",
-      "Theme\\ThemeConfig",
-      "Reports\\DefaultTheme.rdlx-theme"
-    ]
+    "ModuleType": 9
   },
   {
     "ModuleName": "image/組み込み画像",
@@ -594,17 +581,7 @@
   },
   {
     "ModuleName": "PCPage/ひもつき品ページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-26T11:36:31.4789791+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\ひもつき品ページ.json",
-      "Pages\\部品倉出メニュー\\ひもつき品ページ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PageReport/※削除※",
@@ -620,17 +597,7 @@
   },
   {
     "ModuleName": "PCPage/在庫品ページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-26T11:32:59.6615801+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\在庫品ページ.json",
-      "Pages\\部品倉出メニュー\\在庫品ページ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Image/倉出し風景1.jpg",

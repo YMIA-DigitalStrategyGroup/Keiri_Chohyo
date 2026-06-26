@@ -1,9 +1,21 @@
 {
   "Rows": {
+    "RowColumnAttachedInfos": {
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
     "Count": 43
   },
   "Cols": {
-    "Count": 57
+    "Count": 86
   },
   "Values": {
     "2,31": "検索ページへ戻る",
@@ -16,12 +28,12 @@
     "8,37": "ALL",
     "8,43": "レポート",
     "13,1": "部品コード",
-    "13,7": "名称",
-    "13,22": "数量",
-    "13,27": "納入予定日",
-    "13,35": "仕入先コード",
-    "13,39": "仕入先名",
-    "13,53": "区分確認"
+    "13,10": "名称",
+    "13,34": "数量",
+    "13,39": "納入予定日",
+    "13,53": "仕入先コード",
+    "13,60": "仕入先名",
+    "13,82": "区分確認"
   },
   "AttachInfos": {
     "2,31": {
@@ -307,7 +319,7 @@
         "RowIndex": 13,
         "ColumnIndex": 1,
         "RowCount": 29,
-        "ColumnCount": 56,
+        "ColumnCount": 85,
         "TopCondition": null,
         "TableLoadOnDemandInfo": {
           "IsEnabled": true
@@ -315,8 +327,7 @@
         "ListViewStyleName": "ひもつき品",
         "ShowColumnHeaderInDesigner": true,
         "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "ColumnOperation": 2
+        "AutoFitColumnWidth": true
       }
     },
     "14,1": {
@@ -326,21 +337,21 @@
         "GUID": "054c7b55-df28-430b-ad7d-b4814941a04d"
       }
     },
-    "14,7": {
+    "14,10": {
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "品名",
         "GUID": "2a529a26-c91e-419a-a8b3-6f1b8396f08b"
       }
     },
-    "14,13": {
+    "14,22": {
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "規格・寸法",
         "GUID": "116c2454-18f0-4066-af71-4b219c4330a3"
       }
     },
-    "14,22": {
+    "14,34": {
       "NameUsedInJavaScript": "数量",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -348,7 +359,7 @@
         "GUID": "e839ae4e-fc18-475e-b06d-3e0167626cb6"
       }
     },
-    "14,25": {
+    "14,37": {
       "NameUsedInJavaScript": "単位",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -356,7 +367,7 @@
         "GUID": "37eb26b3-3f12-4a64-8cdb-d8914e325265"
       }
     },
-    "14,27": {
+    "14,39": {
       "NameUsedInJavaScript": "納入予定日",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -364,7 +375,7 @@
         "GUID": "efcbc9ee-2ee2-4315-8faa-4e9ed23e0c9b"
       }
     },
-    "14,31": {
+    "14,46": {
       "NameUsedInJavaScript": "受入日",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -372,7 +383,7 @@
         "GUID": "88a2057e-53ad-4949-add4-a7c09510f5ed"
       }
     },
-    "14,35": {
+    "14,53": {
       "NameUsedInJavaScript": "仕入先コード",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -380,7 +391,7 @@
         "GUID": "9e8e8e3a-190c-43a7-a1e1-644308caf0ee"
       }
     },
-    "14,39": {
+    "14,60": {
       "NameUsedInJavaScript": "仕入先名",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -388,7 +399,7 @@
         "GUID": "c181b33d-d39e-4b95-9e1c-68a95a904a8a"
       }
     },
-    "14,44": {
+    "14,70": {
       "NameUsedInJavaScript": "倉出工程",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -396,20 +407,20 @@
         "GUID": "06e558f6-549b-45a8-86a5-4da66cefa4e5"
       }
     },
-    "14,48": {
+    "14,74": {
       "CellType": {
         "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
         "ShowOnlyEdit": false
       }
     },
-    "14,49": {
+    "14,75": {
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "製番",
         "GUID": "74027f1d-1c66-4853-b3e8-e63ba8d3a0a6"
       }
     },
-    "14,53": {
+    "14,82": {
       "NameUsedInJavaScript": "区分確認",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -507,12 +518,15 @@
         "Background": 6,
         "FontFamily": 1,
         "Formatter": 4,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": 0
+        "BorderLeft": 0
       },
       {
+        "Background": 6,
+        "FontFamily": 1,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 6,
         "FontFamily": 1,
         "BorderBottom": 0,
         "BorderTop": 0,
@@ -520,7 +534,6 @@
         "BorderRight": 0
       },
       {
-        "Background": 6,
         "FontFamily": 1,
         "BorderBottom": 0,
         "BorderTop": 0,
@@ -553,9 +566,6 @@
       },
       {
         "FontFamily": 1,
-        "HorizontalAlignment": 5
-      },
-      {
         "HorizontalAlignment": 5
       },
       {
@@ -854,116 +864,49 @@
       "11,44": 5,
       "11,45": 5,
       "13,1": 18,
-      "13,2": 19,
-      "13,3": 19,
-      "13,4": 19,
-      "13,5": 19,
-      "13,6": 19,
-      "13,7": 18,
-      "13,8": 19,
-      "13,9": 19,
-      "13,10": 19,
-      "13,11": 19,
-      "13,12": 19,
-      "13,13": 20,
-      "13,14": 19,
-      "13,15": 19,
-      "13,16": 19,
-      "13,17": 19,
-      "13,18": 19,
-      "13,19": 19,
-      "13,20": 19,
-      "13,21": 19,
-      "13,22": 20,
-      "13,23": 19,
-      "13,24": 19,
-      "13,25": 20,
-      "13,26": 19,
-      "13,27": 20,
-      "13,28": 19,
-      "13,29": 19,
-      "13,30": 19,
-      "13,31": 20,
-      "13,32": 19,
-      "13,33": 19,
-      "13,34": 19,
-      "13,35": 20,
-      "13,36": 19,
-      "13,37": 19,
-      "13,38": 19,
-      "13,39": 20,
-      "13,40": 19,
-      "13,41": 19,
-      "13,42": 19,
-      "13,43": 19,
-      "13,44": 20,
-      "13,45": 19,
+      "13,10": 18,
+      "13,22": 19,
+      "13,34": 20,
+      "13,35": 21,
+      "13,36": 21,
+      "13,37": 20,
+      "13,38": 21,
+      "13,39": 19,
       "13,46": 19,
-      "13,47": 19,
-      "13,49": 20,
-      "13,50": 19,
-      "13,51": 19,
-      "13,52": 19,
-      "13,53": 21,
-      "13,54": 22,
-      "13,55": 22,
-      "13,56": 22,
-      "14,1": 23,
-      "14,2": 5,
-      "14,3": 5,
-      "14,4": 5,
-      "14,5": 5,
-      "14,6": 5,
-      "14,7": 5,
-      "14,8": 5,
-      "14,9": 5,
+      "13,53": 19,
+      "13,60": 19,
+      "13,70": 20,
+      "13,71": 21,
+      "13,72": 21,
+      "13,73": 21,
+      "13,74": 5,
+      "13,75": 19,
+      "13,82": 22,
+      "13,83": 23,
+      "13,84": 23,
+      "13,85": 23,
+      "14,1": 24,
       "14,10": 5,
-      "14,11": 5,
-      "14,12": 5,
-      "14,13": 5,
-      "14,14": 5,
-      "14,15": 5,
-      "14,16": 5,
-      "14,17": 5,
-      "14,18": 5,
-      "14,19": 5,
-      "14,20": 5,
-      "14,21": 5,
-      "14,22": 24,
-      "14,23": 5,
-      "14,24": 5,
-      "14,25": 25,
-      "14,26": 5,
-      "14,27": 5,
-      "14,28": 5,
-      "14,29": 5,
-      "14,30": 5,
-      "14,31": 26,
-      "14,32": 5,
-      "14,33": 5,
-      "14,34": 5,
+      "14,22": 5,
+      "14,34": 25,
       "14,35": 5,
       "14,36": 5,
-      "14,37": 5,
+      "14,37": 26,
       "14,38": 5,
       "14,39": 5,
-      "14,40": 5,
-      "14,41": 5,
-      "14,42": 5,
-      "14,43": 5,
-      "14,44": 5,
-      "14,45": 5,
-      "14,46": 5,
-      "14,47": 5,
-      "14,48": 27,
-      "14,49": 5,
-      "14,50": 5,
-      "14,51": 5,
-      "14,52": 5,
+      "14,46": 27,
       "14,53": 5,
-      "14,54": 5,
-      "14,55": 5,
-      "14,56": 5,
+      "14,60": 5,
+      "14,70": 5,
+      "14,71": 5,
+      "14,72": 5,
+      "14,73": 5,
+      "14,74": 27,
+      "14,75": 5,
+      "14,82": 5,
+      "14,83": 5,
+      "14,84": 5,
+      "14,85": 5,
       "15,1": 28,
       "15,55": 29,
       "16,1": 28,
@@ -1092,31 +1035,31 @@
     "8,31,3,5",
     "8,37,3,5",
     "8,43,3,5",
-    "15,1,27,56",
-    "13,1,1,6",
-    "13,7,1,6",
-    "13,13,1,9",
-    "13,22,1,3",
-    "13,25,1,2",
-    "13,27,1,4",
-    "13,31,1,4",
-    "13,35,1,4",
-    "13,39,1,5",
-    "13,44,1,4",
-    "14,1,1,6",
-    "14,7,1,6",
-    "14,13,1,9",
-    "14,22,1,3",
-    "14,25,1,2",
-    "14,27,1,4",
-    "14,31,1,4",
-    "14,35,1,4",
-    "14,39,1,5",
-    "14,44,1,4",
-    "13,49,1,4",
-    "14,49,1,4",
-    "14,53,1,4",
-    "13,53,1,4"
+    "15,1,27,85",
+    "13,34,1,3",
+    "13,37,1,2",
+    "14,34,1,3",
+    "14,37,1,2",
+    "13,70,1,4",
+    "14,70,1,4",
+    "13,82,1,4",
+    "14,82,1,4",
+    "13,1,1,9",
+    "14,1,1,9",
+    "13,10,1,12",
+    "14,10,1,12",
+    "13,22,1,12",
+    "14,22,1,12",
+    "13,39,1,7",
+    "14,39,1,7",
+    "13,46,1,7",
+    "14,46,1,7",
+    "13,53,1,7",
+    "14,53,1,7",
+    "13,60,1,10",
+    "14,60,1,10",
+    "13,75,1,7",
+    "14,75,1,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1209,4 +1152,4 @@
       "Size": "31.99599838256836,29.329666137695312"
     }
   ]
-}//41uS9kDcqAx9EgVhME9+W8cbIBZOkiVHH5Xqyn+N8HG8jmj9U+gBcjM6sRg3JXcK1jRTHrB+JtTz1n+hvmYG2w37yn9fwmZ/EOeZ2pceJSgKe49WnXrYFFgG/8LZr6MMkS3IgP5yWyVg5r2QOeXuJ9v05YLFVlrEuJBYmrTVAxVUR/mDrs0alEarY0V0iQhKgsdxG9RSMbpzHAyT4b7ng5DLBwvR9KcDu6PGcSTRnKB+qdrnPjcJpEC32v0di4U8x81jOIP8kfAhaH9udo9RjJxDqrnGVnYP/5UViBARy6sY7250bQmuNgv1NAx7kaoXUx9GaDhHC8i8pJLiBeykEY8iuKr07LY6Oo6AzH6k/qGJHZi9bLaWJZZRtJGANx9c6ljMFq1S7KlbheyfIBukzYY3IzU8gVckNco7pFuUgmDuOf+dZqZR/wZuO5dgrlI9oAsOJU6+C/Urs4a5nMfz81JlyUEuO46tBZa79g4fBQk+7yvk1civl2GLtiqn+sn8owHPzm+NR0voM6S6Tu5Od3TJSCpV2Uu32VKRitQdtB8va4UNFyGEkntNMmyGl8uzxStBpWSSWpYsQBoKYGrmgjJ+TUEepC1XwQcnUNehB7wUJRakvRlvKarkmY/kwiPk+WhEsWMQu726Sq0xU3ge//qNuJCx5zDeST2PbTcni+DjZsVlwwHt8h4ljcw7gvz6FgJzalVPqkjIwTzyOIS7zY7jxtBv3eh6EPcuzLBkODPNXdwMsyWbPcDBLeHpASv1yT9KPlVSUU9824RJbDynaZqr93Lg7eKCXubA58210fWxLjGkxGumJ9iscQmLlBMm6kdrxSdpesRTZlggXZfeXMfNqr4Gq5K9NW4y4CgpaYmF42i3dh4z9q3UjE0fyD82/YypX/9Vdn1ofLI+EvYeGQ==|920
+}//KOMIIUqi7z7SgaeVkgSeAu1TygWcCHl1q09Tcru34rX1R+xrZOXXupNKkPO3QAMys0AeB2J7HHw6sHXaEXtIYuxlYsl/uR8u6Lrpewm40hM7JGxzj2sLiwoE0UWbsuWdUsrN1oclU2bFVq+hHDi6nnF7YrJWQbX+tCPr9VZ0F/flwDSF979+FuzD+XubB1plRYH3mPKpuU9Y4BWPlXjRTk6PdQw7WWmshgrgS8WyEX7RoAOsmNE0Mntx/nnyO72bqiH3oWCDafCvchNY5EtWFdtgkuQocNzmSbHOUGBO4Pc9cNoD6bHWuJXEPhaC0tYz7pV4OabamE771P0Yjq263wzEbmCFO0/w7yE52+84Wjl+1vUEcEEZNLp7KIFpspCdkWKmTk3yZijEg2zhDVQHhThxlNSL0GoHP0nMa06fiSMQZFjKBxmGtLeIMzsQIC6NqB2F9VNibDTE0pbmBr+HzQKxSQiXRLUu+tI6QOkHiV5zy3WPad5g4JTOdo+9SWkGJD34tybQ+fcX6eVPuRUMxL9mYS3dWSmjiI6/cFRiijjKWDANmCRYellSRINzQK04cPB1bE7LsHL0krGLeC+b/Jrsqng8/mSmN/2/WdA0o/BfWuozPYeiijmYgPP7iX0N6RqHAVym2MPRNCe65uCc/2wh/FsJJWdygxgTzegCg6VOFE2MXFQndcpT6d8DnyUuWhgt9lTPQN2d8jdLVj/zOYQIVkxHTIKUrcO2xSkO4Tv4w6GDt2bOBdeyB6Jbhq/6eCGsY6u8+lJmVCwJ0ItT+/Miu4DyIceVlOTcSj3N2b/SNrNcwaHDYBn/HbeV0B5rB6ILOr03pNfOrtuFgcTxHzDhFPl8KMSdtlPc4e+9PeSj81Qt3IIwydBStY6GtwB2qDHHtiDE9XC5Ih+/5HD9bA==|920
