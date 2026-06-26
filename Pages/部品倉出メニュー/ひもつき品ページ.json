@@ -400,17 +400,17 @@
       }
     },
     "14,70": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      }
+    },
+    "14,71": {
       "NameUsedInJavaScript": "倉出工程",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "倉出工程",
         "GUID": "06e558f6-549b-45a8-86a5-4da66cefa4e5"
-      }
-    },
-    "14,74": {
-      "CellType": {
-        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
-        "ShowOnlyEdit": false
       }
     },
     "14,75": {
@@ -875,12 +875,18 @@
       "13,46": 19,
       "13,53": 19,
       "13,60": 19,
-      "13,70": 20,
-      "13,71": 21,
+      "13,70": 5,
+      "13,71": 20,
       "13,72": 21,
       "13,73": 21,
-      "13,74": 5,
+      "13,74": 21,
       "13,75": 19,
+      "13,76": 5,
+      "13,77": 5,
+      "13,78": 5,
+      "13,79": 5,
+      "13,80": 5,
+      "13,81": 5,
       "13,82": 22,
       "13,83": 23,
       "13,84": 23,
@@ -897,12 +903,18 @@
       "14,46": 27,
       "14,53": 5,
       "14,60": 5,
-      "14,70": 5,
+      "14,70": 27,
       "14,71": 5,
       "14,72": 5,
       "14,73": 5,
-      "14,74": 27,
+      "14,74": 5,
       "14,75": 5,
+      "14,76": 5,
+      "14,77": 5,
+      "14,78": 5,
+      "14,79": 5,
+      "14,80": 5,
+      "14,81": 5,
       "14,82": 5,
       "14,83": 5,
       "14,84": 5,
@@ -1035,21 +1047,16 @@
     "8,31,3,5",
     "8,37,3,5",
     "8,43,3,5",
-    "15,1,27,85",
-    "13,34,1,3",
-    "13,37,1,2",
-    "14,34,1,3",
-    "14,37,1,2",
-    "13,70,1,4",
-    "14,70,1,4",
-    "13,82,1,4",
-    "14,82,1,4",
     "13,1,1,9",
     "14,1,1,9",
     "13,10,1,12",
     "14,10,1,12",
     "13,22,1,12",
     "14,22,1,12",
+    "13,34,1,3",
+    "14,34,1,3",
+    "13,37,1,2",
+    "14,37,1,2",
     "13,39,1,7",
     "14,39,1,7",
     "13,46,1,7",
@@ -1058,8 +1065,13 @@
     "14,53,1,7",
     "13,60,1,10",
     "14,60,1,10",
+    "13,71,1,4",
+    "14,71,1,4",
+    "15,1,27,85",
     "13,75,1,7",
-    "14,75,1,7"
+    "14,75,1,7",
+    "13,82,1,4",
+    "14,82,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1152,4 +1164,4 @@
       "Size": "31.99599838256836,29.329666137695312"
     }
   ]
-}//KOMIIUqi7z7SgaeVkgSeAu1TygWcCHl1q09Tcru34rX1R+xrZOXXupNKkPO3QAMys0AeB2J7HHw6sHXaEXtIYuxlYsl/uR8u6Lrpewm40hM7JGxzj2sLiwoE0UWbsuWdUsrN1oclU2bFVq+hHDi6nnF7YrJWQbX+tCPr9VZ0F/flwDSF979+FuzD+XubB1plRYH3mPKpuU9Y4BWPlXjRTk6PdQw7WWmshgrgS8WyEX7RoAOsmNE0Mntx/nnyO72bqiH3oWCDafCvchNY5EtWFdtgkuQocNzmSbHOUGBO4Pc9cNoD6bHWuJXEPhaC0tYz7pV4OabamE771P0Yjq263wzEbmCFO0/w7yE52+84Wjl+1vUEcEEZNLp7KIFpspCdkWKmTk3yZijEg2zhDVQHhThxlNSL0GoHP0nMa06fiSMQZFjKBxmGtLeIMzsQIC6NqB2F9VNibDTE0pbmBr+HzQKxSQiXRLUu+tI6QOkHiV5zy3WPad5g4JTOdo+9SWkGJD34tybQ+fcX6eVPuRUMxL9mYS3dWSmjiI6/cFRiijjKWDANmCRYellSRINzQK04cPB1bE7LsHL0krGLeC+b/Jrsqng8/mSmN/2/WdA0o/BfWuozPYeiijmYgPP7iX0N6RqHAVym2MPRNCe65uCc/2wh/FsJJWdygxgTzegCg6VOFE2MXFQndcpT6d8DnyUuWhgt9lTPQN2d8jdLVj/zOYQIVkxHTIKUrcO2xSkO4Tv4w6GDt2bOBdeyB6Jbhq/6eCGsY6u8+lJmVCwJ0ItT+/Miu4DyIceVlOTcSj3N2b/SNrNcwaHDYBn/HbeV0B5rB6ILOr03pNfOrtuFgcTxHzDhFPl8KMSdtlPc4e+9PeSj81Qt3IIwydBStY6GtwB2qDHHtiDE9XC5Ih+/5HD9bA==|920
+}//gzNVN9QWvSm0uW0Awhlmdh3khHsdTfX42tNNNCdgEMNT68+nccAAXU8qmo+61Q1B6pQiEaA8yRLQ9mv0Km1ejCINFy9VFDABHj89TyGVFrjZcdllbi6b58uJ78gLNev73qqsxw2mktUMuhDPE5tMVLBE+MLRba3F0JngNTo7i+6nIyPzZ4TjkhXodlOfG8tLKjdd4VUkR+Xzdv8+84ltGqB9kjBKucrpp0ZoGf2yA0b0ft/ai07EKQ3Quvw/khPdzVY+lGwT7tIO+NZ+HSNdcp7k49PFCJ3hOontU6lsxrRZybm10g9rBzHKXudl6A33BCbFCCdfWYBIDmN7tN7ZfzNfNHLmmnpvepltYsSiFlPBX6EqRolVHrT6EVIlNaRnsrbYWG/ApoMEzVC+C4vM7GYVSsernFT14uLJC0wADxRRjy3+bwa2/4uU35utYw/h20V8CUcfViVi7kPm2LBN1aqqa8PJFVMVuCcDGvd4lTKz02J4C8QdaQ15SLIg7N2p7Xicii7gVr3Z9sRc1nI0CFGWvuwiDHtBoMyJmYbq4LcMu3/3TYVSL43Pk6KIXHeUiV6F5+BP1U6E36A7kuZVJ72LBLuPqiPrTkdcC7DsAK99TRyFqZuXLa3w3jYUuU9VS9snx/Q1PLJRC4Gxzp8ARfgHla3t5rHMBrsSeUrlmPVYGvR/nI3fYgbKzFT1RHBAxUOblCcijaY/KCZ8BI1HcKx0lMVyQAw50GV0MLtDr6Zy+scxKMmrelXMdHquOvXSnaW3ckECilq+Acs5Y/Z8RGP9weK9Zhb5Yj2tRqzVAcJxF3FghQ4rxiGLkc7JYObeWgrHZflyr24kRtPGpX9iGEwv/nLAgrKlSSArApEh4plWIK8t1A14WobMpSkif/8qbLMPWFwGw48MYQ2176nAHw==|920

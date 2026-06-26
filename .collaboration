@@ -581,17 +581,7 @@
   },
   {
     "ModuleName": "PCPage/ひもつき品ページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-26T14:29:26.8156754+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\ひもつき品ページ.json",
-      "Pages\\部品倉出メニュー\\ひもつき品ページ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PageReport/※削除※",
