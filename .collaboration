@@ -5,7 +5,16 @@
   },
   {
     "ModuleName": "TableView/ymia_v_engineukebarai",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-26T16:24:45.8270149+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engineukebarai.json"
+    ]
   },
   {
     "ModuleName": "TableView/ymia_v_driveukebarai",
@@ -41,7 +50,16 @@
   },
   {
     "ModuleName": "Table/tbuhink",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-26T16:24:45.8271884+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\tbuhink.json"
+    ]
   },
   {
     "ModuleName": "Table/mgentani",
@@ -53,7 +71,16 @@
   },
   {
     "ModuleName": "TableView/ymia_v_thatchum",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-26T16:24:45.8272023+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\ymia_v_thatchum.json"
+    ]
   },
   {
     "ModuleName": "Table/mhinban",
@@ -473,11 +500,29 @@
   },
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou_ver_ystm",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-26T16:24:45.8271716+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engine_drive_daichou_ver_ystm.json"
+    ]
   },
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou_1",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-26T16:24:45.8270912+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engine_drive_daichou_1.json"
+    ]
   },
   {
     "ModuleName": "Table/tbuhinjm",
