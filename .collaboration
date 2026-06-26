@@ -610,17 +610,7 @@
   },
   {
     "ModuleName": "PCPage/在庫品ページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-26T11:30:49.0449453+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\在庫品ページ.json",
-      "Pages\\部品倉出メニュー\\在庫品ページ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Image/倉出し風景1.jpg",
