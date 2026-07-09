@@ -361,7 +361,17 @@
   },
   {
     "ModuleName": "PageReport/材料残高内訳帳",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023256",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-09T11:18:41.0110028+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\材料残高内訳帳\\材料残高内訳帳.json",
+      "Reports\\材料残高内訳帳\\材料残高内訳帳.rdlx"
+    ]
   },
   {
     "ModuleName": "ApplicationSetting",
