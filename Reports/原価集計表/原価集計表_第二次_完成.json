@@ -1,0 +1,152 @@
+{
+  "Name": "原価集計表_第二次_完成",
+  "DataSources": [
+    {
+      "Name": "監査用仕掛",
+      "GUID": "109ac9dc-ab45-40d3-85f5-d846623a9264",
+      "DataSourceSetting": {
+        "TableName": "ymia_v_genkasyukei_mikan",
+        "BindingInfos": [
+          {
+            "GUID": "3cbc7a82-e9e9-40a5-8cc3-bd37708c999d",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "KOJI_NO",
+              "GUID": "91601438-5ff0-4800-935d-e68c663652b0"
+            },
+            "ColumnName": "KOJI_NO"
+          },
+          {
+            "GUID": "2556a796-3a23-43a9-8ff4-2c617dddd895",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "PL_BS_SHUKEI",
+              "GUID": "c638c46c-b8b9-4483-aa1d-a5312374f980"
+            },
+            "ColumnName": "PL_BS_SHUKEI"
+          },
+          {
+            "GUID": "5a988cdc-7a8e-4696-96da-8100622da12b",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "MEISHO1_KANJI",
+              "GUID": "4c881cd5-b13f-4e42-a427-c470b3668c25"
+            },
+            "ColumnName": "MEISHO1_KANJI"
+          },
+          {
+            "GUID": "569cd190-fb4f-4114-82d6-3be1b62e8d4a",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "前月繰越",
+              "GUID": "8681c9ed-244a-47ac-a857-9d48c68dcd82"
+            },
+            "ColumnName": "前月繰越"
+          },
+          {
+            "GUID": "2e124257-361e-40be-9c10-61d740fd26da",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "当月発生",
+              "GUID": "87402e1a-b631-4645-9d5c-2304b337b358"
+            },
+            "ColumnName": "当月発生"
+          },
+          {
+            "GUID": "dfe2dbef-fa31-49fc-a2a2-ad77253c53c1",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "合計",
+              "GUID": "548ca0d9-1c0d-4563-b6bb-e2e226c93087"
+            },
+            "ColumnName": "合計"
+          },
+          {
+            "GUID": "9fe6eef9-c5aa-4330-90d7-b8cc70dfe774",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "区分",
+              "GUID": "5b3f8b8c-235f-42cb-a668-9dccae1de178"
+            },
+            "ColumnName": "区分"
+          },
+          {
+            "GUID": "66a2f798-fb2c-4811-bbc2-06d5185b842a",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "テーブル名_漢字",
+              "GUID": "6fcdfb35-f3ec-461c-a1ed-ad94b9241c85"
+            },
+            "ColumnName": "テーブル名_漢字"
+          },
+          {
+            "GUID": "4f6d1949-ba90-4faa-9a5b-429184c5cd7d",
+            "BindingInfo": {
+              "TableName": "ymia_v_genkasyukei_mikan",
+              "ColumnName": "テーブル名",
+              "GUID": "1537c904-4648-4310-b816-fb59a35d12d2"
+            },
+            "ColumnName": "テーブル名"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 6,
+          "ColumnBindingInfo": {
+            "TableName": "ymia_v_genkasyukei_mikan",
+            "ColumnName": "KOJI_NO",
+            "GUID": "431aedba-6a48-4605-9930-79789e90f829"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=機種"
+          }
+        }
+      },
+      "ReportDataSourceParams": [
+        {
+          "Name": "機種"
+        },
+        {
+          "Name": "機番"
+        },
+        {
+          "Name": "仕様コード"
+        }
+      ],
+      "ColumnsType": [
+        "string",
+        "string",
+        "string",
+        "number",
+        "number",
+        "number",
+        "string",
+        "string",
+        "string"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}

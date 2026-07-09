@@ -77,7 +77,7 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-								<Value>原価集計表　（第一次　未完）</Value>
+								<Value>原価集計表　（第一次　完成）</Value>
 							</Textbox>
 							<Textbox Name="TextBox4">
 								<Top>0cm</Top>
@@ -661,7 +661,7 @@
 	<DataSources>
 		<DataSource Name="監査用仕掛">
 			<ConnectionProperties>
-				<ConnectString>jsondoc=http://localhost:57770/Forguncy/ARDataSource/GetDataSource/856dd3f0-67bd-4c7c-bf25-9aaed168ce69;schemadata={"type":"array","items":{"type":"object","properties":{"KOJI_NO":{"type":"string"},"PL_BS_SHUKEI":{"type":"string"},"MEISHO1_KANJI":{"type":"string"},"前月繰越":{"type":"number"},"当月発生":{"type":"number"},"合計":{"type":"number"},"区分":{"type":"string"},"テーブル名_漢字":{"type":"string"},"テーブル名":{"type":"string"}}}}</ConnectString>
+				<ConnectString>jsondoc=http://localhost:57770/Forguncy/ARDataSource/GetDataSource/33800208-8f12-4fb8-8176-854d61b60233;schemadata={"type":"array","items":{"type":"object","properties":{"KOJI_NO":{"type":"string"},"PL_BS_SHUKEI":{"type":"string"},"MEISHO1_KANJI":{"type":"string"},"前月繰越":{"type":"number"},"当月発生":{"type":"number"},"合計":{"type":"number"},"区分":{"type":"string"},"テーブル名_漢字":{"type":"string"},"テーブル名":{"type":"string"}}}}</ConnectString>
 				<DataProvider>JSON</DataProvider>
 			</ConnectionProperties>
 		</DataSource>

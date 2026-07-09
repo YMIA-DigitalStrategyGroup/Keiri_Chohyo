@@ -361,17 +361,7 @@
   },
   {
     "ModuleName": "PageReport/材料残高内訳帳",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023256",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-09T11:18:41.0110028+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\材料残高内訳帳\\材料残高内訳帳.json",
-      "Reports\\材料残高内訳帳\\材料残高内訳帳.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "ApplicationSetting",
@@ -467,17 +457,7 @@
   },
   {
     "ModuleName": "PageReport/原価集計表_第一次_未完成",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023256",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T09:15:47.3231413+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\原価集計表\\原価集計表_第一次_未完成.json",
-      "Reports\\原価集計表\\原価集計表_第一次_未完成.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "Pages/マスタ管理画面",
@@ -637,32 +617,14 @@
   },
   {
     "ModuleName": "PageReport/原価集計表_第一次_完成",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023256",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-09T11:08:18.0217421+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "PageReport/原価集計表_第二次_未完",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023256",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-09T11:09:54.722239+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "PageReport/原価集計表_第二次_完成",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023256",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-09T11:10:11.2652258+09:00",
     "ModuleType": 17
   }
 ]
