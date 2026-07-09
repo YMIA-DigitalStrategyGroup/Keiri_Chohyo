@@ -634,5 +634,15 @@
     },
     "LockDateTime": "2026-07-09T11:08:18.0217421+09:00",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "PageReport/原価集計表_第二次_完",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023256",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-09T11:09:35.0673194+09:00",
+    "ModuleType": 17
   }
 ]
