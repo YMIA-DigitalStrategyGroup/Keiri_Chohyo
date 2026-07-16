@@ -27,12 +27,12 @@
     "8,31": "反映",
     "8,37": "ALL",
     "8,43": "レポート",
-    "13,1": "部品コード",
-    "13,10": "名称",
-    "13,34": "数量",
-    "13,39": "納入予定日",
-    "13,53": "仕入先コード",
-    "13,60": "仕入先名",
+    "13,2": "部品コード",
+    "13,11": "名称",
+    "13,35": "数量",
+    "13,40": "納入予定日",
+    "13,54": "仕入先コード",
+    "13,61": "仕入先名",
     "13,82": "区分確認"
   },
   "AttachInfos": {
@@ -326,32 +326,35 @@
         },
         "ListViewStyleName": "ひもつき品",
         "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderCheckBoxVisible": true,
         "ShowEditStatusIcon": true,
-        "AutoFitColumnWidth": true
+        "AllowEditInListview": true,
+        "AutoFitColumnWidth": true,
+        "CommitType": 1
       }
     },
-    "14,1": {
+    "14,2": {
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "倉出品番",
         "GUID": "054c7b55-df28-430b-ad7d-b4814941a04d"
       }
     },
-    "14,10": {
+    "14,11": {
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "品名",
         "GUID": "2a529a26-c91e-419a-a8b3-6f1b8396f08b"
       }
     },
-    "14,22": {
+    "14,23": {
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "規格・寸法",
         "GUID": "116c2454-18f0-4066-af71-4b219c4330a3"
       }
     },
-    "14,34": {
+    "14,35": {
       "NameUsedInJavaScript": "数量",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -359,7 +362,7 @@
         "GUID": "e839ae4e-fc18-475e-b06d-3e0167626cb6"
       }
     },
-    "14,37": {
+    "14,38": {
       "NameUsedInJavaScript": "単位",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -367,7 +370,7 @@
         "GUID": "37eb26b3-3f12-4a64-8cdb-d8914e325265"
       }
     },
-    "14,39": {
+    "14,40": {
       "NameUsedInJavaScript": "納入予定日",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -375,7 +378,7 @@
         "GUID": "efcbc9ee-2ee2-4315-8faa-4e9ed23e0c9b"
       }
     },
-    "14,46": {
+    "14,47": {
       "NameUsedInJavaScript": "受入日",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -383,7 +386,7 @@
         "GUID": "88a2057e-53ad-4949-add4-a7c09510f5ed"
       }
     },
-    "14,53": {
+    "14,54": {
       "NameUsedInJavaScript": "仕入先コード",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
@@ -391,18 +394,12 @@
         "GUID": "9e8e8e3a-190c-43a7-a1e1-644308caf0ee"
       }
     },
-    "14,60": {
+    "14,61": {
       "NameUsedInJavaScript": "仕入先名",
       "BindingInfo": {
         "TableName": "ymia_v_kuradashi_buhin",
         "ColumnName": "取引先名",
         "GUID": "c181b33d-d39e-4b95-9e1c-68a95a904a8a"
-      }
-    },
-    "14,70": {
-      "CellType": {
-        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
-        "ShowOnlyEdit": false
       }
     },
     "14,71": {
@@ -548,7 +545,6 @@
         "BorderLeft": 0
       },
       {
-        "FontFamily": 1,
         "BorderBottom": 0,
         "BorderTop": 0
       },
@@ -863,18 +859,74 @@
       "11,43": 5,
       "11,44": 5,
       "11,45": 5,
-      "13,1": 18,
-      "13,10": 18,
-      "13,22": 19,
-      "13,34": 20,
-      "13,35": 21,
+      "13,2": 18,
+      "13,3": 5,
+      "13,4": 5,
+      "13,5": 5,
+      "13,6": 5,
+      "13,7": 5,
+      "13,8": 5,
+      "13,9": 5,
+      "13,10": 5,
+      "13,11": 18,
+      "13,12": 5,
+      "13,13": 5,
+      "13,14": 5,
+      "13,15": 5,
+      "13,16": 5,
+      "13,17": 5,
+      "13,18": 5,
+      "13,19": 5,
+      "13,20": 5,
+      "13,21": 5,
+      "13,22": 5,
+      "13,23": 19,
+      "13,24": 5,
+      "13,25": 5,
+      "13,26": 5,
+      "13,27": 5,
+      "13,28": 5,
+      "13,29": 5,
+      "13,30": 5,
+      "13,31": 5,
+      "13,32": 5,
+      "13,33": 5,
+      "13,34": 5,
+      "13,35": 20,
       "13,36": 21,
-      "13,37": 20,
-      "13,38": 21,
-      "13,39": 19,
-      "13,46": 19,
-      "13,53": 19,
-      "13,60": 19,
+      "13,37": 21,
+      "13,38": 20,
+      "13,39": 21,
+      "13,40": 19,
+      "13,41": 5,
+      "13,42": 5,
+      "13,43": 5,
+      "13,44": 5,
+      "13,45": 5,
+      "13,46": 5,
+      "13,47": 19,
+      "13,48": 5,
+      "13,49": 5,
+      "13,50": 5,
+      "13,51": 5,
+      "13,52": 5,
+      "13,53": 5,
+      "13,54": 19,
+      "13,55": 5,
+      "13,56": 5,
+      "13,57": 5,
+      "13,58": 5,
+      "13,59": 5,
+      "13,60": 5,
+      "13,61": 19,
+      "13,62": 5,
+      "13,63": 5,
+      "13,64": 5,
+      "13,65": 5,
+      "13,66": 5,
+      "13,67": 5,
+      "13,68": 5,
+      "13,69": 5,
       "13,70": 5,
       "13,71": 20,
       "13,72": 21,
@@ -891,19 +943,75 @@
       "13,83": 23,
       "13,84": 23,
       "13,85": 23,
-      "14,1": 24,
+      "14,2": 24,
+      "14,3": 5,
+      "14,4": 5,
+      "14,5": 5,
+      "14,6": 5,
+      "14,7": 5,
+      "14,8": 5,
+      "14,9": 5,
       "14,10": 5,
+      "14,11": 5,
+      "14,12": 5,
+      "14,13": 5,
+      "14,14": 5,
+      "14,15": 5,
+      "14,16": 5,
+      "14,17": 5,
+      "14,18": 5,
+      "14,19": 5,
+      "14,20": 5,
+      "14,21": 5,
       "14,22": 5,
-      "14,34": 25,
-      "14,35": 5,
+      "14,23": 5,
+      "14,24": 5,
+      "14,25": 5,
+      "14,26": 5,
+      "14,27": 5,
+      "14,28": 5,
+      "14,29": 5,
+      "14,30": 5,
+      "14,31": 5,
+      "14,32": 5,
+      "14,33": 5,
+      "14,34": 5,
+      "14,35": 25,
       "14,36": 5,
-      "14,37": 26,
-      "14,38": 5,
+      "14,37": 5,
+      "14,38": 26,
       "14,39": 5,
-      "14,46": 27,
+      "14,40": 5,
+      "14,41": 5,
+      "14,42": 5,
+      "14,43": 5,
+      "14,44": 5,
+      "14,45": 5,
+      "14,46": 5,
+      "14,47": 27,
+      "14,48": 5,
+      "14,49": 5,
+      "14,50": 5,
+      "14,51": 5,
+      "14,52": 5,
       "14,53": 5,
+      "14,54": 5,
+      "14,55": 5,
+      "14,56": 5,
+      "14,57": 5,
+      "14,58": 5,
+      "14,59": 5,
       "14,60": 5,
-      "14,70": 27,
+      "14,61": 5,
+      "14,62": 5,
+      "14,63": 5,
+      "14,64": 5,
+      "14,65": 5,
+      "14,66": 5,
+      "14,67": 5,
+      "14,68": 5,
+      "14,69": 5,
+      "14,70": 5,
       "14,71": 5,
       "14,72": 5,
       "14,73": 5,
@@ -916,9 +1024,6 @@
       "14,80": 5,
       "14,81": 5,
       "14,82": 5,
-      "14,83": 5,
-      "14,84": 5,
-      "14,85": 5,
       "15,1": 28,
       "15,55": 29,
       "16,1": 28,
@@ -1047,31 +1152,31 @@
     "8,31,3,5",
     "8,37,3,5",
     "8,43,3,5",
-    "13,1,1,9",
-    "14,1,1,9",
-    "13,10,1,12",
-    "14,10,1,12",
-    "13,22,1,12",
-    "14,22,1,12",
-    "13,34,1,3",
-    "14,34,1,3",
-    "13,37,1,2",
-    "14,37,1,2",
-    "13,39,1,7",
-    "14,39,1,7",
-    "13,46,1,7",
-    "14,46,1,7",
-    "13,53,1,7",
-    "14,53,1,7",
-    "13,60,1,10",
-    "14,60,1,10",
     "13,71,1,4",
     "14,71,1,4",
     "15,1,27,85",
     "13,75,1,7",
     "14,75,1,7",
     "13,82,1,4",
-    "14,82,1,4"
+    "14,82,1,4",
+    "13,11,1,12",
+    "14,11,1,12",
+    "13,23,1,12",
+    "14,23,1,12",
+    "13,35,1,3",
+    "14,35,1,3",
+    "13,38,1,2",
+    "14,38,1,2",
+    "13,40,1,7",
+    "14,40,1,7",
+    "13,47,1,7",
+    "14,47,1,7",
+    "13,54,1,7",
+    "14,54,1,7",
+    "13,61,1,10",
+    "14,61,1,10",
+    "13,2,1,9",
+    "14,2,1,9"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1164,4 +1269,4 @@
       "Size": "31.99599838256836,29.329666137695312"
     }
   ]
-}//gzNVN9QWvSm0uW0Awhlmdh3khHsdTfX42tNNNCdgEMNT68+nccAAXU8qmo+61Q1B6pQiEaA8yRLQ9mv0Km1ejCINFy9VFDABHj89TyGVFrjZcdllbi6b58uJ78gLNev73qqsxw2mktUMuhDPE5tMVLBE+MLRba3F0JngNTo7i+6nIyPzZ4TjkhXodlOfG8tLKjdd4VUkR+Xzdv8+84ltGqB9kjBKucrpp0ZoGf2yA0b0ft/ai07EKQ3Quvw/khPdzVY+lGwT7tIO+NZ+HSNdcp7k49PFCJ3hOontU6lsxrRZybm10g9rBzHKXudl6A33BCbFCCdfWYBIDmN7tN7ZfzNfNHLmmnpvepltYsSiFlPBX6EqRolVHrT6EVIlNaRnsrbYWG/ApoMEzVC+C4vM7GYVSsernFT14uLJC0wADxRRjy3+bwa2/4uU35utYw/h20V8CUcfViVi7kPm2LBN1aqqa8PJFVMVuCcDGvd4lTKz02J4C8QdaQ15SLIg7N2p7Xicii7gVr3Z9sRc1nI0CFGWvuwiDHtBoMyJmYbq4LcMu3/3TYVSL43Pk6KIXHeUiV6F5+BP1U6E36A7kuZVJ72LBLuPqiPrTkdcC7DsAK99TRyFqZuXLa3w3jYUuU9VS9snx/Q1PLJRC4Gxzp8ARfgHla3t5rHMBrsSeUrlmPVYGvR/nI3fYgbKzFT1RHBAxUOblCcijaY/KCZ8BI1HcKx0lMVyQAw50GV0MLtDr6Zy+scxKMmrelXMdHquOvXSnaW3ckECilq+Acs5Y/Z8RGP9weK9Zhb5Yj2tRqzVAcJxF3FghQ4rxiGLkc7JYObeWgrHZflyr24kRtPGpX9iGEwv/nLAgrKlSSArApEh4plWIK8t1A14WobMpSkif/8qbLMPWFwGw48MYQ2176nAHw==|920
+}//xwxM8Ni4+Wk1G5aweZDKMtWVDKH7t1WYavQmpMsVkm0inpiltgZUY1pkUjoBHGzaB90cEc/1KmRVjfRL1wHnavn2EMSNS88h5GWQHflRQs2jD2bMNKO1zlVRxBZGxPJ6O6l0tdLKvOi9ZEYpnCtsfThRIhKRqSeHXCRL67aCfXxJ76/TnhGBlBUHXvYa63y61KWykn6pZbwkdlOiYVT4CAfvID75iGx4g/VzTt3QhX4ZWaEIx3eVRslrWfmQkevPLCWYDayg1VCNmU13Vow//mMY0PSgWxlEpmRYToSnrmm5itvcd/PLBs+LBnqpjPCnXuCYGWovmWxjB61LgdcDOV4LkPcsnkO8fE3el8BxFvEzlHYo6HHHaW4a3RLaRmjcm78w4PYF1vcQUG3B+lXZLL9JDlzki8BvwfM62W6SKcwBJBJ5owwLRnY9rh+6Y9dVKl6p16/uhfGA6N++BsdPWghkN8XhxWWlQeLYUTGZaDaA6ke/F3fZmYbp297KmFSXp+OKlkXO57gAsPN5aS/mJn/KlhT1X6cJCeqOus8r6tK82ZdOKT+/xb7h3B29LncVjqx/THA2u2lBcOWoJe185nWT1DAg/FmYuCcKfaAus1NvSLDH5W9ZKHPv82KxOO2JnpoZ50r6XZeUn7e2haLjd1Lq6ULSd7gwiLMq8/JIXSNaMouzVMne/CbDozhMVHRumvjAbUrE/zUB3PCJJ19xPXrzzzN2lYtAYN33bO5R2X3G1lHenyaz5+DIU8EFBpDKdSoTkjGkEW+MIk5hb51SVo4foe3gZcrYIdghz/7E2ml+XGsaHOkmWZqmQZbwZ7f0gUKVxfUmIKHagEFAWTInWmybKCvRjhOZ1l6cZaIEX/46DUdzS0szgnK51e6nAX79VL9inrOuC3rFCFgKzigRlA==|920

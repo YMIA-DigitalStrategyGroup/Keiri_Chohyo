@@ -581,17 +581,7 @@
   },
   {
     "ModuleName": "PCPage/ひもつき品ページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T09:25:54.9988425+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\ひもつき品ページ.json",
-      "Pages\\部品倉出メニュー\\ひもつき品ページ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PageReport/※削除※",
@@ -607,17 +597,7 @@
   },
   {
     "ModuleName": "PCPage/在庫品ページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T09:24:55.2667961+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品倉出メニュー\\在庫品ページ.json",
-      "Pages\\部品倉出メニュー\\在庫品ページ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Image/倉出し風景1.jpg",
