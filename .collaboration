@@ -5,7 +5,16 @@
   },
   {
     "ModuleName": "TableView/ymia_v_engineukebarai",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-10T15:07:33.6049958+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engineukebarai.json"
+    ]
   },
   {
     "ModuleName": "TableView/ymia_v_driveukebarai",
@@ -41,7 +50,16 @@
   },
   {
     "ModuleName": "Table/tbuhink",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-10T15:07:33.6049446+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\tbuhink.json"
+    ]
   },
   {
     "ModuleName": "Table/mgentani",
@@ -49,11 +67,29 @@
   },
   {
     "ModuleName": "Table/tjuchu",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-10T15:07:33.6049523+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\tjuchu.json"
+    ]
   },
   {
     "ModuleName": "TableView/ymia_v_thatchum",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-10T15:07:33.6048592+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\ymia_v_thatchum.json"
+    ]
   },
   {
     "ModuleName": "Table/mhinban",
@@ -473,11 +509,29 @@
   },
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou_ver_ystm",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-10T15:07:33.6050062+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engine_drive_daichou_ver_ystm.json"
+    ]
   },
   {
     "ModuleName": "TableView/ymia_v_engine_drive_daichou_1",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-10T15:07:33.6050021+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\エンジン・ドライブ受払台帳\\ymia_v_engine_drive_daichou_1.json"
+    ]
   },
   {
     "ModuleName": "Table/tbuhinjm",
