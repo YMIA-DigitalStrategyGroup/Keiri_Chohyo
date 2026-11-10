@@ -399,7 +399,17 @@
   },
   {
     "ModuleName": "PageReport/部品お買上げ明細",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-10T15:47:07.647062+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\部品お買上げ明細\\部品お買上げ明細.json",
+      "Reports\\部品お買上げ明細\\部品お買上げ明細.rdlx"
+    ]
   },
   {
     "ModuleName": "Reports/材料残高内訳帳",
