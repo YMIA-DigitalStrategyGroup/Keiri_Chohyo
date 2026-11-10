@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -82,7 +82,7 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-								<Value>=Fields!郵便番号.Value</Value>
+								<Value>=Fields.Item("郵便番号").Value</Value>
 							</Textbox>
 							<Textbox Name="txt住所">
 								<Top>1in</Top>
@@ -107,7 +107,7 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-								<Value>=Fields!住所.Value</Value>
+								<Value>=Fields.Item("住所").Value</Value>
 							</Textbox>
 							<Textbox Name="TextBox2">
 								<Top>1.75in</Top>
@@ -132,7 +132,7 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-								<Value>=Fields!請求先名称.Value</Value>
+								<Value>=Fields.Item("請求先名称").Value</Value>
 							</Textbox>
 							<Textbox Name="TextBox3">
 								<Top>2in</Top>
@@ -513,6 +513,7 @@
 																<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
 																<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
 																<FontWeight>=Theme.Fonts!MinorFont.Weight</FontWeight>
+																<Format>d</Format>
 																<PaddingBottom>2pt</PaddingBottom>
 																<PaddingLeft>2pt</PaddingLeft>
 																<PaddingRight>2pt</PaddingRight>
@@ -520,7 +521,7 @@
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>出荷日</DataElementName>
-															<Value>=Fields!出荷日.Value</Value>
+															<Value>=Fields.Item("出荷日").Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -541,7 +542,7 @@
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>伝種</DataElementName>
-															<Value>=Fields!伝種.Value</Value>
+															<Value>=Fields.Item("伝種").Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -562,7 +563,7 @@
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>売上番号</DataElementName>
-															<Value>=Fields!売上番号.Value</Value>
+															<Value>=Fields.Item("売上番号").Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -583,7 +584,7 @@
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>部品コード</DataElementName>
-															<Value>=Fields!部品コード.Value</Value>
+															<Value>=Fields.Item("部品コード").Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -604,7 +605,7 @@
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>部品名称</DataElementName>
-															<Value>=Fields!部品名称.Value</Value>
+															<Value>=Fields.Item("部品名称").Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -627,7 +628,7 @@
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>数量</DataElementName>
-															<Value>=Fields!数量.Value</Value>
+															<Value>=Fields.Item("数量").Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -650,7 +651,7 @@
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>単価</DataElementName>
-															<Value>=Fields!単価.Value</Value>
+															<Value>=Fields.Item("単価").Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -673,7 +674,7 @@
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>金額</DataElementName>
-															<Value>=Fields!金額.Value</Value>
+															<Value>=Fields.Item("金額").Value</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -806,7 +807,7 @@
 															</Style>
 															<CanGrow>true</CanGrow>
 															<DataElementName>TextBox29</DataElementName>
-															<Value>=Sum(Fields!金額.Value) * 0.1</Value>
+															<Value>=Round(Sum(Fields!金額.Value) * 0.1, 0, 0)</Value>
 														</Textbox>
 													</ReportItems>
 												</TableCell>
@@ -814,6 +815,7 @@
 										</TableRow>
 									</TableRows>
 								</Footer>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">20.321cm</dd:FixedHeight>
 								<TableColumns>
 									<TableColumn>
 										<Width>2.631cm</Width>
@@ -828,10 +830,10 @@
 										<Width>2.415cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.415cm</Width>
+										<Width>2.9cm</Width>
 									</TableColumn>
 									<TableColumn>
-										<Width>2.415cm</Width>
+										<Width>1.93cm</Width>
 									</TableColumn>
 									<TableColumn>
 										<Width>2.408cm</Width>
@@ -908,7 +910,7 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-								<Value>=Sum(Fields!金額.Value) + Sum(Fields!金額.Value) * 0.1</Value>
+								<Value>=Sum(Fields.Item("金額").Value) + (Sum(Fields.Item("金額").Value) * 0.1)</Value>
 							</Textbox>
 						</ReportItems>
 						<PaperOrientation>Portrait</PaperOrientation>
@@ -1005,6 +1007,10 @@
 		<CustomProperty>
 			<Name>SizeType</Name>
 			<Value>Default</Value>
+		</CustomProperty>
+		<CustomProperty>
+			<Name>CollapseWhiteSpace</Name>
+			<Value>True</Value>
 		</CustomProperty>
 		<CustomProperty>
 			<Name>PaperOrientation</Name>

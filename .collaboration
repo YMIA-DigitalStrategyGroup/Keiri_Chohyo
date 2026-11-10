@@ -317,17 +317,7 @@
   },
   {
     "ModuleName": "PCPage/お買い上げ明細書_発行画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-10T15:44:14.3644461+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\部品お買上げ明細書\\お買い上げ明細書_発行画面.json",
-      "Pages\\部品お買上げ明細書\\お買い上げ明細書_発行画面.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/材料残高内訳帳",
@@ -399,17 +389,7 @@
   },
   {
     "ModuleName": "PageReport/部品お買上げ明細",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-10T15:47:07.647062+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\部品お買上げ明細\\部品お買上げ明細.json",
-      "Reports\\部品お買上げ明細\\部品お買上げ明細.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "Reports/材料残高内訳帳",
